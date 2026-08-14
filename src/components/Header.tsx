@@ -7,34 +7,33 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary">
-          <span className="text-2xl">▶</span>
-          <span>動画のミカタ</span>
+    <header className="sticky top-0 z-50 bg-card border-b border-border">
+      <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-1.5">
+          <span className="ig-gradient-text text-xl font-bold tracking-tight">MOVeBUZ</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <Link href="/blog" className="hover:text-primary transition-colors">
+        <nav className="hidden md:flex items-center gap-1">
+          <Link href="/blog" className="px-4 py-2 text-sm text-muted hover:text-foreground transition-colors rounded-lg hover:bg-background">
             記事一覧
           </Link>
-          <Link href="/about" className="hover:text-primary transition-colors">
-            サービス紹介
+          <Link href="/about" className="px-4 py-2 text-sm text-muted hover:text-foreground transition-colors rounded-lg hover:bg-background">
+            サービス
           </Link>
           <Link
             href="/contact"
-            className="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-primary-dark transition-colors"
+            className="ml-2 ig-gradient text-white text-sm font-semibold px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
           >
-            無料相談する
+            無料相談
           </Link>
         </nav>
 
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 text-muted hover:text-foreground transition-colors"
           onClick={() => setOpen(!open)}
           aria-label="メニュー"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
             {open ? (
               <path d="M6 6l12 12M6 18L18 6" />
             ) : (
@@ -45,19 +44,19 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="md:hidden border-t border-border bg-white px-4 py-4 flex flex-col gap-4">
-          <Link href="/blog" className="hover:text-primary" onClick={() => setOpen(false)}>
+        <nav className="md:hidden border-t border-border bg-card px-4 py-3 flex flex-col gap-1">
+          <Link href="/blog" className="px-3 py-2.5 text-sm rounded-lg hover:bg-background" onClick={() => setOpen(false)}>
             記事一覧
           </Link>
-          <Link href="/about" className="hover:text-primary" onClick={() => setOpen(false)}>
-            サービス紹介
+          <Link href="/about" className="px-3 py-2.5 text-sm rounded-lg hover:bg-background" onClick={() => setOpen(false)}>
+            サービス
           </Link>
           <Link
             href="/contact"
-            className="bg-primary text-white px-5 py-2.5 rounded-lg text-center hover:bg-primary-dark"
+            className="ig-gradient text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center mt-1 hover:opacity-90"
             onClick={() => setOpen(false)}
           >
-            無料相談する
+            無料相談
           </Link>
         </nav>
       )}

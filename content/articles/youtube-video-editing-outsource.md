@@ -1,7 +1,7 @@
 ---
 title: "YouTube動画編集を外注するには？費用・依頼先・注意点を解説"
 description: "YouTube動画の編集を外注する方法を徹底解説。費用相場、依頼先の選び方、失敗しないためのポイントまでまとめました。"
-date: "2024-11-20"
+date: "2026-04-03"
 category: "outsourcing"
 tags: ["動画編集", "外注", "YouTube", "費用", "フリーランス"]
 thumbnail: ""

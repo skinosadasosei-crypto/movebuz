@@ -12,15 +12,15 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: "動画のミカタ | YouTube運用・動画マーケティングの専門メディア",
-    template: "%s | 動画のミカタ",
+    default: "MOVeBUZ | YouTube運用・動画マーケティングの専門メディア",
+    template: "%s | MOVeBUZ",
   },
   description:
     "企業のYouTube運用を成功に導く情報メディア。チャンネル開設から運用代行まで、動画マーケティングのノウハウを発信します。",
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    siteName: "動画のミカタ",
+    siteName: "MOVeBUZ",
   },
 };
 

@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "generate": "node scripts/generate-article.mjs",
-    "generate:batch": "node scripts/generate-article.mjs --batch scripts/keywords-sample.txt"
+    "generate:batch": "node scripts/generate-article.mjs --batch scripts/keywords-sample.txt",
+    "draft": "node scripts/generate-daily-draft.mjs",
+    "publish": "node scripts/publish-draft.mjs"
   },
   "dependencies": {
     "date-fns": "^4.4.0",

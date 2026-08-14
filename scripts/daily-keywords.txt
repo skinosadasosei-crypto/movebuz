@@ -1,0 +1,47 @@
+# MOVeBUZ - 毎日の記事投稿用キーワードリスト
+# カテゴリーバランスを考慮して並べています
+# 1行1キーワード。#で始まる行はスキップされます。
+# 使用済みキーワードは先頭に "# [済] " を付けてください
+
+# --- YouTube運用の基礎 ---
+YouTube チャンネル 開設 手順 2026
+YouTube Studio 使い方 初心者
+YouTube ブランドアカウント 作り方
+企業YouTube アカウント設計 ポイント
+YouTube チャンネルアート 作成 コツ
+YouTube 概要欄 書き方 テンプレート
+YouTube エンドカード 設定方法
+
+# --- 動画制作ノウハウ ---
+YouTube サムネイル 作り方 コツ
+YouTube 台本 書き方 テンプレート
+YouTube 動画 構成 テンプレート
+YouTube 撮影 照明 セットアップ
+YouTube テロップ デザイン コツ
+YouTube BGM 選び方 著作権フリー
+YouTube ショート動画 企画 アイデア
+
+# --- チャンネル成長戦略 ---
+YouTube アルゴリズム 仕組み 2026
+YouTube SEO タイトル 最適化
+YouTube アナリティクス 見方 分析
+YouTube 視聴維持率 改善 方法
+YouTube CTR 上げる コツ
+YouTube チャンネル登録者 増やし方
+YouTube おすすめ 表示される 方法
+
+# --- 成功事例 ---
+企業YouTube 成功事例 中小企業
+BtoB YouTube 活用事例 製造業
+不動産 YouTube 集客 事例
+士業 YouTube 活用 メリット
+飲食店 YouTube 集客 方法
+採用 YouTube 活用 事例
+
+# --- 外注・運用代行 ---
+YouTube 運用代行 メリット デメリット
+YouTube コンサル 選び方 ポイント
+動画編集 外注 クオリティ管理
+YouTube 運用 内製 外注 比較
+動画マーケティング ROI 測定方法
+YouTube 運用 KPI 設定方法

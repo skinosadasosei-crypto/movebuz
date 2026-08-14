@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a2e;
-  --primary: #4f46e5;
-  --primary-light: #eef2ff;
-  --primary-dark: #3730a3;
-  --accent: #f59e0b;
-  --accent-light: #fffbeb;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --card: #f9fafb;
+  --background: #fafafa;
+  --foreground: #262626;
+  --primary: #e1306c;
+  --primary-light: #fdf2f5;
+  --primary-dark: #c13584;
+  --accent: #fd1d1d;
+  --accent-light: #fff5f5;
+  --muted: #8e8e8e;
+  --border: #dbdbdb;
+  --card: #ffffff;
+  --gradient-start: #f58529;
+  --gradient-mid: #dd2a7b;
+  --gradient-end: #8134af;
+  --gradient-far: #515bd4;
 }
 
 @theme inline {
@@ -30,21 +34,49 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.ig-gradient {
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.ig-gradient-text {
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ig-gradient-border {
+  position: relative;
+}
+
+.ig-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
 }
 
 .article-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 700;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
   color: var(--foreground);
 }
 
 .article-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -54,7 +86,7 @@ body {
 .article-content p {
   margin-bottom: 1.25rem;
   line-height: 1.9;
-  color: #374151;
+  color: #262626;
 }
 
 .article-content ul,
@@ -77,11 +109,12 @@ body {
 }
 
 .article-content blockquote {
-  border-left: 4px solid var(--primary);
+  border-left: 3px solid var(--primary);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   background: var(--primary-light);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
 }
 
 .article-content strong {

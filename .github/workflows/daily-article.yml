@@ -1,0 +1,83 @@
+name: 毎日の記事自動生成
+
+on:
+  schedule:
+    # 毎日20:03 JST (11:03 UTC) に実行 - 前日に下書きPRを作成
+    - cron: '3 11 * * *'
+  workflow_dispatch: # 手動実行も可能
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-article:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: キーワード選定 & 記事生成
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node scripts/generate-daily-draft.mjs
+
+      - name: 生成された下書きを確認
+        run: |
+          if [ -z "$(ls content/drafts/*.md 2>/dev/null)" ]; then
+            echo "下書きが見つかりません"
+            exit 1
+          fi
+          echo "=== 生成された下書き ==="
+          ls -la content/drafts/
+          echo ""
+          echo "=== 内容プレビュー ==="
+          head -30 content/drafts/*.md
+
+      - name: 下書きを記事フォルダに移動
+        run: |
+          for f in content/drafts/*.md; do
+            filename=$(basename "$f")
+            mv "$f" "content/articles/$filename"
+            echo "移動: $filename → content/articles/"
+          done
+
+      - name: PRを作成
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u -d '+9 hours' '+%Y-%m-%d' 2>/dev/null || date -v+9H '+%Y-%m-%d')
+          BRANCH="article/${DATE}"
+
+          git config user.name "MOVeBUZ Bot"
+          git config user.email "noreply@movebuz.com"
+
+          git checkout -b "$BRANCH"
+          git add content/articles/ content/drafts/ scripts/daily-keywords.txt
+          git commit -m "記事追加: ${DATE}"
+          git push origin "$BRANCH"
+
+          # PR作成
+          ARTICLE_TITLE=$(head -5 content/articles/*.md 2>/dev/null | grep '^title:' | tail -1 | sed 's/title: "//;s/"$//')
+
+          gh pr create \
+            --title "📝 記事公開: ${DATE}" \
+            --body "$(cat <<'EOF'
+          ## 自動生成された記事
+
+          **確認事項:**
+          - [ ] タイトルは適切か
+          - [ ] 法律に引っかかる表現がないか
+          - [ ] 断定的な表現（「絶対」「必ず」等）がないか
+          - [ ] 誹謗中傷にあたる記述がないか
+          - [ ] 内容が正確か
+
+          **問題なければマージしてください。** Vercelが自動でデプロイします。
+          EOF
+          )" \
+            --base main \
+            --head "$BRANCH"

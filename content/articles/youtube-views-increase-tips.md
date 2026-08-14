@@ -1,7 +1,7 @@
 ---
 title: "企業YouTubeの再生数を伸ばす7つの施策｜今すぐ実践できるコツ"
 description: "企業のYouTubeチャンネルで再生数が伸びない原因と、今日から実践できる7つの改善施策を解説します。"
-date: "2024-11-25"
+date: "2026-04-07"
 category: "channel-growth"
 tags: ["YouTube", "再生数", "企業", "改善", "アルゴリズム"]
 thumbnail: ""

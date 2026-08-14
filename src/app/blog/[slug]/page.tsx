@@ -49,35 +49,35 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
       <article className="py-12">
         <div className="max-w-3xl mx-auto px-4">
           {/* Breadcrumb */}
-          <nav className="text-sm text-muted mb-6 flex items-center gap-2">
-            <Link href="/" className="hover:text-primary">
+          <nav className="text-xs text-muted mb-8 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-primary transition-colors">
               ホーム
             </Link>
-            <span>/</span>
-            <Link href="/blog" className="hover:text-primary">
+            <span className="text-muted/50">/</span>
+            <Link href="/blog" className="hover:text-primary transition-colors">
               記事一覧
             </Link>
-            <span>/</span>
-            <span className="text-foreground">{article.title}</span>
+            <span className="text-muted/50">/</span>
+            <span className="text-foreground truncate max-w-[200px]">{article.title}</span>
           </nav>
 
           {/* Header */}
-          <div className="mb-8">
+          <div className="mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs bg-primary-light text-primary px-3 py-1 rounded-full font-medium">
+              <span className="text-xs ig-gradient text-white px-3 py-1 rounded-full font-medium">
                 {categoryLabels[article.category] ?? article.category}
               </span>
-              <time className="text-sm text-muted">{article.date}</time>
+              <time className="text-xs text-muted">{article.date}</time>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+            <h1 className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">
               {article.title}
             </h1>
             {article.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-4">
+              <div className="flex flex-wrap gap-1.5 mt-4">
                 {article.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs text-muted border border-border px-2 py-1 rounded"
+                    className="text-[11px] text-muted bg-card border border-border px-2.5 py-1 rounded-full"
                   >
                     #{tag}
                   </span>
@@ -93,19 +93,22 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
           />
 
           {/* In-article CTA */}
-          <div className="my-12 bg-primary-light border border-primary/20 rounded-xl p-6 text-center">
-            <p className="font-bold text-lg mb-2">
-              YouTube運用でお悩みですか？
-            </p>
-            <p className="text-sm text-muted mb-4">
-              企画力×コスパで、あなたのチャンネルを成長させます
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-primary text-white font-bold px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors"
-            >
-              無料で相談してみる →
-            </Link>
+          <div className="my-12 ig-gradient rounded-2xl p-8 text-center text-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-black/10" />
+            <div className="relative">
+              <p className="font-bold text-lg mb-2">
+                YouTube運用でお悩みですか？
+              </p>
+              <p className="text-sm text-white/80 mb-5">
+                企画力×コスパで、あなたのチャンネルを成長させます
+              </p>
+              <Link
+                href="/contact"
+                className="inline-block bg-white text-foreground font-semibold px-6 py-2.5 rounded-full hover:bg-white/90 transition-colors text-sm"
+              >
+                無料で相談してみる →
+              </Link>
+            </div>
           </div>
         </div>
       </article>
@@ -114,18 +117,19 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
       {relatedArticles.length > 0 && (
         <section className="py-12 bg-card">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-xl font-bold mb-6">関連記事</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-1">Related</p>
+            <h2 className="text-xl font-bold mb-6 tracking-tight">関連記事</h2>
+            <div className="grid md:grid-cols-3 gap-4">
               {relatedArticles.map((a) => (
                 <Link
                   key={a.slug}
                   href={`/blog/${a.slug}`}
-                  className="bg-white border border-border rounded-xl p-4 hover:shadow-md transition-shadow"
+                  className="bg-background border border-border rounded-2xl p-5 hover:shadow-md hover:-translate-y-0.5 transition-all"
                 >
-                  <h3 className="font-bold leading-snug line-clamp-2 hover:text-primary">
+                  <h3 className="font-semibold text-sm leading-snug line-clamp-2 mb-2">
                     {a.title}
                   </h3>
-                  <time className="text-xs text-muted mt-2 block">
+                  <time className="text-[11px] text-muted block">
                     {a.date}
                   </time>
                 </Link>
