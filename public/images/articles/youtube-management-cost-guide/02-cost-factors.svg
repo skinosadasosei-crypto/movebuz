@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow9" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="60" rx="16" fill="url(#grad9)"/>
+  <rect x="0" y="16" width="800" height="44" fill="url(#grad9)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">費用を左右する5つの要素</text>
+
+  <!-- Central circle -->
+  <circle cx="400" cy="310" r="70" fill="#fff" stroke="#dd2a7b" stroke-width="2" filter="url(#shadow9)"/>
+  <text x="400" y="300" text-anchor="middle" fill="#333" font-size="15" font-weight="bold">費用に</text>
+  <text x="400" y="322" text-anchor="middle" fill="#333" font-size="15" font-weight="bold">影響する要素</text>
+
+  <!-- Factor 1: 動画の本数 (top) -->
+  <rect x="295" y="90" width="210" height="90" rx="12" fill="#fff" filter="url(#shadow9)"/>
+  <rect x="295" y="90" width="210" height="8" rx="4" fill="#f58529"/>
+  <circle cx="325" cy="130" r="16" fill="#f58529"/>
+  <text x="325" y="136" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">1</text>
+  <text x="355" y="126" fill="#333" font-size="15" font-weight="bold">動画の本数</text>
+  <text x="355" y="152" fill="#777" font-size="12">月2本 vs 月8本</text>
+  <!-- Connector -->
+  <line x1="400" y1="180" x2="400" y2="240" stroke="#f58529" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Factor 2: 動画の長さ (top-left) -->
+  <rect x="30" y="190" width="210" height="90" rx="12" fill="#fff" filter="url(#shadow9)"/>
+  <rect x="30" y="190" width="210" height="8" rx="4" fill="#dd2a7b"/>
+  <circle cx="60" cy="230" r="16" fill="#dd2a7b"/>
+  <text x="60" y="236" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">2</text>
+  <text x="90" y="226" fill="#333" font-size="14" font-weight="bold">動画の長さ・編集レベル</text>
+  <text x="90" y="252" fill="#777" font-size="12">尺と演出で工数が変動</text>
+  <!-- Connector -->
+  <line x1="240" y1="260" x2="335" y2="295" stroke="#dd2a7b" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Factor 3: 撮影の有無 (top-right) -->
+  <rect x="560" y="190" width="210" height="90" rx="12" fill="#fff" filter="url(#shadow9)"/>
+  <rect x="560" y="190" width="210" height="8" rx="4" fill="#8134af"/>
+  <circle cx="590" cy="230" r="16" fill="#8134af"/>
+  <text x="590" y="236" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">3</text>
+  <text x="620" y="226" fill="#333" font-size="15" font-weight="bold">撮影の有無</text>
+  <text x="620" y="252" fill="#777" font-size="12">撮影込みで費用UP</text>
+  <!-- Connector -->
+  <line x1="560" y1="260" x2="465" y2="295" stroke="#8134af" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Factor 4: 戦略・コンサル (bottom-left) -->
+  <rect x="30" y="370" width="210" height="90" rx="12" fill="#fff" filter="url(#shadow9)"/>
+  <rect x="30" y="370" width="210" height="8" rx="4" fill="#515bd4"/>
+  <circle cx="60" cy="410" r="16" fill="#515bd4"/>
+  <text x="60" y="416" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">4</text>
+  <text x="90" y="406" fill="#333" font-size="14" font-weight="bold">戦略・コンサルの有無</text>
+  <text x="90" y="432" fill="#777" font-size="12">戦略設計で大きく加算</text>
+  <!-- Connector -->
+  <line x1="240" y1="390" x2="335" y2="335" stroke="#515bd4" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Factor 5: レポート頻度 (bottom-right) -->
+  <rect x="560" y="370" width="210" height="90" rx="12" fill="#fff" filter="url(#shadow9)"/>
+  <rect x="560" y="370" width="210" height="8" rx="4" fill="#c4389d"/>
+  <circle cx="590" cy="410" r="16" fill="#c4389d"/>
+  <text x="590" y="416" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">5</text>
+  <text x="620" y="400" fill="#333" font-size="14" font-weight="bold">レポート・改善提案</text>
+  <text x="620" y="420" fill="#333" font-size="14" font-weight="bold">の頻度</text>
+  <text x="620" y="444" fill="#777" font-size="12">月次/週次で費用変動</text>
+  <!-- Connector -->
+  <line x1="560" y1="390" x2="465" y2="335" stroke="#c4389d" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Bottom label -->
+  <text x="400" y="540" text-anchor="middle" fill="#999" font-size="12">これらの要素を見積もり時に確認して、適正価格を見極めよう</text>
+</svg>

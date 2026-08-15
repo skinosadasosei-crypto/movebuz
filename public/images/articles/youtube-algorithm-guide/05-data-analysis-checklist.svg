@@ -1,0 +1,105 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow5" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#grad5)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad5)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">データ分析チェックリスト</text>
+
+  <!-- Table container -->
+  <rect x="40" y="96" width="720" height="360" rx="12" ry="12" fill="#fff" filter="url(#shadow5)"/>
+
+  <!-- Table header -->
+  <rect x="40" y="96" width="720" height="52" rx="12" ry="12" fill="#f8f8f8"/>
+  <rect x="40" y="126" width="720" height="22" fill="#f8f8f8"/>
+  <!-- Header dividers -->
+  <line x1="280" y1="100" x2="280" y2="148" stroke="#e5e5e5" stroke-width="1"/>
+  <line x1="480" y1="100" x2="480" y2="148" stroke="#e5e5e5" stroke-width="1"/>
+  <!-- Header text -->
+  <text x="160" y="128" text-anchor="middle" fill="#555" font-size="15" font-weight="bold">チェック項目</text>
+  <text x="380" y="128" text-anchor="middle" fill="#555" font-size="15" font-weight="bold">確認頻度</text>
+  <text x="620" y="128" text-anchor="middle" fill="#555" font-size="15" font-weight="bold">改善アクション</text>
+  <!-- Header bottom border -->
+  <line x1="40" y1="148" x2="760" y2="148" stroke="#e5e5e5" stroke-width="1.5"/>
+
+  <!-- Row 1: CTR -->
+  <rect x="40" y="148" width="720" height="76" fill="#fff"/>
+  <!-- Color accent -->
+  <rect x="40" y="148" width="5" height="76" fill="#f58529"/>
+  <!-- Checkbox icon -->
+  <rect x="62" y="172" width="24" height="24" rx="6" ry="6" fill="#f5852920" stroke="#f58529" stroke-width="1.5"/>
+  <text x="74" y="190" text-anchor="middle" fill="#f58529" font-size="14" font-weight="bold">✓</text>
+  <!-- Item -->
+  <text x="100" y="183" fill="#333" font-size="16" font-weight="bold">CTR</text>
+  <text x="100" y="204" fill="#999" font-size="11">クリック率</text>
+  <!-- Divider -->
+  <line x1="280" y1="152" x2="280" y2="220" stroke="#f0f0f0" stroke-width="1"/>
+  <!-- Frequency -->
+  <rect x="330" y="172" width="100" height="28" rx="14" fill="#f5852912"/>
+  <text x="380" y="191" text-anchor="middle" fill="#f58529" font-size="13" font-weight="bold">動画ごと</text>
+  <!-- Divider -->
+  <line x1="480" y1="152" x2="480" y2="220" stroke="#f0f0f0" stroke-width="1"/>
+  <!-- Action -->
+  <text x="500" y="189" fill="#666" font-size="13">サムネイル・タイトル改善</text>
+  <!-- Row border -->
+  <line x1="45" y1="224" x2="755" y2="224" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- Row 2: Watch Retention -->
+  <rect x="40" y="224" width="720" height="76" fill="#fff"/>
+  <rect x="40" y="224" width="5" height="76" fill="#dd2a7b"/>
+  <rect x="62" y="248" width="24" height="24" rx="6" ry="6" fill="#dd2a7b20" stroke="#dd2a7b" stroke-width="1.5"/>
+  <text x="74" y="266" text-anchor="middle" fill="#dd2a7b" font-size="14" font-weight="bold">✓</text>
+  <text x="100" y="259" fill="#333" font-size="16" font-weight="bold">視聴維持率</text>
+  <text x="100" y="280" fill="#999" font-size="11">平均視聴時間の割合</text>
+  <line x1="280" y1="228" x2="280" y2="296" stroke="#f0f0f0" stroke-width="1"/>
+  <rect x="330" y="248" width="100" height="28" rx="14" fill="#dd2a7b12"/>
+  <text x="380" y="267" text-anchor="middle" fill="#dd2a7b" font-size="13" font-weight="bold">動画ごと</text>
+  <line x1="480" y1="228" x2="480" y2="296" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="500" y="265" fill="#666" font-size="13">冒頭と構成の見直し</text>
+  <line x1="45" y1="300" x2="755" y2="300" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- Row 3: Traffic Source -->
+  <rect x="40" y="300" width="720" height="76" fill="#fff"/>
+  <rect x="40" y="300" width="5" height="76" fill="#8134af"/>
+  <rect x="62" y="324" width="24" height="24" rx="6" ry="6" fill="#8134af20" stroke="#8134af" stroke-width="1.5"/>
+  <text x="74" y="342" text-anchor="middle" fill="#8134af" font-size="14" font-weight="bold">✓</text>
+  <text x="100" y="335" fill="#333" font-size="16" font-weight="bold">トラフィックソース</text>
+  <text x="100" y="356" fill="#999" font-size="11">流入元の分析</text>
+  <line x1="280" y1="304" x2="280" y2="372" stroke="#f0f0f0" stroke-width="1"/>
+  <rect x="340" y="324" width="80" height="28" rx="14" fill="#8134af12"/>
+  <text x="380" y="343" text-anchor="middle" fill="#8134af" font-size="13" font-weight="bold">月1回</text>
+  <line x1="480" y1="304" x2="480" y2="372" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="500" y="341" fill="#666" font-size="13">検索・おすすめの割合確認</text>
+  <line x1="45" y1="376" x2="755" y2="376" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- Row 4: Audience -->
+  <rect x="40" y="376" width="720" height="76" fill="#fff"/>
+  <rect x="40" y="376" width="5" height="76" rx="0" ry="0" fill="#515bd4"/>
+  <!-- Bottom-left corner fix -->
+  <rect x="40" y="444" width="5" height="12" rx="0" ry="0" fill="#515bd4"/>
+  <rect x="62" y="400" width="24" height="24" rx="6" ry="6" fill="#515bd420" stroke="#515bd4" stroke-width="1.5"/>
+  <text x="74" y="418" text-anchor="middle" fill="#515bd4" font-size="14" font-weight="bold">✓</text>
+  <text x="100" y="411" fill="#333" font-size="16" font-weight="bold">視聴者の属性</text>
+  <text x="100" y="432" fill="#999" font-size="11">年齢・性別・地域</text>
+  <line x1="280" y1="380" x2="280" y2="448" stroke="#f0f0f0" stroke-width="1"/>
+  <rect x="340" y="400" width="80" height="28" rx="14" fill="#515bd412"/>
+  <text x="380" y="419" text-anchor="middle" fill="#515bd4" font-size="13" font-weight="bold">月1回</text>
+  <line x1="480" y1="380" x2="480" y2="448" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="500" y="417" fill="#666" font-size="13">ターゲットに届いているか</text>
+
+  <!-- Footer note -->
+  <text x="400" y="472" text-anchor="middle" fill="#999" font-size="11">※ YouTube Studioのアナリティクスで確認できます</text>
+</svg>

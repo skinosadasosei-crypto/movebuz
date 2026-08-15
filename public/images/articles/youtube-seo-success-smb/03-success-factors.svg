@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="25%" style="stop-color:#dd2a7b"/>
+      <stop offset="50%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="url(#grad)"/>
+  <rect x="0" y="28" width="800" height="28" fill="url(#grad)"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">成功事例に共通する4つのポイント</text>
+
+  <!-- Point 1 -->
+  <rect x="30" y="80" width="355" height="130" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="72" cy="145" r="26" fill="url(#grad)"/>
+  <text x="72" y="152" text-anchor="middle" fill="white" font-size="16" font-weight="bold">1</text>
+  <text x="110" y="120" font-size="14" font-weight="bold" fill="#333">バズを狙わない</text>
+  <text x="110" y="143" font-size="12" fill="#888">数万再生ではなく、</text>
+  <text x="110" y="161" font-size="12" fill="#888">見込み客に向けた</text>
+  <text x="110" y="179" font-size="12" fill="#888">コンテンツを発信する</text>
+
+  <!-- Point 2 -->
+  <rect x="415" y="80" width="355" height="130" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="457" cy="145" r="26" fill="url(#grad)"/>
+  <text x="457" y="152" text-anchor="middle" fill="white" font-size="16" font-weight="bold">2</text>
+  <text x="495" y="120" font-size="14" font-weight="bold" fill="#333">無理なく継続</text>
+  <text x="495" y="143" font-size="12" fill="#888">週1〜月2本ペースで</text>
+  <text x="495" y="161" font-size="12" fill="#888">質を保ちながら</text>
+  <text x="495" y="179" font-size="12" fill="#888">継続的に投稿する</text>
+
+  <!-- Point 3 -->
+  <rect x="30" y="230" width="355" height="130" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="72" cy="295" r="26" fill="url(#grad)"/>
+  <text x="72" y="302" text-anchor="middle" fill="white" font-size="16" font-weight="bold">3</text>
+  <text x="110" y="270" font-size="14" font-weight="bold" fill="#333">導線を設計する</text>
+  <text x="110" y="293" font-size="12" fill="#888">問い合わせ・採用ページなど</text>
+  <text x="110" y="311" font-size="12" fill="#888">動画から次のアクションへの</text>
+  <text x="110" y="329" font-size="12" fill="#888">導線をしっかり設計する</text>
+
+  <!-- Point 4 -->
+  <rect x="415" y="230" width="355" height="130" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="457" cy="295" r="26" fill="url(#grad)"/>
+  <text x="457" y="302" text-anchor="middle" fill="white" font-size="16" font-weight="bold">4</text>
+  <text x="495" y="270" font-size="14" font-weight="bold" fill="#333">自社の強みを活かす</text>
+  <text x="495" y="293" font-size="12" fill="#888">普段やっていることを</text>
+  <text x="495" y="311" font-size="12" fill="#888">そのまま動画にする発想で</text>
+  <text x="495" y="329" font-size="12" fill="#888">専門性をコンテンツ化する</text>
+</svg>

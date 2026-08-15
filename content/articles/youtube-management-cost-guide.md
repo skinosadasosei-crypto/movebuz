@@ -15,6 +15,8 @@ thumbnail: ""
 
 運用代行の料金は、大きく分けて**3つの価格帯**があります。
 
+![YouTube運用代行の3つの価格帯](/images/articles/youtube-management-cost-guide/01-price-tiers.svg)
+
 ### ライト帯（月5万〜15万円）
 
 - 編集のみの対応が中心
@@ -43,6 +45,8 @@ thumbnail: ""
 
 同じ「運用代行」でも、料金が大きく変わるのには理由があります。
 
+![費用を左右する5つの要素](/images/articles/youtube-management-cost-guide/02-cost-factors.svg)
+
 ### 1. 動画の本数
 
 月2本と月8本では、当然コストが変わります。**週1本（月4本）が標準的な目安**です。
@@ -69,6 +73,8 @@ thumbnail: ""
 
 「高いか安いかわからない」という場合は、以下の視点で考えてみましょう。
 
+![社内制作 vs 外注コスト比較](/images/articles/youtube-management-cost-guide/03-cost-effectiveness.svg)
+
 ### 社内で制作する場合のコスト
 
 - 担当者の人件費（月30〜50万円）
@@ -87,6 +93,8 @@ YouTubeは**ストック型コンテンツ**なので、時間が経つほどコ
 ## 運用代行会社を選ぶポイント
 
 費用だけで選ぶと失敗します。以下の点もチェックしましょう。
+
+![運用代行会社を選ぶ5つのポイント](/images/articles/youtube-management-cost-guide/04-selection-checklist.svg)
 
 - **実績**：同業種のチャンネル運用実績があるか
 - **企画力**：テンプレ動画ではなく、自社に合った企画を提案してくれるか

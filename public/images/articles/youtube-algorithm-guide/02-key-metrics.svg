@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="100%" style="stop-color:#dd2a7b"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dd2a7b"/>
+      <stop offset="100%" style="stop-color:#8134af"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#515bd4"/>
+      <stop offset="100%" style="stop-color:#f58529"/>
+    </linearGradient>
+    <filter id="shadow2" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="580" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#grad2)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad2)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">アルゴリズムが重視する4つの指標</text>
+
+  <!-- Card 1: CTR -->
+  <rect x="40" y="96" width="720" height="104" rx="12" ry="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="56" y="108" width="6" height="80" rx="3" ry="3" fill="#f58529"/>
+  <text x="80" y="128" fill="#333" font-size="18" font-weight="bold">クリック率（CTR）</text>
+  <text x="80" y="150" fill="#888" font-size="13">サムネイルとタイトルの魅力度を測る指標</text>
+  <!-- Progress bar -->
+  <rect x="80" y="166" width="360" height="12" rx="6" ry="6" fill="#f0f0f0"/>
+  <rect x="80" y="166" width="252" height="12" rx="6" ry="6" fill="url(#bar1)"/>
+  <!-- Badge -->
+  <rect x="600" y="110" width="140" height="36" rx="18" ry="18" fill="#f5852915"/>
+  <text x="670" y="133" text-anchor="middle" fill="#f58529" font-size="14" font-weight="bold">平均 4〜10%</text>
+  <text x="600" y="180" fill="#999" font-size="12">サムネイル・タイトルの魅力</text>
+
+  <!-- Card 2: Watch Time Retention -->
+  <rect x="40" y="216" width="720" height="104" rx="12" ry="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="56" y="228" width="6" height="80" rx="3" ry="3" fill="#dd2a7b"/>
+  <text x="80" y="248" fill="#333" font-size="18" font-weight="bold">視聴維持率</text>
+  <text x="80" y="270" fill="#888" font-size="13">動画を最後まで見てもらえているかの指標</text>
+  <!-- Progress bar -->
+  <rect x="80" y="286" width="360" height="12" rx="6" ry="6" fill="#f0f0f0"/>
+  <rect x="80" y="286" width="180" height="12" rx="6" ry="6" fill="url(#bar2)"/>
+  <!-- Badge -->
+  <rect x="600" y="230" width="140" height="36" rx="18" ry="18" fill="#dd2a7b15"/>
+  <text x="670" y="253" text-anchor="middle" fill="#dd2a7b" font-size="14" font-weight="bold">目安 50%以上</text>
+  <text x="600" y="300" fill="#999" font-size="12">最後まで見てもらえるか</text>
+
+  <!-- Card 3: Total Watch Time -->
+  <rect x="40" y="336" width="720" height="104" rx="12" ry="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="56" y="348" width="6" height="80" rx="3" ry="3" fill="#8134af"/>
+  <text x="80" y="368" fill="#333" font-size="18" font-weight="bold">総再生時間</text>
+  <text x="80" y="390" fill="#888" font-size="13">再生回数よりも重視される、しっかり見てもらう指標</text>
+  <!-- Progress bar -->
+  <rect x="80" y="406" width="360" height="12" rx="6" ry="6" fill="#f0f0f0"/>
+  <rect x="80" y="406" width="306" height="12" rx="6" ry="6" fill="url(#bar3)"/>
+  <!-- Badge -->
+  <rect x="580" y="350" width="160" height="36" rx="18" ry="18" fill="#8134af15"/>
+  <text x="660" y="373" text-anchor="middle" fill="#8134af" font-size="14" font-weight="bold">再生回数より重視</text>
+  <text x="600" y="420" fill="#999" font-size="12">しっかり見てもらう</text>
+
+  <!-- Card 4: Engagement -->
+  <rect x="40" y="456" width="720" height="104" rx="12" ry="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="56" y="468" width="6" height="80" rx="3" ry="3" fill="#515bd4"/>
+  <text x="80" y="488" fill="#333" font-size="18" font-weight="bold">エンゲージメント</text>
+  <text x="80" y="510" fill="#888" font-size="13">視聴者のアクションで動画の価値を判断</text>
+  <!-- Icons row -->
+  <rect x="80" y="522" width="70" height="26" rx="13" fill="#515bd415"/>
+  <text x="115" y="540" text-anchor="middle" fill="#515bd4" font-size="11" font-weight="bold">👍 高評価</text>
+  <rect x="158" y="522" width="76" height="26" rx="13" fill="#515bd415"/>
+  <text x="196" y="540" text-anchor="middle" fill="#515bd4" font-size="11" font-weight="bold">💬 コメント</text>
+  <rect x="242" y="522" width="60" height="26" rx="13" fill="#515bd415"/>
+  <text x="272" y="540" text-anchor="middle" fill="#515bd4" font-size="11" font-weight="bold">🔄 共有</text>
+  <rect x="310" y="522" width="60" height="26" rx="13" fill="#515bd415"/>
+  <text x="340" y="540" text-anchor="middle" fill="#515bd4" font-size="11" font-weight="bold">🔔 登録</text>
+  <!-- Badge -->
+  <rect x="580" y="470" width="160" height="36" rx="18" ry="18" fill="#515bd415"/>
+  <text x="660" y="493" text-anchor="middle" fill="#515bd4" font-size="14" font-weight="bold">複合的に評価</text>
+  <text x="600" y="540" fill="#999" font-size="12">高評価・コメント・共有・登録</text>
+</svg>

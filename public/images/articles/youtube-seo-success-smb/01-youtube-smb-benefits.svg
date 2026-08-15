@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="25%" style="stop-color:#dd2a7b"/>
+      <stop offset="50%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="url(#grad1)"/>
+  <rect x="0" y="28" width="800" height="28" fill="url(#grad1)"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">中小企業がYouTubeを活用すべき3つの理由</text>
+
+  <!-- Card 1 -->
+  <rect x="30" y="80" width="230" height="290" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="145" cy="140" r="36" fill="#fff3e6"/>
+  <text x="145" y="148" text-anchor="middle" font-size="32">💰</text>
+  <text x="145" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">広告費ゼロで発信</text>
+  <text x="145" y="225" text-anchor="middle" font-size="12" fill="#888">チャンネル開設も</text>
+  <text x="145" y="243" text-anchor="middle" font-size="12" fill="#888">動画投稿も無料。</text>
+  <text x="145" y="261" text-anchor="middle" font-size="12" fill="#888">低コストで始められる</text>
+  <text x="145" y="279" text-anchor="middle" font-size="12" fill="#888">マーケティング手法です。</text>
+  <rect x="70" y="310" width="150" height="32" rx="16" fill="#f58529" opacity="0.15"/>
+  <text x="145" y="331" text-anchor="middle" font-size="12" font-weight="bold" fill="#f58529">コスト削減</text>
+
+  <!-- Card 2 -->
+  <rect x="285" y="80" width="230" height="290" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="400" cy="140" r="36" fill="#f3e6ff"/>
+  <text x="400" y="148" text-anchor="middle" font-size="32">🔍</text>
+  <text x="400" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Google検索にも表示</text>
+  <text x="400" y="225" text-anchor="middle" font-size="12" fill="#888">YouTube動画は</text>
+  <text x="400" y="243" text-anchor="middle" font-size="12" fill="#888">Google検索結果にも</text>
+  <text x="400" y="261" text-anchor="middle" font-size="12" fill="#888">表示されるため、</text>
+  <text x="400" y="279" text-anchor="middle" font-size="12" fill="#888">検索流入も見込めます。</text>
+  <rect x="325" y="310" width="150" height="32" rx="16" fill="#8134af" opacity="0.15"/>
+  <text x="400" y="331" text-anchor="middle" font-size="12" font-weight="bold" fill="#8134af">SEO効果</text>
+
+  <!-- Card 3 -->
+  <rect x="540" y="80" width="230" height="290" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <circle cx="655" cy="140" r="36" fill="#e6f0ff"/>
+  <text x="655" y="148" text-anchor="middle" font-size="32">🤝</text>
+  <text x="655" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">信頼感を醸成</text>
+  <text x="655" y="225" text-anchor="middle" font-size="12" fill="#888">文字だけでは伝わらない</text>
+  <text x="655" y="243" text-anchor="middle" font-size="12" fill="#888">雰囲気や人柄を</text>
+  <text x="655" y="261" text-anchor="middle" font-size="12" fill="#888">動画で伝えることで</text>
+  <text x="655" y="279" text-anchor="middle" font-size="12" fill="#888">信頼感が生まれます。</text>
+  <rect x="580" y="310" width="150" height="32" rx="16" fill="#515bd4" opacity="0.15"/>
+  <text x="655" y="331" text-anchor="middle" font-size="12" font-weight="bold" fill="#515bd4">ブランディング</text>
+</svg>

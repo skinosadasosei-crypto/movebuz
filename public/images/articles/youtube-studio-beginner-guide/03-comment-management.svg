@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="iconBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="100%" style="stop-color:#dd2a7b"/>
+    </linearGradient>
+    <linearGradient id="iconBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dd2a7b"/>
+      <stop offset="100%" style="stop-color:#8134af"/>
+    </linearGradient>
+    <linearGradient id="iconBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="iconBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#515bd4"/>
+      <stop offset="100%" style="stop-color:#8134af"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">コメント対応の4つのポイント</text>
+
+  <!-- Card 1: 24時間以内に返信 -->
+  <rect x="40" y="92" width="348" height="170" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="214" cy="152" r="36" fill="url(#iconBg1)" opacity="0.15"/>
+  <circle cx="214" cy="152" r="28" fill="url(#iconBg1)"/>
+  <!-- Clock icon -->
+  <circle cx="214" cy="152" r="16" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <line x1="214" y1="152" x2="214" y2="143" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="214" y1="152" x2="222" y2="155" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="214" y="210" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">24時間以内に返信</text>
+  <text x="214" y="236" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888">素早い返信で</text>
+  <text x="214" y="254" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888">エンゲージメントUP</text>
+
+  <!-- Card 2: 質問には丁寧に回答 -->
+  <rect x="412" y="92" width="348" height="170" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="586" cy="152" r="36" fill="url(#iconBg2)" opacity="0.15"/>
+  <circle cx="586" cy="152" r="28" fill="url(#iconBg2)"/>
+  <!-- Question/Answer icon -->
+  <text x="586" y="158" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">Q&amp;A</text>
+  <text x="586" y="210" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">質問には丁寧に回答</text>
+  <text x="586" y="236" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888">視聴者の疑問を解決し</text>
+  <text x="586" y="254" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888">信頼関係を構築</text>
+
+  <!-- Card 3: ネガティブコメントも冷静に -->
+  <rect x="40" y="286" width="348" height="170" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="214" cy="346" r="36" fill="url(#iconBg3)" opacity="0.15"/>
+  <circle cx="214" cy="346" r="28" fill="url(#iconBg3)"/>
+  <!-- Shield icon -->
+  <path d="M214,328 L230,334 L230,350 Q230,360 214,366 Q198,360 198,350 L198,334 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="206,348 212,354 222,342" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="214" y="404" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">ネガティブコメントも</text>
+  <text x="214" y="426" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">冷静に対応</text>
+  <text x="214" y="450" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888">感情的にならず誠実に</text>
+
+  <!-- Card 4: スパムはフィルタリング -->
+  <rect x="412" y="286" width="348" height="170" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="586" cy="346" r="36" fill="url(#iconBg4)" opacity="0.15"/>
+  <circle cx="586" cy="346" r="28" fill="url(#iconBg4)"/>
+  <!-- Filter/funnel icon -->
+  <path d="M572,336 L600,336 L592,350 L592,360 L580,360 L580,350 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="586" y="404" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">スパムは</text>
+  <text x="586" y="426" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">フィルタリング</text>
+  <text x="586" y="450" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888">自動フィルタを活用しよう</text>
+</svg>

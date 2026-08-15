@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradA3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadowA3">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradA3)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradA3)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">初心者におすすめの動画フォーマット</text>
+
+  <!-- Card 1: How to系 -->
+  <rect x="40" y="100" width="220" height="310" rx="14" fill="#fff" filter="url(#shadowA3)"/>
+  <rect x="40" y="100" width="220" height="8" rx="4" fill="#f58529"/>
+  <circle cx="150" cy="165" r="32" fill="#f58529" opacity="0.1"/>
+  <text x="150" y="174" text-anchor="middle" font-size="28">🎓</text>
+  <rect x="90" y="210" width="120" height="28" rx="14" fill="#f58529" opacity="0.12"/>
+  <text x="150" y="229" text-anchor="middle" font-size="14" font-weight="bold" fill="#f58529">How to 系</text>
+  <line x1="80" y1="254" x2="220" y2="254" stroke="#f58529" stroke-width="1" opacity="0.2"/>
+  <text x="150" y="282" text-anchor="middle" font-size="13" fill="#555">「○○のやり方」</text>
+  <text x="150" y="306" text-anchor="middle" font-size="13" fill="#555">「○○の使い方」</text>
+  <rect x="60" y="334" width="180" height="50" rx="8" fill="#f58529" opacity="0.05"/>
+  <text x="150" y="356" text-anchor="middle" font-size="11" fill="#888">実用的な内容で</text>
+  <text x="150" y="374" text-anchor="middle" font-size="11" fill="#888">検索流入を狙いやすい</text>
+
+  <!-- Card 2: Q&A系 -->
+  <rect x="290" y="100" width="220" height="310" rx="14" fill="#fff" filter="url(#shadowA3)"/>
+  <rect x="290" y="100" width="220" height="8" rx="4" fill="#dd2a7b"/>
+  <circle cx="400" cy="165" r="32" fill="#dd2a7b" opacity="0.1"/>
+  <text x="400" y="174" text-anchor="middle" font-size="28">💡</text>
+  <rect x="340" y="210" width="120" height="28" rx="14" fill="#dd2a7b" opacity="0.12"/>
+  <text x="400" y="229" text-anchor="middle" font-size="14" font-weight="bold" fill="#dd2a7b">Q&amp;A 系</text>
+  <line x1="330" y1="254" x2="470" y2="254" stroke="#dd2a7b" stroke-width="1" opacity="0.2"/>
+  <text x="400" y="282" text-anchor="middle" font-size="13" fill="#555">よくある質問に</text>
+  <text x="400" y="306" text-anchor="middle" font-size="13" fill="#555">動画で回答</text>
+  <rect x="310" y="334" width="180" height="50" rx="8" fill="#dd2a7b" opacity="0.05"/>
+  <text x="400" y="356" text-anchor="middle" font-size="11" fill="#888">顧客対応の効率化にも</text>
+  <text x="400" y="374" text-anchor="middle" font-size="11" fill="#888">つながる一石二鳥</text>
+
+  <!-- Card 3: 比較・解説系 -->
+  <rect x="540" y="100" width="220" height="310" rx="14" fill="#fff" filter="url(#shadowA3)"/>
+  <rect x="540" y="100" width="220" height="8" rx="4" fill="#515bd4"/>
+  <circle cx="650" cy="165" r="32" fill="#515bd4" opacity="0.1"/>
+  <text x="650" y="174" text-anchor="middle" font-size="28">⚖</text>
+  <rect x="590" y="210" width="120" height="28" rx="14" fill="#515bd4" opacity="0.12"/>
+  <text x="650" y="229" text-anchor="middle" font-size="14" font-weight="bold" fill="#515bd4">比較・解説系</text>
+  <line x1="580" y1="254" x2="720" y2="254" stroke="#515bd4" stroke-width="1" opacity="0.2"/>
+  <text x="650" y="282" text-anchor="middle" font-size="13" fill="#555">「AとBの違い」</text>
+  <text x="650" y="306" text-anchor="middle" font-size="13" fill="#555">「○○を選ぶポイント」</text>
+  <rect x="560" y="334" width="180" height="50" rx="8" fill="#515bd4" opacity="0.05"/>
+  <text x="650" y="356" text-anchor="middle" font-size="11" fill="#888">購買検討層に刺さり</text>
+  <text x="650" y="374" text-anchor="middle" font-size="11" fill="#888">コンバージョンに強い</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="120" y="436" width="560" height="3" rx="1.5" fill="url(#gradA3)" opacity="0.3"/>
+
+  <!-- Footer note -->
+  <text x="400" y="465" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

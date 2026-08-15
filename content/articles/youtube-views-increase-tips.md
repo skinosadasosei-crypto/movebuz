@@ -17,6 +17,8 @@ thumbnail: ""
 
 再生数を伸ばすには、**YouTubeのアルゴリズムに「おすすめ」してもらう**ことが重要です。
 
+![YouTubeアルゴリズムが重視する4つの指標](/images/articles/youtube-views-increase-tips/01-algorithm-metrics.svg)
+
 アルゴリズムが重視する主な指標：
 
 - **クリック率（CTR）**：サムネイルとタイトルの魅力
@@ -27,6 +29,8 @@ thumbnail: ""
 ## 施策1：サムネイルを最適化する
 
 **再生数の8割はサムネイルで決まる**と言っても過言ではありません。
+
+![効果的なサムネイルの4つの特徴](/images/articles/youtube-views-increase-tips/02-thumbnail-optimization.svg)
 
 ### 効果的なサムネイルの特徴
 
@@ -106,6 +110,8 @@ YouTubeショートは、**新規視聴者へのリーチを大幅に広げる**
 
 ## 施策7：データを分析して改善する
 
+![必ずチェックすべき4つの指標](/images/articles/youtube-views-increase-tips/04-analytics-checklist.svg)
+
 YouTubeアナリティクスで**必ずチェックすべき指標**は以下の4つです。
 
 - **インプレッション数**：サムネイルが表示された回数
@@ -116,6 +122,8 @@ YouTubeアナリティクスで**必ずチェックすべき指標**は以下の
 数字を見て、次の動画で改善する。この**PDCAサイクル**が、再生数を伸ばす最大の鍵です。
 
 ## まとめ
+
+![再生数を伸ばす7つの施策マップ](/images/articles/youtube-views-increase-tips/03-seven-strategies-map.svg)
 
 企業YouTubeの再生数を伸ばす7つの施策：
 

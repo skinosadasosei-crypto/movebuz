@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="cardAccent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="100%" style="stop-color:#dd2a7b"/>
+    </linearGradient>
+    <linearGradient id="cardAccent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dd2a7b"/>
+      <stop offset="100%" style="stop-color:#8134af"/>
+    </linearGradient>
+    <linearGradient id="cardAccent3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="cardAccent4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#515bd4"/>
+      <stop offset="100%" style="stop-color:#8134af"/>
+    </linearGradient>
+    <linearGradient id="cardAccent5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">YouTube Studio 5つの主要機能</text>
+
+  <!-- Row 1: 2 cards -->
+  <!-- Card 1: ダッシュボード -->
+  <rect x="40" y="92" width="348" height="150" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="40" y="92" width="348" height="6" rx="3" ry="3" fill="url(#cardAccent1)"/>
+  <circle cx="100" cy="167" r="32" fill="#fff3e6" stroke="#f58529" stroke-width="2"/>
+  <!-- Chart icon -->
+  <rect x="82" y="158" width="8" height="22" rx="2" fill="#f58529"/>
+  <rect x="96" y="148" width="8" height="32" rx="2" fill="#dd2a7b"/>
+  <rect x="110" y="155" width="8" height="25" rx="2" fill="#f58529"/>
+  <text x="160" y="155" font-family="'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333">ダッシュボード</text>
+  <text x="160" y="180" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">チャンネル全体の</text>
+  <text x="160" y="200" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">パフォーマンス概要</text>
+
+  <!-- Card 2: コンテンツ管理 -->
+  <rect x="412" y="92" width="348" height="150" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="412" y="92" width="348" height="6" rx="3" ry="3" fill="url(#cardAccent2)"/>
+  <circle cx="472" cy="167" r="32" fill="#fce4f0" stroke="#dd2a7b" stroke-width="2"/>
+  <!-- Folder icon -->
+  <rect x="454" y="160" width="36" height="24" rx="3" fill="#dd2a7b"/>
+  <path d="M454,163 L454,158 Q454,155 457,155 L466,155 L470,158 L487,158 Q490,158 490,161 L490,163" fill="#dd2a7b" opacity="0.7"/>
+  <text x="532" y="155" font-family="'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333">コンテンツ管理</text>
+  <text x="532" y="180" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">動画の公開・編集・</text>
+  <text x="532" y="200" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">管理をまとめて操作</text>
+
+  <!-- Row 2: 2 cards -->
+  <!-- Card 3: アナリティクス -->
+  <rect x="40" y="262" width="348" height="150" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="40" y="262" width="348" height="6" rx="3" ry="3" fill="url(#cardAccent3)"/>
+  <circle cx="100" cy="337" r="32" fill="#f0e6ff" stroke="#8134af" stroke-width="2"/>
+  <!-- Growth chart icon -->
+  <polyline points="80,355 92,345 104,350 120,325" stroke="#8134af" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="120" cy="325" r="3" fill="#8134af"/>
+  <text x="160" y="325" font-family="'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333">アナリティクス</text>
+  <text x="160" y="350" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">視聴データを分析して</text>
+  <text x="160" y="370" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">改善ポイントを発見</text>
+
+  <!-- Card 4: コメント管理 -->
+  <rect x="412" y="262" width="348" height="150" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="412" y="262" width="348" height="6" rx="3" ry="3" fill="url(#cardAccent4)"/>
+  <circle cx="472" cy="337" r="32" fill="#e8eaff" stroke="#515bd4" stroke-width="2"/>
+  <!-- Chat bubble icon -->
+  <rect x="453" y="325" width="38" height="22" rx="8" fill="#515bd4"/>
+  <polygon points="465,347 462,354 472,347" fill="#515bd4"/>
+  <circle cx="465" cy="336" r="2" fill="#ffffff"/>
+  <circle cx="472" cy="336" r="2" fill="#ffffff"/>
+  <circle cx="479" cy="336" r="2" fill="#ffffff"/>
+  <text x="532" y="325" font-family="'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333">コメント管理</text>
+  <text x="532" y="350" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">視聴者との交流を</text>
+  <text x="532" y="370" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">効率的にマネジメント</text>
+
+  <!-- Row 3: 1 centered card -->
+  <!-- Card 5: カスタマイズ -->
+  <rect x="226" y="432" width="348" height="70" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="226" y="432" width="348" height="6" rx="3" ry="3" fill="url(#cardAccent5)"/>
+  <circle cx="286" cy="470" r="24" fill="#fff3e6" stroke="#f58529" stroke-width="2"/>
+  <!-- Palette icon -->
+  <circle cx="278" cy="465" r="4" fill="#f58529"/>
+  <circle cx="290" cy="462" r="4" fill="#dd2a7b"/>
+  <circle cx="296" cy="472" r="4" fill="#8134af"/>
+  <circle cx="282" cy="476" r="4" fill="#515bd4"/>
+  <text x="330" y="464" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">カスタマイズ</text>
+  <text x="330" y="486" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#666666">チャンネルの見た目を自由にデザイン</text>
+</svg>

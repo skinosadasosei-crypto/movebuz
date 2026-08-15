@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow4" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="620" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#grad4)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad4)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">アルゴリズムを味方にする4つのコツ</text>
+
+  <!-- Tip 1 -->
+  <rect x="40" y="96" width="720" height="118" rx="12" ry="12" fill="#fff" filter="url(#shadow4)"/>
+  <!-- Number circle -->
+  <circle cx="88" cy="155" r="30" fill="#f58529"/>
+  <text x="88" y="164" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">1</text>
+  <!-- Content -->
+  <text x="136" y="130" fill="#333" font-size="18" font-weight="bold">冒頭15秒に全力を注ぐ</text>
+  <text x="136" y="156" fill="#666" font-size="14">結論やメリットを先に伝えることで、視聴者の離脱を防ぐ</text>
+  <!-- Action tag -->
+  <rect x="136" y="172" width="200" height="28" rx="14" fill="#f5852912"/>
+  <text x="146" y="191" fill="#f58529" font-size="12" font-weight="bold">💡 結論ファーストで構成する</text>
+  <!-- Right side visual -->
+  <rect x="580" y="112" width="160" height="86" rx="10" ry="10" fill="#f5852910" stroke="#f58529" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="146" text-anchor="middle" fill="#f58529" font-size="28">⏱️</text>
+  <text x="660" y="176" text-anchor="middle" fill="#f58529" font-size="13" font-weight="bold">最初の15秒が勝負</text>
+
+  <!-- Tip 2 -->
+  <rect x="40" y="230" width="720" height="118" rx="12" ry="12" fill="#fff" filter="url(#shadow4)"/>
+  <circle cx="88" cy="289" r="30" fill="#dd2a7b"/>
+  <text x="88" y="298" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">2</text>
+  <text x="136" y="264" fill="#333" font-size="18" font-weight="bold">シリーズ化で連続視聴を促す</text>
+  <text x="136" y="290" fill="#666" font-size="14">ナンバリング・予告・終了画面を活用して次の動画へ誘導</text>
+  <rect x="136" y="306" width="240" height="28" rx="14" fill="#dd2a7b12"/>
+  <text x="146" y="325" fill="#dd2a7b" font-size="12" font-weight="bold">💡 終了画面で次回予告を入れる</text>
+  <rect x="580" y="246" width="160" height="86" rx="10" ry="10" fill="#dd2a7b10" stroke="#dd2a7b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="280" text-anchor="middle" fill="#dd2a7b" font-size="28">📺</text>
+  <text x="660" y="310" text-anchor="middle" fill="#dd2a7b" font-size="13" font-weight="bold">連続視聴がカギ</text>
+
+  <!-- Tip 3 -->
+  <rect x="40" y="364" width="720" height="118" rx="12" ry="12" fill="#fff" filter="url(#shadow4)"/>
+  <circle cx="88" cy="423" r="30" fill="#8134af"/>
+  <text x="88" y="432" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">3</text>
+  <text x="136" y="398" fill="#333" font-size="18" font-weight="bold">投稿スケジュールを固定する</text>
+  <text x="136" y="424" fill="#666" font-size="14">毎週同じ曜日・同じ時間に投稿して視聴者の習慣をつくる</text>
+  <rect x="136" y="440" width="260" height="28" rx="14" fill="#8134af12"/>
+  <text x="146" y="459" fill="#8134af" font-size="12" font-weight="bold">💡 曜日と時間を固定して習慣化する</text>
+  <rect x="580" y="380" width="160" height="86" rx="10" ry="10" fill="#8134af10" stroke="#8134af" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="414" text-anchor="middle" fill="#8134af" font-size="28">📅</text>
+  <text x="660" y="444" text-anchor="middle" fill="#8134af" font-size="13" font-weight="bold">定期投稿で信頼UP</text>
+
+  <!-- Tip 4 -->
+  <rect x="40" y="498" width="720" height="118" rx="12" ry="12" fill="#fff" filter="url(#shadow4)"/>
+  <circle cx="88" cy="557" r="30" fill="#515bd4"/>
+  <text x="88" y="566" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">4</text>
+  <text x="136" y="532" fill="#333" font-size="18" font-weight="bold">説明文を最適化する</text>
+  <text x="136" y="558" fill="#666" font-size="14">200文字以上・タイムスタンプ・ハッシュタグを活用</text>
+  <rect x="136" y="574" width="280" height="28" rx="14" fill="#515bd412"/>
+  <text x="146" y="593" fill="#515bd4" font-size="12" font-weight="bold">💡 タイムスタンプで検索にも表示される</text>
+  <rect x="580" y="514" width="160" height="86" rx="10" ry="10" fill="#515bd410" stroke="#515bd4" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="548" text-anchor="middle" fill="#515bd4" font-size="28">📝</text>
+  <text x="660" y="578" text-anchor="middle" fill="#515bd4" font-size="13" font-weight="bold">説明文も評価対象</text>
+</svg>

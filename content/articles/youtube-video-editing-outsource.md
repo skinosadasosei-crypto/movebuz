@@ -15,6 +15,8 @@ thumbnail: ""
 
 ## 動画編集を外注するメリット
 
+![動画編集を外注する3つのメリット](/images/articles/youtube-video-editing-outsource/01-outsource-merits.svg)
+
 ### 1. 時間を大幅に節約できる
 
 10分の動画を編集するのに、初心者なら**8〜15時間**かかることも珍しくありません。外注すれば、その時間を本業に集中できます。
@@ -28,6 +30,8 @@ thumbnail: ""
 週1本の投稿を維持するには、安定した制作体制が必要です。外注すれば**投稿ペースを落とさずに続けられます**。
 
 ## 外注先の選択肢と費用相場
+
+![外注先と費用相場の比較](/images/articles/youtube-video-editing-outsource/02-cost-comparison.svg)
 
 ### フリーランス（1本5,000円〜3万円）
 
@@ -48,6 +52,8 @@ thumbnail: ""
 - 費用は高めだが、**成果に直結するコスパの良さ**がある
 
 ## 外注する際の依頼方法
+
+![外注時に伝えるべき6つの情報](/images/articles/youtube-video-editing-outsource/03-order-checklist.svg)
 
 ### 必ず伝えるべき情報
 
@@ -71,6 +77,8 @@ thumbnail: ""
 - エンドカードのテンプレート
 
 ## 外注で失敗しないための5つのポイント
+
+![外注で失敗しない5つのポイント](/images/articles/youtube-video-editing-outsource/04-success-tips.svg)
 
 ### 1. 最初は1本だけテスト発注する
 

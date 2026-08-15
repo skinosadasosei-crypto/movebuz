@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="25%" style="stop-color:#dd2a7b"/>
+      <stop offset="50%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="380" rx="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="url(#grad)"/>
+  <rect x="0" y="28" width="800" height="28" fill="url(#grad)"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">業種別 × おすすめ動画タイプ</text>
+
+  <!-- Header row -->
+  <rect x="30" y="80" width="200" height="44" rx="8" fill="#f0f0f0"/>
+  <text x="130" y="107" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">業種</text>
+  <rect x="240" y="80" width="260" height="44" rx="8" fill="#f0f0f0"/>
+  <text x="370" y="107" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">おすすめ動画タイプ</text>
+  <rect x="510" y="80" width="260" height="44" rx="8" fill="#f0f0f0"/>
+  <text x="640" y="107" text-anchor="middle" font-size="13" font-weight="bold" fill="#555">期待できる効果</text>
+
+  <!-- Row 1 -->
+  <rect x="30" y="134" width="200" height="52" rx="0" fill="white" stroke="#eee" stroke-width="1"/>
+  <text x="50" y="165" font-size="20">🏠</text>
+  <text x="80" y="165" font-size="13" font-weight="bold" fill="#333">地域密着型</text>
+  <rect x="240" y="134" width="260" height="52" rx="0" fill="white" stroke="#eee" stroke-width="1"/>
+  <text x="260" y="165" font-size="12" fill="#555">ルームツアー・施工事例</text>
+  <rect x="510" y="134" width="260" height="52" rx="0" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="530" y="148" width="80" height="24" rx="12" fill="#f58529" opacity="0.15"/>
+  <text x="570" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#f58529">集客UP</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="186" width="200" height="52" rx="0" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <text x="50" y="217" font-size="20">⚖️</text>
+  <text x="80" y="217" font-size="13" font-weight="bold" fill="#333">士業・専門職</text>
+  <rect x="240" y="186" width="260" height="52" rx="0" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <text x="260" y="217" font-size="12" fill="#555">Q&amp;A・ノウハウ解説</text>
+  <rect x="510" y="186" width="260" height="52" rx="0" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <rect x="530" y="200" width="80" height="24" rx="12" fill="#dd2a7b" opacity="0.15"/>
+  <text x="570" y="217" text-anchor="middle" font-size="11" font-weight="bold" fill="#dd2a7b">信頼構築</text>
+
+  <!-- Row 3 -->
+  <rect x="30" y="238" width="200" height="52" rx="0" fill="white" stroke="#eee" stroke-width="1"/>
+  <text x="50" y="269" font-size="20">🏭</text>
+  <text x="80" y="269" font-size="13" font-weight="bold" fill="#333">製造業</text>
+  <rect x="240" y="238" width="260" height="52" rx="0" fill="white" stroke="#eee" stroke-width="1"/>
+  <text x="260" y="269" font-size="12" fill="#555">工場見学・社員インタビュー</text>
+  <rect x="510" y="238" width="260" height="52" rx="0" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="530" y="252" width="80" height="24" rx="12" fill="#8134af" opacity="0.15"/>
+  <text x="570" y="269" text-anchor="middle" font-size="11" font-weight="bold" fill="#8134af">採用強化</text>
+
+  <!-- Row 4 -->
+  <rect x="30" y="290" width="200" height="52" rx="0" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <text x="50" y="321" font-size="20">🍽️</text>
+  <text x="80" y="321" font-size="13" font-weight="bold" fill="#333">飲食・小売</text>
+  <rect x="240" y="290" width="260" height="52" rx="0" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <text x="260" y="321" font-size="12" fill="#555">レシピ・商品紹介</text>
+  <rect x="510" y="290" width="260" height="52" rx="0" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <rect x="530" y="304" width="80" height="24" rx="12" fill="#515bd4" opacity="0.15"/>
+  <text x="570" y="321" text-anchor="middle" font-size="11" font-weight="bold" fill="#515bd4">売上UP</text>
+</svg>

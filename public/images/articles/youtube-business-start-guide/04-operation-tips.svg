@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradA4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadowA4">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradA4)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradA4)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">継続運用の4つのコツ</text>
+
+  <!-- Card 1: 週1〜2本の投稿ペース -->
+  <rect x="40" y="100" width="340" height="160" rx="12" fill="#fff" filter="url(#shadowA4)"/>
+  <rect x="40" y="100" width="340" height="6" rx="3" fill="#f58529"/>
+  <circle cx="80" cy="148" r="24" fill="#f58529" opacity="0.12"/>
+  <text x="80" y="155" text-anchor="middle" font-size="20" font-weight="bold" fill="#f58529">1</text>
+  <text x="120" y="148" font-size="17" font-weight="bold" fill="#333">週1〜2本の投稿ペース</text>
+  <text x="120" y="175" font-size="13" fill="#666">無理のないペースで</text>
+  <text x="120" y="195" font-size="13" fill="#666">コンスタントに投稿を続ける</text>
+  <rect x="60" y="218" width="200" height="26" rx="13" fill="#f58529" opacity="0.08"/>
+  <text x="160" y="236" text-anchor="middle" font-size="11" fill="#f58529" font-weight="bold">継続 > 質 > 量の優先順位</text>
+
+  <!-- Card 2: サムネイルにこだわる -->
+  <rect x="420" y="100" width="340" height="160" rx="12" fill="#fff" filter="url(#shadowA4)"/>
+  <rect x="420" y="100" width="340" height="6" rx="3" fill="#dd2a7b"/>
+  <circle cx="460" cy="148" r="24" fill="#dd2a7b" opacity="0.12"/>
+  <text x="460" y="155" text-anchor="middle" font-size="20" font-weight="bold" fill="#dd2a7b">2</text>
+  <text x="500" y="148" font-size="17" font-weight="bold" fill="#333">サムネイルにこだわる</text>
+  <text x="500" y="175" font-size="13" fill="#666">CTR（クリック率）に</text>
+  <text x="500" y="195" font-size="13" fill="#666">大きく影響する最重要要素</text>
+  <rect x="440" y="218" width="200" height="26" rx="13" fill="#dd2a7b" opacity="0.08"/>
+  <text x="540" y="236" text-anchor="middle" font-size="11" fill="#dd2a7b" font-weight="bold">動画の「顔」を磨く</text>
+
+  <!-- Card 3: アナリティクスを毎週チェック -->
+  <rect x="40" y="300" width="340" height="160" rx="12" fill="#fff" filter="url(#shadowA4)"/>
+  <rect x="40" y="300" width="340" height="6" rx="3" fill="#8134af"/>
+  <circle cx="80" cy="348" r="24" fill="#8134af" opacity="0.12"/>
+  <text x="80" y="355" text-anchor="middle" font-size="20" font-weight="bold" fill="#8134af">3</text>
+  <text x="120" y="341" font-size="17" font-weight="bold" fill="#333">アナリティクスを</text>
+  <text x="120" y="363" font-size="17" font-weight="bold" fill="#333">毎週チェック</text>
+  <text x="120" y="393" font-size="13" fill="#666">数値を見て改善ポイントを</text>
+  <text x="120" y="413" font-size="13" fill="#666">データドリブンに把握する</text>
+  <rect x="60" y="425" width="200" height="26" rx="13" fill="#8134af" opacity="0.08"/>
+  <text x="160" y="443" text-anchor="middle" font-size="11" fill="#8134af" font-weight="bold">PDCAで成長を加速</text>
+
+  <!-- Card 4: コメントには必ず返信 -->
+  <rect x="420" y="300" width="340" height="160" rx="12" fill="#fff" filter="url(#shadowA4)"/>
+  <rect x="420" y="300" width="340" height="6" rx="3" fill="#515bd4"/>
+  <circle cx="460" cy="348" r="24" fill="#515bd4" opacity="0.12"/>
+  <text x="460" y="355" text-anchor="middle" font-size="20" font-weight="bold" fill="#515bd4">4</text>
+  <text x="500" y="348" font-size="17" font-weight="bold" fill="#333">コメントには必ず返信</text>
+  <text x="500" y="375" font-size="13" fill="#666">エンゲージメントを高め</text>
+  <text x="500" y="395" font-size="13" fill="#666">ファンとの信頼関係を構築</text>
+  <rect x="440" y="418" width="200" height="26" rx="13" fill="#515bd4" opacity="0.08"/>
+  <text x="540" y="436" text-anchor="middle" font-size="11" fill="#515bd4" font-weight="bold">コミュニティを育てる</text>
+
+  <!-- Footer note -->
+  <text x="400" y="505" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

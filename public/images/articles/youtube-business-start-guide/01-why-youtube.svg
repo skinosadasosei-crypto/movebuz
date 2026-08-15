@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradA1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadowA1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradA1)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradA1)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">企業がYouTubeを始めるべき3つの理由</text>
+
+  <!-- Card 1: 検索エンジンとしての機能 -->
+  <rect x="40" y="100" width="220" height="320" rx="14" fill="#fff" filter="url(#shadowA1)"/>
+  <rect x="40" y="100" width="220" height="8" rx="4" fill="#f58529"/>
+  <circle cx="150" cy="168" r="36" fill="#f58529" opacity="0.1"/>
+  <text x="150" y="176" text-anchor="middle" font-size="32">🔍</text>
+  <text x="150" y="228" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">検索エンジン</text>
+  <text x="150" y="250" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">としての機能</text>
+  <line x1="90" y1="268" x2="210" y2="268" stroke="#f58529" stroke-width="2" opacity="0.3"/>
+  <text x="150" y="296" text-anchor="middle" font-size="13" fill="#666">Googleに次ぐ</text>
+  <text x="150" y="316" text-anchor="middle" font-size="13" fill="#666">世界第2位の</text>
+  <text x="150" y="336" text-anchor="middle" font-size="13" fill="#666">検索エンジン</text>
+  <rect x="80" y="360" width="140" height="32" rx="16" fill="#f58529" opacity="0.1"/>
+  <text x="150" y="381" text-anchor="middle" font-size="12" fill="#f58529" font-weight="bold">圧倒的リーチ力</text>
+
+  <!-- Card 2: 長期的な資産になる -->
+  <rect x="290" y="100" width="220" height="320" rx="14" fill="#fff" filter="url(#shadowA1)"/>
+  <rect x="290" y="100" width="220" height="8" rx="4" fill="#dd2a7b"/>
+  <circle cx="400" cy="168" r="36" fill="#dd2a7b" opacity="0.1"/>
+  <text x="400" y="176" text-anchor="middle" font-size="32">📈</text>
+  <text x="400" y="228" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">長期的な資産</text>
+  <text x="400" y="250" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">になる</text>
+  <line x1="340" y1="268" x2="460" y2="268" stroke="#dd2a7b" stroke-width="2" opacity="0.3"/>
+  <text x="400" y="296" text-anchor="middle" font-size="13" fill="#666">ストック型</text>
+  <text x="400" y="316" text-anchor="middle" font-size="13" fill="#666">コンテンツとして</text>
+  <text x="400" y="336" text-anchor="middle" font-size="13" fill="#666">継続的に集客</text>
+  <rect x="330" y="360" width="140" height="32" rx="16" fill="#dd2a7b" opacity="0.1"/>
+  <text x="400" y="381" text-anchor="middle" font-size="12" fill="#dd2a7b" font-weight="bold">蓄積する価値</text>
+
+  <!-- Card 3: 信頼構築に最適 -->
+  <rect x="540" y="100" width="220" height="320" rx="14" fill="#fff" filter="url(#shadowA1)"/>
+  <rect x="540" y="100" width="220" height="8" rx="4" fill="#515bd4"/>
+  <circle cx="650" cy="168" r="36" fill="#515bd4" opacity="0.1"/>
+  <text x="650" y="176" text-anchor="middle" font-size="32">🤝</text>
+  <text x="650" y="228" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">信頼構築に</text>
+  <text x="650" y="250" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">最適</text>
+  <line x1="590" y1="268" x2="710" y2="268" stroke="#515bd4" stroke-width="2" opacity="0.3"/>
+  <text x="650" y="296" text-anchor="middle" font-size="13" fill="#666">動画は文字の</text>
+  <text x="650" y="316" text-anchor="middle" font-size="13" fill="#666">5000倍の</text>
+  <text x="650" y="336" text-anchor="middle" font-size="13" fill="#666">情報量がある</text>
+  <rect x="580" y="360" width="140" height="32" rx="16" fill="#515bd4" opacity="0.1"/>
+  <text x="650" y="381" text-anchor="middle" font-size="12" fill="#515bd4" font-weight="bold">深い信頼関係</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="120" y="450" width="560" height="3" rx="1.5" fill="url(#gradA1)" opacity="0.3"/>
+
+  <!-- Footer note -->
+  <text x="400" y="482" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

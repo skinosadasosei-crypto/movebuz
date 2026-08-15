@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#grad2)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad2)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">効果的なサムネイルの4つの特徴</text>
+
+  <!-- Card 1: テキストは13文字以内 -->
+  <rect x="40" y="100" width="340" height="140" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="40" y="100" width="8" height="140" rx="4" fill="#f58529"/>
+  <text x="72" y="134" font-size="32" font-weight="bold" fill="#f58529">01</text>
+  <text x="120" y="134" font-size="17" font-weight="bold" fill="#333">テキストは13文字以内</text>
+  <text x="72" y="162" font-size="13" fill="#666">短く、インパクトのある</text>
+  <text x="72" y="182" font-size="13" fill="#666">テキストで注目を集める</text>
+  <rect x="72" y="200" width="120" height="24" rx="12" fill="#f58529" opacity="0.1"/>
+  <text x="132" y="216" text-anchor="middle" font-size="11" fill="#f58529" font-weight="bold">簡潔さが命</text>
+
+  <!-- Card 2: 顔出し＋感情表現 -->
+  <rect x="420" y="100" width="340" height="140" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="420" y="100" width="8" height="140" rx="4" fill="#dd2a7b"/>
+  <text x="452" y="134" font-size="32" font-weight="bold" fill="#dd2a7b">02</text>
+  <text x="500" y="134" font-size="17" font-weight="bold" fill="#333">顔出し＋感情表現</text>
+  <text x="452" y="162" font-size="13" fill="#666">人の顔と感情が伝わる表情で</text>
+  <text x="452" y="182" font-size="13" fill="#666">視聴者の共感を引き出す</text>
+  <rect x="452" y="200" width="120" height="24" rx="12" fill="#dd2a7b" opacity="0.1"/>
+  <text x="512" y="216" text-anchor="middle" font-size="11" fill="#dd2a7b" font-weight="bold">共感を生む</text>
+
+  <!-- Card 3: コントラストを強く -->
+  <rect x="40" y="280" width="340" height="140" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="40" y="280" width="8" height="140" rx="4" fill="#8134af"/>
+  <text x="72" y="314" font-size="32" font-weight="bold" fill="#8134af">03</text>
+  <text x="120" y="314" font-size="17" font-weight="bold" fill="#333">コントラストを強く</text>
+  <text x="72" y="342" font-size="13" fill="#666">背景と文字の色差を大きくして</text>
+  <text x="72" y="362" font-size="13" fill="#666">スマホの小さい画面でも目立たせる</text>
+  <rect x="72" y="380" width="120" height="24" rx="12" fill="#8134af" opacity="0.1"/>
+  <text x="132" y="396" text-anchor="middle" font-size="11" fill="#8134af" font-weight="bold">視認性UP</text>
+
+  <!-- Card 4: 数字を入れる -->
+  <rect x="420" y="280" width="340" height="140" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="420" y="280" width="8" height="140" rx="4" fill="#515bd4"/>
+  <text x="452" y="314" font-size="32" font-weight="bold" fill="#515bd4">04</text>
+  <text x="500" y="314" font-size="17" font-weight="bold" fill="#333">数字を入れる</text>
+  <text x="452" y="342" font-size="13" fill="#666">具体的な数字で説得力と</text>
+  <text x="452" y="362" font-size="13" fill="#666">信頼感をアップさせる</text>
+  <rect x="452" y="380" width="120" height="24" rx="12" fill="#515bd4" opacity="0.1"/>
+  <text x="512" y="396" text-anchor="middle" font-size="11" fill="#515bd4" font-weight="bold">具体性が鍵</text>
+
+  <!-- Footer note -->
+  <text x="400" y="460" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

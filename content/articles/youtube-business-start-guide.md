@@ -17,11 +17,15 @@ YouTubeは月間アクティブユーザー数が**国内7,000万人以上**。�
 
 特に注目すべきポイントは3つです。
 
+![企業がYouTubeを始めるべき3つの理由](/images/articles/youtube-business-start-guide/01-why-youtube.svg)
+
 - **検索エンジンとしての機能**：YouTubeはGoogleに次ぐ世界第2位の検索エンジン。ユーザーが能動的に情報を探しに来ます
 - **長期的な資産になる**：一度投稿した動画は、何年も再生され続けるストック型コンテンツです
 - **信頼構築に最適**：動画は文章や画像より情報量が多く、企業の信頼感やブランドイメージを効果的に伝えられます
 
 ## ステップ1：チャンネルの方向性を決める
+
+![YouTube開設から運用までの4ステップ](/images/articles/youtube-business-start-guide/02-four-steps.svg)
 
 いきなりチャンネルを作る前に、まず**「誰に・何を・なぜ」届けるのか**を明確にしましょう。
 
@@ -61,6 +65,8 @@ Googleアカウントがあれば、YouTubeチャンネルは無料で作れま�
 
 最初の動画は完璧を目指す必要はありません。大切なのは**「ターゲットの悩みに答える内容」**にすること。
 
+![初心者におすすめの動画フォーマット](/images/articles/youtube-business-start-guide/03-video-formats.svg)
+
 ### 初心者におすすめの動画フォーマット
 
 - **How to系**：「○○のやり方」「○○の使い方」
@@ -77,6 +83,8 @@ Googleアカウントがあれば、YouTubeチャンネルは無料で作れま�
 ## ステップ4：継続的に運用する
 
 YouTubeで成果が出るまでには、最低でも**3〜6ヶ月**の継続が必要です。
+
+![継続運用の4つのコツ](/images/articles/youtube-business-start-guide/04-operation-tips.svg)
 
 ### 運用のコツ
 

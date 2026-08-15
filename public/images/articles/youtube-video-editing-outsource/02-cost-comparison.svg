@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow5" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="60" rx="16" fill="url(#grad5)"/>
+  <rect x="0" y="16" width="800" height="44" fill="url(#grad5)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">外注先と費用相場の比較</text>
+
+  <!-- Card 1: フリーランス -->
+  <rect x="40" y="90" width="220" height="380" rx="12" fill="#fff" filter="url(#shadow5)"/>
+  <rect x="40" y="90" width="220" height="56" rx="12" fill="#f58529"/>
+  <rect x="40" y="120" width="220" height="26" fill="#f58529"/>
+  <text x="150" y="125" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">フリーランス</text>
+
+  <!-- Price -->
+  <text x="150" y="190" text-anchor="middle" fill="#333" font-size="14">1本あたり</text>
+  <text x="150" y="225" text-anchor="middle" fill="#f58529" font-size="28" font-weight="bold">5,000〜3万円</text>
+
+  <line x1="80" y1="248" x2="220" y2="248" stroke="#eee" stroke-width="1"/>
+
+  <!-- Features -->
+  <text x="150" y="280" text-anchor="middle" fill="#777" font-size="13">クオリティに</text>
+  <text x="150" y="300" text-anchor="middle" fill="#777" font-size="13">ばらつきあり</text>
+
+  <text x="150" y="340" text-anchor="middle" fill="#777" font-size="13">個人との直接取引</text>
+  <text x="150" y="370" text-anchor="middle" fill="#777" font-size="13">コストを抑えたい</text>
+  <text x="150" y="390" text-anchor="middle" fill="#777" font-size="13">方向け</text>
+
+  <!-- Rating -->
+  <text x="150" y="430" text-anchor="middle" fill="#f58529" font-size="14" font-weight="bold">コスパ ★★★</text>
+  <text x="150" y="452" text-anchor="middle" fill="#f58529" font-size="14" font-weight="bold">安定度 ★☆☆</text>
+
+  <!-- Card 2: 動画編集会社 -->
+  <rect x="290" y="90" width="220" height="380" rx="12" fill="#fff" filter="url(#shadow5)"/>
+  <rect x="290" y="90" width="220" height="56" rx="12" fill="#dd2a7b"/>
+  <rect x="290" y="120" width="220" height="26" fill="#dd2a7b"/>
+  <text x="400" y="125" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">動画編集会社</text>
+
+  <text x="400" y="190" text-anchor="middle" fill="#333" font-size="14">1本あたり</text>
+  <text x="400" y="225" text-anchor="middle" fill="#dd2a7b" font-size="28" font-weight="bold">3〜10万円</text>
+
+  <line x1="330" y1="248" x2="470" y2="248" stroke="#eee" stroke-width="1"/>
+
+  <text x="400" y="280" text-anchor="middle" fill="#777" font-size="13">安定した</text>
+  <text x="400" y="300" text-anchor="middle" fill="#777" font-size="13">クオリティ</text>
+
+  <text x="400" y="340" text-anchor="middle" fill="#777" font-size="13">チーム体制で対応</text>
+  <text x="400" y="370" text-anchor="middle" fill="#777" font-size="13">品質重視の</text>
+  <text x="400" y="390" text-anchor="middle" fill="#777" font-size="13">方向け</text>
+
+  <text x="400" y="430" text-anchor="middle" fill="#dd2a7b" font-size="14" font-weight="bold">コスパ ★★☆</text>
+  <text x="400" y="452" text-anchor="middle" fill="#dd2a7b" font-size="14" font-weight="bold">安定度 ★★★</text>
+
+  <!-- Card 3: YouTube運用代行 -->
+  <rect x="540" y="90" width="220" height="380" rx="12" fill="#fff" filter="url(#shadow5)"/>
+  <rect x="540" y="90" width="220" height="56" rx="12" fill="#8134af"/>
+  <rect x="540" y="120" width="220" height="26" fill="#8134af"/>
+  <text x="650" y="125" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">YouTube運用代行</text>
+
+  <text x="650" y="190" text-anchor="middle" fill="#333" font-size="14">月額</text>
+  <text x="650" y="225" text-anchor="middle" fill="#8134af" font-size="28" font-weight="bold">15〜50万円</text>
+
+  <line x1="580" y1="248" x2="720" y2="248" stroke="#eee" stroke-width="1"/>
+
+  <text x="650" y="280" text-anchor="middle" fill="#777" font-size="13">企画〜分析まで</text>
+  <text x="650" y="300" text-anchor="middle" fill="#777" font-size="13">対応</text>
+
+  <text x="650" y="340" text-anchor="middle" fill="#777" font-size="13">ワンストップ運用</text>
+  <text x="650" y="370" text-anchor="middle" fill="#777" font-size="13">全部お任せしたい</text>
+  <text x="650" y="390" text-anchor="middle" fill="#777" font-size="13">方向け</text>
+
+  <text x="650" y="430" text-anchor="middle" fill="#8134af" font-size="14" font-weight="bold">コスパ ★☆☆</text>
+  <text x="650" y="452" text-anchor="middle" fill="#8134af" font-size="14" font-weight="bold">安定度 ★★★</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="500" text-anchor="middle" fill="#999" font-size="12">予算と目的に合わせて最適な外注先を選びましょう</text>
+</svg>

@@ -1,0 +1,101 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="33%" stop-color="#dd2a7b"/>
+      <stop offset="66%" stop-color="#8134af"/>
+      <stop offset="100%" stop-color="#515bd4"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="100%" stop-color="#dd2a7b"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dd2a7b"/>
+      <stop offset="100%" stop-color="#8134af"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad3" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8134af"/>
+      <stop offset="100%" stop-color="#515bd4"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad4" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#515bd4"/>
+      <stop offset="100%" stop-color="#f58529"/>
+    </linearGradient>
+    <marker id="arrowEnd1" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#dd2a7b"/>
+    </marker>
+    <marker id="arrowEnd2" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#8134af"/>
+    </marker>
+    <marker id="arrowEnd3" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#515bd4"/>
+    </marker>
+    <marker id="arrowEnd4" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#f58529"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="520" rx="16" ry="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="520" rx="16" ry="16" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="64" rx="16" ry="16" fill="url(#headerGrad5)"/>
+  <rect x="0" y="32" width="800" height="32" fill="url(#headerGrad5)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">サムネイル改善サイクル</text>
+
+  <!-- Center circle -->
+  <circle cx="400" cy="290" r="60" fill="none" stroke="url(#headerGrad5)" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+  <text x="400" y="285" text-anchor="middle" fill="#888888" font-size="12">継続的な</text>
+  <text x="400" y="303" text-anchor="middle" fill="#888888" font-size="12">改善</text>
+
+  <!-- Step 1: Top - CTRを確認 -->
+  <rect x="295" y="100" width="210" height="100" rx="14" ry="14" fill="#ffffff" stroke="#f58529" stroke-width="2.5"/>
+  <circle cx="330" cy="132" r="18" fill="#f58529"/>
+  <text x="330" y="138" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">1</text>
+  <text x="365" y="137" fill="#333333" font-size="16" font-weight="bold">CTRを確認</text>
+  <text x="315" y="172" fill="#666666" font-size="12">YouTube Studioで</text>
+  <text x="315" y="189" fill="#666666" font-size="12">クリック率をチェック</text>
+
+  <!-- Step 2: Right - 低CTR動画を特定 -->
+  <rect x="555" y="235" width="210" height="100" rx="14" ry="14" fill="#ffffff" stroke="#dd2a7b" stroke-width="2.5"/>
+  <circle cx="590" cy="267" r="18" fill="#dd2a7b"/>
+  <text x="590" y="273" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">2</text>
+  <text x="625" y="272" fill="#333333" font-size="15" font-weight="bold">低CTR動画を特定</text>
+  <text x="575" y="307" fill="#666666" font-size="12">改善対象の動画を</text>
+  <text x="575" y="324" fill="#666666" font-size="12">ピックアップする</text>
+
+  <!-- Step 3: Bottom - サムネイルを差し替え -->
+  <rect x="295" y="380" width="210" height="100" rx="14" ry="14" fill="#ffffff" stroke="#8134af" stroke-width="2.5"/>
+  <circle cx="330" cy="412" r="18" fill="#8134af"/>
+  <text x="330" y="418" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">3</text>
+  <text x="365" y="417" fill="#333333" font-size="14" font-weight="bold">サムネイルを差し替え</text>
+  <text x="315" y="452" fill="#666666" font-size="12">基本ルールに沿って</text>
+  <text x="315" y="469" fill="#666666" font-size="12">新しいサムネイルを作成</text>
+
+  <!-- Step 4: Left - 効果を比較 -->
+  <rect x="35" y="235" width="210" height="100" rx="14" ry="14" fill="#ffffff" stroke="#515bd4" stroke-width="2.5"/>
+  <circle cx="70" cy="267" r="18" fill="#515bd4"/>
+  <text x="70" y="273" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">4</text>
+  <text x="105" y="272" fill="#333333" font-size="16" font-weight="bold">効果を比較</text>
+  <text x="55" y="307" fill="#666666" font-size="12">差し替え前後のCTRを</text>
+  <text x="55" y="324" fill="#666666" font-size="12">比較して効果を検証</text>
+
+  <!-- Arrow: Step 1 -> Step 2 (top-right curve) -->
+  <path d="M 505,155 Q 580,155 565,235" fill="none" stroke="url(#arrowGrad1)" stroke-width="3" marker-end="url(#arrowEnd1)"/>
+
+  <!-- Arrow: Step 2 -> Step 3 (bottom-right curve) -->
+  <path d="M 610,335 Q 580,405 505,420" fill="none" stroke="url(#arrowGrad2)" stroke-width="3" marker-end="url(#arrowEnd2)"/>
+
+  <!-- Arrow: Step 3 -> Step 4 (bottom-left curve) -->
+  <path d="M 295,440 Q 220,440 235,335" fill="none" stroke="url(#arrowGrad3)" stroke-width="3" marker-end="url(#arrowEnd3)"/>
+
+  <!-- Arrow: Step 4 -> Step 1 (top-left curve) -->
+  <path d="M 185,235 Q 210,160 295,148" fill="none" stroke="url(#arrowGrad4)" stroke-width="3" marker-end="url(#arrowEnd4)"/>
+
+  <!-- Footer accent line -->
+  <rect x="40" y="500" width="720" height="4" rx="2" fill="url(#headerGrad5)" opacity="0.3"/>
+</svg>

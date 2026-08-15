@@ -1,0 +1,21 @@
+:root {
+  --dash-bg: #f8fafc;
+  --dash-sidebar: #0f172a;
+  --dash-sidebar-hover: #1e293b;
+  --dash-sidebar-active: #334155;
+  --dash-card: #ffffff;
+  --dash-border: #e2e8f0;
+  --dash-text: #0f172a;
+  --dash-text-secondary: #64748b;
+  --dash-text-muted: #94a3b8;
+  --dash-blue: #3b82f6;
+  --dash-blue-light: #eff6ff;
+  --dash-green: #10b981;
+  --dash-green-light: #ecfdf5;
+  --dash-red: #ef4444;
+  --dash-red-light: #fef2f2;
+  --dash-amber: #f59e0b;
+  --dash-amber-light: #fffbeb;
+  --dash-purple: #8b5cf6;
+  --dash-purple-light: #f5f3ff;
+}

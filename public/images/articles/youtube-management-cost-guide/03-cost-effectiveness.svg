@@ -1,0 +1,80 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad10" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow10" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="60" rx="16" fill="url(#grad10)"/>
+  <rect x="0" y="16" width="800" height="44" fill="url(#grad10)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">社内制作 vs 外注コスト比較</text>
+
+  <!-- VS circle -->
+  <circle cx="400" cy="290" r="30" fill="#dd2a7b" filter="url(#shadow10)"/>
+  <text x="400" y="297" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">VS</text>
+
+  <!-- Left column: 社内制作 -->
+  <rect x="40" y="90" width="320" height="390" rx="12" fill="#fff" filter="url(#shadow10)"/>
+  <rect x="40" y="90" width="320" height="60" rx="12" fill="#8134af"/>
+  <rect x="40" y="126" width="320" height="24" fill="#8134af"/>
+  <text x="200" y="128" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">社内制作</text>
+
+  <!-- Cost item 1 -->
+  <rect x="65" y="175" width="270" height="70" rx="8" fill="#f9f5fc"/>
+  <text x="80" y="200" fill="#8134af" font-size="13" font-weight="bold">人件費</text>
+  <text x="80" y="226" fill="#333" font-size="20" font-weight="bold">月30〜50万円</text>
+
+  <!-- Cost item 2 -->
+  <rect x="65" y="260" width="270" height="70" rx="8" fill="#f9f5fc"/>
+  <text x="80" y="285" fill="#8134af" font-size="13" font-weight="bold">機材費（初期投資）</text>
+  <text x="80" y="311" fill="#333" font-size="20" font-weight="bold">50〜100万円</text>
+
+  <!-- Cost item 3 -->
+  <rect x="65" y="345" width="270" height="70" rx="8" fill="#f9f5fc"/>
+  <text x="80" y="370" fill="#8134af" font-size="13" font-weight="bold">学習コスト</text>
+  <text x="80" y="396" fill="#333" font-size="20" font-weight="bold">3〜6ヶ月</text>
+
+  <!-- Verdict -->
+  <rect x="65" y="430" width="270" height="32" rx="6" fill="#f3ecfa"/>
+  <text x="200" y="451" text-anchor="middle" fill="#8134af" font-size="13" font-weight="bold">立ち上げに時間とコストがかかる</text>
+
+  <!-- Right column: 外注 -->
+  <rect x="440" y="90" width="320" height="390" rx="12" fill="#fff" filter="url(#shadow10)"/>
+  <rect x="440" y="90" width="320" height="60" rx="12" fill="#f58529"/>
+  <rect x="440" y="126" width="320" height="24" fill="#f58529"/>
+  <text x="600" y="128" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">外注</text>
+
+  <!-- Benefit 1 -->
+  <rect x="465" y="175" width="270" height="70" rx="8" fill="#fff8f0"/>
+  <text x="480" y="200" fill="#f58529" font-size="13" font-weight="bold">品質</text>
+  <text x="480" y="226" fill="#333" font-size="20" font-weight="bold">初月からプロ品質</text>
+
+  <!-- Benefit 2 -->
+  <rect x="465" y="260" width="270" height="70" rx="8" fill="#fff8f0"/>
+  <text x="480" y="285" fill="#f58529" font-size="13" font-weight="bold">月額費用</text>
+  <text x="480" y="311" fill="#333" font-size="20" font-weight="bold">月15〜40万円</text>
+
+  <!-- Benefit 3 -->
+  <rect x="465" y="345" width="270" height="70" rx="8" fill="#fff8f0"/>
+  <text x="480" y="370" fill="#f58529" font-size="13" font-weight="bold">スピード</text>
+  <text x="480" y="396" fill="#333" font-size="20" font-weight="bold">すぐスタート可能</text>
+
+  <!-- Verdict -->
+  <rect x="465" y="430" width="270" height="32" rx="6" fill="#fff5eb"/>
+  <text x="600" y="451" text-anchor="middle" fill="#d4600a" font-size="13" font-weight="bold">初期投資不要で即戦力を確保</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="508" text-anchor="middle" fill="#999" font-size="12">トータルコストで比較すると外注の方が効率的なケースが多い</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="33%" stop-color="#dd2a7b"/>
+      <stop offset="66%" stop-color="#8134af"/>
+      <stop offset="100%" stop-color="#515bd4"/>
+    </linearGradient>
+    <linearGradient id="accentGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dd2a7b"/>
+      <stop offset="100%" stop-color="#8134af"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="520" rx="16" ry="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="520" rx="16" ry="16" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="64" rx="16" ry="16" fill="url(#headerGrad1)"/>
+  <rect x="0" y="32" width="800" height="32" fill="url(#headerGrad1)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">サムネイルデザイン4つの基本ルール</text>
+
+  <!-- Card 1 -->
+  <rect x="40" y="90" width="340" height="170" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <circle cx="72" cy="122" r="20" fill="url(#accentGrad1)"/>
+  <text x="72" y="128" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">1</text>
+  <text x="102" y="128" fill="#333333" font-size="17" font-weight="bold">文字は大きく、少なく</text>
+  <line x1="60" y1="148" x2="360" y2="148" stroke="#f0e6f6" stroke-width="1"/>
+  <text x="60" y="175" fill="#666666" font-size="14">視聴者の目に一瞬で飛び込む文字サイズと</text>
+  <text x="60" y="197" fill="#666666" font-size="14">文字量が重要です。</text>
+  <rect x="60" y="215" width="180" height="28" rx="14" fill="#fef3f8"/>
+  <text x="150" y="234" text-anchor="middle" fill="#dd2a7b" font-size="13" font-weight="bold">最大15文字程度が目安</text>
+
+  <!-- Card 2 -->
+  <rect x="420" y="90" width="340" height="170" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <circle cx="452" cy="122" r="20" fill="url(#accentGrad1)"/>
+  <text x="452" y="128" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">2</text>
+  <text x="482" y="128" fill="#333333" font-size="17" font-weight="bold">コントラストをはっきり</text>
+  <line x1="440" y1="148" x2="740" y2="148" stroke="#f0e6f6" stroke-width="1"/>
+  <text x="440" y="175" fill="#666666" font-size="14">背景と文字の明暗差を十分にとり、</text>
+  <text x="440" y="197" fill="#666666" font-size="14">小さな画面でも読みやすくします。</text>
+  <rect x="440" y="215" width="200" height="28" rx="14" fill="#f3f0fe"/>
+  <text x="540" y="234" text-anchor="middle" fill="#8134af" font-size="13" font-weight="bold">背景と文字の明暗差が鍵</text>
+
+  <!-- Card 3 -->
+  <rect x="40" y="290" width="340" height="170" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <circle cx="72" cy="322" r="20" fill="url(#accentGrad1)"/>
+  <text x="72" y="328" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">3</text>
+  <text x="102" y="328" fill="#333333" font-size="17" font-weight="bold">人の顔を入れる</text>
+  <line x1="60" y1="348" x2="360" y2="348" stroke="#f0e6f6" stroke-width="1"/>
+  <text x="60" y="375" fill="#666666" font-size="14">感情が伝わる表情は視聴者の共感を</text>
+  <text x="60" y="397" fill="#666666" font-size="14">呼び、クリック率が向上します。</text>
+  <rect x="60" y="415" width="200" height="28" rx="14" fill="#fff5eb"/>
+  <text x="160" y="434" text-anchor="middle" fill="#f58529" font-size="13" font-weight="bold">感情が伝わる表情が効果的</text>
+
+  <!-- Card 4 -->
+  <rect x="420" y="290" width="340" height="170" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <circle cx="452" cy="322" r="20" fill="url(#accentGrad1)"/>
+  <text x="452" y="328" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">4</text>
+  <text x="482" y="328" fill="#333333" font-size="17" font-weight="bold">情報の優先順位を意識</text>
+  <line x1="440" y1="348" x2="740" y2="348" stroke="#f0e6f6" stroke-width="1"/>
+  <text x="440" y="375" fill="#666666" font-size="14">最も伝えたいメッセージを目立たせ、</text>
+  <text x="440" y="397" fill="#666666" font-size="14">視線の流れを設計しましょう。</text>
+  <rect x="440" y="415" width="250" height="28" rx="14" fill="#eef0fd"/>
+  <text x="565" y="434" text-anchor="middle" fill="#515bd4" font-size="13" font-weight="bold">伝えたいメッセージを最優先に</text>
+
+  <!-- Footer accent line -->
+  <rect x="40" y="490" width="720" height="4" rx="2" fill="url(#headerGrad1)" opacity="0.3"/>
+</svg>

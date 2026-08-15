@@ -1,0 +1,99 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow1" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">動画が表示される3つの場所</text>
+
+  <!-- Card 1: Home -->
+  <rect x="40" y="96" width="220" height="380" rx="14" ry="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="96" width="220" height="56" rx="14" ry="14" fill="#f58529"/>
+  <rect x="40" y="130" width="220" height="22" fill="#f58529"/>
+  <text x="150" y="130" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">ホーム画面</text>
+  <text x="150" y="148" text-anchor="middle" fill="#fff" font-size="13">（おすすめ）</text>
+
+  <!-- Icon placeholder: Home -->
+  <circle cx="150" cy="200" r="28" fill="#f5852915" stroke="#f58529" stroke-width="2"/>
+  <text x="150" y="208" text-anchor="middle" fill="#f58529" font-size="28">🏠</text>
+
+  <text x="150" y="256" text-anchor="middle" fill="#555" font-size="13" font-weight="bold">表示の仕組み</text>
+  <text x="150" y="278" text-anchor="middle" fill="#666" font-size="12">視聴履歴・興味関心</text>
+  <text x="150" y="296" text-anchor="middle" fill="#666" font-size="12">ベースで選定</text>
+
+  <line x1="80" y1="318" x2="220" y2="318" stroke="#eee" stroke-width="1"/>
+
+  <text x="150" y="342" text-anchor="middle" fill="#555" font-size="13" font-weight="bold">重要な指標</text>
+  <rect x="64" y="356" width="172" height="28" rx="14" fill="#f5852918"/>
+  <text x="150" y="375" text-anchor="middle" fill="#f58529" font-size="11" font-weight="bold">CTR</text>
+  <rect x="64" y="390" width="172" height="28" rx="14" fill="#f5852918"/>
+  <text x="150" y="409" text-anchor="middle" fill="#f58529" font-size="11" font-weight="bold">視聴維持率</text>
+  <rect x="64" y="424" width="172" height="28" rx="14" fill="#f5852918"/>
+  <text x="150" y="443" text-anchor="middle" fill="#f58529" font-size="11" font-weight="bold">満足度</text>
+
+  <!-- Card 2: Related -->
+  <rect x="290" y="96" width="220" height="380" rx="14" ry="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="290" y="96" width="220" height="56" rx="14" ry="14" fill="#dd2a7b"/>
+  <rect x="290" y="130" width="220" height="22" fill="#dd2a7b"/>
+  <text x="400" y="130" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">関連動画</text>
+  <text x="400" y="148" text-anchor="middle" fill="#fff" font-size="13">（サイドバー）</text>
+
+  <!-- Icon placeholder: Related -->
+  <circle cx="400" cy="200" r="28" fill="#dd2a7b15" stroke="#dd2a7b" stroke-width="2"/>
+  <text x="400" y="208" text-anchor="middle" fill="#dd2a7b" font-size="28">🔗</text>
+
+  <text x="400" y="256" text-anchor="middle" fill="#555" font-size="13" font-weight="bold">表示の仕組み</text>
+  <text x="400" y="278" text-anchor="middle" fill="#666" font-size="12">現在視聴中の動画と</text>
+  <text x="400" y="296" text-anchor="middle" fill="#666" font-size="12">関連性で選定</text>
+
+  <line x1="330" y1="318" x2="470" y2="318" stroke="#eee" stroke-width="1"/>
+
+  <text x="400" y="342" text-anchor="middle" fill="#555" font-size="13" font-weight="bold">重要な指標</text>
+  <rect x="314" y="356" width="172" height="28" rx="14" fill="#dd2a7b18"/>
+  <text x="400" y="375" text-anchor="middle" fill="#dd2a7b" font-size="11" font-weight="bold">テーマ類似性</text>
+  <rect x="314" y="390" width="172" height="28" rx="14" fill="#dd2a7b18"/>
+  <text x="400" y="409" text-anchor="middle" fill="#dd2a7b" font-size="11" font-weight="bold">キーワード一致</text>
+  <rect x="314" y="424" width="172" height="28" rx="14" fill="#dd2a7b18"/>
+  <text x="400" y="443" text-anchor="middle" fill="#dd2a7b" font-size="11" font-weight="bold">連続視聴率</text>
+
+  <!-- Card 3: Search -->
+  <rect x="540" y="96" width="220" height="380" rx="14" ry="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="540" y="96" width="220" height="56" rx="14" ry="14" fill="#8134af"/>
+  <rect x="540" y="130" width="220" height="22" fill="#8134af"/>
+  <text x="650" y="130" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">YouTube検索</text>
+  <text x="650" y="148" text-anchor="middle" fill="#fff" font-size="13">（検索結果）</text>
+
+  <!-- Icon placeholder: Search -->
+  <circle cx="650" cy="200" r="28" fill="#8134af15" stroke="#8134af" stroke-width="2"/>
+  <text x="650" y="208" text-anchor="middle" fill="#8134af" font-size="28">🔍</text>
+
+  <text x="650" y="256" text-anchor="middle" fill="#555" font-size="13" font-weight="bold">表示の仕組み</text>
+  <text x="650" y="278" text-anchor="middle" fill="#666" font-size="12">キーワード検索に</text>
+  <text x="650" y="296" text-anchor="middle" fill="#666" font-size="12">マッチして表示</text>
+
+  <line x1="580" y1="318" x2="720" y2="318" stroke="#eee" stroke-width="1"/>
+
+  <text x="650" y="342" text-anchor="middle" fill="#555" font-size="13" font-weight="bold">重要な指標</text>
+  <rect x="564" y="356" width="172" height="28" rx="14" fill="#8134af18"/>
+  <text x="650" y="375" text-anchor="middle" fill="#8134af" font-size="11" font-weight="bold">タイトル最適化</text>
+  <rect x="564" y="390" width="172" height="28" rx="14" fill="#8134af18"/>
+  <text x="650" y="409" text-anchor="middle" fill="#8134af" font-size="11" font-weight="bold">説明文の質</text>
+  <rect x="564" y="424" width="172" height="28" rx="14" fill="#8134af18"/>
+  <text x="650" y="443" text-anchor="middle" fill="#8134af" font-size="11" font-weight="bold">視聴維持率</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="504" text-anchor="middle" fill="#999" font-size="11">※ 各エリアで重視される指標が異なります</text>
+</svg>

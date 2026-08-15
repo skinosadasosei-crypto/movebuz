@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 540" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow4">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="540" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#grad4)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad4)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">必ずチェックすべき4つの指標</text>
+
+  <!-- Table header -->
+  <rect x="50" y="95" width="700" height="44" rx="8" fill="url(#grad4)" opacity="0.1"/>
+  <text x="100" y="122" font-size="14" font-weight="bold" fill="#8134af">指標</text>
+  <text x="320" y="122" font-size="14" font-weight="bold" fill="#8134af">説明</text>
+  <text x="620" y="122" font-size="14" font-weight="bold" fill="#8134af">ポイント</text>
+
+  <!-- Row 1: インプレッション数 -->
+  <rect x="50" y="150" width="700" height="80" rx="10" fill="#fff" filter="url(#shadow4)"/>
+  <rect x="50" y="150" width="6" height="80" rx="3" fill="#f58529"/>
+  <circle cx="85" cy="190" r="18" fill="#f58529" opacity="0.12"/>
+  <text x="85" y="196" text-anchor="middle" font-size="16" fill="#f58529">👁</text>
+  <text x="115" y="182" font-size="15" font-weight="bold" fill="#333">インプレッション数</text>
+  <text x="115" y="204" font-size="11" fill="#999">Impressions</text>
+  <line x1="280" y1="165" x2="280" y2="215" stroke="#eee" stroke-width="1"/>
+  <text x="300" y="185" font-size="13" fill="#555">サムネイルが視聴者の画面に</text>
+  <text x="300" y="205" font-size="13" fill="#555">表示された回数</text>
+  <line x1="560" y1="165" x2="560" y2="215" stroke="#eee" stroke-width="1"/>
+  <rect x="580" y="176" width="140" height="28" rx="14" fill="#f58529" opacity="0.08"/>
+  <text x="650" y="195" text-anchor="middle" font-size="12" fill="#f58529" font-weight="bold">リーチの指標</text>
+
+  <!-- Row 2: CTR -->
+  <rect x="50" y="245" width="700" height="80" rx="10" fill="#fff" filter="url(#shadow4)"/>
+  <rect x="50" y="245" width="6" height="80" rx="3" fill="#dd2a7b"/>
+  <circle cx="85" cy="285" r="18" fill="#dd2a7b" opacity="0.12"/>
+  <text x="85" y="291" text-anchor="middle" font-size="16" fill="#dd2a7b">📊</text>
+  <text x="115" y="277" font-size="15" font-weight="bold" fill="#333">CTR</text>
+  <text x="115" y="299" font-size="11" fill="#999">Click Through Rate</text>
+  <line x1="280" y1="260" x2="280" y2="310" stroke="#eee" stroke-width="1"/>
+  <text x="300" y="280" font-size="13" fill="#555">表示からクリックされた割合</text>
+  <text x="300" y="300" font-size="13" fill="#555">サムネイル・タイトルの評価</text>
+  <line x1="560" y1="260" x2="560" y2="310" stroke="#eee" stroke-width="1"/>
+  <rect x="580" y="271" width="140" height="28" rx="14" fill="#dd2a7b" opacity="0.08"/>
+  <text x="650" y="290" text-anchor="middle" font-size="12" fill="#dd2a7b" font-weight="bold">目安: 4〜10%</text>
+
+  <!-- Row 3: 平均視聴時間 -->
+  <rect x="50" y="340" width="700" height="80" rx="10" fill="#fff" filter="url(#shadow4)"/>
+  <rect x="50" y="340" width="6" height="80" rx="3" fill="#8134af"/>
+  <circle cx="85" cy="380" r="18" fill="#8134af" opacity="0.12"/>
+  <text x="85" y="386" text-anchor="middle" font-size="16" fill="#8134af">⏱</text>
+  <text x="115" y="372" font-size="15" font-weight="bold" fill="#333">平均視聴時間</text>
+  <text x="115" y="394" font-size="11" fill="#999">Average View Duration</text>
+  <line x1="280" y1="355" x2="280" y2="405" stroke="#eee" stroke-width="1"/>
+  <text x="300" y="375" font-size="13" fill="#555">動画をどこまで</text>
+  <text x="300" y="395" font-size="13" fill="#555">見てもらえたかの平均値</text>
+  <line x1="560" y1="355" x2="560" y2="405" stroke="#eee" stroke-width="1"/>
+  <rect x="580" y="366" width="140" height="28" rx="14" fill="#8134af" opacity="0.08"/>
+  <text x="650" y="385" text-anchor="middle" font-size="12" fill="#8134af" font-weight="bold">コンテンツの質</text>
+
+  <!-- Row 4: トラフィックソース -->
+  <rect x="50" y="435" width="700" height="80" rx="10" fill="#fff" filter="url(#shadow4)"/>
+  <rect x="50" y="435" width="6" height="80" rx="3" fill="#515bd4"/>
+  <circle cx="85" cy="475" r="18" fill="#515bd4" opacity="0.12"/>
+  <text x="85" y="481" text-anchor="middle" font-size="16" fill="#515bd4">🔍</text>
+  <text x="115" y="467" font-size="15" font-weight="bold" fill="#333">トラフィックソース</text>
+  <text x="115" y="489" font-size="11" fill="#999">Traffic Source</text>
+  <line x1="280" y1="450" x2="280" y2="500" stroke="#eee" stroke-width="1"/>
+  <text x="300" y="470" font-size="13" fill="#555">どこから視聴者が</text>
+  <text x="300" y="490" font-size="13" fill="#555">来ているかの内訳</text>
+  <line x1="560" y1="450" x2="560" y2="500" stroke="#eee" stroke-width="1"/>
+  <rect x="580" y="461" width="140" height="28" rx="14" fill="#515bd4" opacity="0.08"/>
+  <text x="650" y="480" text-anchor="middle" font-size="12" fill="#515bd4" font-weight="bold">集客経路の分析</text>
+
+  <!-- Footer note -->
+  <text x="400" y="530" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

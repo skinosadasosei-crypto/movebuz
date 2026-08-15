@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="25%" style="stop-color:#dd2a7b"/>
+      <stop offset="50%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" rx="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="url(#grad)"/>
+  <rect x="0" y="28" width="800" height="28" fill="url(#grad)"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">5つの活用事例マップ</text>
+
+  <!-- Row 1 -->
+  <rect x="30" y="80" width="355" height="110" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="30" y="80" width="6" height="110" rx="3" fill="#f58529"/>
+  <text x="56" y="108" font-size="11" font-weight="bold" fill="#f58529">事例 1</text>
+  <text x="56" y="132" font-size="15" font-weight="bold" fill="#333">地方の工務店</text>
+  <text x="56" y="155" font-size="12" fill="#888">ルームツアー動画 → 問い合わせ増加</text>
+  <rect x="260" y="110" width="110" height="28" rx="14" fill="#f58529" opacity="0.12"/>
+  <text x="315" y="129" text-anchor="middle" font-size="11" font-weight="bold" fill="#f58529">🏠 集客</text>
+
+  <rect x="415" y="80" width="355" height="110" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="415" y="80" width="6" height="110" rx="3" fill="#dd2a7b"/>
+  <text x="441" y="108" font-size="11" font-weight="bold" fill="#dd2a7b">事例 2</text>
+  <text x="441" y="132" font-size="15" font-weight="bold" fill="#333">士業事務所</text>
+  <text x="441" y="155" font-size="12" fill="#888">Q&amp;A動画 → 専門性アピール・相談増</text>
+  <rect x="645" y="110" width="110" height="28" rx="14" fill="#dd2a7b" opacity="0.12"/>
+  <text x="700" y="129" text-anchor="middle" font-size="11" font-weight="bold" fill="#dd2a7b">⚖️ 信頼構築</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="210" width="355" height="110" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="30" y="210" width="6" height="110" rx="3" fill="#8134af"/>
+  <text x="56" y="238" font-size="11" font-weight="bold" fill="#8134af">事例 3</text>
+  <text x="56" y="262" font-size="15" font-weight="bold" fill="#333">製造業</text>
+  <text x="56" y="285" font-size="12" fill="#888">工場見学・社員インタビュー → 採用改善</text>
+  <rect x="260" y="240" width="110" height="28" rx="14" fill="#8134af" opacity="0.12"/>
+  <text x="315" y="259" text-anchor="middle" font-size="11" font-weight="bold" fill="#8134af">🏭 採用</text>
+
+  <rect x="415" y="210" width="355" height="110" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="415" y="210" width="6" height="110" rx="3" fill="#515bd4"/>
+  <text x="441" y="238" font-size="11" font-weight="bold" fill="#515bd4">事例 4</text>
+  <text x="441" y="262" font-size="15" font-weight="bold" fill="#333">飲食店</text>
+  <text x="441" y="285" font-size="12" fill="#888">レシピ動画 → テイクアウト注文増</text>
+  <rect x="645" y="240" width="110" height="28" rx="14" fill="#515bd4" opacity="0.12"/>
+  <text x="700" y="259" text-anchor="middle" font-size="11" font-weight="bold" fill="#515bd4">🍽️ 売上</text>
+
+  <!-- Row 3 center -->
+  <rect x="215" y="340" width="370" height="110" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="215" y="340" width="6" height="110" rx="3" fill="#e1306c"/>
+  <text x="241" y="368" font-size="11" font-weight="bold" fill="#e1306c">事例 5</text>
+  <text x="241" y="392" font-size="15" font-weight="bold" fill="#333">不動産会社</text>
+  <text x="241" y="415" font-size="12" fill="#888">エリア紹介動画 → 物件問い合わせ増</text>
+  <rect x="450" y="370" width="120" height="28" rx="14" fill="#e1306c" opacity="0.12"/>
+  <text x="510" y="389" text-anchor="middle" font-size="11" font-weight="bold" fill="#e1306c">🏢 リード獲得</text>
+</svg>

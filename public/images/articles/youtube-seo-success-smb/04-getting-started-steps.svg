@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="25%" style="stop-color:#dd2a7b"/>
+      <stop offset="50%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="340" rx="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="56" rx="16" fill="url(#grad)"/>
+  <rect x="0" y="28" width="800" height="28" fill="url(#grad)"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">YouTube運用を始める5ステップ</text>
+
+  <!-- Step 1 -->
+  <circle cx="90" cy="140" r="24" fill="#f58529"/>
+  <text x="90" y="147" text-anchor="middle" fill="white" font-size="14" font-weight="bold">1</text>
+  <text x="90" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">目的を</text>
+  <text x="90" y="201" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">明確にする</text>
+  <text x="90" y="225" text-anchor="middle" font-size="10" fill="#888">集客？採用？</text>
+  <text x="90" y="239" text-anchor="middle" font-size="10" fill="#888">ブランディング？</text>
+
+  <!-- Arrow -->
+  <line x1="130" y1="140" x2="195" y2="140" stroke="#ddd" stroke-width="2"/>
+  <polygon points="195,134 207,140 195,146" fill="#ddd"/>
+
+  <!-- Step 2 -->
+  <circle cx="240" cy="140" r="24" fill="#e04e6a"/>
+  <text x="240" y="147" text-anchor="middle" fill="white" font-size="14" font-weight="bold">2</text>
+  <text x="240" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">ターゲットを</text>
+  <text x="240" y="201" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">決める</text>
+  <text x="240" y="225" text-anchor="middle" font-size="10" fill="#888">誰に向けた</text>
+  <text x="240" y="239" text-anchor="middle" font-size="10" fill="#888">動画を作るか</text>
+
+  <line x1="280" y1="140" x2="345" y2="140" stroke="#ddd" stroke-width="2"/>
+  <polygon points="345,134 357,140 345,146" fill="#ddd"/>
+
+  <!-- Step 3 -->
+  <circle cx="390" cy="140" r="24" fill="#a02d90"/>
+  <text x="390" y="147" text-anchor="middle" fill="white" font-size="14" font-weight="bold">3</text>
+  <text x="390" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">テーマを</text>
+  <text x="390" y="201" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">リストアップ</text>
+  <text x="390" y="225" text-anchor="middle" font-size="10" fill="#888">自社の強みを</text>
+  <text x="390" y="239" text-anchor="middle" font-size="10" fill="#888">活かせるテーマ</text>
+
+  <line x1="430" y1="140" x2="495" y2="140" stroke="#ddd" stroke-width="2"/>
+  <polygon points="495,134 507,140 495,146" fill="#ddd"/>
+
+  <!-- Step 4 -->
+  <circle cx="540" cy="140" r="24" fill="#6e32b5"/>
+  <text x="540" y="147" text-anchor="middle" fill="white" font-size="14" font-weight="bold">4</text>
+  <text x="540" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">まず1本</text>
+  <text x="540" y="201" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">作ってみる</text>
+  <text x="540" y="225" text-anchor="middle" font-size="10" fill="#888">スマホ撮影でも</text>
+  <text x="540" y="239" text-anchor="middle" font-size="10" fill="#888">OK！</text>
+
+  <line x1="580" y1="140" x2="645" y2="140" stroke="#ddd" stroke-width="2"/>
+  <polygon points="645,134 657,140 645,146" fill="#ddd"/>
+
+  <!-- Step 5 -->
+  <circle cx="690" cy="140" r="24" fill="#515bd4"/>
+  <text x="690" y="147" text-anchor="middle" fill="white" font-size="14" font-weight="bold">5</text>
+  <text x="690" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">反応を見て</text>
+  <text x="690" y="201" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">改善する</text>
+  <text x="690" y="225" text-anchor="middle" font-size="10" fill="#888">再生数やコメントを</text>
+  <text x="690" y="239" text-anchor="middle" font-size="10" fill="#888">次に活かす</text>
+
+  <!-- Bottom note -->
+  <rect x="200" y="275" width="400" height="40" rx="20" fill="url(#grad)" opacity="0.1"/>
+  <text x="400" y="300" text-anchor="middle" font-size="13" font-weight="bold" fill="#8134af">完璧を求めず、まず始めることが大切！</text>
+</svg>

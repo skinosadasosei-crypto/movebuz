@@ -1,7 +1,7 @@
 ---
 title: "YouTube Studio完全ガイド｜初心者が最初に覚えるべき5つの機能"
 description: "YouTube Studioの基本的な使い方を初心者向けに解説。アナリティクスの見方、動画管理、コメント対応など、チャンネル運用に欠かせない5つの機能を紹介します。"
-date: "2026-08-17"
+date: "2026-08-16"
 category: "youtube-basics"
 tags: ["YouTube Studio", "初心者", "チャンネル運用", "アナリティクス"]
 thumbnail: ""
@@ -18,6 +18,8 @@ thumbnail: ""
 YouTube Studioは、**YouTubeチャンネルを管理するための公式ツール**です。パソコンのブラウザからアクセスできるほか、スマートフォンアプリも用意されています。
 
 主にできることは以下の通りです。
+
+![YouTube Studio 5つの主要機能](/images/articles/youtube-studio-beginner-guide/01-youtube-studio-overview.svg)
 
 - 動画のアップロード・編集
 - チャンネルのアクセス解析
@@ -66,6 +68,8 @@ YouTube Studioにログインすると最初に表示されるのが**ダッシ�
 
 YouTube Studioの中で**最も重要と言っても過言ではない機能**がアナリティクスです。
 
+![最低限チェックすべき4つの指標](/images/articles/youtube-studio-beginner-guide/02-analytics-metrics.svg)
+
 ### 最低限チェックすべき4つの指標
 
 | 指標 | 意味 | 目安 |
@@ -86,6 +90,8 @@ YouTube Studioの中で**最も重要と言っても過言ではない機能**�
 ## 機能4：コメント管理｜視聴者とのコミュニケーション
 
 左メニューの「コメント」から、**動画に寄せられたコメントを一覧で確認・返信**できます。
+
+![コメント対応の4つのポイント](/images/articles/youtube-studio-beginner-guide/03-comment-management.svg)
 
 ### コメント対応のポイント
 
@@ -110,6 +116,8 @@ YouTube Studioの中で**最も重要と言っても過言ではない機能**�
 
 左メニューの「カスタマイズ」では、**チャンネルページの見た目やブランディング**を設定できます。
 
+![チャンネルカスタマイズの3つの設定](/images/articles/youtube-studio-beginner-guide/04-channel-customize.svg)
+
 ### レイアウトタブ
 
 - **チャンネル紹介動画**：未登録者向けに自動再生される動画を設定
@@ -132,6 +140,8 @@ YouTube Studioの中で**最も重要と言っても過言ではない機能**�
 ## まずは週1回のチェックから始めよう
 
 YouTube Studioのすべての機能を使いこなす必要はありません。まずは以下のルーティンから始めてみてください。
+
+![YouTube Studio運用ルーティン](/images/articles/youtube-studio-beginner-guide/05-routine-checklist.svg)
 
 **毎日やること：**
 - ダッシュボードをチェック（1分）

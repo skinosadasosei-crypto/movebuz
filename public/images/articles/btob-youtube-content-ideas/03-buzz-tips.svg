@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow3" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="60" rx="16" fill="url(#grad3)"/>
+  <rect x="0" y="16" width="800" height="44" fill="url(#grad3)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">バズるネタに変える3つのコツ</text>
+
+  <!-- Tip 1 -->
+  <rect x="40" y="90" width="720" height="130" rx="12" fill="#fff" filter="url(#shadow3)"/>
+  <circle cx="85" cy="130" r="28" fill="#f58529"/>
+  <text x="85" y="138" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">1</text>
+  <text x="130" y="128" fill="#333" font-size="18" font-weight="bold">具体的な数字を入れる</text>
+  <!-- Before/After -->
+  <rect x="130" y="148" width="270" height="36" rx="8" fill="#f5f5f5"/>
+  <text x="145" y="171" fill="#999" font-size="13">Before:</text>
+  <text x="205" y="171" fill="#888" font-size="13">「売上アップのコツ」</text>
+  <!-- Arrow -->
+  <text x="415" y="171" fill="#dd2a7b" font-size="18" font-weight="bold">→</text>
+  <rect x="440" y="148" width="300" height="36" rx="8" fill="#fff5eb"/>
+  <text x="455" y="171" fill="#f58529" font-size="13">After:</text>
+  <text x="505" y="171" fill="#d4600a" font-size="13">「売上を2倍にした3つの施策」</text>
+
+  <!-- Tip 2 -->
+  <rect x="40" y="240" width="720" height="130" rx="12" fill="#fff" filter="url(#shadow3)"/>
+  <circle cx="85" cy="280" r="28" fill="#dd2a7b"/>
+  <text x="85" y="288" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">2</text>
+  <text x="130" y="278" fill="#333" font-size="18" font-weight="bold">逆張りの視点</text>
+  <text x="130" y="310" fill="#777" font-size="14">常識に反する主張で議論を生む</text>
+  <!-- Example -->
+  <rect x="130" y="324" width="600" height="30" rx="6" fill="#fce4f0"/>
+  <text x="145" y="344" fill="#b8206a" font-size="12">例：「SEOはもう古い？YouTubeが最強の集客ツールである理由」</text>
+
+  <!-- Tip 3 -->
+  <rect x="40" y="390" width="720" height="130" rx="12" fill="#fff" filter="url(#shadow3)"/>
+  <circle cx="85" cy="430" r="28" fill="#8134af"/>
+  <text x="85" y="438" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">3</text>
+  <text x="130" y="428" fill="#333" font-size="18" font-weight="bold">時事ネタに絡める</text>
+  <text x="130" y="460" fill="#777" font-size="14">鮮度の高い情報は検索されやすい</text>
+  <!-- Example -->
+  <rect x="130" y="474" width="600" height="30" rx="6" fill="#f3ecfa"/>
+  <text x="145" y="494" fill="#6a2b8f" font-size="12">例：「2025年のAI時代にBtoB企業がYouTubeを始めるべき理由」</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="545" text-anchor="middle" fill="#999" font-size="12">普通のネタも切り口次第でバズるコンテンツに変わる</text>
+</svg>

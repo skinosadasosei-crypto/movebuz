@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">YouTubeアルゴリズムが重視する4つの指標</text>
+
+  <!-- Card 1: CTR -->
+  <rect x="40" y="100" width="340" height="160" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="100" width="340" height="6" rx="3" fill="#f58529"/>
+  <circle cx="80" cy="150" r="24" fill="#f58529" opacity="0.12"/>
+  <text x="80" y="156" text-anchor="middle" font-size="22" fill="#f58529">📊</text>
+  <text x="120" y="148" font-size="17" font-weight="bold" fill="#333">クリック率（CTR）</text>
+  <text x="120" y="172" font-size="13" fill="#666">サムネイルとタイトルの魅力が</text>
+  <text x="120" y="192" font-size="13" fill="#666">クリック率を左右する</text>
+  <text x="60" y="236" font-size="11" fill="#f58529" font-weight="bold">▶ 視聴者の第一印象を決定</text>
+
+  <!-- Card 2: 視聴維持率 -->
+  <rect x="420" y="100" width="340" height="160" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="420" y="100" width="340" height="6" rx="3" fill="#dd2a7b"/>
+  <circle cx="460" cy="150" r="24" fill="#dd2a7b" opacity="0.12"/>
+  <text x="460" y="156" text-anchor="middle" font-size="22" fill="#dd2a7b">⏱</text>
+  <text x="500" y="148" font-size="17" font-weight="bold" fill="#333">視聴維持率</text>
+  <text x="500" y="172" font-size="13" fill="#666">動画をどこまで</text>
+  <text x="500" y="192" font-size="13" fill="#666">見てもらえたか</text>
+  <text x="440" y="236" font-size="11" fill="#dd2a7b" font-weight="bold">▶ 最も重要なシグナルの一つ</text>
+
+  <!-- Card 3: エンゲージメント -->
+  <rect x="40" y="300" width="340" height="160" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="300" width="340" height="6" rx="3" fill="#8134af"/>
+  <circle cx="80" cy="350" r="24" fill="#8134af" opacity="0.12"/>
+  <text x="80" y="356" text-anchor="middle" font-size="22" fill="#8134af">💬</text>
+  <text x="120" y="348" font-size="17" font-weight="bold" fill="#333">エンゲージメント</text>
+  <text x="120" y="372" font-size="13" fill="#666">高評価・コメント・共有で</text>
+  <text x="120" y="392" font-size="13" fill="#666">視聴者の反応を測定</text>
+  <text x="60" y="436" font-size="11" fill="#8134af" font-weight="bold">▶ 能動的な反応を評価</text>
+
+  <!-- Card 4: セッション時間 -->
+  <rect x="420" y="300" width="340" height="160" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="420" y="300" width="340" height="6" rx="3" fill="#515bd4"/>
+  <circle cx="460" cy="350" r="24" fill="#515bd4" opacity="0.12"/>
+  <text x="460" y="356" text-anchor="middle" font-size="22" fill="#515bd4">🔄</text>
+  <text x="500" y="348" font-size="17" font-weight="bold" fill="#333">セッション時間</text>
+  <text x="500" y="372" font-size="13" fill="#666">YouTube内での</text>
+  <text x="500" y="392" font-size="13" fill="#666">視聴継続時間</text>
+  <text x="440" y="436" font-size="11" fill="#515bd4" font-weight="bold">▶ プラットフォーム全体への貢献</text>
+
+  <!-- Footer note -->
+  <text x="400" y="500" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

@@ -1,0 +1,105 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="33%" stop-color="#dd2a7b"/>
+      <stop offset="66%" stop-color="#8134af"/>
+      <stop offset="100%" stop-color="#515bd4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" rx="16" ry="16" fill="#fafafa"/>
+  <rect x="0" y="0" width="800" height="500" rx="16" ry="16" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="64" rx="16" ry="16" fill="url(#headerGrad2)"/>
+  <rect x="0" y="32" width="800" height="32" fill="url(#headerGrad2)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">業種別サムネイルのコツ</text>
+
+  <!-- Card 1: BtoB -->
+  <rect x="40" y="90" width="220" height="370" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <rect x="40" y="90" width="220" height="50" rx="12" ry="12" fill="#515bd4"/>
+  <rect x="40" y="116" width="220" height="24" fill="#515bd4"/>
+  <text x="150" y="122" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="bold">BtoB企業</text>
+
+  <!-- BtoB icon -->
+  <circle cx="150" cy="180" r="30" fill="#eef0fd"/>
+  <text x="150" y="188" text-anchor="middle" fill="#515bd4" font-size="24">📊</text>
+
+  <!-- BtoB items -->
+  <circle cx="70" cy="235" r="5" fill="#515bd4"/>
+  <text x="85" y="240" fill="#444444" font-size="14">落ち着いた配色</text>
+
+  <circle cx="70" cy="270" r="5" fill="#515bd4"/>
+  <text x="85" y="275" fill="#444444" font-size="14">データ・グラフの</text>
+  <text x="85" y="295" fill="#444444" font-size="14">イメージを活用</text>
+
+  <circle cx="70" cy="325" r="5" fill="#515bd4"/>
+  <text x="85" y="330" fill="#444444" font-size="14">権威性を演出</text>
+
+  <rect x="60" y="365" width="180" height="32" rx="16" fill="#eef0fd"/>
+  <text x="150" y="386" text-anchor="middle" fill="#515bd4" font-size="12" font-weight="bold">信頼感を重視</text>
+
+  <!-- Decorative line -->
+  <rect x="60" y="410" width="180" height="3" rx="1.5" fill="#515bd4" opacity="0.2"/>
+
+  <!-- Card 2: 飲食・小売 -->
+  <rect x="290" y="90" width="220" height="370" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <rect x="290" y="90" width="220" height="50" rx="12" ry="12" fill="#dd2a7b"/>
+  <rect x="290" y="116" width="220" height="24" fill="#dd2a7b"/>
+  <text x="400" y="122" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="bold">飲食・小売</text>
+
+  <!-- 飲食 icon -->
+  <circle cx="400" cy="180" r="30" fill="#fef3f8"/>
+  <text x="400" y="188" text-anchor="middle" fill="#dd2a7b" font-size="24">🍽️</text>
+
+  <!-- 飲食 items -->
+  <circle cx="320" cy="235" r="5" fill="#dd2a7b"/>
+  <text x="335" y="240" fill="#444444" font-size="14">商品を大きく見せる</text>
+
+  <circle cx="320" cy="270" r="5" fill="#dd2a7b"/>
+  <text x="335" y="275" fill="#444444" font-size="14">鮮やかな色使いで</text>
+  <text x="335" y="295" fill="#444444" font-size="14">食欲・購買欲を刺激</text>
+
+  <circle cx="320" cy="325" r="5" fill="#dd2a7b"/>
+  <text x="335" y="330" fill="#444444" font-size="14">限定感を演出</text>
+
+  <rect x="310" y="365" width="180" height="32" rx="16" fill="#fef3f8"/>
+  <text x="400" y="386" text-anchor="middle" fill="#dd2a7b" font-size="12" font-weight="bold">視覚的インパクト重視</text>
+
+  <!-- Decorative line -->
+  <rect x="310" y="410" width="180" height="3" rx="1.5" fill="#dd2a7b" opacity="0.2"/>
+
+  <!-- Card 3: 士業・専門 -->
+  <rect x="540" y="90" width="220" height="370" rx="12" ry="12" fill="#ffffff" stroke="#f0e6f6" stroke-width="1.5"/>
+  <rect x="540" y="90" width="220" height="50" rx="12" ry="12" fill="#8134af"/>
+  <rect x="540" y="116" width="220" height="24" fill="#8134af"/>
+  <text x="650" y="122" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="bold">士業・専門</text>
+
+  <!-- 士業 icon -->
+  <circle cx="650" cy="180" r="30" fill="#f3f0fe"/>
+  <text x="650" y="188" text-anchor="middle" fill="#8134af" font-size="24">⚖️</text>
+
+  <!-- 士業 items -->
+  <circle cx="570" cy="235" r="5" fill="#8134af"/>
+  <text x="585" y="240" fill="#444444" font-size="14">顔出し+キーワード</text>
+
+  <circle cx="570" cy="270" r="5" fill="#8134af"/>
+  <text x="585" y="275" fill="#444444" font-size="14">落ち着いた</text>
+  <text x="585" y="295" fill="#444444" font-size="14">デザインで信頼感</text>
+
+  <circle cx="570" cy="325" r="5" fill="#8134af"/>
+  <text x="585" y="330" fill="#444444" font-size="14">具体的テーマを提示</text>
+
+  <rect x="560" y="365" width="180" height="32" rx="16" fill="#f3f0fe"/>
+  <text x="650" y="386" text-anchor="middle" fill="#8134af" font-size="12" font-weight="bold">専門性と親近感の両立</text>
+
+  <!-- Decorative line -->
+  <rect x="560" y="410" width="180" height="3" rx="1.5" fill="#8134af" opacity="0.2"/>
+
+  <!-- Footer accent line -->
+  <rect x="40" y="475" width="720" height="4" rx="2" fill="url(#headerGrad2)" opacity="0.3"/>
+</svg>

@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="33%" style="stop-color:#dd2a7b"/>
+      <stop offset="66%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <linearGradient id="tabGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f58529"/>
+      <stop offset="100%" style="stop-color:#dd2a7b"/>
+    </linearGradient>
+    <linearGradient id="tabGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dd2a7b"/>
+      <stop offset="100%" style="stop-color:#8134af"/>
+    </linearGradient>
+    <linearGradient id="tabGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8134af"/>
+      <stop offset="100%" style="stop-color:#515bd4"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">チャンネルカスタマイズの3つの設定</text>
+
+  <!-- Tab 1: レイアウト -->
+  <rect x="40" y="92" width="720" height="125" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <!-- Tab label -->
+  <rect x="40" y="92" width="160" height="40" rx="12" ry="0" fill="url(#tabGrad1)"/>
+  <rect x="40" y="112" width="160" height="20" fill="url(#tabGrad1)"/>
+  <rect x="40" y="120" width="160" height="12" rx="0" ry="0" fill="#ffffff"/>
+  <text x="120" y="116" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">レイアウト</text>
+  <!-- Content -->
+  <text x="72" y="158" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">チャンネルページの構成を設定</text>
+  <!-- Item bullets -->
+  <circle cx="80" cy="183" r="4" fill="#f58529"/>
+  <text x="94" y="188" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">紹介動画の設定（未登録者向け / 登録者向け）</text>
+  <circle cx="80" cy="205" r="4" fill="#dd2a7b"/>
+  <text x="94" y="210" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">セクションの追加・並び替え（人気の動画、再生リストなど）</text>
+  <!-- Layout icon -->
+  <rect x="670" y="145" width="60" height="45" rx="4" fill="none" stroke="#f58529" stroke-width="2"/>
+  <line x1="670" y1="160" x2="730" y2="160" stroke="#f58529" stroke-width="1.5"/>
+  <line x1="700" y1="160" x2="700" y2="190" stroke="#f58529" stroke-width="1.5"/>
+  <rect x="674" y="148" width="52" height="8" rx="2" fill="#f58529" opacity="0.2"/>
+
+  <!-- Tab 2: ブランディング -->
+  <rect x="40" y="237" width="720" height="125" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <!-- Tab label -->
+  <rect x="40" y="237" width="200" height="40" rx="12" ry="0" fill="url(#tabGrad2)"/>
+  <rect x="40" y="257" width="200" height="20" fill="url(#tabGrad2)"/>
+  <rect x="40" y="265" width="200" height="12" rx="0" ry="0" fill="#ffffff"/>
+  <text x="140" y="261" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">ブランディング</text>
+  <!-- Content -->
+  <text x="72" y="303" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">チャンネルのビジュアルを統一</text>
+  <circle cx="80" cy="328" r="4" fill="#dd2a7b"/>
+  <text x="94" y="333" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">プロフィールアイコン（98 x 98px 推奨）</text>
+  <circle cx="80" cy="350" r="4" fill="#8134af"/>
+  <text x="94" y="355" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">バナー画像（2048 x 1152px 推奨）・動画の透かし</text>
+  <!-- Branding icons -->
+  <circle cx="690" cy="290" r="18" fill="none" stroke="#dd2a7b" stroke-width="2"/>
+  <circle cx="690" cy="290" r="8" fill="#dd2a7b" opacity="0.3"/>
+  <rect x="716" y="278" width="36" height="24" rx="4" fill="none" stroke="#8134af" stroke-width="2"/>
+  <rect x="720" y="282" width="28" height="16" rx="2" fill="#8134af" opacity="0.15"/>
+
+  <!-- Tab 3: 基本情報 -->
+  <rect x="40" y="382" width="720" height="125" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+  <!-- Tab label -->
+  <rect x="40" y="382" width="160" height="40" rx="12" ry="0" fill="url(#tabGrad3)"/>
+  <rect x="40" y="402" width="160" height="20" fill="url(#tabGrad3)"/>
+  <rect x="40" y="410" width="160" height="12" rx="0" ry="0" fill="#ffffff"/>
+  <text x="120" y="406" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">基本情報</text>
+  <!-- Content -->
+  <text x="72" y="448" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">チャンネルの基本プロフィール</text>
+  <circle cx="80" cy="473" r="4" fill="#8134af"/>
+  <text x="94" y="478" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">チャンネル名・説明文（検索キーワードを意識）</text>
+  <circle cx="80" cy="495" r="4" fill="#515bd4"/>
+  <text x="94" y="500" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#666666">リンク（SNS・Webサイト）・連絡先メール</text>
+  <!-- Info icon -->
+  <rect x="680" y="438" width="50" height="14" rx="3" fill="#8134af" opacity="0.15"/>
+  <rect x="680" y="456" width="50" height="8" rx="3" fill="#515bd4" opacity="0.1"/>
+  <rect x="680" y="468" width="50" height="8" rx="3" fill="#515bd4" opacity="0.1"/>
+  <rect x="680" y="480" width="35" height="8" rx="3" fill="#515bd4" opacity="0.1"/>
+</svg>
