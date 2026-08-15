@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { logoutAction } from "./login/actions";
@@ -13,6 +13,7 @@ const navItems = [
   { href: "/dashboard/conversions", label: "コンバージョン分析", icon: "target" },
   { href: "/dashboard/user-flow", label: "ユーザー導線分析", icon: "git-branch" },
   { href: "/dashboard/insights", label: "改善提案", icon: "lightbulb" },
+  { href: "/dashboard/settings", label: "設定", icon: "settings" },
 ];
 
 function NavIcon({ name, className }: { name: string; className?: string }) {
@@ -47,6 +48,11 @@ function NavIcon({ name, className }: { name: string; className?: string }) {
         <path d="M9 18h6" /><path d="M10 22h4" /><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" />
       </svg>
     ),
+    settings: (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+      </svg>
+    ),
   };
   return <>{icons[name]}</>;
 }
@@ -55,6 +61,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [period, setPeriod] = useState("past30");
+  const [isDemo, setIsDemo] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/dashboard/status")
+      .then((r) => r.json())
+      .then((d) => setIsDemo(!d.ga4Configured))
+      .catch(() => setIsDemo(true));
+  }, []);
 
   if (pathname === "/dashboard/login") {
     return <>{children}</>;
@@ -122,6 +136,15 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <h1 className="text-sm font-semibold" style={{ color: "var(--dash-text)" }}>
                   {navItems.find((n) => n.href === "/dashboard" ? pathname === "/dashboard" : pathname.startsWith(n.href))?.label || "ダッシュボード"}
                 </h1>
+                {isDemo && (
+                  <Link
+                    href="/dashboard/settings"
+                    className="text-[10px] font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-opacity"
+                    style={{ background: "var(--dash-amber-light)", color: "var(--dash-amber)" }}
+                  >
+                    デモデータ — セットアップ →
+                  </Link>
+                )}
               </div>
               <div className="flex items-center gap-3">
                 <select
