@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { logoutAction } from "./login/actions";
 import "./dashboard.css";
 
 const navItems = [
@@ -55,6 +56,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [period, setPeriod] = useState("past30");
 
+  if (pathname === "/dashboard/login") {
+    return <>{children}</>;
+  }
+
   return (
         <div className="flex h-screen" style={{ background: "var(--dash-bg)" }}>
           {sidebarOpen && (
@@ -94,11 +99,17 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 );
               })}
             </nav>
-            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10">
+            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10 space-y-2">
               <Link href="/" className="flex items-center gap-2 text-xs text-slate-400 hover:text-slate-200 transition-colors">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /><polyline points="10 17 15 12 10 7" /><line x1="15" y1="12" x2="3" y2="12" /></svg>
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
                 サイトに戻る
               </Link>
+              <form action={logoutAction}>
+                <button type="submit" className="flex items-center gap-2 text-xs text-slate-400 hover:text-red-400 transition-colors w-full">
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /><polyline points="16 17 21 12 16 7" /><line x1="21" y1="12" x2="9" y2="12" /></svg>
+                  ログアウト
+                </button>
+              </form>
             </div>
           </aside>
 
