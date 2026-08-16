@@ -142,9 +142,9 @@ export default function AudiencePage() {
                 <Tooltip
                   contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e2e8f0" }}
                   labelFormatter={(v) => `${v}:00 - ${v}:59`}
-                  formatter={(value: number, name: string) => {
+                  formatter={(value, name) => {
                     const labels: Record<string, string> = { sessions: "セッション", users: "ユーザー", pageviews: "PV" };
-                    return [value.toLocaleString(), labels[name] || name];
+                    return [Number(value).toLocaleString(), labels[String(name)] || String(name)];
                   }}
                 />
                 <Bar dataKey="sessions" name="sessions" fill="#3b82f6" radius={[3, 3, 0, 0]} />
@@ -190,7 +190,7 @@ export default function AudiencePage() {
                       </Pie>
                       <Tooltip
                         contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e2e8f0" }}
-                        formatter={(v: number, name: string) => [v.toLocaleString(), genderLabels[name] || name]}
+                        formatter={(v, name) => [Number(v).toLocaleString(), genderLabels[String(name)] || String(name)]}
                       />
                     </PieChart>
                   </ResponsiveContainer>
@@ -235,8 +235,8 @@ export default function AudiencePage() {
                     />
                     <Tooltip
                       contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e2e8f0" }}
-                      formatter={(v: number) => [v.toLocaleString(), "ユーザー"]}
-                      labelFormatter={(v) => ageLabels[v] || v}
+                      formatter={(v) => [Number(v).toLocaleString(), "ユーザー"]}
+                      labelFormatter={(v) => ageLabels[String(v)] || String(v)}
                     />
                     <Bar dataKey="users" fill="#8b5cf6" radius={[0, 4, 4, 0]}>
                       {age.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
