@@ -62,9 +62,9 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
     headline: article.title,
     description: article.description,
     image: `${siteUrl}/api/og/${slug}`,
-    datePublished: article.date,
-    dateModified: article.date,
-    author: { "@type": "Organization", name: "MOVeBUZ" },
+    datePublished: `${article.date}T00:00:00+09:00`,
+    dateModified: `${article.date}T00:00:00+09:00`,
+    author: { "@type": "Organization", name: "MOVeBUZ", url: siteUrl },
     publisher: {
       "@type": "Organization",
       name: "MOVeBUZ",
