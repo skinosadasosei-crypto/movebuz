@@ -1,73 +1,39 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import ChartCard from "@/components/dashboard/ChartCard";
-import type { FunnelStep, ConversionType } from "@/lib/dashboard/types";
 
-const funnelSteps: FunnelStep[] = [];
-const conversionTypes: ConversionType[] = [];
-
-/* ---------- icons per conversion type ---------- */
-const typeIcons: Record<string, React.ReactNode> = {
-  form_submit: (
-    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-      <polyline points="14 2 14 8 20 8" />
-      <line x1="16" y1="13" x2="8" y2="13" />
-      <line x1="16" y1="17" x2="8" y2="17" />
-      <polyline points="10 9 9 9 8 9" />
-    </svg>
-  ),
-};
-
-const typeColors: Record<string, { bg: string; icon: string }> = {
-  form_submit: { bg: "var(--dash-blue-light)", icon: "var(--dash-blue)" },
-};
-
-/* ---------- Conversion Type Card ---------- */
-function ConversionCard({ cv }: { cv: ConversionType }) {
-  const color = typeColors[cv.type] ?? { bg: "var(--dash-blue-light)", icon: "var(--dash-blue)" };
-  const icon = typeIcons[cv.type] ?? typeIcons.form_submit;
-  const isPositive = cv.change >= 0;
-
-  return (
-    <div
-      className="rounded-xl border p-4 flex items-start gap-3"
-      style={{ background: "var(--dash-card)", borderColor: "var(--dash-border)" }}
-    >
-      <div
-        className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center"
-        style={{ background: color.bg, color: color.icon }}
-      >
-        {icon}
-      </div>
-      <div className="min-w-0 flex-1">
-        <p className="text-xs mb-1" style={{ color: "var(--dash-text-secondary)" }}>
-          {cv.label}
-        </p>
-        <div className="flex items-end gap-2">
-          <span className="text-xl font-bold" style={{ color: "var(--dash-text)" }}>
-            {cv.count.toLocaleString()}
-          </span>
-          <span
-            className="text-xs font-medium mb-0.5"
-            style={{ color: isPositive ? "var(--dash-green)" : "var(--dash-red)" }}
-          >
-            {isPositive ? "+" : ""}
-            {cv.change}%
-          </span>
-        </div>
-      </div>
-    </div>
-  );
+interface OverviewData {
+  users: number;
+  sessions: number;
+  pageviews: number;
+  newUsers: number;
+  bounceRate: number;
+  avgSessionDuration: number;
 }
 
-/* ---------- Funnel Chart ---------- */
+interface PageRow {
+  path: string;
+  title: string;
+  pageviews: number;
+  users: number;
+  avgDuration: number;
+  bounceRate: number;
+}
+
+interface FunnelStep {
+  label: string;
+  users: number;
+  rate: number;
+}
+
+const funnelColors = [
+  "#3b82f6", "#6366f1", "#7c3aed", "#8b5cf6", "#a855f7",
+];
+
 function FunnelChart({ steps }: { steps: FunnelStep[] }) {
   if (steps.length === 0) return null;
   const maxUsers = steps[0].users;
-  const funnelColors = [
-    "#3b82f6", "#6366f1", "#7c3aed", "#8b5cf6", "#a855f7", "#9333ea",
-  ];
 
   return (
     <div className="space-y-0">
@@ -106,7 +72,7 @@ function FunnelChart({ steps }: { steps: FunnelStep[] }) {
             <div className="flex items-center gap-3">
               <div
                 className="shrink-0 text-xs font-medium text-right"
-                style={{ width: 130, color: "var(--dash-text)" }}
+                style={{ width: 140, color: "var(--dash-text)" }}
               >
                 {step.label}
               </div>
@@ -131,7 +97,6 @@ function FunnelChart({ steps }: { steps: FunnelStep[] }) {
                 <span className="font-semibold" style={{ color: "var(--dash-text)" }}>
                   {step.rate}%
                 </span>
-                <span className="ml-1">of total</span>
               </div>
             </div>
           </div>
@@ -141,9 +106,73 @@ function FunnelChart({ steps }: { steps: FunnelStep[] }) {
   );
 }
 
-/* ---------- Main Page ---------- */
 export default function ConversionsPage() {
-  const totalConversions = conversionTypes.reduce((sum, cv) => sum + cv.count, 0);
+  const [overview, setOverview] = useState<OverviewData | null>(null);
+  const [pages, setPages] = useState<PageRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    Promise.all([
+      fetch("/api/dashboard/analytics?type=overview").then((r) => r.json()),
+      fetch("/api/dashboard/analytics?type=pages&limit=50").then((r) => r.json()),
+    ])
+      .then(([ov, pg]) => {
+        if (ov.data) setOverview(ov.data);
+        if (pg.data) setPages(pg.data);
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
+  const contactPage = pages.find(
+    (p) => p.path.includes("/contact") || p.path.includes("/inquiry")
+  );
+  const blogPages = pages.filter((p) => p.path.startsWith("/blog/"));
+  const totalBlogPV = blogPages.reduce((s, p) => s + p.pageviews, 0);
+
+  const funnelSteps: FunnelStep[] = [];
+  if (overview) {
+    const totalSessions = overview.sessions;
+    funnelSteps.push({
+      label: "サイト訪問",
+      users: totalSessions,
+      rate: 100,
+    });
+
+    const contentViewers = Math.round(totalSessions * (1 - overview.bounceRate));
+    funnelSteps.push({
+      label: "コンテンツ閲覧",
+      users: contentViewers,
+      rate: totalSessions > 0 ? Math.round((contentViewers / totalSessions) * 100) : 0,
+    });
+
+    if (totalBlogPV > 0) {
+      const blogViewers = blogPages.reduce((s, p) => s + p.users, 0);
+      funnelSteps.push({
+        label: "記事閲覧",
+        users: blogViewers,
+        rate: totalSessions > 0 ? Math.round((blogViewers / totalSessions) * 100) : 0,
+      });
+    }
+
+    if (contactPage) {
+      funnelSteps.push({
+        label: "お問い合わせ閲覧",
+        users: contactPage.users,
+        rate: totalSessions > 0 ? Math.round((contactPage.users / totalSessions) * 100) : 0,
+      });
+    }
+  }
+
+  const topEntryPages = pages
+    .filter((p) => p.path.startsWith("/blog/"))
+    .sort((a, b) => b.users - a.users)
+    .slice(0, 5);
+
+  const highBouncePages = pages
+    .filter((p) => p.pageviews >= 5 && p.bounceRate >= 0.5)
+    .sort((a, b) => b.bounceRate - a.bounceRate)
+    .slice(0, 5);
 
   return (
     <div className="space-y-6 max-w-[1400px]">
@@ -152,90 +181,96 @@ export default function ConversionsPage() {
           コンバージョン分析
         </h2>
         <p className="text-xs mt-0.5" style={{ color: "var(--dash-text-secondary)" }}>
-          CV種別ごとの件数推移とファネル分析
+          サイト訪問からお問い合わせまでのファネル分析
         </p>
       </div>
 
-      {/* Total Card */}
-      <div
-        className="rounded-xl border p-4"
-        style={{ background: "var(--dash-blue-light)", borderColor: "var(--dash-blue)" }}
-      >
-        <p className="text-xs font-medium mb-1" style={{ color: "var(--dash-blue)" }}>
-          合計コンバージョン
-        </p>
-        <span className="text-2xl font-bold" style={{ color: "var(--dash-text)" }}>
-          {totalConversions.toLocaleString()}
-        </span>
-      </div>
-
-      {conversionTypes.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
-          {conversionTypes.map((cv) => (
-            <ConversionCard key={cv.type} cv={cv} />
-          ))}
-        </div>
-      )}
-
-      {/* Funnel */}
-      <ChartCard
-        title="コンバージョンファネル"
-        subtitle="サイト訪問 → 問い合わせ完了"
-      >
-        {funnelSteps.length > 0 ? (
-          <FunnelChart steps={funnelSteps} />
-        ) : (
-          <div className="flex items-center justify-center h-32">
-            <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>
-              GA4のデータが蓄積されるとファネル分析が表示されます
+      {/* KPI */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        {[
+          { label: "セッション数", value: overview?.sessions ?? 0, color: "var(--dash-blue)" },
+          { label: "直帰率", value: overview ? `${(overview.bounceRate * 100).toFixed(1)}%` : "—", color: "var(--dash-purple)" },
+          { label: "お問い合わせページPV", value: contactPage?.pageviews ?? 0, color: "var(--dash-green)" },
+          { label: "お問い合わせページUU", value: contactPage?.users ?? 0, color: "var(--dash-amber)" },
+        ].map((k) => (
+          <div key={k.label} className="rounded-xl border p-4" style={{ background: "var(--dash-card)", borderColor: "var(--dash-border)" }}>
+            <p className="text-xs font-medium mb-1" style={{ color: "var(--dash-text-secondary)" }}>{k.label}</p>
+            <p className="text-xl font-bold" style={{ color: typeof k.color === "string" ? k.color : "var(--dash-text)" }}>
+              {loading ? "—" : typeof k.value === "number" ? k.value.toLocaleString() : k.value}
             </p>
           </div>
-        )}
-      </ChartCard>
+        ))}
+      </div>
 
-      {/* CV Trend */}
-      <ChartCard title="問い合わせ数推移" subtitle="過去30日">
-        <div className="flex items-center justify-center h-32">
-          <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>
-            データがありません
-          </p>
+      {loading ? (
+        <div className="flex items-center justify-center h-40">
+          <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>読み込み中...</p>
         </div>
-      </ChartCard>
+      ) : !overview ? (
+        <div className="rounded-xl border p-12 text-center" style={{ background: "var(--dash-card)", borderColor: "var(--dash-border)" }}>
+          <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>GA4のデータが蓄積されるとファネル分析が表示されます</p>
+        </div>
+      ) : (
+        <>
+          {/* Funnel */}
+          <ChartCard title="コンバージョンファネル" subtitle="サイト訪問 → お問い合わせ">
+            {funnelSteps.length > 0 ? (
+              <FunnelChart steps={funnelSteps} />
+            ) : (
+              <div className="flex items-center justify-center h-32">
+                <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>データが不足しています</p>
+              </div>
+            )}
+          </ChartCard>
 
-      {/* CV Type Table */}
-      {conversionTypes.length > 0 && (
-        <ChartCard title="CV種別一覧" subtitle="前月比">
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs">
-              <thead>
-                <tr className="border-b" style={{ borderColor: "var(--dash-border)" }}>
-                  <th className="text-left py-2.5 px-3 font-semibold" style={{ color: "var(--dash-text-secondary)" }}>CV種別</th>
-                  <th className="text-right py-2.5 px-3 font-semibold" style={{ color: "var(--dash-text-secondary)" }}>件数</th>
-                  <th className="text-right py-2.5 px-3 font-semibold" style={{ color: "var(--dash-text-secondary)" }}>前月比</th>
-                  <th className="text-right py-2.5 px-3 font-semibold" style={{ color: "var(--dash-text-secondary)" }}>構成比</th>
-                </tr>
-              </thead>
-              <tbody>
-                {conversionTypes.map((cv) => {
-                  const isPositive = cv.change >= 0;
-                  const share = totalConversions > 0 ? ((cv.count / totalConversions) * 100).toFixed(1) : "0.0";
-                  return (
-                    <tr key={cv.type} className="border-b last:border-b-0" style={{ borderColor: "var(--dash-border)" }}>
-                      <td className="py-2.5 px-3"><span className="font-medium" style={{ color: "var(--dash-text)" }}>{cv.label}</span></td>
-                      <td className="text-right py-2.5 px-3 font-semibold" style={{ color: "var(--dash-text)" }}>{cv.count.toLocaleString()}</td>
-                      <td className="text-right py-2.5 px-3">
-                        <span className="inline-flex items-center gap-0.5 font-medium" style={{ color: isPositive ? "var(--dash-green)" : "var(--dash-red)" }}>
-                          {Math.abs(cv.change)}%
-                        </span>
-                      </td>
-                      <td className="text-right py-2.5 px-3" style={{ color: "var(--dash-text-secondary)" }}>{share}%</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+          {/* Top entry pages → contact */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <ChartCard title="記事別 流入ユーザー数 TOP5" subtitle="お問い合わせ導線の起点">
+              {topEntryPages.length > 0 ? (
+                <div className="space-y-2">
+                  {topEntryPages.map((p, i) => (
+                    <div key={p.path} className="flex items-center gap-3">
+                      <span className="text-xs font-bold w-5 text-center" style={{ color: "var(--dash-blue)" }}>{i + 1}</span>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs font-medium truncate" style={{ color: "var(--dash-text)" }}>{p.title || p.path}</p>
+                        <p className="text-[11px] truncate" style={{ color: "var(--dash-text-muted)" }}>{p.path}</p>
+                      </div>
+                      <span className="text-xs font-semibold shrink-0" style={{ color: "var(--dash-text)" }}>{p.users.toLocaleString()} UU</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex items-center justify-center h-24">
+                  <p className="text-xs" style={{ color: "var(--dash-text-muted)" }}>記事データなし</p>
+                </div>
+              )}
+            </ChartCard>
+
+            <ChartCard title="高離脱率ページ" subtitle="直帰率50%以上">
+              {highBouncePages.length > 0 ? (
+                <div className="space-y-2">
+                  {highBouncePages.map((p) => (
+                    <div key={p.path} className="flex items-center gap-3">
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs font-medium truncate" style={{ color: "var(--dash-text)" }}>{p.title || p.path}</p>
+                      </div>
+                      <span className="text-xs font-semibold shrink-0" style={{ color: "var(--dash-red)" }}>
+                        {(p.bounceRate * 100).toFixed(1)}%
+                      </span>
+                      <span className="text-[11px] shrink-0" style={{ color: "var(--dash-text-muted)" }}>
+                        {p.pageviews} PV
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex items-center justify-center h-24">
+                  <p className="text-xs" style={{ color: "var(--dash-text-muted)" }}>高離脱率ページなし</p>
+                </div>
+              )}
+            </ChartCard>
           </div>
-        </ChartCard>
+        </>
       )}
     </div>
   );

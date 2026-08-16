@@ -1,412 +1,221 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {
+  PieChart, Pie, Cell, Tooltip, ResponsiveContainer, BarChart, Bar,
+  XAxis, YAxis, CartesianGrid,
+} from "recharts";
 import ChartCard from "@/components/dashboard/ChartCard";
 import DataTable from "@/components/dashboard/DataTable";
-import type {
-  TrafficSource,
-  UTMData,
-  LandingPage,
-  SEOKeyword,
-} from "@/lib/dashboard/types";
 
-type Tab = "traffic" | "utm" | "seo";
-
-const tabs: { key: Tab; label: string }[] = [
-  { key: "traffic", label: "流入元分析" },
-  { key: "utm", label: "UTM分析" },
-  { key: "seo", label: "SEO分析" },
-];
-
-const trafficSources: TrafficSource[] = [];
-const utmData: UTMData[] = [];
-const landingPages: LandingPage[] = [];
-const seoKeywords: SEOKeyword[] = [];
-
-function EmptyState() {
-  return (
-    <div className="flex items-center justify-center h-32">
-      <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>
-        GA4のデータが蓄積されると分析が表示されます
-      </p>
-    </div>
-  );
+interface TrafficRow {
+  channel: string;
+  users: number;
+  sessions: number;
+  pageviews: number;
+  color: string;
 }
 
-/* ------------------------------------------------------------------ */
-/*  Tab 1 : 流入元分析                                                  */
-/* ------------------------------------------------------------------ */
+interface PageRow {
+  path: string;
+  title: string;
+  pageviews: number;
+  users: number;
+  avgDuration: number;
+  bounceRate: number;
+}
 
-function TrafficSourceTab() {
+interface DeviceRow {
+  device: string;
+  sessions: number;
+  percentage: number;
+}
+
+const COLORS = ["#3b82f6", "#8b5cf6", "#ec4899", "#f59e0b", "#10b981", "#6366f1", "#94a3b8"];
+
+const deviceLabels: Record<string, string> = {
+  desktop: "PC",
+  mobile: "モバイル",
+  tablet: "タブレット",
+};
+
+function formatDuration(s: number) {
+  return `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;
+}
+
+export default function TrafficPage() {
+  const [traffic, setTraffic] = useState<TrafficRow[]>([]);
+  const [pages, setPages] = useState<PageRow[]>([]);
+  const [devices, setDevices] = useState<DeviceRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    Promise.all([
+      fetch("/api/dashboard/analytics?type=traffic").then((r) => r.json()),
+      fetch("/api/dashboard/analytics?type=pages").then((r) => r.json()),
+      fetch("/api/dashboard/analytics?type=devices").then((r) => r.json()),
+    ])
+      .then(([tr, pg, dv]) => {
+        if (tr.data) setTraffic(tr.data);
+        if (pg.data) setPages(pg.data);
+        if (dv.data) setDevices(dv.data);
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
+
+  const totalUsers = traffic.reduce((s, t) => s + t.users, 0);
+  const totalSessions = traffic.reduce((s, t) => s + t.sessions, 0);
+  const totalPV = traffic.reduce((s, t) => s + t.pageviews, 0);
+
+  const landingPages = pages.slice(0, 10);
+
   const trafficColumns = [
     {
-      key: "channel",
-      label: "チャネル",
-      render: (r: TrafficSource) => (
+      key: "channel", label: "チャネル",
+      render: (r: TrafficRow) => (
         <span className="flex items-center gap-2">
-          <span
-            className="w-2.5 h-2.5 rounded-full shrink-0"
-            style={{ background: r.color }}
-          />
+          <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: r.color }} />
           <span className="text-xs font-medium">{r.channel}</span>
         </span>
       ),
     },
+    { key: "users", label: "ユーザー", sortable: true, align: "right" as const, render: (r: TrafficRow) => r.users.toLocaleString() },
+    { key: "sessions", label: "セッション", sortable: true, align: "right" as const, render: (r: TrafficRow) => r.sessions.toLocaleString() },
+    { key: "pageviews", label: "PV", sortable: true, align: "right" as const, render: (r: TrafficRow) => r.pageviews.toLocaleString() },
     {
-      key: "users",
-      label: "ユーザー",
-      sortable: true,
-      align: "right" as const,
-      render: (r: TrafficSource) => r.users.toLocaleString(),
-    },
-    {
-      key: "sessions",
-      label: "セッション",
-      sortable: true,
-      align: "right" as const,
-      render: (r: TrafficSource) => r.sessions.toLocaleString(),
-    },
-    {
-      key: "pageviews",
-      label: "PV",
-      sortable: true,
-      align: "right" as const,
-      render: (r: TrafficSource) => r.pageviews.toLocaleString(),
-    },
-    {
-      key: "inquiries",
-      label: "問い合わせ",
-      sortable: true,
-      align: "right" as const,
-    },
-    {
-      key: "cvr",
-      label: "CVR",
-      sortable: true,
-      align: "right" as const,
-      render: (r: TrafficSource) => `${r.cvr}%`,
+      key: "share", label: "構成比", align: "right" as const,
+      render: (r: TrafficRow) => totalUsers > 0 ? `${((r.users / totalUsers) * 100).toFixed(1)}%` : "—",
     },
   ];
 
   const landingColumns = [
     {
-      key: "page",
-      label: "ページ",
-      width: "320px",
-      render: (r: LandingPage) => (
-        <span className="text-xs font-medium truncate block max-w-[320px]">
-          {r.page}
-        </span>
+      key: "path", label: "ランディングページ", width: "320px",
+      render: (r: PageRow) => (
+        <span className="text-xs font-medium truncate block max-w-[320px]">{r.title || r.path}</span>
       ),
     },
+    { key: "pageviews", label: "PV", sortable: true, align: "right" as const, render: (r: PageRow) => r.pageviews.toLocaleString() },
+    { key: "users", label: "UU", sortable: true, align: "right" as const, render: (r: PageRow) => r.users.toLocaleString() },
+    { key: "avgDuration", label: "平均滞在", sortable: true, align: "right" as const, render: (r: PageRow) => formatDuration(r.avgDuration) },
     {
-      key: "sessions",
-      label: "セッション",
-      sortable: true,
-      align: "right" as const,
-      render: (r: LandingPage) => r.sessions.toLocaleString(),
-    },
-    {
-      key: "exitRate",
-      label: "離脱率",
-      sortable: true,
-      align: "right" as const,
-      render: (r: LandingPage) => `${r.exitRate}%`,
-    },
-    {
-      key: "inquiries",
-      label: "問い合わせ",
-      sortable: true,
-      align: "right" as const,
-    },
-    {
-      key: "cvr",
-      label: "CVR",
-      sortable: true,
-      align: "right" as const,
-      render: (r: LandingPage) => `${r.cvr}%`,
+      key: "bounceRate", label: "直帰率", sortable: true, align: "right" as const,
+      render: (r: PageRow) => (
+        <span style={{ color: r.bounceRate >= 0.4 ? "var(--dash-red)" : "var(--dash-text)" }}>
+          {(r.bounceRate * 100).toFixed(1)}%
+        </span>
+      ),
     },
   ];
-
-  if (trafficSources.length === 0) return <EmptyState />;
-
-  return (
-    <>
-      <ChartCard title="流入元データ" subtitle="チャネル別詳細">
-        <DataTable
-          columns={trafficColumns}
-          data={trafficSources as unknown as Record<string, unknown>[]}
-          defaultSortKey="users"
-        />
-      </ChartCard>
-
-      <ChartCard title="ランディングページ分析" subtitle="流入先ページ別">
-        {landingPages.length > 0 ? (
-          <DataTable
-            columns={landingColumns}
-            data={landingPages as unknown as Record<string, unknown>[]}
-            defaultSortKey="sessions"
-          />
-        ) : (
-          <EmptyState />
-        )}
-      </ChartCard>
-    </>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  Tab 2 : UTM分析                                                    */
-/* ------------------------------------------------------------------ */
-
-function UTMTab() {
-  const utmColumns = [
-    {
-      key: "source",
-      label: "source",
-      sortable: true,
-      render: (r: UTMData) => (
-        <span className="text-xs font-medium">{r.source}</span>
-      ),
-    },
-    {
-      key: "medium",
-      label: "medium",
-      sortable: true,
-      render: (r: UTMData) => (
-        <span className="text-xs" style={{ color: "var(--dash-text-secondary)" }}>
-          {r.medium}
-        </span>
-      ),
-    },
-    {
-      key: "campaign",
-      label: "campaign",
-      sortable: true,
-      render: (r: UTMData) => (
-        <span
-          className="text-xs font-mono truncate block max-w-[220px]"
-          style={{ color: "var(--dash-text-secondary)" }}
-        >
-          {r.campaign}
-        </span>
-      ),
-    },
-    {
-      key: "users",
-      label: "ユーザー",
-      sortable: true,
-      align: "right" as const,
-      render: (r: UTMData) => r.users.toLocaleString(),
-    },
-    {
-      key: "sessions",
-      label: "セッション",
-      sortable: true,
-      align: "right" as const,
-      render: (r: UTMData) => r.sessions.toLocaleString(),
-    },
-    {
-      key: "inquiries",
-      label: "問い合わせ",
-      sortable: true,
-      align: "right" as const,
-    },
-    {
-      key: "cvr",
-      label: "CVR",
-      sortable: true,
-      align: "right" as const,
-      render: (r: UTMData) => `${r.cvr}%`,
-    },
-  ];
-
-  if (utmData.length === 0) return <EmptyState />;
-
-  return (
-    <ChartCard title="UTMパラメータ別データ" subtitle="キャンペーン別詳細">
-      <DataTable
-        columns={utmColumns}
-        data={utmData as unknown as Record<string, unknown>[]}
-        defaultSortKey="users"
-      />
-    </ChartCard>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  Tab 3 : SEO分析                                                    */
-/* ------------------------------------------------------------------ */
-
-function SEOTab() {
-  if (seoKeywords.length === 0) return <EmptyState />;
-
-  const totalClicks = seoKeywords.reduce((sum, k) => sum + k.clicks, 0);
-  const avgCTR = seoKeywords.reduce((sum, k) => sum + k.ctr, 0) / seoKeywords.length;
-  const avgPosition = seoKeywords.reduce((sum, k) => sum + k.avgPosition, 0) / seoKeywords.length;
-  const totalCV = seoKeywords.reduce((sum, k) => sum + k.inquiries, 0);
-
-  const kpis = [
-    { label: "検索流入数", value: totalClicks.toLocaleString() },
-    { label: "平均CTR", value: `${avgCTR.toFixed(1)}%` },
-    { label: "平均順位", value: avgPosition.toFixed(1) },
-    { label: "SEO経由CV数", value: String(totalCV) },
-  ];
-
-  const seoColumns = [
-    {
-      key: "keyword",
-      label: "キーワード",
-      width: "200px",
-      render: (r: SEOKeyword) => (
-        <span className="text-xs font-medium truncate block max-w-[200px]">
-          {r.keyword}
-        </span>
-      ),
-    },
-    {
-      key: "impressions",
-      label: "表示回数",
-      sortable: true,
-      align: "right" as const,
-      render: (r: SEOKeyword) => r.impressions.toLocaleString(),
-    },
-    {
-      key: "clicks",
-      label: "クリック数",
-      sortable: true,
-      align: "right" as const,
-      render: (r: SEOKeyword) => r.clicks.toLocaleString(),
-    },
-    {
-      key: "ctr",
-      label: "CTR",
-      sortable: true,
-      align: "right" as const,
-      render: (r: SEOKeyword) => `${r.ctr}%`,
-    },
-    {
-      key: "avgPosition",
-      label: "平均順位",
-      sortable: true,
-      align: "right" as const,
-      render: (r: SEOKeyword) => r.avgPosition.toFixed(1),
-    },
-    {
-      key: "landingPage",
-      label: "LP",
-      width: "200px",
-      render: (r: SEOKeyword) => (
-        <span
-          className="text-xs truncate block max-w-[200px]"
-          style={{ color: "var(--dash-text-secondary)" }}
-        >
-          {r.landingPage}
-        </span>
-      ),
-    },
-    {
-      key: "inquiries",
-      label: "CV数",
-      sortable: true,
-      align: "right" as const,
-    },
-    {
-      key: "cvr",
-      label: "CVR",
-      sortable: true,
-      align: "right" as const,
-      render: (r: SEOKeyword) => `${r.cvr}%`,
-    },
-  ];
-
-  return (
-    <>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {kpis.map((kpi) => (
-          <div
-            key={kpi.label}
-            className="rounded-xl p-4 border"
-            style={{
-              background: "var(--dash-card)",
-              borderColor: "var(--dash-border)",
-            }}
-          >
-            <p
-              className="text-xs font-medium mb-1"
-              style={{ color: "var(--dash-text-secondary)" }}
-            >
-              {kpi.label}
-            </p>
-            <p
-              className="text-2xl font-bold tracking-tight"
-              style={{ color: "var(--dash-text)" }}
-            >
-              {kpi.value}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      <ChartCard title="SEOキーワード分析" subtitle="検索パフォーマンス">
-        <DataTable
-          columns={seoColumns}
-          data={seoKeywords as unknown as Record<string, unknown>[]}
-          defaultSortKey="clicks"
-        />
-      </ChartCard>
-    </>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  Page Component                                                     */
-/* ------------------------------------------------------------------ */
-
-export default function TrafficPage() {
-  const [activeTab, setActiveTab] = useState<Tab>("traffic");
 
   return (
     <div className="space-y-6 max-w-[1400px]">
       <div>
-        <h2
-          className="text-lg font-bold"
-          style={{ color: "var(--dash-text)" }}
-        >
-          トラフィック分析
-        </h2>
-        <p
-          className="text-sm mt-0.5"
-          style={{ color: "var(--dash-text-secondary)" }}
-        >
-          流入元・UTM・SEOのパフォーマンスを分析
+        <h2 className="text-lg font-bold" style={{ color: "var(--dash-text)" }}>トラフィック分析</h2>
+        <p className="text-sm mt-0.5" style={{ color: "var(--dash-text-secondary)" }}>
+          流入元・ランディングページ・デバイスのパフォーマンスを分析
         </p>
       </div>
 
-      <div
-        className="inline-flex items-center gap-1 p-1 rounded-full"
-        style={{ background: "var(--dash-border)" }}
-      >
-        {tabs.map((tab) => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
-            className="px-4 py-1.5 text-sm font-medium rounded-full transition-colors"
-            style={{
-              background:
-                activeTab === tab.key ? "var(--dash-blue)" : "transparent",
-              color:
-                activeTab === tab.key ? "#ffffff" : "var(--dash-text-secondary)",
-            }}
-          >
-            {tab.label}
-          </button>
+      {/* KPI */}
+      <div className="grid grid-cols-3 gap-3">
+        {[
+          { label: "合計ユーザー", value: totalUsers.toLocaleString(), color: "var(--dash-blue)" },
+          { label: "合計セッション", value: totalSessions.toLocaleString(), color: "var(--dash-purple)" },
+          { label: "合計PV", value: totalPV.toLocaleString(), color: "var(--dash-green)" },
+        ].map((k) => (
+          <div key={k.label} className="rounded-xl border p-4" style={{ background: "var(--dash-card)", borderColor: "var(--dash-border)" }}>
+            <p className="text-xs font-medium mb-1" style={{ color: "var(--dash-text-secondary)" }}>{k.label}</p>
+            <p className="text-xl font-bold" style={{ color: k.color }}>{loading ? "—" : k.value}</p>
+          </div>
         ))}
       </div>
 
-      {activeTab === "traffic" && <TrafficSourceTab />}
-      {activeTab === "utm" && <UTMTab />}
-      {activeTab === "seo" && <SEOTab />}
+      {loading ? (
+        <div className="flex items-center justify-center h-40">
+          <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>読み込み中...</p>
+        </div>
+      ) : traffic.length === 0 ? (
+        <div className="rounded-xl border p-12 text-center" style={{ background: "var(--dash-card)", borderColor: "var(--dash-border)" }}>
+          <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>GA4のデータが蓄積されると分析が表示されます</p>
+        </div>
+      ) : (
+        <>
+          {/* Traffic Sources */}
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+            <ChartCard title="流入元構成比" className="xl:col-span-1">
+              <ResponsiveContainer width="100%" height={240}>
+                <PieChart>
+                  <Pie data={traffic} dataKey="users" nameKey="channel" cx="50%" cy="50%" outerRadius={90} innerRadius={55} paddingAngle={2}>
+                    {traffic.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
+                  </Pie>
+                  <Tooltip contentStyle={{ fontSize: 11, borderRadius: 8, border: "1px solid #e2e8f0" }} formatter={(v) => typeof v === "number" ? v.toLocaleString() : v} />
+                </PieChart>
+              </ResponsiveContainer>
+              <div className="space-y-1.5 mt-2">
+                {traffic.map((t, i) => (
+                  <div key={t.channel} className="flex items-center justify-between text-xs">
+                    <span className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full" style={{ background: COLORS[i % COLORS.length] }} />
+                      <span style={{ color: "var(--dash-text-secondary)" }}>{t.channel}</span>
+                    </span>
+                    <span className="font-medium" style={{ color: "var(--dash-text)" }}>{t.users.toLocaleString()}</span>
+                  </div>
+                ))}
+              </div>
+            </ChartCard>
+
+            <ChartCard title="流入元データ" subtitle="チャネル別詳細" className="xl:col-span-2">
+              <DataTable columns={trafficColumns} data={traffic as unknown as Record<string, unknown>[]} defaultSortKey="users" />
+            </ChartCard>
+          </div>
+
+          {/* Device Breakdown */}
+          {devices.length > 0 && (
+            <ChartCard title="デバイス別アクセス">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <ResponsiveContainer width="100%" height={200}>
+                  <BarChart data={devices} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" horizontal={false} />
+                    <XAxis type="number" tick={{ fontSize: 11, fill: "#94a3b8" }} tickLine={false} axisLine={false} />
+                    <YAxis
+                      type="category" dataKey="device" tick={{ fontSize: 12, fill: "#64748b" }} tickLine={false} axisLine={false} width={80}
+                      tickFormatter={(v) => deviceLabels[v] || v}
+                    />
+                    <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e2e8f0" }} />
+                    <Bar dataKey="sessions" name="セッション" fill="#3b82f6" radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+                <div className="space-y-3">
+                  {devices.map((d, i) => (
+                    <div key={d.device}>
+                      <div className="flex items-center justify-between text-xs mb-1">
+                        <span className="font-medium" style={{ color: "var(--dash-text)" }}>{deviceLabels[d.device] || d.device}</span>
+                        <span style={{ color: "var(--dash-text-secondary)" }}>{d.percentage}% ({d.sessions.toLocaleString()})</span>
+                      </div>
+                      <div className="h-2 rounded-full overflow-hidden" style={{ background: "var(--dash-border)" }}>
+                        <div className="h-full rounded-full" style={{ width: `${d.percentage}%`, background: COLORS[i % COLORS.length] }} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </ChartCard>
+          )}
+
+          {/* Landing Pages */}
+          <ChartCard title="ランディングページ分析" subtitle="流入先ページ別 TOP10">
+            {landingPages.length > 0 ? (
+              <DataTable columns={landingColumns} data={landingPages as unknown as Record<string, unknown>[]} defaultSortKey="pageviews" />
+            ) : (
+              <div className="flex items-center justify-center h-32">
+                <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>データがありません</p>
+              </div>
+            )}
+          </ChartCard>
+        </>
+      )}
     </div>
   );
 }
