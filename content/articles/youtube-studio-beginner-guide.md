@@ -5,6 +5,13 @@ date: "2026-08-16"
 category: "youtube-basics"
 tags: ["YouTube Studio", "初心者", "チャンネル運用", "アナリティクス"]
 thumbnail: ""
+faq:
+  - question: "YouTube Studioはスマホからも使えますか？"
+    answer: "はい、YouTube Studioにはスマートフォン用のアプリがあります。iOS・Android両方に対応しており、基本的な動画管理やコメント返信、アナリティクスの確認が可能です。"
+  - question: "YouTube Studioのアナリティクスで最初に見るべき指標は？"
+    answer: "初心者はまず「視聴回数」「平均視聴時間」「インプレッションのクリック率」の3つを確認しましょう。視聴回数は露出量、平均視聴時間はコンテンツの質、クリック率はサムネイルの効果を示します。"
+  - question: "YouTube Studioで動画を非公開から公開に変更できますか？"
+    answer: "はい、YouTube Studioの「コンテンツ」メニューから動画の公開設定はいつでも変更できます。非公開→限定公開→公開の順に段階的に公開範囲を広げることも可能です。"
 ---
 
 「YouTubeチャンネルを開設したけど、管理画面の見方がよくわからない…」

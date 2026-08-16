@@ -94,6 +94,25 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {article.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: article.faq.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
       <article className="py-12">
         <div className="max-w-3xl mx-auto px-4">
           {/* Breadcrumb */}
@@ -139,6 +158,32 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
             className="article-content"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
+
+          {/* FAQ */}
+          {article.faq.length > 0 && (
+            <section className="my-12">
+              <h2 className="text-xl font-bold mb-6 tracking-tight">よくある質問</h2>
+              <div className="space-y-4">
+                {article.faq.map((item, i) => (
+                  <details
+                    key={i}
+                    className="group border border-border rounded-xl overflow-hidden"
+                  >
+                    <summary className="flex items-center gap-3 px-5 py-4 cursor-pointer hover:bg-card/50 transition-colors">
+                      <span className="text-primary font-bold text-sm shrink-0">Q</span>
+                      <span className="text-sm font-semibold">{item.question}</span>
+                    </summary>
+                    <div className="px-5 pb-4 pt-0">
+                      <div className="flex gap-3">
+                        <span className="text-muted font-bold text-sm shrink-0">A</span>
+                        <p className="text-sm text-muted leading-relaxed">{item.answer}</p>
+                      </div>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* In-article CTA */}
           <div className="my-12 ig-gradient rounded-2xl p-8 text-center text-white relative overflow-hidden">

@@ -48,7 +48,7 @@ export default async function BlogPage({
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.slug}
-                href={`/blog?category=${cat.slug}`}
+                href={`/blog/category/${cat.slug}`}
                 className={`px-4 py-2 rounded-full text-xs font-medium transition-all ${
                   category === cat.slug
                     ? "ig-gradient text-white"

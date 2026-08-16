@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, CATEGORIES } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://douga-no-mikata.vercel.app";
@@ -9,6 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(article.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const categories = CATEGORIES.map((cat) => ({
+    url: `${baseUrl}/blog/category/${cat.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
   }));
 
   return [
@@ -36,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    ...categories,
     ...articles,
   ];
 }

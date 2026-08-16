@@ -6,6 +6,11 @@ import html from "remark-html";
 
 const articlesDirectory = path.join(process.cwd(), "content/articles");
 
+export type FAQItem = {
+  question: string;
+  answer: string;
+};
+
 export type Article = {
   slug: string;
   title: string;
@@ -14,6 +19,7 @@ export type Article = {
   category: string;
   tags: string[];
   thumbnail: string;
+  faq: FAQItem[];
   content: string;
 };
 
@@ -37,6 +43,7 @@ export function getAllArticles(): ArticleMeta[] {
         category: data.category ?? "",
         tags: data.tags ?? [],
         thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
+        faq: data.faq ?? [],
       };
     });
   return articles.sort(
@@ -62,6 +69,7 @@ export async function getArticleBySlug(
     category: data.category ?? "",
     tags: data.tags ?? [],
     thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
+    faq: data.faq ?? [],
     content: processedContent.toString(),
   };
 }
