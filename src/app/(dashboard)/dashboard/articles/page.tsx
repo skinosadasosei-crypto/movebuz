@@ -70,9 +70,15 @@ export default function ArticlesPage() {
       label: "ページ",
       width: "320px",
       render: (r: PageMetric) => (
-        <span className="text-xs font-medium truncate block max-w-[320px]" style={{ color: "var(--dash-blue)" }}>
+        <a
+          href={r.path}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs font-medium truncate block max-w-[320px] hover:underline"
+          style={{ color: "var(--dash-blue)" }}
+        >
           {r.title || r.path}
-        </span>
+        </a>
       ),
     },
     {

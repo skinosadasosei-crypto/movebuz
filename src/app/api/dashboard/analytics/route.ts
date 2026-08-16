@@ -6,6 +6,8 @@ import {
   fetchTopPages,
   fetchTrafficSources,
   fetchDeviceBreakdown,
+  fetchHourlyMetrics,
+  fetchUserDemographics,
 } from "@/lib/dashboard/ga4";
 
 export async function GET(request: Request) {
@@ -34,6 +36,12 @@ export async function GET(request: Request) {
         break;
       case "devices":
         data = await fetchDeviceBreakdown(days);
+        break;
+      case "hourly":
+        data = await fetchHourlyMetrics(days);
+        break;
+      case "demographics":
+        data = await fetchUserDemographics(days);
         break;
       default:
         return NextResponse.json({ error: "Invalid type" }, { status: 400 });

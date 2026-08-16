@@ -174,6 +174,76 @@ export async function fetchDeviceBreakdown(days: number = 30) {
   });
 }
 
+export async function fetchHourlyMetrics(days: number = 30) {
+  const client = getClient();
+  const propertyId = getPropertyId();
+  if (!client || !propertyId) return null;
+
+  const [response] = await client.runReport({
+    property: `properties/${propertyId}`,
+    dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensions: [{ name: "hour" }],
+    metrics: [
+      { name: "totalUsers" },
+      { name: "sessions" },
+      { name: "screenPageViews" },
+    ],
+    orderBys: [{ dimension: { dimensionName: "hour" } }],
+  });
+
+  const hours = Array.from({ length: 24 }, (_, i) => ({
+    hour: i,
+    users: 0,
+    sessions: 0,
+    pageviews: 0,
+  }));
+
+  for (const row of response.rows || []) {
+    const h = Number(row.dimensionValues?.[0]?.value || 0);
+    if (h >= 0 && h < 24) {
+      hours[h].users = Number(row.metricValues?.[0]?.value || 0);
+      hours[h].sessions = Number(row.metricValues?.[1]?.value || 0);
+      hours[h].pageviews = Number(row.metricValues?.[2]?.value || 0);
+    }
+  }
+
+  return hours;
+}
+
+export async function fetchUserDemographics(days: number = 30) {
+  const client = getClient();
+  const propertyId = getPropertyId();
+  if (!client || !propertyId) return null;
+
+  const [ageRes] = await client.runReport({
+    property: `properties/${propertyId}`,
+    dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensions: [{ name: "userAgeBracket" }],
+    metrics: [{ name: "totalUsers" }],
+    orderBys: [{ dimension: { dimensionName: "userAgeBracket" } }],
+  });
+
+  const [genderRes] = await client.runReport({
+    property: `properties/${propertyId}`,
+    dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensions: [{ name: "userGender" }],
+    metrics: [{ name: "totalUsers" }],
+    orderBys: [{ metric: { metricName: "totalUsers" }, desc: true }],
+  });
+
+  const age = (ageRes.rows || []).map((row) => ({
+    bracket: row.dimensionValues?.[0]?.value || "unknown",
+    users: Number(row.metricValues?.[0]?.value || 0),
+  }));
+
+  const gender = (genderRes.rows || []).map((row) => ({
+    gender: row.dimensionValues?.[0]?.value || "unknown",
+    users: Number(row.metricValues?.[0]?.value || 0),
+  }));
+
+  return { age, gender };
+}
+
 function formatGADate(dateStr: string): string {
   if (dateStr.length !== 8) return dateStr;
   return `${dateStr.slice(4, 6)}/${dateStr.slice(6, 8)}`;
