@@ -8,6 +8,7 @@ import "./dashboard.css";
 
 const navItems = [
   { href: "/dashboard", label: "ダッシュボード", icon: "grid" },
+  { href: "/dashboard/contacts", label: "問い合わせ", icon: "mail" },
   { href: "/dashboard/articles", label: "記事・ページ分析", icon: "file-text" },
   { href: "/dashboard/traffic", label: "流入分析", icon: "arrow-down-left" },
   { href: "/dashboard/conversions", label: "コンバージョン分析", icon: "target" },
@@ -21,6 +22,11 @@ function NavIcon({ name, className }: { name: string; className?: string }) {
     grid: (
       <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" />
+      </svg>
+    ),
+    mail: (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" />
       </svg>
     ),
     "file-text": (
@@ -150,7 +156,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     className="text-[10px] font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-opacity"
                     style={{ background: "var(--dash-amber-light)", color: "var(--dash-amber)" }}
                   >
-                    デモデータ — セットアップ →
+                    未設定 — セットアップ →
                   </Link>
                 )}
                 {ga4Status === "collecting" && (

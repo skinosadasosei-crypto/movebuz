@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import DataTable from "@/components/dashboard/DataTable";
-import { articleMetrics } from "@/lib/dashboard/mock-data";
 import type { ArticleMetric, SortField } from "@/lib/dashboard/types";
 
 const sortButtons: { key: SortField; label: string }[] = [
@@ -20,16 +19,19 @@ function formatDuration(seconds: number): string {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
+const articleMetrics: ArticleMetric[] = [];
+
 export default function ArticlesPage() {
   const [sortField, setSortField] = useState<SortField>("pageviews");
 
   const totalPV = articleMetrics.reduce((sum, a) => sum + a.pageviews, 0);
   const totalInquiries = articleMetrics.reduce((sum, a) => sum + a.inquiries, 0);
-  const avgCVR =
-    articleMetrics.reduce((sum, a) => sum + a.cvr, 0) / articleMetrics.length;
-  const avgCTARate =
-    articleMetrics.reduce((sum, a) => sum + a.ctaClickRate, 0) /
-    articleMetrics.length;
+  const avgCVR = articleMetrics.length > 0
+    ? articleMetrics.reduce((sum, a) => sum + a.cvr, 0) / articleMetrics.length
+    : 0;
+  const avgCTARate = articleMetrics.length > 0
+    ? articleMetrics.reduce((sum, a) => sum + a.ctaClickRate, 0) / articleMetrics.length
+    : 0;
 
   const sorted = [...articleMetrics].sort((a, b) => {
     const aVal = a[sortField] as number;
@@ -263,12 +265,20 @@ export default function ArticlesPage() {
           </p>
         </div>
         <div className="p-2">
-          <DataTable
-            columns={columns}
-            data={sorted}
-            defaultSortKey={sortField}
-            defaultSortDir="desc"
-          />
+          {sorted.length > 0 ? (
+            <DataTable
+              columns={columns}
+              data={sorted}
+              defaultSortKey={sortField}
+              defaultSortDir="desc"
+            />
+          ) : (
+            <div className="flex items-center justify-center h-32">
+              <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>
+                GA4のデータが蓄積されると記事別の分析が表示されます
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

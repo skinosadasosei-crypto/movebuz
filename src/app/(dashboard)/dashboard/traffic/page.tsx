@@ -1,24 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Cell,
-} from "recharts";
 import ChartCard from "@/components/dashboard/ChartCard";
 import DataTable from "@/components/dashboard/DataTable";
-import {
-  trafficSources,
-  utmData,
-  landingPages,
-  seoKeywords,
-} from "@/lib/dashboard/mock-data";
 import type {
   TrafficSource,
   UTMData,
@@ -33,6 +17,21 @@ const tabs: { key: Tab; label: string }[] = [
   { key: "utm", label: "UTM分析" },
   { key: "seo", label: "SEO分析" },
 ];
+
+const trafficSources: TrafficSource[] = [];
+const utmData: UTMData[] = [];
+const landingPages: LandingPage[] = [];
+const seoKeywords: SEOKeyword[] = [];
+
+function EmptyState() {
+  return (
+    <div className="flex items-center justify-center h-32">
+      <p className="text-sm" style={{ color: "var(--dash-text-muted)" }}>
+        GA4のデータが蓄積されると分析が表示されます
+      </p>
+    </div>
+  );
+}
 
 /* ------------------------------------------------------------------ */
 /*  Tab 1 : 流入元分析                                                  */
@@ -129,54 +128,10 @@ function TrafficSourceTab() {
     },
   ];
 
+  if (trafficSources.length === 0) return <EmptyState />;
+
   return (
     <>
-      {/* Horizontal bar chart */}
-      <ChartCard title="チャネル別ユーザー数" subtitle="流入元サマリー">
-        <ResponsiveContainer width="100%" height={280}>
-          <BarChart
-            data={trafficSources}
-            layout="vertical"
-            margin={{ left: 10, right: 30, top: 5, bottom: 5 }}
-          >
-            <CartesianGrid
-              strokeDasharray="3 3"
-              stroke="#f1f5f9"
-              horizontal={false}
-            />
-            <XAxis
-              type="number"
-              tick={{ fontSize: 11, fill: "#94a3b8" }}
-              tickLine={false}
-              axisLine={false}
-              tickFormatter={(v: number) => v.toLocaleString()}
-            />
-            <YAxis
-              type="category"
-              dataKey="channel"
-              tick={{ fontSize: 11, fill: "#64748b" }}
-              tickLine={false}
-              axisLine={false}
-              width={110}
-            />
-            <Tooltip
-              contentStyle={{
-                fontSize: 12,
-                borderRadius: 8,
-                border: "1px solid #e2e8f0",
-              }}
-              formatter={(v) => typeof v === "number" ? v.toLocaleString() : v}
-            />
-            <Bar dataKey="users" name="ユーザー" radius={[0, 4, 4, 0]}>
-              {trafficSources.map((entry, i) => (
-                <Cell key={i} fill={entry.color} />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
-
-      {/* Traffic source table */}
       <ChartCard title="流入元データ" subtitle="チャネル別詳細">
         <DataTable
           columns={trafficColumns}
@@ -185,13 +140,16 @@ function TrafficSourceTab() {
         />
       </ChartCard>
 
-      {/* Landing page table */}
       <ChartCard title="ランディングページ分析" subtitle="流入先ページ別">
-        <DataTable
-          columns={landingColumns}
-          data={landingPages as unknown as Record<string, unknown>[]}
-          defaultSortKey="sessions"
-        />
+        {landingPages.length > 0 ? (
+          <DataTable
+            columns={landingColumns}
+            data={landingPages as unknown as Record<string, unknown>[]}
+            defaultSortKey="sessions"
+          />
+        ) : (
+          <EmptyState />
+        )}
       </ChartCard>
     </>
   );
@@ -263,6 +221,8 @@ function UTMTab() {
     },
   ];
 
+  if (utmData.length === 0) return <EmptyState />;
+
   return (
     <ChartCard title="UTMパラメータ別データ" subtitle="キャンペーン別詳細">
       <DataTable
@@ -279,12 +239,11 @@ function UTMTab() {
 /* ------------------------------------------------------------------ */
 
 function SEOTab() {
+  if (seoKeywords.length === 0) return <EmptyState />;
+
   const totalClicks = seoKeywords.reduce((sum, k) => sum + k.clicks, 0);
-  const avgCTR =
-    seoKeywords.reduce((sum, k) => sum + k.ctr, 0) / seoKeywords.length;
-  const avgPosition =
-    seoKeywords.reduce((sum, k) => sum + k.avgPosition, 0) /
-    seoKeywords.length;
+  const avgCTR = seoKeywords.reduce((sum, k) => sum + k.ctr, 0) / seoKeywords.length;
+  const avgPosition = seoKeywords.reduce((sum, k) => sum + k.avgPosition, 0) / seoKeywords.length;
   const totalCV = seoKeywords.reduce((sum, k) => sum + k.inquiries, 0);
 
   const kpis = [
@@ -363,7 +322,6 @@ function SEOTab() {
 
   return (
     <>
-      {/* KPI summary cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {kpis.map((kpi) => (
           <div
@@ -390,7 +348,6 @@ function SEOTab() {
         ))}
       </div>
 
-      {/* SEO keywords table */}
       <ChartCard title="SEOキーワード分析" subtitle="検索パフォーマンス">
         <DataTable
           columns={seoColumns}
@@ -411,7 +368,6 @@ export default function TrafficPage() {
 
   return (
     <div className="space-y-6 max-w-[1400px]">
-      {/* Page header */}
       <div>
         <h2
           className="text-lg font-bold"
@@ -427,7 +383,6 @@ export default function TrafficPage() {
         </p>
       </div>
 
-      {/* Tab switcher */}
       <div
         className="inline-flex items-center gap-1 p-1 rounded-full"
         style={{ background: "var(--dash-border)" }}
@@ -449,7 +404,6 @@ export default function TrafficPage() {
         ))}
       </div>
 
-      {/* Tab content */}
       {activeTab === "traffic" && <TrafficSourceTab />}
       {activeTab === "utm" && <UTMTab />}
       {activeTab === "seo" && <SEOTab />}
