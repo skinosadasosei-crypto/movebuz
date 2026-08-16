@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
-
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
@@ -37,12 +35,20 @@ export default function ContactPage() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    const body = {
+      company: data.get("company"),
+      name: data.get("name"),
+      email: data.get("email"),
+      phone: data.get("phone"),
+      plan: data.get("plan"),
+      message: data.get("message"),
+    };
 
     try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
       });
       if (res.ok) {
         setStatus("sent");
