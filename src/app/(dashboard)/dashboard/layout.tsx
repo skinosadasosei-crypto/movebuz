@@ -61,13 +61,21 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [period, setPeriod] = useState("past30");
-  const [isDemo, setIsDemo] = useState(true);
+  const [ga4Status, setGa4Status] = useState<"loading" | "not-configured" | "collecting" | "live">("loading");
 
   useEffect(() => {
-    fetch("/api/dashboard/status")
-      .then((r) => r.json())
-      .then((d) => setIsDemo(!d.ga4Configured))
-      .catch(() => setIsDemo(true));
+    Promise.all([
+      fetch("/api/dashboard/status").then((r) => r.json()),
+      fetch("/api/dashboard/analytics?type=overview").then((r) => r.json()),
+    ]).then(([status, ov]) => {
+      if (!status.ga4Configured) {
+        setGa4Status("not-configured");
+      } else if (ov.data && ov.data.users > 0) {
+        setGa4Status("live");
+      } else {
+        setGa4Status("collecting");
+      }
+    }).catch(() => setGa4Status("not-configured"));
   }, []);
 
   if (pathname === "/dashboard/login") {
@@ -136,7 +144,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <h1 className="text-sm font-semibold" style={{ color: "var(--dash-text)" }}>
                   {navItems.find((n) => n.href === "/dashboard" ? pathname === "/dashboard" : pathname.startsWith(n.href))?.label || "ダッシュボード"}
                 </h1>
-                {isDemo && (
+                {ga4Status === "not-configured" && (
                   <Link
                     href="/dashboard/settings"
                     className="text-[10px] font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-opacity"
@@ -144,6 +152,22 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                   >
                     デモデータ — セットアップ →
                   </Link>
+                )}
+                {ga4Status === "collecting" && (
+                  <span
+                    className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
+                    style={{ background: "var(--dash-blue-light)", color: "var(--dash-blue)" }}
+                  >
+                    GA4接続済み — データ収集中
+                  </span>
+                )}
+                {ga4Status === "live" && (
+                  <span
+                    className="text-[10px] font-semibold px-2 py-0.5 rounded-full"
+                    style={{ background: "var(--dash-green-light)", color: "var(--dash-green)" }}
+                  >
+                    GA4 ライブ
+                  </span>
                 )}
               </div>
               <div className="flex items-center gap-3">
