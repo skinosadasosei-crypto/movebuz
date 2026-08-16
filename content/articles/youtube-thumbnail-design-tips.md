@@ -1,7 +1,7 @@
 ---
 title: "クリックされるYouTubeサムネイルの作り方｜デザインの基本と注意点"
 description: "YouTubeのサムネイルでクリック率を高めるためのデザインのコツを解説。配色・文字配置・構図の基本から、無料ツールでの作成方法まで紹介します。"
-date: "2026-08-16"
+date: "2026-08-17"
 category: "video-production"
 tags: ["サムネイル", "デザイン", "クリック率", "YouTube"]
 thumbnail: ""
