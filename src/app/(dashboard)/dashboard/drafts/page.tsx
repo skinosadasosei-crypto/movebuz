@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Link from "next/link";
 
 type Draft = {
   slug: string;
@@ -190,12 +191,13 @@ export default function DraftsPage() {
                     </div>
 
                     {/* Title */}
-                    <h3
-                      className="text-sm font-semibold truncate"
+                    <Link
+                      href={`/dashboard/drafts/${draft.slug}`}
+                      className="text-sm font-semibold truncate block hover:underline"
                       style={{ color: "var(--dash-text)" }}
                     >
                       {draft.title}
-                    </h3>
+                    </Link>
 
                     {/* Description */}
                     <p

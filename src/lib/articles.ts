@@ -105,6 +105,27 @@ export function getDraftArticles(): ArticleMeta[] {
   );
 }
 
+export async function getDraftBySlug(slug: string): Promise<Article | null> {
+  const filePath = path.join(draftsDirectory, `${slug}.md`);
+  if (!fs.existsSync(filePath)) return null;
+
+  const fileContents = fs.readFileSync(filePath, "utf8");
+  const { data, content } = matter(fileContents);
+  const processedContent = await remark().use(html).process(content);
+
+  return {
+    slug,
+    title: data.title ?? "",
+    description: data.description ?? "",
+    date: data.date ?? "",
+    category: data.category ?? "",
+    tags: data.tags ?? [],
+    thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
+    faq: data.faq ?? [],
+    content: processedContent.toString(),
+  };
+}
+
 export function publishDraft(slug: string): { success: boolean; error?: string } {
   const srcPath = path.join(draftsDirectory, `${slug}.md`);
   if (!fs.existsSync(srcPath)) return { success: false, error: "下書きが見つかりません" };
