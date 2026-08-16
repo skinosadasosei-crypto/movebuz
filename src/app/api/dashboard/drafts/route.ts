@@ -57,7 +57,7 @@ export async function POST(req: Request) {
     const srcData = await getRes.json();
     const content = Buffer.from(srcData.content, "base64").toString("utf8");
 
-    const today = new Date().toISOString().slice(0, 10);
+    const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Tokyo" });
     const updatedContent = content.replace(/^date:\s*".*"/m, `date: "${today}"`);
 
     const destPath = `content/articles/${slug}.md`;
