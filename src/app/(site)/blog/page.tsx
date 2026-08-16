@@ -1,6 +1,6 @@
 import ArticleCard from "@/components/ArticleCard";
 import CTA from "@/components/CTA";
-import { getAllArticles, CATEGORIES } from "@/lib/articles";
+import { getAllArticlesWithGitHub, CATEGORIES } from "@/lib/articles";
 import Link from "next/link";
 
 export const metadata = {
@@ -12,7 +12,7 @@ export default async function BlogPage({
   searchParams,
 }: PageProps<"/blog">) {
   const { category } = await searchParams;
-  const allArticles = getAllArticles();
+  const allArticles = await getAllArticlesWithGitHub();
   const articles = category
     ? allArticles.filter((a) => a.category === category)
     : allArticles;

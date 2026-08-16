@@ -7,6 +7,9 @@ import html from "remark-html";
 const articlesDirectory = path.join(process.cwd(), "content/articles");
 const draftsDirectory = path.join(process.cwd(), "content/drafts");
 
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_REPO = process.env.GITHUB_REPO || "skinosadasosei-crypto/movebuz";
+
 export type FAQItem = {
   question: string;
   answer: string;
@@ -26,42 +29,23 @@ export type Article = {
 
 export type ArticleMeta = Omit<Article, "content">;
 
-export function getAllArticles(): ArticleMeta[] {
-  if (!fs.existsSync(articlesDirectory)) return [];
-  const filenames = fs.readdirSync(articlesDirectory);
-  const articles = filenames
-    .filter((name) => name.endsWith(".md"))
-    .map((filename) => {
-      const slug = filename.replace(/\.md$/, "");
-      const filePath = path.join(articlesDirectory, filename);
-      const fileContents = fs.readFileSync(filePath, "utf8");
-      const { data } = matter(fileContents);
-      return {
-        slug,
-        title: data.title ?? "",
-        description: data.description ?? "",
-        date: data.date ?? "",
-        category: data.category ?? "",
-        tags: data.tags ?? [],
-        thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
-        faq: data.faq ?? [],
-      };
-    });
-  return articles.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+function parseMarkdown(slug: string, fileContents: string): ArticleMeta {
+  const { data } = matter(fileContents);
+  return {
+    slug,
+    title: data.title ?? "",
+    description: data.description ?? "",
+    date: data.date ?? "",
+    category: data.category ?? "",
+    tags: data.tags ?? [],
+    thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
+    faq: data.faq ?? [],
+  };
 }
 
-export async function getArticleBySlug(
-  slug: string
-): Promise<Article | null> {
-  const filePath = path.join(articlesDirectory, `${slug}.md`);
-  if (!fs.existsSync(filePath)) return null;
-
-  const fileContents = fs.readFileSync(filePath, "utf8");
+async function parseMarkdownWithContent(slug: string, fileContents: string): Promise<Article> {
   const { data, content } = matter(fileContents);
   const processedContent = await remark().use(html).process(content);
-
   return {
     slug,
     title: data.title ?? "",
@@ -75,8 +59,114 @@ export async function getArticleBySlug(
   };
 }
 
+async function githubFetchFile(filePath: string): Promise<string | null> {
+  if (!GITHUB_TOKEN) return null;
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`,
+      {
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+        },
+        next: { revalidate: 60 },
+      }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    return Buffer.from(data.content, "base64").toString("utf8");
+  } catch {
+    return null;
+  }
+}
+
+async function githubListFiles(dir: string): Promise<string[]> {
+  if (!GITHUB_TOKEN) return [];
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GITHUB_REPO}/contents/${dir}`,
+      {
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+        },
+        next: { revalidate: 60 },
+      }
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    if (!Array.isArray(data)) return [];
+    return data
+      .filter((f: { name: string }) => f.name.endsWith(".md"))
+      .map((f: { name: string }) => f.name);
+  } catch {
+    return [];
+  }
+}
+
+function getLocalArticles(): ArticleMeta[] {
+  if (!fs.existsSync(articlesDirectory)) return [];
+  return fs.readdirSync(articlesDirectory)
+    .filter((name) => name.endsWith(".md"))
+    .map((filename) => {
+      const slug = filename.replace(/\.md$/, "");
+      const filePath = path.join(articlesDirectory, filename);
+      const fileContents = fs.readFileSync(filePath, "utf8");
+      return parseMarkdown(slug, fileContents);
+    });
+}
+
+export function getAllArticles(): ArticleMeta[] {
+  const articles = getLocalArticles();
+  return articles.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+}
+
+export async function getAllArticlesWithGitHub(): Promise<ArticleMeta[]> {
+  const ghFiles = await githubListFiles("content/articles");
+  if (ghFiles.length === 0) return getAllArticles();
+
+  const ghSlugs = ghFiles.map((f) => f.replace(/\.md$/, ""));
+  const articles: ArticleMeta[] = [];
+  for (const slug of ghSlugs) {
+    const localPath = path.join(articlesDirectory, `${slug}.md`);
+    if (fs.existsSync(localPath)) {
+      const fileContents = fs.readFileSync(localPath, "utf8");
+      articles.push(parseMarkdown(slug, fileContents));
+    } else {
+      const content = await githubFetchFile(`content/articles/${slug}.md`);
+      if (content) articles.push(parseMarkdown(slug, content));
+    }
+  }
+
+  return articles.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+}
+
+export async function getArticleBySlug(
+  slug: string
+): Promise<Article | null> {
+  const filePath = path.join(articlesDirectory, `${slug}.md`);
+  if (fs.existsSync(filePath)) {
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    return parseMarkdownWithContent(slug, fileContents);
+  }
+
+  const ghContent = await githubFetchFile(`content/articles/${slug}.md`);
+  if (ghContent) return parseMarkdownWithContent(slug, ghContent);
+
+  return null;
+}
+
 export function getArticlesByCategory(category: string): ArticleMeta[] {
   return getAllArticles().filter((a) => a.category === category);
+}
+
+export async function getArticlesByCategoryWithGitHub(category: string): Promise<ArticleMeta[]> {
+  const all = await getAllArticlesWithGitHub();
+  return all.filter((a) => a.category === category);
 }
 
 export function getDraftArticles(): ArticleMeta[] {
@@ -88,17 +178,7 @@ export function getDraftArticles(): ArticleMeta[] {
       const slug = filename.replace(/\.md$/, "");
       const filePath = path.join(draftsDirectory, filename);
       const fileContents = fs.readFileSync(filePath, "utf8");
-      const { data } = matter(fileContents);
-      return {
-        slug,
-        title: data.title ?? "",
-        description: data.description ?? "",
-        date: data.date ?? "",
-        category: data.category ?? "",
-        tags: data.tags ?? [],
-        thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
-        faq: data.faq ?? [],
-      };
+      return parseMarkdown(slug, fileContents);
     });
   return drafts.sort(
     (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
@@ -106,24 +186,37 @@ export function getDraftArticles(): ArticleMeta[] {
 }
 
 export async function getDraftBySlug(slug: string): Promise<Article | null> {
+  const ghContent = await githubFetchFile(`content/drafts/${slug}.md`);
+  if (ghContent) return parseMarkdownWithContent(slug, ghContent);
+
   const filePath = path.join(draftsDirectory, `${slug}.md`);
-  if (!fs.existsSync(filePath)) return null;
+  if (fs.existsSync(filePath)) {
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    return parseMarkdownWithContent(slug, fileContents);
+  }
 
-  const fileContents = fs.readFileSync(filePath, "utf8");
-  const { data, content } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
+  return null;
+}
 
-  return {
-    slug,
-    title: data.title ?? "",
-    description: data.description ?? "",
-    date: data.date ?? "",
-    category: data.category ?? "",
-    tags: data.tags ?? [],
-    thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
-    faq: data.faq ?? [],
-    content: processedContent.toString(),
-  };
+export async function getDraftArticlesWithGitHub(): Promise<ArticleMeta[]> {
+  const ghFiles = await githubListFiles("content/drafts");
+  const ghSlugs = new Set(ghFiles.map((f) => f.replace(/\.md$/, "")));
+
+  const drafts: ArticleMeta[] = [];
+  for (const slug of ghSlugs) {
+    const localPath = path.join(draftsDirectory, `${slug}.md`);
+    if (fs.existsSync(localPath)) {
+      const fileContents = fs.readFileSync(localPath, "utf8");
+      drafts.push(parseMarkdown(slug, fileContents));
+    } else {
+      const content = await githubFetchFile(`content/drafts/${slug}.md`);
+      if (content) drafts.push(parseMarkdown(slug, content));
+    }
+  }
+
+  return drafts.sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
 }
 
 export function publishDraft(slug: string): { success: boolean; error?: string } {

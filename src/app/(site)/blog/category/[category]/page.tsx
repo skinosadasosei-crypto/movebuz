@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
 import CTA from "@/components/CTA";
-import { getArticlesByCategory, CATEGORIES } from "@/lib/articles";
+import { getArticlesByCategoryWithGitHub, CATEGORIES } from "@/lib/articles";
 import type { Metadata } from "next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
@@ -33,7 +33,7 @@ export default async function CategoryPage(
   const cat = CATEGORIES.find((c) => c.slug === category);
   if (!cat) notFound();
 
-  const articles = getArticlesByCategory(category);
+  const articles = await getArticlesByCategoryWithGitHub(category);
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",

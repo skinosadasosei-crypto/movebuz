@@ -1,9 +1,15 @@
 import { NextResponse } from "next/server";
 import { verifySession } from "@/lib/dashboard/auth";
-import { getDraftArticles } from "@/lib/articles";
+import { getDraftArticlesWithGitHub } from "@/lib/articles";
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPO = process.env.GITHUB_REPO || "skinosadasosei-crypto/movebuz";
+const VERCEL_DEPLOY_HOOK = process.env.VERCEL_DEPLOY_HOOK;
+
+async function triggerDeploy() {
+  if (!VERCEL_DEPLOY_HOOK) return;
+  await fetch(VERCEL_DEPLOY_HOOK, { method: "POST" });
+}
 
 async function githubApi(path: string, options?: RequestInit) {
   const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`, {
@@ -21,7 +27,8 @@ async function githubApi(path: string, options?: RequestInit) {
 export async function GET() {
   const authed = await verifySession();
   if (!authed) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  return NextResponse.json({ drafts: getDraftArticles() });
+  const drafts = await getDraftArticlesWithGitHub();
+  return NextResponse.json({ drafts });
 }
 
 export async function POST(req: Request) {
@@ -82,6 +89,8 @@ export async function POST(req: Request) {
       const err = await deleteRes.json();
       return NextResponse.json({ error: `下書きの削除に失敗: ${err.message}` }, { status: 500 });
     }
+
+    triggerDeploy().catch(() => {});
 
     return NextResponse.json({ success: true });
   } catch (e) {

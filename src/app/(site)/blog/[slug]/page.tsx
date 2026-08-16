@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import CTA from "@/components/CTA";
-import { getArticleBySlug, getAllArticles } from "@/lib/articles";
+import { getArticleBySlug, getAllArticles, getAllArticlesWithGitHub } from "@/lib/articles";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -52,7 +52,8 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
     "outsourcing": "外注・運用代行",
   };
 
-  const relatedArticles = getAllArticles()
+  const allArticles = await getAllArticlesWithGitHub();
+  const relatedArticles = allArticles
     .filter((a) => a.category === article.category && a.slug !== article.slug)
     .slice(0, 3);
 
