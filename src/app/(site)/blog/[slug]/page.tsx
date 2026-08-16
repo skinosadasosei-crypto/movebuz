@@ -9,6 +9,8 @@ export async function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
 }
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
+
 export async function generateMetadata(
   props: PageProps<"/blog/[slug]">
 ): Promise<Metadata> {
@@ -18,11 +20,15 @@ export async function generateMetadata(
   return {
     title: article.title,
     description: article.description,
+    alternates: {
+      canonical: `${siteUrl}/blog/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.description,
       type: "article",
       publishedTime: article.date,
+      url: `${siteUrl}/blog/${slug}`,
     },
   };
 }
@@ -44,8 +50,42 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
     .filter((a) => a.category === article.category && a.slug !== article.slug)
     .slice(0, 3);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    author: { "@type": "Organization", name: "MOVeBUZ" },
+    publisher: {
+      "@type": "Organization",
+      name: "MOVeBUZ",
+      logo: { "@type": "ImageObject", url: `${siteUrl}/icon.svg` },
+    },
+    mainEntityOfPage: `${siteUrl}/blog/${slug}`,
+    keywords: article.tags.join(", "),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "記事一覧", item: `${siteUrl}/blog` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${siteUrl}/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <article className="py-12">
         <div className="max-w-3xl mx-auto px-4">
           {/* Breadcrumb */}

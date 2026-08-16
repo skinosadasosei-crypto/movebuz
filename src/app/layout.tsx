@@ -24,11 +24,38 @@ export const metadata: Metadata = {
 };
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "MOVeBUZ",
+  url: siteUrl,
+  description: "企業のYouTube運用を成功に導く情報メディア。チャンネル開設から運用代行まで、動画マーケティングのノウハウを発信します。",
+  logo: `${siteUrl}/icon.svg`,
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "MOVeBUZ",
+  url: siteUrl,
+  description: "企業のYouTube運用を成功に導く情報メディア",
+  publisher: { "@type": "Organization", name: "MOVeBUZ" },
+};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ja" className={`${notoSansJP.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         {gaId && (
           <>
             <Script
