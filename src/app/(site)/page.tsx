@@ -1,10 +1,10 @@
 import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
 import CTA from "@/components/CTA";
-import { getAllArticles, CATEGORIES } from "@/lib/articles";
+import { getAllArticlesWithGitHub, CATEGORIES } from "@/lib/articles";
 
-export default function Home() {
-  const articles = getAllArticles();
+export default async function Home() {
+  const articles = await getAllArticlesWithGitHub();
   const latestArticles = articles.slice(0, 6);
 
   return (
