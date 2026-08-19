@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0f4ff"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">押さえるべき7つの指標</text>
+  <g transform="translate(50,70)">
+    <rect width="220" height="105" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#3b82f6"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">1</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#1e40af">インプレッション数</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">動画がYouTube上で</text>
+    <text x="15" y="72" font-family="sans-serif" font-size="11" fill="#64748b">表示された回数。</text>
+    <text x="15" y="92" font-family="sans-serif" font-weight="600" font-size="11" fill="#3b82f6">リーチの大きさを測る</text>
+  </g>
+  <g transform="translate(290,70)">
+    <rect width="220" height="105" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#8b5cf6"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">2</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#5b21b6">クリック率（CTR）</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">表示→再生の転換率。</text>
+    <text x="15" y="72" font-family="sans-serif" font-size="11" fill="#64748b">目安は4〜10%。</text>
+    <text x="15" y="92" font-family="sans-serif" font-weight="600" font-size="11" fill="#8b5cf6">サムネイルの効果を測る</text>
+  </g>
+  <g transform="translate(530,70)">
+    <rect width="220" height="105" rx="10" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#ec4899"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">3</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#9d174d">視聴維持率</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">動画をどこまで見て</text>
+    <text x="15" y="72" font-family="sans-serif" font-size="11" fill="#64748b">もらえたかの割合。</text>
+    <text x="15" y="92" font-family="sans-serif" font-weight="600" font-size="11" fill="#ec4899">コンテンツの質を測る</text>
+  </g>
+  <g transform="translate(50,195)">
+    <rect width="220" height="105" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#f59e0b"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">4</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#92400e">平均視聴時間</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">1回の再生で実際に</text>
+    <text x="15" y="72" font-family="sans-serif" font-size="11" fill="#64748b">視聴された時間。</text>
+    <text x="15" y="92" font-family="sans-serif" font-weight="600" font-size="11" fill="#f59e0b">エンゲージメント深度</text>
+  </g>
+  <g transform="translate(290,195)">
+    <rect width="220" height="105" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#22c55e"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">5</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#166534">チャンネル登録者数</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">ファン基盤の成長を</text>
+    <text x="15" y="72" font-family="sans-serif" font-size="11" fill="#64748b">示す中長期指標。</text>
+    <text x="15" y="92" font-family="sans-serif" font-weight="600" font-size="11" fill="#22c55e">ブランド力の指標</text>
+  </g>
+  <g transform="translate(530,195)">
+    <rect width="220" height="105" rx="10" fill="white" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#6366f1"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">6</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#312e81">エンゲージメント率</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">高評価・コメント・</text>
+    <text x="15" y="72" font-family="sans-serif" font-size="11" fill="#64748b">共有の総量。</text>
+    <text x="15" y="92" font-family="sans-serif" font-weight="600" font-size="11" fill="#6366f1">視聴者の反応を測る</text>
+  </g>
+  <g transform="translate(170,320)">
+    <rect width="460" height="105" rx="10" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="#ef4444"/>
+    <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">7</text>
+    <text x="60" y="30" font-family="sans-serif" font-weight="700" font-size="13" fill="#991b1b">コンバージョン（CV）</text>
+    <text x="15" y="55" font-family="sans-serif" font-size="11" fill="#64748b">動画経由の問い合わせ・資料請求・購入など、ビジネス成果に直結する指標。</text>
+    <text x="15" y="75" font-family="sans-serif" font-size="11" fill="#64748b">YouTubeカード・概要欄リンク・UTMパラメータで計測。</text>
+    <text x="15" y="95" font-family="sans-serif" font-weight="600" font-size="11" fill="#ef4444">最終的なROIを判断する最重要指標</text>
+  </g>
+</svg>

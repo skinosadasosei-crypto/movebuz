@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">製造業ブランディング動画の構成例</text>
+
+  <!-- Video types -->
+  <rect x="40" y="100" width="350" height="120" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="100" width="6" height="120" rx="3" fill="#1e40af"/>
+  <circle cx="80" cy="140" r="18" fill="#dbeafe"/>
+  <text x="80" y="147" text-anchor="middle" font-size="18">🏭</text>
+  <text x="110" y="135" font-size="15" font-weight="bold" fill="#333">ものづくりの裏側</text>
+  <text x="110" y="158" font-size="12" fill="#666">工場の作業工程や技術力を</text>
+  <text x="110" y="178" font-size="12" fill="#666">丁寧に撮影した動画シリーズ</text>
+  <rect x="110" y="190" width="80" height="20" rx="6" fill="#dbeafe"/>
+  <text x="150" y="205" text-anchor="middle" font-size="10" fill="#1e40af" font-weight="bold">週1本ペース</text>
+
+  <rect x="410" y="100" width="350" height="120" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="410" y="100" width="6" height="120" rx="3" fill="#3b82f6"/>
+  <circle cx="450" cy="140" r="18" fill="#dbeafe"/>
+  <text x="450" y="147" text-anchor="middle" font-size="18">👨‍🔧</text>
+  <text x="480" y="135" font-size="15" font-weight="bold" fill="#333">社員インタビュー</text>
+  <text x="480" y="158" font-size="12" fill="#666">「働く人」の魅力を発信し</text>
+  <text x="480" y="178" font-size="12" fill="#666">企業の人柄が伝わるコンテンツ</text>
+  <rect x="480" y="190" width="80" height="20" rx="6" fill="#dbeafe"/>
+  <text x="520" y="205" text-anchor="middle" font-size="10" fill="#3b82f6" font-weight="bold">採用強化</text>
+
+  <rect x="40" y="240" width="350" height="120" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="240" width="6" height="120" rx="3" fill="#6366f1"/>
+  <circle cx="80" cy="280" r="18" fill="#e0e7ff"/>
+  <text x="80" y="287" text-anchor="middle" font-size="18">🔬</text>
+  <text x="110" y="275" font-size="15" font-weight="bold" fill="#333">技術解説</text>
+  <text x="110" y="298" font-size="12" fill="#666">専門的な技術力をわかりやすく</text>
+  <text x="110" y="318" font-size="12" fill="#666">解説して専門性をアピール</text>
+  <rect x="110" y="330" width="100" height="20" rx="6" fill="#e0e7ff"/>
+  <text x="160" y="345" text-anchor="middle" font-size="10" fill="#4338ca" font-weight="bold">信頼構築</text>
+
+  <!-- Results -->
+  <rect x="410" y="240" width="350" height="230" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <text x="440" y="275" font-size="16" font-weight="bold" fill="#333">📈 成果</text>
+  <line x1="430" y1="290" x2="740" y2="290" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="430" y="305" width="310" height="40" rx="8" fill="#dcfce7"/>
+  <text x="445" y="330" font-size="13" fill="#166534">✅ 採用応募が増加</text>
+
+  <rect x="430" y="355" width="310" height="40" rx="8" fill="#dbeafe"/>
+  <text x="445" y="380" font-size="13" fill="#1e40af">✅ 取引先候補から「YouTube見ました」</text>
+
+  <rect x="430" y="405" width="310" height="40" rx="8" fill="#fef3c7"/>
+  <text x="445" y="430" font-size="13" fill="#92400e">✅ 展示会の来場者も事前にYouTubeで認知</text>
+
+  <text x="400" y="500" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

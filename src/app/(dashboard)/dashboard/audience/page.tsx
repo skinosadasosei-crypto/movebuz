@@ -53,6 +53,7 @@ export default function AudiencePage() {
   const [age, setAge] = useState<AgeRow[]>([]);
   const [gender, setGender] = useState<GenderRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [demoError, setDemoError] = useState<string | null>(null);
 
   useEffect(() => {
     Promise.all([
@@ -61,12 +62,18 @@ export default function AudiencePage() {
     ])
       .then(([hr, demo]) => {
         if (hr.data) setHourly(hr.data);
-        if (demo.data) {
+        if (demo.error) {
+          setDemoError(demo.error);
+        } else if (demo.data) {
           setAge(demo.data.age || []);
           setGender(demo.data.gender || []);
+        } else if (demo.configured === false) {
+          setDemoError("GA4が未設定です");
         }
       })
-      .catch(() => {})
+      .catch((err) => {
+        setDemoError(`通信エラー: ${err.message}`);
+      })
       .finally(() => setLoading(false));
   }, []);
 
@@ -209,9 +216,9 @@ export default function AudiencePage() {
                   </div>
                 </div>
               ) : (
-                <div className="flex items-center justify-center h-32">
-                  <p className="text-xs" style={{ color: "var(--dash-text-muted)" }}>
-                    GA4で「デモグラフィック レポート」を有効にすると表示されます
+                <div className="flex items-center justify-center h-32 text-center px-4">
+                  <p className="text-xs" style={{ color: demoError ? "var(--dash-red, #ef4444)" : "var(--dash-text-muted)" }}>
+                    {demoError || "GA4で「デモグラフィック レポート」を有効にすると表示されます"}
                   </p>
                 </div>
               )}
@@ -244,9 +251,9 @@ export default function AudiencePage() {
                   </BarChart>
                 </ResponsiveContainer>
               ) : (
-                <div className="flex items-center justify-center h-32">
-                  <p className="text-xs" style={{ color: "var(--dash-text-muted)" }}>
-                    GA4で「デモグラフィック レポート」を有効にすると表示されます
+                <div className="flex items-center justify-center h-32 text-center px-4">
+                  <p className="text-xs" style={{ color: demoError ? "var(--dash-red, #ef4444)" : "var(--dash-text-muted)" }}>
+                    {demoError || "GA4で「デモグラフィック レポート」を有効にすると表示されます"}
                   </p>
                 </div>
               )}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0fdf4"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">失敗を防ぐための対策</text>
+  <g transform="translate(50,75)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <rect width="340" height="42" rx="12" fill="#22c55e"/>
+    <rect y="30" width="340" height="12" fill="#22c55e"/>
+    <text x="170" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">ペルソナを明確にする</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="12" fill="#64748b">・年齢・職種・課題を言語化</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="12" fill="#64748b">・「この人に向けて話す」を</text>
+    <text x="25" y="108" font-family="sans-serif" font-size="12" fill="#64748b"> チーム内で共有</text>
+    <text x="25" y="132" font-family="sans-serif" font-weight="600" font-size="12" fill="#166534">対象 → 失敗パターン1</text>
+  </g>
+  <g transform="translate(410,75)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="340" height="42" rx="12" fill="#3b82f6"/>
+    <rect y="30" width="340" height="12" fill="#3b82f6"/>
+    <text x="170" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">投稿カレンダーを作る</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="12" fill="#64748b">・月初に翌月分の企画を確定</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="12" fill="#64748b">・最低「週1本」をノルマに</text>
+    <text x="25" y="108" font-family="sans-serif" font-size="12" fill="#64748b">・バッファ動画を2本ストック</text>
+    <text x="25" y="132" font-family="sans-serif" font-weight="600" font-size="12" fill="#1e40af">対象 → 失敗パターン2</text>
+  </g>
+  <g transform="translate(50,260)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="340" height="42" rx="12" fill="#f59e0b"/>
+    <rect y="30" width="340" height="12" fill="#f59e0b"/>
+    <text x="170" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">サムネイルのA/Bテスト</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="12" fill="#64748b">・2パターン作成して比較</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="12" fill="#64748b">・CTR 5%以上を基準にする</text>
+    <text x="25" y="108" font-family="sans-serif" font-size="12" fill="#64748b">・モバイル表示で必ず確認</text>
+    <text x="25" y="132" font-family="sans-serif" font-weight="600" font-size="12" fill="#92400e">対象 → 失敗パターン3</text>
+  </g>
+  <g transform="translate(410,260)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="340" height="42" rx="12" fill="#8b5cf6"/>
+    <rect y="30" width="340" height="12" fill="#8b5cf6"/>
+    <text x="170" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">月次レポートを習慣化</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="12" fill="#64748b">・CTR・視聴維持率・登録者推移</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="12" fill="#64748b">・改善施策を1つ決めて実行</text>
+    <text x="25" y="108" font-family="sans-serif" font-size="12" fill="#64748b">・前月比で効果を検証</text>
+    <text x="25" y="132" font-family="sans-serif" font-weight="600" font-size="12" fill="#5b21b6">対象 → 失敗パターン4, 5</text>
+  </g>
+</svg>

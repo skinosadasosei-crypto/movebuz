@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">視聴者属性データの例</text>
+
+  <!-- Age distribution -->
+  <rect x="40" y="90" width="350" height="190" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <text x="60" y="120" font-size="15" font-weight="bold" fill="#333">👤 年齢層</text>
+  <!-- Bars -->
+  <text x="60" y="155" font-size="11" fill="#64748b">18-24</text>
+  <rect x="120" y="142" width="60" height="18" rx="4" fill="#16a34a" opacity="0.3"/>
+  <text x="190" y="156" font-size="11" fill="#666">12%</text>
+
+  <text x="60" y="180" font-size="11" fill="#64748b">25-34</text>
+  <rect x="120" y="167" width="180" height="18" rx="4" fill="#16a34a" opacity="0.7"/>
+  <text x="310" y="181" font-size="11" fill="#666" font-weight="bold">38%</text>
+
+  <text x="60" y="205" font-size="11" fill="#64748b">35-44</text>
+  <rect x="120" y="192" width="140" height="18" rx="4" fill="#16a34a" opacity="0.5"/>
+  <text x="270" y="206" font-size="11" fill="#666">28%</text>
+
+  <text x="60" y="230" font-size="11" fill="#64748b">45-54</text>
+  <rect x="120" y="217" width="50" height="18" rx="4" fill="#16a34a" opacity="0.25"/>
+  <text x="180" y="231" font-size="11" fill="#666">14%</text>
+
+  <text x="60" y="255" font-size="11" fill="#64748b">55+</text>
+  <rect x="120" y="242" width="30" height="18" rx="4" fill="#16a34a" opacity="0.15"/>
+  <text x="160" y="256" font-size="11" fill="#666">8%</text>
+
+  <!-- Gender -->
+  <rect x="410" y="90" width="350" height="190" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <text x="430" y="120" font-size="15" font-weight="bold" fill="#333">⚥ 性別比</text>
+  <!-- Pie chart approximation -->
+  <circle cx="530" cy="195" r="60" fill="#0d9488" opacity="0.2"/>
+  <path d="M530,195 L530,135 A60,60 0 1,1 478,225 Z" fill="#0d9488" opacity="0.6"/>
+  <text x="505" y="200" font-size="14" font-weight="bold" fill="#0d9488">65%</text>
+  <text x="570" y="200" font-size="14" font-weight="bold" fill="#0d9488" opacity="0.5">35%</text>
+  <rect x="630" y="165" width="12" height="12" rx="3" fill="#0d9488" opacity="0.6"/>
+  <text x="650" y="176" font-size="12" fill="#666">男性</text>
+  <rect x="630" y="195" width="12" height="12" rx="3" fill="#0d9488" opacity="0.2"/>
+  <text x="650" y="206" font-size="12" fill="#666">女性</text>
+
+  <!-- Viewing time -->
+  <rect x="40" y="300" width="350" height="170" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <text x="60" y="330" font-size="15" font-weight="bold" fill="#333">🕐 視聴が多い時間帯</text>
+  <rect x="80" y="350" width="30" height="40" rx="4" fill="#16a34a" opacity="0.15"/>
+  <rect x="120" y="340" width="30" height="50" rx="4" fill="#16a34a" opacity="0.25"/>
+  <rect x="160" y="320" width="30" height="70" rx="4" fill="#16a34a" opacity="0.5"/>
+  <rect x="200" y="330" width="30" height="60" rx="4" fill="#16a34a" opacity="0.4"/>
+  <rect x="240" y="345" width="30" height="45" rx="4" fill="#16a34a" opacity="0.2"/>
+  <rect x="280" y="310" width="30" height="80" rx="4" fill="#16a34a" opacity="0.8"/>
+  <rect x="320" y="305" width="30" height="85" rx="4" fill="#16a34a"/>
+  <text x="80" y="405" font-size="9" fill="#94a3b8">6時</text>
+  <text x="120" y="405" font-size="9" fill="#94a3b8">9時</text>
+  <text x="156" y="405" font-size="9" fill="#94a3b8">12時</text>
+  <text x="196" y="405" font-size="9" fill="#94a3b8">15時</text>
+  <text x="236" y="405" font-size="9" fill="#94a3b8">18時</text>
+  <text x="276" y="405" font-size="9" fill="#94a3b8">20時</text>
+  <text x="316" y="405" font-size="9" fill="#94a3b8">22時</text>
+  <rect x="80" y="430" width="270" height="24" rx="6" fill="#dcfce7"/>
+  <text x="95" y="447" font-size="11" fill="#166534" font-weight="bold">💡 20〜22時に投稿がおすすめ</text>
+
+  <!-- Region -->
+  <rect x="410" y="300" width="350" height="170" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <text x="430" y="330" font-size="15" font-weight="bold" fill="#333">🌏 地域</text>
+  <text x="430" y="365" font-size="13" fill="#666">🇯🇵 日本</text>
+  <rect x="500" y="352" width="200" height="16" rx="4" fill="#16a34a" opacity="0.7"/>
+  <text x="710" y="365" font-size="11" fill="#666">82%</text>
+  <text x="430" y="395" font-size="13" fill="#666">🇺🇸 米国</text>
+  <rect x="500" y="382" width="40" height="16" rx="4" fill="#16a34a" opacity="0.3"/>
+  <text x="550" y="395" font-size="11" fill="#666">8%</text>
+  <text x="430" y="425" font-size="13" fill="#666">🇹🇼 台湾</text>
+  <rect x="500" y="412" width="20" height="16" rx="4" fill="#16a34a" opacity="0.2"/>
+  <text x="530" y="425" font-size="11" fill="#666">4%</text>
+  <text x="430" y="455" font-size="13" fill="#666">その他</text>
+  <rect x="500" y="442" width="15" height="16" rx="4" fill="#16a34a" opacity="0.1"/>
+  <text x="525" y="455" font-size="11" fill="#666">6%</text>
+
+  <text x="400" y="505" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

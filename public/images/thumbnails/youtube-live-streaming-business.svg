@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="white" opacity="0.12"/>
+  <text x="600" y="200" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="72" fill="white">YouTube</text>
+  <text x="600" y="300" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="80" fill="#fef08a">ライブ配信</text>
+  <text x="600" y="390" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="64" fill="white">ビジネス活用法</text>
+  <rect x="380" y="430" width="440" height="60" rx="30" fill="white" opacity="0.2"/>
+  <text x="600" y="470" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="30" fill="white">視聴者との信頼を築く</text>
+  <circle cx="120" cy="520" r="50" fill="white" opacity="0.08"/>
+  <circle cx="1080" cy="120" r="70" fill="white" opacity="0.06"/>
+  <rect x="60" y="60" width="8" height="80" rx="4" fill="#fef08a" opacity="0.6"/>
+</svg>

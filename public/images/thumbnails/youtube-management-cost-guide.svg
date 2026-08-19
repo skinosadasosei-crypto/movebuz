@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="250" r="280" fill="#8b5cf6" opacity="0.03"/>
+  <!-- Yen symbol -->
+  <g transform="translate(400, 60)">
+    <circle cx="200" cy="180" r="140" fill="#8b5cf6" opacity="0.08" stroke="#8b5cf6" stroke-width="2" opacity="0.3"/>
+    <text x="200" y="215" text-anchor="middle" font-family="system-ui" font-size="120" font-weight="700" fill="#a78bfa" opacity="0.4">¥</text>
+  </g>
+  <!-- Cost breakdown bars -->
+  <g transform="translate(100, 120)">
+    <text x="0" y="15" font-family="system-ui" font-size="13" fill="#94a3b8">企画・構成</text>
+    <rect x="130" y="0" width="200" height="22" rx="4" fill="#7c3aed" opacity="0.5"/>
+    <text x="340" y="16" font-family="system-ui" font-size="13" fill="#c4b5fd">5〜10万円</text>
+
+    <text x="0" y="55" font-family="system-ui" font-size="13" fill="#94a3b8">撮影</text>
+    <rect x="130" y="40" width="300" height="22" rx="4" fill="#7c3aed" opacity="0.6"/>
+    <text x="440" y="56" font-family="system-ui" font-size="13" fill="#c4b5fd">10〜30万円</text>
+
+    <text x="0" y="95" font-family="system-ui" font-size="13" fill="#94a3b8">編集</text>
+    <rect x="130" y="80" width="250" height="22" rx="4" fill="#7c3aed" opacity="0.55"/>
+    <text x="390" y="96" font-family="system-ui" font-size="13" fill="#c4b5fd">5〜15万円</text>
+
+    <text x="0" y="135" font-family="system-ui" font-size="13" fill="#94a3b8">運用管理</text>
+    <rect x="130" y="120" width="350" height="22" rx="4" fill="#7c3aed" opacity="0.65"/>
+    <text x="490" y="136" font-family="system-ui" font-size="13" fill="#c4b5fd">10〜30万円</text>
+  </g>
+  <!-- Comparison card -->
+  <g transform="translate(700, 120)">
+    <rect x="0" y="0" width="400" height="160" rx="12" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="200" y="30" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="600" fill="#c4b5fd">月額コスト比較</text>
+    <line x1="20" y1="45" x2="380" y2="45" stroke="#7c3aed" opacity="0.3"/>
+    <text x="30" y="75" font-family="system-ui" font-size="13" fill="#94a3b8">自社チーム運用</text>
+    <text x="370" y="75" text-anchor="end" font-family="system-ui" font-size="16" font-weight="700" fill="#f87171">80〜150万</text>
+    <text x="30" y="110" font-family="system-ui" font-size="13" fill="#94a3b8">外注（丸投げ）</text>
+    <text x="370" y="110" text-anchor="end" font-family="system-ui" font-size="16" font-weight="700" fill="#fbbf24">30〜80万</text>
+    <text x="30" y="145" font-family="system-ui" font-size="13" fill="#94a3b8">外注（一部）</text>
+    <text x="370" y="145" text-anchor="end" font-family="system-ui" font-size="16" font-weight="700" fill="#4ade80">10〜30万</text>
+  </g>
+  <!-- Text -->
+  <text x="600" y="470" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">YouTube運用の費用相場と内訳</text>
+  <text x="600" y="505" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#c4b5fd">外注 vs 内製の費用対効果を比較</text>
+</svg>

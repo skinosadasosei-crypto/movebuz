@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import ArticleThumbnail from "./ArticleThumbnail";
 import CTA from "@/components/CTA";
 import { getArticleBySlug, getAllArticles, getAllArticlesWithGitHub } from "@/lib/articles";
 import type { Metadata } from "next";
@@ -128,6 +129,9 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
             <span className="text-muted/50">/</span>
             <span className="text-foreground truncate max-w-[200px]">{article.title}</span>
           </nav>
+
+          {/* Thumbnail */}
+          <ArticleThumbnail slug={slug} title={article.title} />
 
           {/* Header */}
           <div className="mb-10">

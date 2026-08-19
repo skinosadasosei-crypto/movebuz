@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <linearGradient id="rocket" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Stars -->
+  <circle cx="100" cy="80" r="2" fill="#fff" opacity="0.3"/><circle cx="300" cy="120" r="1.5" fill="#fff" opacity="0.25"/>
+  <circle cx="500" cy="60" r="2" fill="#fff" opacity="0.2"/><circle cx="700" cy="100" r="1.5" fill="#fff" opacity="0.3"/>
+  <circle cx="900" cy="80" r="2" fill="#fff" opacity="0.2"/><circle cx="1100" cy="130" r="1.5" fill="#fff" opacity="0.25"/>
+  <circle cx="200" cy="200" r="1" fill="#fff" opacity="0.15"/><circle cx="800" cy="180" r="1" fill="#fff" opacity="0.15"/>
+  <!-- Rocket -->
+  <g transform="translate(420, 60) rotate(15)">
+    <ellipse cx="180" cy="180" rx="40" ry="80" fill="#e2e8f0"/>
+    <ellipse cx="180" cy="150" rx="30" ry="30" fill="#ef4444"/>
+    <polygon points="150,260 180,310 210,260" fill="#f97316" opacity="0.8"/>
+    <polygon points="160,270 180,340 200,270" fill="#fbbf24" opacity="0.6"/>
+    <!-- Window -->
+    <circle cx="180" cy="180" r="15" fill="#1e3a5f" stroke="#93c5fd" stroke-width="2"/>
+    <!-- Fins -->
+    <polygon points="140,220 100,270 140,250" fill="#93c5fd" opacity="0.6"/>
+    <polygon points="220,220 260,270 220,250" fill="#93c5fd" opacity="0.6"/>
+  </g>
+  <!-- Steps -->
+  <g transform="translate(100, 340)">
+    <circle cx="50" cy="30" r="24" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="2"/>
+    <text x="50" y="37" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="700" fill="#60a5fa">1</text>
+    <text x="90" y="37" font-family="system-ui" font-size="14" fill="#94a3b8">チャンネル開設</text>
+    <line x1="200" y1="30" x2="240" y2="30" stroke="#334155" stroke-width="2"/>
+    <circle cx="290" cy="30" r="24" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="2"/>
+    <text x="290" y="37" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="700" fill="#60a5fa">2</text>
+    <text x="330" y="37" font-family="system-ui" font-size="14" fill="#94a3b8">初期設定</text>
+    <line x1="420" y1="30" x2="460" y2="30" stroke="#334155" stroke-width="2"/>
+    <circle cx="510" cy="30" r="24" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="2"/>
+    <text x="510" y="37" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="700" fill="#60a5fa">3</text>
+    <text x="550" y="37" font-family="system-ui" font-size="14" fill="#94a3b8">動画投稿</text>
+    <line x1="650" y1="30" x2="690" y2="30" stroke="#334155" stroke-width="2"/>
+    <circle cx="740" cy="30" r="24" fill="#22c55e" opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+    <text x="740" y="37" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="700" fill="#4ade80">4</text>
+    <text x="780" y="37" font-family="system-ui" font-size="14" fill="#94a3b8">運用開始</text>
+  </g>
+  <!-- Text -->
+  <text x="600" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">企業がYouTubeを始めるための完全ガイド</text>
+  <text x="600" y="515" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#93c5fd">開設から運用まで</text>
+</svg>

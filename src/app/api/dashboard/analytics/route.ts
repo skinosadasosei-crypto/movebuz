@@ -48,9 +48,17 @@ export async function GET(request: Request) {
     }
     return NextResponse.json({ configured: true, data });
   } catch (error) {
-    console.error("GA4 API error:", error);
+    console.error(`GA4 API error (type=${type}):`, error);
+    const message = error instanceof Error ? error.message : "Unknown error";
+    const isDemoError = type === "demographics" && message.includes("userAgeBracket");
     return NextResponse.json(
-      { configured: true, data: null, error: "Failed to fetch analytics data" },
+      {
+        configured: true,
+        data: null,
+        error: isDemoError
+          ? "デモグラフィックデータの取得に失敗しました。GA4で「Googleシグナル」が有効になっているか確認してください。"
+          : `データ取得エラー: ${message}`,
+      },
       { status: 500 }
     );
   }

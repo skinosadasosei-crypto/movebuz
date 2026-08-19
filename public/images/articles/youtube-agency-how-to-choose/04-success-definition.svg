@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d9488"/>
+      <stop offset="100%" style="stop-color:#14b8a6"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">成果定義のすり合わせ</text>
+
+  <!-- Left: Company side -->
+  <rect x="40" y="100" width="340" height="280" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="100" width="340" height="6" rx="3" fill="#0d9488"/>
+  <text x="210" y="138" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">🏢 自社の目標</text>
+  <line x1="70" y1="155" x2="350" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="65" y="170" width="290" height="45" rx="8" fill="#f0fdfa"/>
+  <text x="85" y="198" font-size="13" fill="#0f766e">📞 問い合わせ数の増加</text>
+
+  <rect x="65" y="225" width="290" height="45" rx="8" fill="#f0fdfa"/>
+  <text x="85" y="253" font-size="13" fill="#0f766e">🎯 ターゲット層へのリーチ</text>
+
+  <rect x="65" y="280" width="290" height="45" rx="8" fill="#f0fdfa"/>
+  <text x="85" y="308" font-size="13" fill="#0f766e">🤝 ブランド認知度の向上</text>
+
+  <rect x="65" y="335" width="290" height="30" rx="6" fill="#ccfbf1"/>
+  <text x="210" y="356" text-anchor="middle" font-size="11" fill="#115e59" font-weight="bold">企業チャンネルは登録者数より成果重視</text>
+
+  <!-- Center: Match arrow -->
+  <text x="400" y="250" text-anchor="middle" font-size="28" fill="#0d9488">⇄</text>
+  <text x="400" y="275" text-anchor="middle" font-size="11" fill="#0d9488" font-weight="bold">一致が重要</text>
+
+  <!-- Right: Agency side -->
+  <rect x="420" y="100" width="340" height="280" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="420" y="100" width="340" height="6" rx="3" fill="#14b8a6"/>
+  <text x="590" y="138" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">🏭 代行会社のKPI</text>
+  <line x1="450" y1="155" x2="730" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="445" y="170" width="290" height="45" rx="8" fill="#f0fdfa"/>
+  <text x="465" y="198" font-size="13" fill="#0f766e">📈 再生数・視聴時間</text>
+
+  <rect x="445" y="225" width="290" height="45" rx="8" fill="#f0fdfa"/>
+  <text x="465" y="253" font-size="13" fill="#0f766e">👥 チャンネル登録者数</text>
+
+  <rect x="445" y="280" width="290" height="45" rx="8" fill="#f0fdfa"/>
+  <text x="465" y="308" font-size="13" fill="#0f766e">🔍 CTR・エンゲージメント率</text>
+
+  <rect x="445" y="335" width="290" height="30" rx="6" fill="#ccfbf1"/>
+  <text x="590" y="356" text-anchor="middle" font-size="11" fill="#115e59" font-weight="bold">達成目標の現実性を確認</text>
+
+  <!-- Warning box -->
+  <rect x="80" y="410" width="640" height="70" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="115" y="440" font-size="18" fill="#dc2626">⚠</text>
+  <text x="145" y="442" font-size="14" font-weight="bold" fill="#dc2626">注意すべき約束</text>
+  <text x="145" y="467" font-size="13" fill="#991b1b">「3ヶ月で登録者1万人」のような非現実的な約束をする会社には注意</text>
+
+  <text x="400" y="510" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

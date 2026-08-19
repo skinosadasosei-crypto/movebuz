@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { ArticleMeta } from "@/lib/articles";
 
@@ -11,12 +15,26 @@ const categoryConfig: Record<string, { label: string; emoji: string; color: stri
 
 export default function ArticleCard({ article }: { article: ArticleMeta }) {
   const cat = categoryConfig[article.category] ?? { label: article.category, emoji: "📄", color: "bg-gray-50 text-gray-600" };
+  const thumbnailPath = `/images/thumbnails/${article.slug}.svg`;
+  const [imgError, setImgError] = useState(false);
 
   return (
     <Link href={`/blog/${article.slug}`} className="group block">
       <article className="bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
-        <div className="aspect-[16/9] ig-gradient flex items-center justify-center">
-          <span className="text-5xl opacity-90">{cat.emoji}</span>
+        <div className="aspect-[16/9] relative overflow-hidden">
+          {imgError ? (
+            <div className="absolute inset-0 ig-gradient flex items-center justify-center">
+              <span className="text-5xl opacity-90">{cat.emoji}</span>
+            </div>
+          ) : (
+            <Image
+              src={thumbnailPath}
+              alt={article.title}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              onError={() => setImgError(true)}
+            />
+          )}
         </div>
         <div className="p-5">
           <div className="flex items-center gap-2 mb-3">

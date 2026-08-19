@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles, CATEGORIES } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://douga-no-mikata.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
 
   const articles = getAllArticles().map((article) => ({
     url: `${baseUrl}/blog/${article.slug}`,

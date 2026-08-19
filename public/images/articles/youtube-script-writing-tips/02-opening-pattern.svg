@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#fdf4ff"/>
+  <text x="400" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">視聴者を掴むオープニング3パターン</text>
+  <g transform="translate(60,80)">
+    <rect width="210" height="320" rx="14" fill="white" stroke="#d946ef" stroke-width="2"/>
+    <rect width="210" height="50" rx="14" fill="#d946ef"/>
+    <rect y="36" width="210" height="14" fill="#d946ef"/>
+    <text x="105" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">問題提起型</text>
+    <text x="105" y="90" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="13" fill="#7c3aed">「こんな経験ありませんか？」</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#64748b">視聴者が抱える悩みを</text>
+    <text x="20" y="145" font-family="sans-serif" font-size="12" fill="#64748b">冒頭で言語化する</text>
+    <line x1="30" y1="170" x2="180" y2="170" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="105" y="200" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">例：</text>
+    <text x="20" y="225" font-family="sans-serif" font-size="11" fill="#64748b">「動画の再生数が全然</text>
+    <text x="20" y="243" font-family="sans-serif" font-size="11" fill="#64748b"> 伸びない…と悩んで</text>
+    <text x="20" y="261" font-family="sans-serif" font-size="11" fill="#64748b"> いませんか？」</text>
+    <rect x="30" y="290" width="150" height="30" rx="6" fill="#faf5ff"/>
+    <text x="105" y="310" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="11" fill="#7c3aed">共感を得やすい</text>
+  </g>
+  <g transform="translate(295,80)">
+    <rect width="210" height="320" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="210" height="50" rx="14" fill="#3b82f6"/>
+    <rect y="36" width="210" height="14" fill="#3b82f6"/>
+    <text x="105" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">結論先出し型</text>
+    <text x="105" y="90" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="13" fill="#2563eb">「結論から言うと◯◯です」</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#64748b">最初に答えを見せて</text>
+    <text x="20" y="145" font-family="sans-serif" font-size="12" fill="#64748b">理由を聞きたくさせる</text>
+    <line x1="30" y1="170" x2="180" y2="170" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="105" y="200" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">例：</text>
+    <text x="20" y="225" font-family="sans-serif" font-size="11" fill="#64748b">「この3つだけ変えれば</text>
+    <text x="20" y="243" font-family="sans-serif" font-size="11" fill="#64748b"> 再生数は2倍になり</text>
+    <text x="20" y="261" font-family="sans-serif" font-size="11" fill="#64748b"> ます」</text>
+    <rect x="30" y="290" width="150" height="30" rx="6" fill="#eff6ff"/>
+    <text x="105" y="310" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="11" fill="#2563eb">離脱を防ぎやすい</text>
+  </g>
+  <g transform="translate(530,80)">
+    <rect width="210" height="320" rx="14" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="210" height="50" rx="14" fill="#f59e0b"/>
+    <rect y="36" width="210" height="14" fill="#f59e0b"/>
+    <text x="105" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">実績提示型</text>
+    <text x="105" y="90" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="13" fill="#d97706">「実際に◯◯を達成しました」</text>
+    <text x="20" y="125" font-family="sans-serif" font-size="12" fill="#64748b">具体的な成果を見せて</text>
+    <text x="20" y="145" font-family="sans-serif" font-size="12" fill="#64748b">信頼性と期待を生む</text>
+    <line x1="30" y1="170" x2="180" y2="170" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="105" y="200" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">例：</text>
+    <text x="20" y="225" font-family="sans-serif" font-size="11" fill="#64748b">「この方法で登録者</text>
+    <text x="20" y="243" font-family="sans-serif" font-size="11" fill="#64748b"> 1万人を達成した</text>
+    <text x="20" y="261" font-family="sans-serif" font-size="11" fill="#64748b"> やり方をお話しします」</text>
+    <rect x="30" y="290" width="150" height="30" rx="6" fill="#fffbeb"/>
+    <text x="105" y="310" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="11" fill="#d97706">権威性が出やすい</text>
+  </g>
+</svg>

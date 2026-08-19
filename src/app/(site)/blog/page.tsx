@@ -3,9 +3,26 @@ import CTA from "@/components/CTA";
 import { getAllArticlesWithGitHub, CATEGORIES } from "@/lib/articles";
 import Link from "next/link";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
+
+const ogImage = `${siteUrl}/api/og`;
+
 export const metadata = {
   title: "記事一覧",
   description: "YouTube運用・動画マーケティングに関する最新記事の一覧です。",
+  alternates: {
+    canonical: `${siteUrl}/blog`,
+  },
+  openGraph: {
+    title: "記事一覧 | MOVeBUZ",
+    description: "YouTube運用・動画マーケティングに関する最新記事の一覧です。",
+    url: `${siteUrl}/blog`,
+    images: [{ url: ogImage, width: 1200, height: 630, type: "image/png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [ogImage],
+  },
 };
 
 export default async function BlogPage({

@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="900" cy="200" r="250" fill="#f97316" opacity="0.04"/>
+  <!-- Company buildings -->
+  <g transform="translate(80, 120)">
+    <!-- Building 1 -->
+    <rect x="0" y="100" width="100" height="200" rx="6" fill="#292524" stroke="#f97316" stroke-width="2" opacity="0.6"/>
+    <rect x="15" y="120" width="20" height="20" rx="2" fill="#f97316" opacity="0.3"/>
+    <rect x="45" y="120" width="20" height="20" rx="2" fill="#f97316" opacity="0.3"/>
+    <rect x="15" y="155" width="20" height="20" rx="2" fill="#f97316" opacity="0.3"/>
+    <rect x="45" y="155" width="20" height="20" rx="2" fill="#f97316" opacity="0.3"/>
+    <rect x="15" y="190" width="20" height="20" rx="2" fill="#f97316" opacity="0.3"/>
+    <rect x="45" y="190" width="20" height="20" rx="2" fill="#f97316" opacity="0.3"/>
+    <!-- Arrow up -->
+    <g transform="translate(50, 50)">
+      <circle cx="0" cy="0" r="25" fill="#22c55e" opacity="0.2"/>
+      <text x="0" y="8" text-anchor="middle" font-family="system-ui" font-size="24" fill="#4ade80">↑</text>
+    </g>
+  </g>
+  <!-- YouTube play button with search -->
+  <g transform="translate(400, 100)">
+    <rect x="0" y="30" width="400" height="240" rx="20" fill="#292524" stroke="#f97316" stroke-width="2"/>
+    <!-- Play button -->
+    <circle cx="200" cy="140" r="50" fill="#ef4444" opacity="0.8"/>
+    <polygon points="185,115 185,165 225,140" fill="#fff"/>
+    <!-- Search bar overlay -->
+    <rect x="30" y="50" width="340" height="40" rx="20" fill="#1c1917" stroke="#78716c" stroke-width="1.5"/>
+    <text x="60" y="76" font-family="system-ui" font-size="14" fill="#a8a29e">中小企業 YouTube 活用</text>
+    <circle cx="340" cy="70" r="14" fill="#f97316" opacity="0.3"/>
+    <text x="340" y="76" text-anchor="middle" font-family="system-ui" font-size="16" fill="#fdba74">🔍</text>
+  </g>
+  <!-- Success checkmarks -->
+  <g transform="translate(880, 120)">
+    <rect x="0" y="0" width="220" height="60" rx="10" fill="#292524" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="14" fill="#22c55e" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" font-family="system-ui" font-size="16" fill="#4ade80">✓</text>
+    <text x="55" y="28" font-family="system-ui" font-size="12" fill="#a8a29e">売上</text>
+    <text x="55" y="46" font-family="system-ui" font-size="18" font-weight="700" fill="#fbbf24">+150%</text>
+  </g>
+  <g transform="translate(880, 200)">
+    <rect x="0" y="0" width="220" height="60" rx="10" fill="#292524" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="14" fill="#22c55e" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" font-family="system-ui" font-size="16" fill="#4ade80">✓</text>
+    <text x="55" y="28" font-family="system-ui" font-size="12" fill="#a8a29e">採用応募</text>
+    <text x="55" y="46" font-family="system-ui" font-size="18" font-weight="700" fill="#fbbf24">+200%</text>
+  </g>
+  <g transform="translate(880, 280)">
+    <rect x="0" y="0" width="220" height="60" rx="10" fill="#292524" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="14" fill="#22c55e" opacity="0.2"/>
+    <text x="30" y="36" text-anchor="middle" font-family="system-ui" font-size="16" fill="#4ade80">✓</text>
+    <text x="55" y="28" font-family="system-ui" font-size="12" fill="#a8a29e">認知度</text>
+    <text x="55" y="46" font-family="system-ui" font-size="18" font-weight="700" fill="#fbbf24">+300%</text>
+  </g>
+  <!-- Text -->
+  <text x="600" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">中小企業のYouTube活用事例5選</text>
+  <text x="600" y="515" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fdba74">少ない予算でも成果を出すポイント</text>
+</svg>

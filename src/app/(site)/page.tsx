@@ -1,7 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
 import CTA from "@/components/CTA";
 import { getAllArticlesWithGitHub, CATEGORIES } from "@/lib/articles";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
+
+const ogImage = `${siteUrl}/api/og`;
+
+export const metadata: Metadata = {
+  title: { absolute: "MOVeBUZ | YouTube運用・動画マーケティングの専門メディア" },
+  description: "企業のYouTube運用・動画マーケティングを支援する専門メディア。チャンネル戦略から撮影・編集・分析まで、プロのノウハウを発信します。",
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    title: "MOVeBUZ | YouTube運用・動画マーケティングの専門メディア",
+    description: "企業のYouTube運用・動画マーケティングを支援する専門メディア。",
+    url: siteUrl,
+    images: [{ url: ogImage, width: 1200, height: 630, type: "image/png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [ogImage],
+  },
+};
 
 export default async function Home() {
   const articles = await getAllArticlesWithGitHub();

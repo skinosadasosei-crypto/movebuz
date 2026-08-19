@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0fdf4"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">YouTube広告のターゲティング手法</text>
+  <g transform="translate(50,75)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <rect width="340" height="40" rx="12" fill="#22c55e"/>
+    <rect y="28" width="340" height="12" fill="#22c55e"/>
+    <text x="170" y="28" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">ユーザー属性ターゲティング</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="13" fill="#475569">・年齢（18-24, 25-34 ...）</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="13" fill="#475569">・性別（男性・女性）</text>
+    <text x="25" y="112" font-family="sans-serif" font-size="13" fill="#475569">・子供の有無</text>
+    <text x="25" y="134" font-family="sans-serif" font-size="13" fill="#475569">・世帯年収</text>
+  </g>
+  <g transform="translate(410,75)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="340" height="40" rx="12" fill="#3b82f6"/>
+    <rect y="28" width="340" height="12" fill="#3b82f6"/>
+    <text x="170" y="28" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">興味・関心ターゲティング</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="13" fill="#475569">・アフィニティ（大まかな興味）</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="13" fill="#475569">・購買意向（購入を検討中の層）</text>
+    <text x="25" y="112" font-family="sans-serif" font-size="13" fill="#475569">・カスタムオーディエンス</text>
+    <text x="25" y="134" font-family="sans-serif" font-size="13" fill="#475569">・ライフイベント（引越し等）</text>
+  </g>
+  <g transform="translate(50,260)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="340" height="40" rx="12" fill="#f59e0b"/>
+    <rect y="28" width="340" height="12" fill="#f59e0b"/>
+    <text x="170" y="28" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">コンテンツターゲティング</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="13" fill="#475569">・特定チャンネルへの配信</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="13" fill="#475569">・特定動画への配信</text>
+    <text x="25" y="112" font-family="sans-serif" font-size="13" fill="#475569">・キーワード（動画内容）</text>
+    <text x="25" y="134" font-family="sans-serif" font-size="13" fill="#475569">・トピック（カテゴリ）</text>
+  </g>
+  <g transform="translate(410,260)">
+    <rect width="340" height="160" rx="12" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <rect width="340" height="40" rx="12" fill="#ec4899"/>
+    <rect y="28" width="340" height="12" fill="#ec4899"/>
+    <text x="170" y="28" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">リマーケティング</text>
+    <text x="25" y="68" font-family="sans-serif" font-size="13" fill="#475569">・自社動画の視聴者</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="13" fill="#475569">・チャンネル登録者</text>
+    <text x="25" y="112" font-family="sans-serif" font-size="13" fill="#475569">・Webサイト訪問者</text>
+    <text x="25" y="134" font-family="sans-serif" font-size="13" fill="#475569">・顧客リスト（メールアドレス）</text>
+  </g>
+</svg>

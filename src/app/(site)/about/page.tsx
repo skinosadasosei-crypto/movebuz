@@ -1,10 +1,27 @@
 import Link from "next/link";
 import CTA from "@/components/CTA";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app";
+
+const ogImage = `${siteUrl}/api/og`;
+
 export const metadata = {
   title: "サービス紹介",
   description:
     "YouTube制作・運用代行サービスの詳細。企画から撮影・編集・分析まで、チャンネル運用を丸ごとサポートします。",
+  alternates: {
+    canonical: `${siteUrl}/about`,
+  },
+  openGraph: {
+    title: "サービス紹介 | MOVeBUZ",
+    description: "YouTube制作・運用代行サービスの詳細。企画から撮影・編集・分析まで、チャンネル運用を丸ごとサポートします。",
+    url: `${siteUrl}/about`,
+    images: [{ url: ogImage, width: 1200, height: 630, type: "image/png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [ogImage],
+  },
 };
 
 export default function AboutPage() {

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0fdf4"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">視聴維持率を高める台本テクニック</text>
+  <g transform="translate(50,75)">
+    <rect width="330" height="80" rx="12" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#22c55e"/>
+    <text x="40" y="46" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">1</text>
+    <text x="80" y="30" font-family="sans-serif" font-weight="700" font-size="15" fill="#166534">ループ構造を使う</text>
+    <text x="80" y="52" font-family="sans-serif" font-size="12" fill="#64748b">「次のポイントが一番大事です」</text>
+    <text x="80" y="68" font-family="sans-serif" font-size="12" fill="#64748b">で次の話題への橋渡しをする</text>
+  </g>
+  <g transform="translate(420,75)">
+    <rect width="330" height="80" rx="12" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#3b82f6"/>
+    <text x="40" y="46" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">2</text>
+    <text x="80" y="30" font-family="sans-serif" font-weight="700" font-size="15" fill="#1e3a5f">パターンブレイク</text>
+    <text x="80" y="52" font-family="sans-serif" font-size="12" fill="#64748b">2〜3分ごとに話の展開や</text>
+    <text x="80" y="68" font-family="sans-serif" font-size="12" fill="#64748b">演出を変えて飽きさせない</text>
+  </g>
+  <g transform="translate(50,180)">
+    <rect width="330" height="80" rx="12" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#f59e0b"/>
+    <text x="40" y="46" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">3</text>
+    <text x="80" y="30" font-family="sans-serif" font-weight="700" font-size="15" fill="#92400e">オープループ</text>
+    <text x="80" y="52" font-family="sans-serif" font-size="12" fill="#64748b">冒頭で伏線を張り、後半で</text>
+    <text x="80" y="68" font-family="sans-serif" font-size="12" fill="#64748b">回収する構成で最後まで見せる</text>
+  </g>
+  <g transform="translate(420,180)">
+    <rect width="330" height="80" rx="12" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#ec4899"/>
+    <text x="40" y="46" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">4</text>
+    <text x="80" y="30" font-family="sans-serif" font-weight="700" font-size="15" fill="#831843">具体例を挟む</text>
+    <text x="80" y="52" font-family="sans-serif" font-size="12" fill="#64748b">抽象的な話の後に必ず</text>
+    <text x="80" y="68" font-family="sans-serif" font-size="12" fill="#64748b">事例やビフォーアフターを入れる</text>
+  </g>
+  <g transform="translate(50,290)">
+    <rect width="700" height="130" rx="14" fill="#dcfce7" stroke="#86efac" stroke-width="1.5"/>
+    <text x="350" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#166534">台本チェックリスト</text>
+    <text x="40" y="60" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 冒頭15秒で視聴者の悩みに触れているか</text>
+    <text x="40" y="82" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 2〜3分ごとに展開の変化があるか</text>
+    <text x="380" y="60" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 話し言葉で自然に読める文章か</text>
+    <text x="380" y="82" font-family="sans-serif" font-size="13" fill="#15803d">[ ] エンディングにCTAが含まれているか</text>
+    <text x="40" y="108" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 1つの話題は3分以内に収まっているか</text>
+    <text x="380" y="108" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 抽象→具体例のセットになっているか</text>
+  </g>
+</svg>

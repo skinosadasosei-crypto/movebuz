@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e4429"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Content idea cards floating -->
+  <g transform="translate(80, 60)">
+    <!-- Card 1 -->
+    <g transform="rotate(-5, 150, 100)">
+      <rect x="0" y="0" width="280" height="160" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5"/>
+      <rect x="15" y="15" width="250" height="80" rx="6" fill="#0f2920"/>
+      <text x="140" y="60" text-anchor="middle" font-family="system-ui" font-size="30" fill="#4ade80" opacity="0.5">💡</text>
+      <text x="15" y="120" font-family="system-ui" font-size="13" font-weight="600" fill="#86efac">ノウハウ解説動画</text>
+      <text x="15" y="140" font-family="system-ui" font-size="11" fill="#6b8f78">業界の専門知識を共有</text>
+    </g>
+    <!-- Card 2 -->
+    <g transform="translate(350, 20) rotate(3, 140, 80)">
+      <rect x="0" y="0" width="280" height="160" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5"/>
+      <rect x="15" y="15" width="250" height="80" rx="6" fill="#0f2920"/>
+      <text x="140" y="60" text-anchor="middle" font-family="system-ui" font-size="30" fill="#4ade80" opacity="0.5">🎤</text>
+      <text x="15" y="120" font-family="system-ui" font-size="13" font-weight="600" fill="#86efac">社員インタビュー</text>
+      <text x="15" y="140" font-family="system-ui" font-size="11" fill="#6b8f78">企業文化と人材の魅力</text>
+    </g>
+    <!-- Card 3 -->
+    <g transform="translate(700, 0) rotate(-2, 140, 80)">
+      <rect x="0" y="0" width="280" height="160" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5"/>
+      <rect x="15" y="15" width="250" height="80" rx="6" fill="#0f2920"/>
+      <text x="140" y="60" text-anchor="middle" font-family="system-ui" font-size="30" fill="#4ade80" opacity="0.5">📊</text>
+      <text x="15" y="120" font-family="system-ui" font-size="13" font-weight="600" fill="#86efac">事例紹介・実績</text>
+      <text x="15" y="140" font-family="system-ui" font-size="11" fill="#6b8f78">信頼構築の最強コンテンツ</text>
+    </g>
+    <!-- Card 4 -->
+    <g transform="translate(150, 210) rotate(2, 140, 80)">
+      <rect x="0" y="0" width="280" height="160" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5"/>
+      <rect x="15" y="15" width="250" height="80" rx="6" fill="#0f2920"/>
+      <text x="140" y="60" text-anchor="middle" font-family="system-ui" font-size="30" fill="#4ade80" opacity="0.5">🏭</text>
+      <text x="15" y="120" font-family="system-ui" font-size="13" font-weight="600" fill="#86efac">製品デモ・使い方</text>
+      <text x="15" y="140" font-family="system-ui" font-size="11" fill="#6b8f78">視覚的にわかりやすく紹介</text>
+    </g>
+    <!-- Card 5 -->
+    <g transform="translate(520, 220) rotate(-3, 140, 80)">
+      <rect x="0" y="0" width="280" height="160" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5"/>
+      <rect x="15" y="15" width="250" height="80" rx="6" fill="#0f2920"/>
+      <text x="140" y="60" text-anchor="middle" font-family="system-ui" font-size="30" fill="#4ade80" opacity="0.5">🎓</text>
+      <text x="15" y="120" font-family="system-ui" font-size="13" font-weight="600" fill="#86efac">セミナー・ウェビナー</text>
+      <text x="15" y="140" font-family="system-ui" font-size="11" fill="#6b8f78">リード獲得の入口</text>
+    </g>
+  </g>
+  <!-- Text -->
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">BtoB企業向けYouTubeコンテンツアイデア15選</text>
+  <text x="600" y="555" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#86efac">商談につながる動画企画の立て方</text>
+</svg>

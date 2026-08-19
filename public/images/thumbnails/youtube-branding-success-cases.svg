@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="250" r="300" fill="#22c55e" opacity="0.04"/>
+  <!-- Trophy -->
+  <g transform="translate(450, 60)">
+    <path d="M100,80 L100,40 C100,20 120,0 150,0 C180,0 200,20 200,40 L200,80" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+    <rect x="80" y="80" width="140" height="100" rx="10" fill="url(#gold)" opacity="0.2" stroke="#fbbf24" stroke-width="3"/>
+    <text x="150" y="145" text-anchor="middle" font-family="system-ui" font-size="40" fill="#fbbf24">★</text>
+    <rect x="120" y="180" width="60" height="20" rx="4" fill="#fbbf24" opacity="0.3"/>
+    <rect x="100" y="200" width="100" height="12" rx="6" fill="#fbbf24" opacity="0.5"/>
+    <!-- Left handle -->
+    <path d="M80,95 C40,95 20,120 30,150 C35,165 55,175 80,170" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.6"/>
+    <!-- Right handle -->
+    <path d="M220,95 C260,95 280,120 270,150 C265,165 245,175 220,170" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.6"/>
+  </g>
+  <!-- Success metrics -->
+  <g transform="translate(100, 300)">
+    <rect x="0" y="0" width="300" height="80" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5" opacity="0.8"/>
+    <text x="25" y="35" font-family="system-ui" font-size="14" fill="#86efac">チャンネル登録者数</text>
+    <text x="25" y="62" font-family="system-ui" font-size="24" font-weight="700" fill="#4ade80">+340%</text>
+    <text x="230" y="55" font-family="system-ui" font-size="28" fill="#22c55e" opacity="0.5">↑</text>
+  </g>
+  <g transform="translate(450, 300)">
+    <rect x="0" y="0" width="300" height="80" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5" opacity="0.8"/>
+    <text x="25" y="35" font-family="system-ui" font-size="14" fill="#86efac">ブランド認知度</text>
+    <text x="25" y="62" font-family="system-ui" font-size="24" font-weight="700" fill="#4ade80">+210%</text>
+    <text x="230" y="55" font-family="system-ui" font-size="28" fill="#22c55e" opacity="0.5">↑</text>
+  </g>
+  <g transform="translate(800, 300)">
+    <rect x="0" y="0" width="300" height="80" rx="12" fill="#1a3a2a" stroke="#22c55e" stroke-width="1.5" opacity="0.8"/>
+    <text x="25" y="35" font-family="system-ui" font-size="14" fill="#86efac">問い合わせ数</text>
+    <text x="25" y="62" font-family="system-ui" font-size="24" font-weight="700" fill="#4ade80">+180%</text>
+    <text x="230" y="55" font-family="system-ui" font-size="28" fill="#22c55e" opacity="0.5">↑</text>
+  </g>
+  <!-- Text -->
+  <text x="600" y="470" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">YouTubeで企業ブランディングに成功した事例3選</text>
+  <text x="600" y="505" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#86efac">動画で信頼をつくる方法</text>
+</svg>

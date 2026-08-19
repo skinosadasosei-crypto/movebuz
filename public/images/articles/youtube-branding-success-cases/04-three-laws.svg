@@ -1,0 +1,53 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">ブランディング成功の3法則</text>
+
+  <!-- Law 1 -->
+  <rect x="40" y="100" width="720" height="110" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="100" width="8" height="110" rx="4" fill="#7c3aed"/>
+  <circle cx="95" cy="155" r="28" fill="#ede9fe"/>
+  <text x="95" y="162" text-anchor="middle" font-size="22" font-weight="bold" fill="#7c3aed">1</text>
+  <text x="140" y="140" font-size="18" font-weight="bold" fill="#333">自社の宣伝を前面に出さない</text>
+  <text x="140" y="167" font-size="13" fill="#666">動画の主役は「視聴者の知りたいこと」</text>
+  <text x="140" y="190" font-size="13" fill="#666">視聴者にとって価値のある情報提供に集中する</text>
+  <rect x="590" y="130" width="140" height="50" rx="10" fill="#ede9fe"/>
+  <text x="660" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed">視聴者ファースト</text>
+  <text x="660" y="170" text-anchor="middle" font-size="11" fill="#7c3aed">宣伝は控えめに</text>
+
+  <!-- Law 2 -->
+  <rect x="40" y="230" width="720" height="110" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="230" width="8" height="110" rx="4" fill="#a855f7"/>
+  <circle cx="95" cy="285" r="28" fill="#f3e8ff"/>
+  <text x="95" y="292" text-anchor="middle" font-size="22" font-weight="bold" fill="#a855f7">2</text>
+  <text x="140" y="270" font-size="18" font-weight="bold" fill="#333">「人」が見えるコンテンツを作る</text>
+  <text x="140" y="297" font-size="13" fill="#666">「この会社にはこういう人がいる」が最強のブランド資産</text>
+  <text x="140" y="320" font-size="13" fill="#666">社員の顔・声・考え方が伝わるコンテンツを制作</text>
+  <rect x="590" y="260" width="140" height="50" rx="10" fill="#f3e8ff"/>
+  <text x="660" y="282" text-anchor="middle" font-size="12" font-weight="bold" fill="#a855f7">人柄が信頼に</text>
+  <text x="660" y="300" text-anchor="middle" font-size="11" fill="#a855f7">テキストでは不可</text>
+
+  <!-- Law 3 -->
+  <rect x="40" y="360" width="720" height="110" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="360" width="8" height="110" rx="4" fill="#c084fc"/>
+  <circle cx="95" cy="415" r="28" fill="#faf5ff"/>
+  <text x="95" y="422" text-anchor="middle" font-size="22" font-weight="bold" fill="#c084fc">3</text>
+  <text x="140" y="400" font-size="18" font-weight="bold" fill="#333">短期の成果を求めない</text>
+  <text x="140" y="427" font-size="13" fill="#666">ブランディング効果は数値に現れるまで時間がかかる</text>
+  <text x="140" y="450" font-size="13" fill="#666">「動画を見た」の声が自然に増えるかを中長期で観察</text>
+  <rect x="590" y="390" width="140" height="50" rx="10" fill="#faf5ff"/>
+  <text x="660" y="412" text-anchor="middle" font-size="12" font-weight="bold" fill="#c084fc">中長期で判断</text>
+  <text x="660" y="430" text-anchor="middle" font-size="11" fill="#c084fc">再生数だけで見ない</text>
+
+  <text x="400" y="505" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

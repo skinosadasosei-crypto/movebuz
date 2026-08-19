@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Studio UI mockup -->
+  <g transform="translate(100, 50)">
+    <!-- Window frame -->
+    <rect x="0" y="0" width="1000" height="420" rx="12" fill="#1a1f2e" stroke="#334155" stroke-width="2"/>
+    <!-- Title bar -->
+    <rect x="0" y="0" width="1000" height="40" rx="12" fill="#1e293b"/>
+    <rect x="0" y="28" width="1000" height="12" fill="#1e293b"/>
+    <circle cx="24" cy="20" r="6" fill="#ef4444" opacity="0.7"/>
+    <circle cx="44" cy="20" r="6" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="64" cy="20" r="6" fill="#22c55e" opacity="0.7"/>
+    <text x="500" y="25" text-anchor="middle" font-family="system-ui" font-size="12" fill="#64748b">YouTube Studio</text>
+    <!-- Sidebar -->
+    <rect x="0" y="40" width="180" height="380" fill="#111827"/>
+    <rect x="12" y="60" width="156" height="32" rx="6" fill="#1d4ed8" opacity="0.3"/>
+    <text x="90" y="82" text-anchor="middle" font-family="system-ui" font-size="11" fill="#93c5fd">ダッシュボード</text>
+    <rect x="12" y="100" width="156" height="28" rx="6" fill="transparent"/>
+    <text x="90" y="119" text-anchor="middle" font-family="system-ui" font-size="11" fill="#64748b">コンテンツ</text>
+    <rect x="12" y="136" width="156" height="28" rx="6" fill="transparent"/>
+    <text x="90" y="155" text-anchor="middle" font-family="system-ui" font-size="11" fill="#64748b">アナリティクス</text>
+    <rect x="12" y="172" width="156" height="28" rx="6" fill="transparent"/>
+    <text x="90" y="191" text-anchor="middle" font-family="system-ui" font-size="11" fill="#64748b">コメント</text>
+    <!-- Main content area -->
+    <g transform="translate(200, 60)">
+      <!-- Metric cards -->
+      <rect x="0" y="0" width="240" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="28" font-family="system-ui" font-size="11" fill="#94a3b8">視聴回数</text>
+      <text x="16" y="60" font-family="system-ui" font-size="26" font-weight="700" fill="#e2e8f0">12,458</text>
+      <text x="16" y="78" font-family="system-ui" font-size="11" fill="#4ade80">▲ 23.5%</text>
+      <rect x="260" y="0" width="240" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="276" y="28" font-family="system-ui" font-size="11" fill="#94a3b8">総再生時間</text>
+      <text x="276" y="60" font-family="system-ui" font-size="26" font-weight="700" fill="#e2e8f0">847h</text>
+      <text x="276" y="78" font-family="system-ui" font-size="11" fill="#4ade80">▲ 15.2%</text>
+      <rect x="520" y="0" width="240" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="536" y="28" font-family="system-ui" font-size="11" fill="#94a3b8">チャンネル登録者</text>
+      <text x="536" y="60" font-family="system-ui" font-size="26" font-weight="700" fill="#e2e8f0">2,340</text>
+      <text x="536" y="78" font-family="system-ui" font-size="11" fill="#4ade80">▲ 8.7%</text>
+      <!-- Chart area -->
+      <rect x="0" y="110" width="780" height="230" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <polyline points="30,280 130,260 230,240 330,200 430,220 530,160 630,140 730,100" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,-50)"/>
+      <text x="16" y="135" font-family="system-ui" font-size="12" fill="#94a3b8">過去28日間のパフォーマンス</text>
+    </g>
+  </g>
+  <!-- Text -->
+  <text x="600" y="540" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">YouTube Studio完全ガイド</text>
+  <text x="600" y="575" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">初心者が最初に覚えるべき5つの機能</text>
+</svg>

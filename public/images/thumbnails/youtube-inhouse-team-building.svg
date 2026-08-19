@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop stop-color="#059669"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="520" height="510" rx="24" fill="white" opacity="0.12"/>
+  <text x="100" y="155" font-family="sans-serif" font-weight="900" font-size="64" fill="white">社内チーム</text>
+  <text x="100" y="240" font-family="sans-serif" font-weight="900" font-size="64" fill="white">の作り方</text>
+  <text x="100" y="320" font-family="sans-serif" font-weight="700" font-size="32" fill="#a7f3d0">YouTube運用の</text>
+  <text x="100" y="365" font-family="sans-serif" font-weight="700" font-size="32" fill="#a7f3d0">体制構築ガイド</text>
+  <rect x="100" y="410" width="280" height="50" rx="25" fill="white" opacity="0.2"/>
+  <text x="240" y="442" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="white">ワークフロー付き</text>
+  <g transform="translate(700,100)">
+    <circle cx="100" cy="60" r="50" fill="white" opacity="0.2"/>
+    <text x="100" y="55" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">プロデュー</text>
+    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">サー</text>
+  </g>
+  <line x1="750" y1="160" x2="700" y2="240" stroke="white" stroke-width="2" opacity="0.4"/>
+  <line x1="800" y1="160" x2="800" y2="240" stroke="white" stroke-width="2" opacity="0.4"/>
+  <line x1="850" y1="160" x2="900" y2="240" stroke="white" stroke-width="2" opacity="0.4"/>
+  <g transform="translate(630,240)">
+    <circle cx="70" cy="50" r="42" fill="white" opacity="0.2"/>
+    <text x="70" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">企画</text>
+  </g>
+  <g transform="translate(740,240)">
+    <circle cx="60" cy="50" r="42" fill="white" opacity="0.2"/>
+    <text x="60" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">制作</text>
+  </g>
+  <g transform="translate(850,240)">
+    <circle cx="50" cy="50" r="42" fill="white" opacity="0.2"/>
+    <text x="50" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">分析</text>
+  </g>
+  <g transform="translate(650,380)">
+    <rect width="450" height="55" rx="12" fill="white" opacity="0.15"/>
+    <text x="225" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="white">内製 × 外注のハイブリッド体制</text>
+  </g>
+  <g transform="translate(650,460)">
+    <rect width="450" height="55" rx="12" fill="white" opacity="0.15"/>
+    <text x="225" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="white">1〜2人からスタート可能</text>
+  </g>
+</svg>

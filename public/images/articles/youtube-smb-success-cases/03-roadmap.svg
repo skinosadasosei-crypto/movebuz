@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#faf5ff"/>
+  <text x="400" y="40" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">中小企業YouTube成功のロードマップ</text>
+  <line x1="400" y1="70" x2="400" y2="420" stroke="#d8b4fe" stroke-width="3"/>
+  <g transform="translate(420,70)">
+    <rect width="330" height="75" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="15" y="25" font-family="sans-serif" font-weight="700" font-size="14" fill="#5b21b6">Phase 1：準備期（1ヶ月目）</text>
+    <text x="15" y="45" font-family="sans-serif" font-size="11" fill="#64748b">ターゲット設定・競合分析・チャンネル設計</text>
+    <text x="15" y="63" font-family="sans-serif" font-size="11" fill="#64748b">最初の5本分の企画を作成する</text>
+  </g>
+  <circle cx="400" cy="107" r="8" fill="#8b5cf6"/>
+  <g transform="translate(50,155)">
+    <rect width="330" height="75" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="15" y="25" font-family="sans-serif" font-weight="700" font-size="14" fill="#1e40af">Phase 2：立ち上げ期（2〜4ヶ月目）</text>
+    <text x="15" y="45" font-family="sans-serif" font-size="11" fill="#64748b">週1本ペースで投稿を継続する</text>
+    <text x="15" y="63" font-family="sans-serif" font-size="11" fill="#64748b">CTR・視聴維持率を改善指標にする</text>
+  </g>
+  <circle cx="400" cy="192" r="8" fill="#3b82f6"/>
+  <g transform="translate(420,240)">
+    <rect width="330" height="75" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="15" y="25" font-family="sans-serif" font-weight="700" font-size="14" fill="#166534">Phase 3：成長期（5〜9ヶ月目）</text>
+    <text x="15" y="45" font-family="sans-serif" font-size="11" fill="#64748b">勝ちパターンを横展開する</text>
+    <text x="15" y="63" font-family="sans-serif" font-size="11" fill="#64748b">SNS連携・ショート動画を追加する</text>
+  </g>
+  <circle cx="400" cy="277" r="8" fill="#22c55e"/>
+  <g transform="translate(50,325)">
+    <rect width="330" height="75" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="15" y="25" font-family="sans-serif" font-weight="700" font-size="14" fill="#92400e">Phase 4：収益化期（10ヶ月目〜）</text>
+    <text x="15" y="45" font-family="sans-serif" font-size="11" fill="#64748b">リード獲得・採用・ブランディングの</text>
+    <text x="15" y="63" font-family="sans-serif" font-size="11" fill="#64748b">成果をビジネス指標で計測する</text>
+  </g>
+  <circle cx="400" cy="362" r="8" fill="#f59e0b"/>
+</svg>

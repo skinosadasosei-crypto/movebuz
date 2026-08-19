@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f5f3ff"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">フェーズ別KPI設定の目安</text>
+  <g transform="translate(50,75)">
+    <rect width="220" height="340" rx="14" fill="white" stroke="#667eea" stroke-width="2"/>
+    <rect width="220" height="50" rx="14" fill="#667eea"/>
+    <rect y="36" width="220" height="14" fill="#667eea"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">立ち上げ期</text>
+    <text x="110" y="80" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#4338ca">0〜6ヶ月目</text>
+    <line x1="20" y1="95" x2="200" y2="95" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="120" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">重視する指標</text>
+    <text x="20" y="142" font-family="sans-serif" font-size="11" fill="#64748b">・投稿本数（月4本以上）</text>
+    <text x="20" y="160" font-family="sans-serif" font-size="11" fill="#64748b">・CTR（4%以上）</text>
+    <text x="20" y="178" font-family="sans-serif" font-size="11" fill="#64748b">・視聴維持率（40%以上）</text>
+    <line x1="20" y1="198" x2="200" y2="198" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="220" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">目標の例</text>
+    <text x="20" y="242" font-family="sans-serif" font-size="11" fill="#64748b">・登録者 500人</text>
+    <text x="20" y="260" font-family="sans-serif" font-size="11" fill="#64748b">・月間再生 5,000回</text>
+    <line x1="20" y1="280" x2="200" y2="280" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="305" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">注力ポイント</text>
+    <text x="20" y="327" font-family="sans-serif" font-size="11" fill="#64748b">投稿頻度と品質の</text>
+    <text x="20" y="345" font-family="sans-serif" font-size="11" fill="#64748b">ベースライン確立</text>
+  </g>
+  <g transform="translate(290,75)">
+    <rect width="220" height="340" rx="14" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="220" height="50" rx="14" fill="#8b5cf6"/>
+    <rect y="36" width="220" height="14" fill="#8b5cf6"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">成長期</text>
+    <text x="110" y="80" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#6d28d9">6〜18ヶ月目</text>
+    <line x1="20" y1="95" x2="200" y2="95" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="120" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">重視する指標</text>
+    <text x="20" y="142" font-family="sans-serif" font-size="11" fill="#64748b">・登録者増加率</text>
+    <text x="20" y="160" font-family="sans-serif" font-size="11" fill="#64748b">・月間総再生時間</text>
+    <text x="20" y="178" font-family="sans-serif" font-size="11" fill="#64748b">・エンゲージメント率</text>
+    <line x1="20" y1="198" x2="200" y2="198" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="220" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">目標の例</text>
+    <text x="20" y="242" font-family="sans-serif" font-size="11" fill="#64748b">・登録者 3,000人</text>
+    <text x="20" y="260" font-family="sans-serif" font-size="11" fill="#64748b">・月間再生 30,000回</text>
+    <line x1="20" y1="280" x2="200" y2="280" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="305" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">注力ポイント</text>
+    <text x="20" y="327" font-family="sans-serif" font-size="11" fill="#64748b">ヒット動画の型を</text>
+    <text x="20" y="345" font-family="sans-serif" font-size="11" fill="#64748b">見つけて横展開</text>
+  </g>
+  <g transform="translate(530,75)">
+    <rect width="220" height="340" rx="14" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <rect width="220" height="50" rx="14" fill="#ec4899"/>
+    <rect y="36" width="220" height="14" fill="#ec4899"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">収益化期</text>
+    <text x="110" y="80" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#be185d">18ヶ月目〜</text>
+    <line x1="20" y1="95" x2="200" y2="95" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="120" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">重視する指標</text>
+    <text x="20" y="142" font-family="sans-serif" font-size="11" fill="#64748b">・CV数（問い合わせ等）</text>
+    <text x="20" y="160" font-family="sans-serif" font-size="11" fill="#64748b">・動画経由の売上</text>
+    <text x="20" y="178" font-family="sans-serif" font-size="11" fill="#64748b">・ROI（投資対効果）</text>
+    <line x1="20" y1="198" x2="200" y2="198" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="220" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">目標の例</text>
+    <text x="20" y="242" font-family="sans-serif" font-size="11" fill="#64748b">・月間CV 20件以上</text>
+    <text x="20" y="260" font-family="sans-serif" font-size="11" fill="#64748b">・広告費回収率 200%</text>
+    <line x1="20" y1="280" x2="200" y2="280" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="305" font-family="sans-serif" font-weight="600" font-size="12" fill="#334155">注力ポイント</text>
+    <text x="20" y="327" font-family="sans-serif" font-size="11" fill="#64748b">ビジネス成果への</text>
+    <text x="20" y="345" font-family="sans-serif" font-size="11" fill="#64748b">導線設計と計測</text>
+  </g>
+</svg>

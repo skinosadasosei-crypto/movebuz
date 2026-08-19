@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">レポート・分析体制のチェックポイント</text>
+
+  <!-- 4 check items -->
+  <rect x="40" y="95" width="350" height="130" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="95" width="350" height="6" rx="3" fill="#0891b2"/>
+  <circle cx="80" cy="140" r="20" fill="#cffafe"/>
+  <text x="80" y="147" text-anchor="middle" font-size="20">📅</text>
+  <text x="115" y="135" font-size="15" font-weight="bold" fill="#333">レポートの頻度</text>
+  <text x="115" y="160" font-size="12" fill="#666">月1回？ 動画ごと？</text>
+  <rect x="115" y="180" width="140" height="24" rx="6" fill="#dcfce7"/>
+  <text x="185" y="197" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">✓ 月1回以上が理想</text>
+
+  <rect x="410" y="95" width="350" height="130" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="410" y="95" width="350" height="6" rx="3" fill="#06b6d4"/>
+  <circle cx="450" cy="140" r="20" fill="#cffafe"/>
+  <text x="450" y="147" text-anchor="middle" font-size="20">📊</text>
+  <text x="485" y="135" font-size="15" font-weight="bold" fill="#333">レポートの内容</text>
+  <text x="485" y="160" font-size="12" fill="#666">再生数だけでなく詳細データ</text>
+  <rect x="485" y="180" width="210" height="24" rx="6" fill="#dcfce7"/>
+  <text x="590" y="197" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">✓ CTR・維持率・流入経路</text>
+
+  <rect x="40" y="250" width="350" height="130" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="250" width="350" height="6" rx="3" fill="#0e7490"/>
+  <circle cx="80" cy="295" r="20" fill="#cffafe"/>
+  <text x="80" y="302" text-anchor="middle" font-size="20">💡</text>
+  <text x="115" y="290" font-size="15" font-weight="bold" fill="#333">改善提案の有無</text>
+  <text x="115" y="315" font-size="12" fill="#666">データに基づいた次のアクション</text>
+  <rect x="115" y="335" width="200" height="24" rx="6" fill="#dcfce7"/>
+  <text x="215" y="352" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">✓ 具体的な改善案があるか</text>
+
+  <rect x="410" y="250" width="350" height="130" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="410" y="250" width="350" height="6" rx="3" fill="#155e75"/>
+  <circle cx="450" cy="295" r="20" fill="#cffafe"/>
+  <text x="450" y="302" text-anchor="middle" font-size="20">🤝</text>
+  <text x="485" y="290" font-size="15" font-weight="bold" fill="#333">ミーティングの頻度</text>
+  <text x="485" y="315" font-size="12" fill="#666">定期的な振り返り会議</text>
+  <rect x="485" y="335" width="200" height="24" rx="6" fill="#dcfce7"/>
+  <text x="585" y="352" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">✓ 月1回以上の打合せ</text>
+
+  <!-- Warning -->
+  <rect x="100" y="410" width="600" height="70" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="130" y="440" font-size="18" fill="#dc2626">⚠</text>
+  <text x="160" y="440" font-size="14" font-weight="bold" fill="#dc2626">注意</text>
+  <text x="160" y="465" font-size="13" fill="#991b1b">数値の羅列だけで改善提案がない会社は避けた方が良い</text>
+
+  <text x="400" y="507" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

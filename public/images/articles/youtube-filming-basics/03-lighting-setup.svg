@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#fff7ed"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">照明セットアップの基本</text>
+  <text x="400" y="72" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748b">3点照明の配置と効果</text>
+  <g transform="translate(50,95)">
+    <rect width="340" height="240" rx="12" fill="white" stroke="#f97316" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#c2410c">3点照明の配置図</text>
+    <circle cx="170" cy="160" r="30" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="170" y="165" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#92400e">被写体</text>
+    <g>
+      <circle cx="80" cy="80" r="18" fill="#f59e0b"/>
+      <text x="80" y="85" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">キー</text>
+      <line x1="93" y1="93" x2="150" y2="140" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3"/>
+    </g>
+    <g>
+      <circle cx="260" cy="80" r="18" fill="#3b82f6"/>
+      <text x="260" y="85" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">フィル</text>
+      <line x1="247" y1="93" x2="190" y2="140" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,3"/>
+    </g>
+    <g>
+      <circle cx="170" cy="220" r="15" fill="#8b5cf6"/>
+      <text x="170" y="224" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="9" fill="white">バック</text>
+      <line x1="170" y1="205" x2="170" y2="190" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
+    </g>
+    <rect x="120" y="90" width="100" height="15" rx="3" fill="#94a3b8" opacity="0.3"/>
+    <text x="170" y="100" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#475569">カメラ位置</text>
+  </g>
+  <g transform="translate(420,95)">
+    <rect width="340" height="240" rx="12" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="170" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#166534">各ライトの役割</text>
+    <g transform="translate(20,50)">
+      <circle cx="12" cy="8" r="10" fill="#f59e0b"/>
+      <text x="30" y="5" font-family="sans-serif" font-weight="700" font-size="13" fill="#92400e">キーライト</text>
+      <text x="30" y="22" font-family="sans-serif" font-size="11" fill="#64748b">メインの光源。被写体の斜め</text>
+      <text x="30" y="38" font-family="sans-serif" font-size="11" fill="#64748b">45度前方から当てる</text>
+    </g>
+    <g transform="translate(20,110)">
+      <circle cx="12" cy="8" r="10" fill="#3b82f6"/>
+      <text x="30" y="5" font-family="sans-serif" font-weight="700" font-size="13" fill="#1e40af">フィルライト</text>
+      <text x="30" y="22" font-family="sans-serif" font-size="11" fill="#64748b">影を柔らかくする補助光。</text>
+      <text x="30" y="38" font-family="sans-serif" font-size="11" fill="#64748b">キーライトの反対側から</text>
+    </g>
+    <g transform="translate(20,170)">
+      <circle cx="12" cy="8" r="10" fill="#8b5cf6"/>
+      <text x="30" y="5" font-family="sans-serif" font-weight="700" font-size="13" fill="#5b21b6">バックライト</text>
+      <text x="30" y="22" font-family="sans-serif" font-size="11" fill="#64748b">背景との分離感を出す。</text>
+      <text x="30" y="38" font-family="sans-serif" font-size="11" fill="#64748b">後方斜め上から当てる</text>
+    </g>
+  </g>
+  <g transform="translate(50,360)">
+    <rect width="700" height="70" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="350" y="25" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="#c2410c">自然光だけで撮る場合</text>
+    <text x="350" y="50" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78350f">窓を正面または斜め前に配置し、反対側に白い壁や発泡スチロール板をレフ板代わりに置く</text>
+  </g>
+</svg>

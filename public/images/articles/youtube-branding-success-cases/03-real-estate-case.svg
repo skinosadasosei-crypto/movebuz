@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">不動産会社のブランディング動画構成</text>
+
+  <!-- Content types -->
+  <rect x="40" y="95" width="230" height="155" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="95" width="230" height="6" rx="3" fill="#d97706"/>
+  <circle cx="85" cy="140" r="22" fill="#fef3c7"/>
+  <text x="85" y="148" text-anchor="middle" font-size="22">🍽</text>
+  <text x="120" y="138" font-size="14" font-weight="bold" fill="#333">地域情報動画</text>
+  <text x="60" y="170" font-size="12" fill="#666">「○○駅周辺の</text>
+  <text x="60" y="190" font-size="12" fill="#666"> ランチスポット5選」</text>
+  <rect x="60" y="210" width="100" height="22" rx="6" fill="#fef3c7"/>
+  <text x="110" y="226" text-anchor="middle" font-size="10" fill="#92400e" font-weight="bold">地域の魅力紹介</text>
+
+  <rect x="285" y="95" width="230" height="155" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="285" y="95" width="230" height="6" rx="3" fill="#ea580c"/>
+  <circle cx="330" cy="140" r="22" fill="#ffedd5"/>
+  <text x="330" y="148" text-anchor="middle" font-size="22">💡</text>
+  <text x="365" y="138" font-size="14" font-weight="bold" fill="#333">お役立ち動画</text>
+  <text x="305" y="170" font-size="12" fill="#666">「初めての一人暮らしで</text>
+  <text x="305" y="190" font-size="12" fill="#666"> 知っておくべきこと」</text>
+  <rect x="305" y="210" width="100" height="22" rx="6" fill="#ffedd5"/>
+  <text x="355" y="226" text-anchor="middle" font-size="10" fill="#9a3412" font-weight="bold">信頼感の醸成</text>
+
+  <rect x="530" y="95" width="230" height="155" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="530" y="95" width="230" height="6" rx="3" fill="#f59e0b"/>
+  <circle cx="575" cy="140" r="22" fill="#fef3c7"/>
+  <text x="575" y="148" text-anchor="middle" font-size="22">📹</text>
+  <text x="610" y="138" font-size="14" font-weight="bold" fill="#333">Vlog形式</text>
+  <text x="550" y="170" font-size="12" fill="#666">スタッフの日常を紹介</text>
+  <text x="550" y="190" font-size="12" fill="#666">親しみやすさを発信</text>
+  <rect x="550" y="210" width="100" height="22" rx="6" fill="#fef3c7"/>
+  <text x="600" y="226" text-anchor="middle" font-size="10" fill="#92400e" font-weight="bold">月2本ペース</text>
+
+  <!-- Arrow -->
+  <text x="400" y="290" text-anchor="middle" font-size="24" fill="#d97706">▼</text>
+
+  <!-- Results -->
+  <rect x="80" y="305" width="640" height="170" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <text x="400" y="340" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">ブランディング成果</text>
+  <line x1="120" y1="355" x2="680" y2="355" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="110" y="370" width="180" height="80" rx="10" fill="#dcfce7"/>
+  <text x="200" y="400" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">🏠 エリア専門家</text>
+  <text x="200" y="425" text-anchor="middle" font-size="11" fill="#166534">「詳しい会社」として</text>
+  <text x="200" y="443" text-anchor="middle" font-size="11" fill="#166534">ポジション確立</text>
+
+  <rect x="310" y="370" width="180" height="80" rx="10" fill="#dbeafe"/>
+  <text x="400" y="400" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">🤝 来店時の信頼感</text>
+  <text x="400" y="425" text-anchor="middle" font-size="11" fill="#1e40af">最初から信頼が高い</text>
+  <text x="400" y="443" text-anchor="middle" font-size="11" fill="#1e40af">状態でスタート</text>
+
+  <rect x="510" y="370" width="180" height="80" rx="10" fill="#fef3c7"/>
+  <text x="600" y="400" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">📈 事前認知</text>
+  <text x="600" y="425" text-anchor="middle" font-size="11" fill="#92400e">物件検索前の段階で</text>
+  <text x="600" y="443" text-anchor="middle" font-size="11" fill="#92400e">会社を知ってもらえる</text>
+
+  <text x="400" y="507" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

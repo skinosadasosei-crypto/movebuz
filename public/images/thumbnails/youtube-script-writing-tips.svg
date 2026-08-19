@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop stop-color="#667eea"/>
+      <stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="500" height="510" rx="24" fill="white" opacity="0.15"/>
+  <text x="100" y="150" font-family="sans-serif" font-weight="900" font-size="72" fill="white">台本の</text>
+  <text x="100" y="240" font-family="sans-serif" font-weight="900" font-size="72" fill="white">書き方</text>
+  <text x="100" y="320" font-family="sans-serif" font-weight="700" font-size="36" fill="#e0e7ff">視聴維持率を上げる</text>
+  <text x="100" y="370" font-family="sans-serif" font-weight="700" font-size="36" fill="#e0e7ff">構成テクニック</text>
+  <rect x="100" y="420" width="200" height="50" rx="25" fill="white" opacity="0.2"/>
+  <text x="200" y="452" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="white">テンプレ付き</text>
+  <g transform="translate(650,100)">
+    <rect width="440" height="120" rx="16" fill="white" opacity="0.2"/>
+    <text x="220" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">オープニング</text>
+    <text x="220" y="85" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#e0e7ff">冒頭15秒で掴む</text>
+  </g>
+  <g transform="translate(650,250)">
+    <rect width="440" height="120" rx="16" fill="white" opacity="0.2"/>
+    <text x="220" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">メインパート</text>
+    <text x="220" y="85" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#e0e7ff">3〜5ポイントで解説</text>
+  </g>
+  <g transform="translate(650,400)">
+    <rect width="440" height="120" rx="16" fill="white" opacity="0.2"/>
+    <text x="220" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">エンディング</text>
+    <text x="220" y="85" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#e0e7ff">まとめ＋CTA</text>
+  </g>
+</svg>

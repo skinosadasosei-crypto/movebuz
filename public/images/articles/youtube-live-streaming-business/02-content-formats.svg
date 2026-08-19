@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0f9ff"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">企業ライブ配信の人気フォーマット</text>
+  <g transform="translate(50,75)">
+    <rect width="340" height="110" rx="12" fill="white" stroke="#0ea5e9" stroke-width="2"/>
+    <rect width="80" height="110" rx="12" fill="#0ea5e9"/>
+    <rect x="66" width="14" height="110" fill="#0ea5e9"/>
+    <text x="40" y="48" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="32" fill="white">Q&amp;A</text>
+    <text x="100" y="35" font-family="sans-serif" font-weight="700" font-size="14" fill="#0c4a6e">質問回答ライブ</text>
+    <text x="100" y="58" font-family="sans-serif" font-size="12" fill="#64748b">視聴者の質問にリアルタイムで</text>
+    <text x="100" y="76" font-family="sans-serif" font-size="12" fill="#64748b">回答。専門性をアピールでき、</text>
+    <text x="100" y="94" font-family="sans-serif" font-size="12" fill="#64748b">エンゲージメントが最も高い形式。</text>
+  </g>
+  <g transform="translate(410,75)">
+    <rect width="340" height="110" rx="12" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="80" height="110" rx="12" fill="#8b5cf6"/>
+    <rect x="66" width="14" height="110" fill="#8b5cf6"/>
+    <text x="40" y="55" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">セミ</text>
+    <text x="40" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">ナー</text>
+    <text x="100" y="35" font-family="sans-serif" font-weight="700" font-size="14" fill="#5b21b6">ウェビナー型</text>
+    <text x="100" y="58" font-family="sans-serif" font-size="12" fill="#64748b">スライドを共有しながら</text>
+    <text x="100" y="76" font-family="sans-serif" font-size="12" fill="#64748b">ノウハウを解説。リード獲得</text>
+    <text x="100" y="94" font-family="sans-serif" font-size="12" fill="#64748b">と専門性確立に効果的。</text>
+  </g>
+  <g transform="translate(50,210)">
+    <rect width="340" height="110" rx="12" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="80" height="110" rx="12" fill="#f59e0b"/>
+    <rect x="66" width="14" height="110" fill="#f59e0b"/>
+    <text x="40" y="55" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">裏側</text>
+    <text x="40" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">公開</text>
+    <text x="100" y="35" font-family="sans-serif" font-weight="700" font-size="14" fill="#92400e">舞台裏・作業配信</text>
+    <text x="100" y="58" font-family="sans-serif" font-size="12" fill="#64748b">制作過程やオフィスの様子を</text>
+    <text x="100" y="76" font-family="sans-serif" font-size="12" fill="#64748b">そのまま配信。親近感と</text>
+    <text x="100" y="94" font-family="sans-serif" font-size="12" fill="#64748b">透明性を同時にアピール。</text>
+  </g>
+  <g transform="translate(410,210)">
+    <rect width="340" height="110" rx="12" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <rect width="80" height="110" rx="12" fill="#ec4899"/>
+    <rect x="66" width="14" height="110" fill="#ec4899"/>
+    <text x="40" y="55" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">新商</text>
+    <text x="40" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">品</text>
+    <text x="100" y="35" font-family="sans-serif" font-weight="700" font-size="14" fill="#9d174d">商品発表・デモ</text>
+    <text x="100" y="58" font-family="sans-serif" font-size="12" fill="#64748b">新商品やサービスの実演を</text>
+    <text x="100" y="76" font-family="sans-serif" font-size="12" fill="#64748b">ライブで見せる。質問にも</text>
+    <text x="100" y="94" font-family="sans-serif" font-size="12" fill="#64748b">その場で対応できるのが強み。</text>
+  </g>
+  <g transform="translate(50,350)">
+    <rect width="700" height="70" rx="12" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+    <text x="350" y="28" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#1e40af">おすすめの組み合わせ</text>
+    <text x="350" y="53" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e3a5f">月1回のQ&amp;Aライブ ＋ 四半期ごとのウェビナー ＝ 継続的な関係構築</text>
+  </g>
+</svg>

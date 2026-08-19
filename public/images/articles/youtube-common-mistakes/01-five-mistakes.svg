@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#fef2f2"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">企業YouTube運用の5大失敗パターン</text>
+  <g transform="translate(50,75)">
+    <rect width="700" height="65" rx="10" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="40" cy="32" r="22" fill="#ef4444"/>
+    <text x="40" y="38" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">1</text>
+    <text x="80" y="28" font-family="sans-serif" font-weight="700" font-size="15" fill="#991b1b">ターゲットが定まっていない</text>
+    <text x="80" y="50" font-family="sans-serif" font-size="12" fill="#64748b">「誰に向けた動画なのか」が曖昧だと、メッセージが届かない</text>
+  </g>
+  <g transform="translate(50,155)">
+    <rect width="700" height="65" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="40" cy="32" r="22" fill="#f59e0b"/>
+    <text x="40" y="38" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">2</text>
+    <text x="80" y="28" font-family="sans-serif" font-weight="700" font-size="15" fill="#92400e">投稿頻度にムラがある</text>
+    <text x="80" y="50" font-family="sans-serif" font-size="12" fill="#64748b">月5本→翌月0本のような不安定な投稿はアルゴリズムの評価を下げる</text>
+  </g>
+  <g transform="translate(50,235)">
+    <rect width="700" height="65" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="40" cy="32" r="22" fill="#8b5cf6"/>
+    <text x="40" y="38" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">3</text>
+    <text x="80" y="28" font-family="sans-serif" font-weight="700" font-size="15" fill="#5b21b6">サムネイル・タイトルを軽視</text>
+    <text x="80" y="50" font-family="sans-serif" font-size="12" fill="#64748b">中身がよくてもクリックされなければ再生されない</text>
+  </g>
+  <g transform="translate(50,315)">
+    <rect width="700" height="65" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="40" cy="32" r="22" fill="#3b82f6"/>
+    <text x="40" y="38" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">4</text>
+    <text x="80" y="28" font-family="sans-serif" font-weight="700" font-size="15" fill="#1e40af">データを見ずに運用している</text>
+    <text x="80" y="50" font-family="sans-serif" font-size="12" fill="#64748b">感覚頼りの改善は再現性がなく、成長が止まりやすい</text>
+  </g>
+  <g transform="translate(50,395)">
+    <rect width="700" height="42" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="350" y="28" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="#dc2626">5. 短期で成果を求めて撤退 → YouTubeは中長期施策。最低6ヶ月は継続が必要</text>
+  </g>
+</svg>

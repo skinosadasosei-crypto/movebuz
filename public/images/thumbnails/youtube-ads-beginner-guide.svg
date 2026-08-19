@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop stop-color="#1e40af"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="520" height="510" rx="24" fill="white" opacity="0.12"/>
+  <text x="100" y="160" font-family="sans-serif" font-weight="900" font-size="72" fill="white">YouTube</text>
+  <text x="100" y="250" font-family="sans-serif" font-weight="900" font-size="72" fill="white">広告入門</text>
+  <text x="100" y="330" font-family="sans-serif" font-weight="700" font-size="32" fill="#93c5fd">種類・設定・費用を</text>
+  <text x="100" y="375" font-family="sans-serif" font-weight="700" font-size="32" fill="#93c5fd">やさしく解説</text>
+  <rect x="100" y="420" width="200" height="50" rx="25" fill="#fbbf24"/>
+  <text x="200" y="452" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">初心者向け</text>
+  <g transform="translate(650,80)">
+    <rect width="480" height="110" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="55" r="30" fill="#fbbf24" opacity="0.8"/>
+    <text x="55" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">1</text>
+    <text x="110" y="45" font-family="sans-serif" font-weight="700" font-size="22" fill="white">インストリーム広告</text>
+    <text x="110" y="75" font-family="sans-serif" font-size="17" fill="#93c5fd">スキップ可能 / CPV課金</text>
+  </g>
+  <g transform="translate(650,210)">
+    <rect width="480" height="110" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="55" r="30" fill="#fbbf24" opacity="0.8"/>
+    <text x="55" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">2</text>
+    <text x="110" y="45" font-family="sans-serif" font-weight="700" font-size="22" fill="white">インフィード広告</text>
+    <text x="110" y="75" font-family="sans-serif" font-size="17" fill="#93c5fd">検索・関連に表示 / CPC課金</text>
+  </g>
+  <g transform="translate(650,340)">
+    <rect width="480" height="110" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="55" r="30" fill="#fbbf24" opacity="0.8"/>
+    <text x="55" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">3</text>
+    <text x="110" y="45" font-family="sans-serif" font-weight="700" font-size="22" fill="white">バンパー広告</text>
+    <text x="110" y="75" font-family="sans-serif" font-size="17" fill="#93c5fd">6秒の認知拡大 / CPM課金</text>
+  </g>
+  <g transform="translate(650,480)">
+    <rect width="480" height="50" rx="25" fill="white" opacity="0.2"/>
+    <text x="240" y="33" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="white">日予算1,000円から始められる</text>
+  </g>
+</svg>

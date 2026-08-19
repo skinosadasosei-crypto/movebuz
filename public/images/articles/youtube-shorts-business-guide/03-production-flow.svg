@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f5f3ff"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">ショート動画の制作フロー</text>
+  <g transform="translate(50,80)">
+    <rect width="140" height="140" rx="12" fill="#667eea"/>
+    <text x="70" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">1</text>
+    <text x="70" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">企画</text>
+    <text x="70" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#e0e7ff">テーマ決め</text>
+    <text x="70" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#e0e7ff">フック設計</text>
+  </g>
+  <path d="M195 150 L220 150" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g transform="translate(225,80)">
+    <rect width="140" height="140" rx="12" fill="#8b5cf6"/>
+    <text x="70" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">2</text>
+    <text x="70" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">撮影</text>
+    <text x="70" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ede9fe">縦型で撮影</text>
+    <text x="70" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ede9fe">複数テイク</text>
+  </g>
+  <path d="M370 150 L395 150" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g transform="translate(400,80)">
+    <rect width="140" height="140" rx="12" fill="#ec4899"/>
+    <text x="70" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">3</text>
+    <text x="70" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">編集</text>
+    <text x="70" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fce7f3">テロップ追加</text>
+    <text x="70" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fce7f3">テンポ調整</text>
+  </g>
+  <path d="M545 150 L570 150" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <g transform="translate(575,80)">
+    <rect width="140" height="140" rx="12" fill="#f59e0b"/>
+    <text x="70" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">4</text>
+    <text x="70" y="75" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">公開</text>
+    <text x="70" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fef3c7">#Shorts タグ</text>
+    <text x="70" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fef3c7">投稿時間設定</text>
+  </g>
+  <g transform="translate(50,260)">
+    <rect width="700" height="60" rx="10" fill="#dbeafe"/>
+    <text x="350" y="25" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#1e40af">制作のポイント</text>
+    <text x="350" y="48" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e3a5f">冒頭1秒で目を引く → テンポを落とさない → 最後まで見せてループ再生を狙う</text>
+  </g>
+  <g transform="translate(50,340)">
+    <rect width="340" height="80" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="170" y="25" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="#334155">必要な機材</text>
+    <text x="20" y="50" font-family="sans-serif" font-size="12" fill="#64748b">・スマートフォン（十分な画質）</text>
+    <text x="20" y="68" font-family="sans-serif" font-size="12" fill="#64748b">・ピンマイク or 外付けマイク</text>
+  </g>
+  <g transform="translate(410,340)">
+    <rect width="340" height="80" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="170" y="25" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="#334155">編集ツール</text>
+    <text x="20" y="50" font-family="sans-serif" font-size="12" fill="#64748b">・CapCut / VN（無料でも高機能）</text>
+    <text x="20" y="68" font-family="sans-serif" font-size="12" fill="#64748b">・Premiere Pro / DaVinci Resolve</text>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+</svg>

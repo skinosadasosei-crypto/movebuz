@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f8fafc"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">YouTube運用チームの役割分担</text>
+  <g transform="translate(280,70)">
+    <circle cx="120" cy="50" r="45" fill="#667eea"/>
+    <text x="120" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">プロデューサー</text>
+    <text x="120" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#e0e7ff">全体統括・KPI管理</text>
+  </g>
+  <line x1="320" y1="120" x2="160" y2="200" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="480" y1="120" x2="640" y2="200" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="400" y1="120" x2="400" y2="200" stroke="#cbd5e1" stroke-width="2"/>
+  <g transform="translate(50,200)">
+    <rect width="200" height="100" rx="12" fill="#8b5cf6"/>
+    <text x="100" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">企画・ディレクター</text>
+    <text x="100" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ede9fe">テーマ選定</text>
+    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ede9fe">台本作成・構成設計</text>
+    <text x="100" y="92" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ede9fe">撮影ディレクション</text>
+  </g>
+  <g transform="translate(300,200)">
+    <rect width="200" height="100" rx="12" fill="#ec4899"/>
+    <text x="100" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">撮影・編集</text>
+    <text x="100" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fce7f3">撮影オペレーション</text>
+    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fce7f3">動画編集・テロップ</text>
+    <text x="100" y="92" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fce7f3">サムネイル制作</text>
+  </g>
+  <g transform="translate(550,200)">
+    <rect width="200" height="100" rx="12" fill="#f59e0b"/>
+    <text x="100" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">分析・改善</text>
+    <text x="100" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fef3c7">アナリティクス分析</text>
+    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fef3c7">SEO最適化</text>
+    <text x="100" y="92" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fef3c7">レポート作成</text>
+  </g>
+  <g transform="translate(50,340)">
+    <rect width="700" height="80" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="350" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#334155">少人数チームの場合</text>
+    <text x="350" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#64748b">1〜2人でスタートする場合は、企画＋分析を1人、撮影＋編集を1人が兼務。</text>
+    <text x="350" y="73" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#64748b">編集は外注し、社内リソースを企画と分析に集中させるのが効率的です。</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#fefce8"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">YouTube KPIの階層構造</text>
+  <g transform="translate(200,70)">
+    <polygon points="200,0 400,320 0,320" fill="#667eea" opacity="0.1" stroke="#667eea" stroke-width="2"/>
+    <rect x="130" y="40" width="140" height="55" rx="8" fill="#667eea"/>
+    <text x="200" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="13" fill="white">ビジネスKGI</text>
+    <text x="200" y="82" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#e0e7ff">売上・問い合わせ数</text>
+  </g>
+  <g transform="translate(200,70)">
+    <rect x="90" y="120" width="220" height="55" rx="8" fill="#8b5cf6"/>
+    <text x="200" y="142" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="13" fill="white">チャンネルKPI</text>
+    <text x="200" y="162" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ede9fe">登録者数・月間再生数</text>
+  </g>
+  <g transform="translate(200,70)">
+    <rect x="50" y="200" width="300" height="55" rx="8" fill="#ec4899"/>
+    <text x="200" y="222" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="13" fill="white">動画KPI</text>
+    <text x="200" y="242" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fce7f3">CTR・視聴維持率・エンゲージメント</text>
+  </g>
+  <g transform="translate(50,400)">
+    <rect width="700" height="35" rx="8" fill="#fef9c3"/>
+    <text x="350" y="23" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="13" fill="#854d0e">上位の目標から逆算して各階層のKPIを設定する</text>
+  </g>
+</svg>

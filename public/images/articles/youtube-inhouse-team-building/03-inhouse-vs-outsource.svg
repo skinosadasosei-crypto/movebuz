@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0fdf4"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">内製 vs 外注 ハイブリッド体制</text>
+  <g transform="translate(50,75)">
+    <rect width="340" height="170" rx="14" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <rect width="340" height="45" rx="14" fill="#22c55e"/>
+    <rect y="31" width="340" height="14" fill="#22c55e"/>
+    <text x="170" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">社内で担当すべき業務</text>
+    <text x="25" y="72" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">企画・テーマ選定</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="11" fill="#64748b">→ 自社の強み・顧客理解が必要</text>
+    <text x="25" y="115" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">出演・撮影ディレクション</text>
+    <text x="25" y="133" font-family="sans-serif" font-size="11" fill="#64748b">→ 企業の顔として一貫性が必要</text>
+    <text x="25" y="158" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">データ分析・改善判断</text>
+    <text x="25" y="176" font-family="sans-serif" font-size="11" fill="#64748b">→ ビジネス目標との接続が必要</text>
+  </g>
+  <g transform="translate(410,75)">
+    <rect width="340" height="170" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="340" height="45" rx="14" fill="#3b82f6"/>
+    <rect y="31" width="340" height="14" fill="#3b82f6"/>
+    <text x="170" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">外注に適した業務</text>
+    <text x="25" y="72" font-family="sans-serif" font-weight="600" font-size="13" fill="#1e40af">動画編集</text>
+    <text x="25" y="90" font-family="sans-serif" font-size="11" fill="#64748b">→ 専門スキルが必要・工数大</text>
+    <text x="25" y="115" font-family="sans-serif" font-weight="600" font-size="13" fill="#1e40af">サムネイルデザイン</text>
+    <text x="25" y="133" font-family="sans-serif" font-size="11" fill="#64748b">→ デザインスキルが必要</text>
+    <text x="25" y="158" font-family="sans-serif" font-weight="600" font-size="13" fill="#1e40af">撮影（機材・技術込み）</text>
+    <text x="25" y="176" font-family="sans-serif" font-size="11" fill="#64748b">→ 高品質な映像はプロに依頼</text>
+  </g>
+  <g transform="translate(50,275)">
+    <rect width="700" height="140" rx="14" fill="#dcfce7" stroke="#86efac" stroke-width="1.5"/>
+    <text x="350" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#166534">おすすめハイブリッド体制</text>
+    <text x="40" y="60" font-family="sans-serif" font-size="13" fill="#15803d">社内 1〜2名：企画・出演・ディレクション・分析</text>
+    <text x="40" y="82" font-family="sans-serif" font-size="13" fill="#15803d">外注パートナー：編集・サムネイル・必要に応じて撮影</text>
+    <text x="40" y="108" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">ポイント：「何を伝えるか」は社内、「どう見せるか」は外注に任せると効率的</text>
+    <text x="40" y="128" font-family="sans-serif" font-size="12" fill="#15803d">月4本制作の場合、社内工数は週10〜15時間が目安</text>
+  </g>
+</svg>

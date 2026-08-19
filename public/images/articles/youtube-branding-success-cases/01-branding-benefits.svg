@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">YouTubeがブランディングに向いている3つの理由</text>
+
+  <!-- Card 1 -->
+  <rect x="40" y="100" width="220" height="360" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="40" y="100" width="220" height="6" rx="3" fill="#059669"/>
+  <circle cx="150" cy="170" r="36" fill="#dcfce7"/>
+  <text x="150" y="180" text-anchor="middle" font-size="36">📊</text>
+  <text x="150" y="230" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">情報量が</text>
+  <text x="150" y="255" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">圧倒的に多い</text>
+  <line x1="80" y1="275" x2="220" y2="275" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="150" y="305" text-anchor="middle" font-size="12" fill="#666">1分の動画 =</text>
+  <text x="150" y="330" text-anchor="middle" font-size="20" font-weight="bold" fill="#059669">3,600ページ分</text>
+  <text x="150" y="360" text-anchor="middle" font-size="12" fill="#666">表情・声・空気感を</text>
+  <text x="150" y="380" text-anchor="middle" font-size="12" fill="#666">一度に届けられる</text>
+  <rect x="70" y="400" width="160" height="30" rx="8" fill="#dcfce7"/>
+  <text x="150" y="420" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">文字では伝わらない要素</text>
+
+  <!-- Card 2 -->
+  <rect x="290" y="100" width="220" height="360" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="290" y="100" width="220" height="6" rx="3" fill="#0d9488"/>
+  <circle cx="400" cy="170" r="36" fill="#ccfbf1"/>
+  <text x="400" y="180" text-anchor="middle" font-size="36">🧠</text>
+  <text x="400" y="230" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">記憶に</text>
+  <text x="400" y="255" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">残りやすい</text>
+  <line x1="330" y1="275" x2="470" y2="275" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="305" text-anchor="middle" font-size="12" fill="#666">テキスト記憶率</text>
+  <text x="400" y="325" text-anchor="middle" font-size="15" fill="#94a3b8">10%</text>
+  <text x="400" y="355" text-anchor="middle" font-size="12" fill="#666">動画記憶率</text>
+  <text x="400" y="375" text-anchor="middle" font-size="20" font-weight="bold" fill="#0d9488">95%</text>
+  <rect x="320" y="400" width="160" height="30" rx="8" fill="#ccfbf1"/>
+  <text x="400" y="420" text-anchor="middle" font-size="11" fill="#115e59" font-weight="bold">長く印象に残る</text>
+
+  <!-- Card 3 -->
+  <rect x="540" y="100" width="220" height="360" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="540" y="100" width="220" height="6" rx="3" fill="#16a34a"/>
+  <circle cx="650" cy="170" r="36" fill="#dcfce7"/>
+  <text x="650" y="180" text-anchor="middle" font-size="36">♾</text>
+  <text x="650" y="230" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">継続的に</text>
+  <text x="650" y="255" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">リーチできる</text>
+  <line x1="580" y1="275" x2="720" y2="275" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="650" y="305" text-anchor="middle" font-size="12" fill="#666">ストック型コンテンツ</text>
+  <text x="650" y="335" text-anchor="middle" font-size="12" fill="#666">SNSのように</text>
+  <text x="650" y="355" text-anchor="middle" font-size="12" fill="#666">流れない</text>
+  <text x="650" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#16a34a">何年もリーチし続ける</text>
+  <rect x="570" y="400" width="160" height="30" rx="8" fill="#dcfce7"/>
+  <text x="650" y="420" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">検索で見つけてもらえる</text>
+
+  <text x="400" y="500" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

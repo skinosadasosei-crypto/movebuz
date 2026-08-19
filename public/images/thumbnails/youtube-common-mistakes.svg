@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="white" opacity="0.06"/>
+  <text x="600" y="180" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="60" fill="#fca5a5">企業YouTube</text>
+  <text x="600" y="290" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="90" fill="#ef4444">失敗5選</text>
+  <text x="600" y="380" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="52" fill="white">原因と対策を解説</text>
+  <rect x="370" y="420" width="460" height="60" rx="30" fill="#ef4444" opacity="0.25"/>
+  <text x="600" y="460" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="#fecaca">知っていれば防げる</text>
+  <text x="100" y="120" font-family="sans-serif" font-weight="900" font-size="100" fill="#ef4444" opacity="0.15">!</text>
+  <text x="1020" y="560" font-family="sans-serif" font-weight="900" font-size="100" fill="#ef4444" opacity="0.15">!</text>
+</svg>

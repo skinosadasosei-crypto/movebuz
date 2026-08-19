@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">料金体系チェックリスト</text>
+
+  <!-- Checklist items -->
+  <rect x="60" y="100" width="680" height="70" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="60" y="100" width="6" height="70" rx="3" fill="#7c3aed"/>
+  <circle cx="100" cy="135" r="18" fill="#ede9fe"/>
+  <text x="100" y="141" text-anchor="middle" font-size="16" fill="#7c3aed" font-weight="bold">1</text>
+  <text x="135" y="130" font-size="15" font-weight="bold" fill="#333">基本料金に含まれる範囲</text>
+  <text x="135" y="153" font-size="12" fill="#666">企画・撮影・編集・投稿・分析のどこまでが含まれるか</text>
+
+  <rect x="60" y="185" width="680" height="70" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="60" y="185" width="6" height="70" rx="3" fill="#8b5cf6"/>
+  <circle cx="100" cy="220" r="18" fill="#f3e8ff"/>
+  <text x="100" y="226" text-anchor="middle" font-size="16" fill="#8b5cf6" font-weight="bold">2</text>
+  <text x="135" y="215" font-size="15" font-weight="bold" fill="#333">追加費用が発生する条件</text>
+  <text x="135" y="238" font-size="12" fill="#666">修正回数・撮影回数・動画本数の追加で追加料金は？</text>
+
+  <rect x="60" y="270" width="680" height="70" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="60" y="270" width="6" height="70" rx="3" fill="#a78bfa"/>
+  <circle cx="100" cy="305" r="18" fill="#faf5ff"/>
+  <text x="100" y="311" text-anchor="middle" font-size="16" fill="#a78bfa" font-weight="bold">3</text>
+  <text x="135" y="300" font-size="15" font-weight="bold" fill="#333">撮影費用は別途か込みか</text>
+  <text x="135" y="323" font-size="12" fill="#666">撮影を自社で行うか、代行会社が対応するかで大きく変わる</text>
+
+  <rect x="60" y="355" width="680" height="70" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <rect x="60" y="355" width="6" height="70" rx="3" fill="#c4b5fd"/>
+  <circle cx="100" cy="390" r="18" fill="#faf5ff"/>
+  <text x="100" y="396" text-anchor="middle" font-size="16" fill="#c4b5fd" font-weight="bold">4</text>
+  <text x="135" y="385" font-size="15" font-weight="bold" fill="#333">契約期間と解約条件</text>
+  <text x="135" y="408" font-size="12" fill="#666">最低契約期間・途中解約の違約金・更新条件を確認</text>
+
+  <!-- Bottom tip -->
+  <rect x="100" y="445" width="600" height="45" rx="10" fill="#ede9fe"/>
+  <text x="400" y="474" text-anchor="middle" font-size="13" fill="#5b21b6" font-weight="bold">💡 「この金額で何をしてもらえるのか」を具体的に確認しましょう</text>
+
+  <text x="400" y="510" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

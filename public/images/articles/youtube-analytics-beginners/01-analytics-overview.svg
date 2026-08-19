@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">YouTubeアナリティクスの画面構成</text>
+
+  <!-- Left: Studio sidebar mockup -->
+  <rect x="40" y="90" width="180" height="380" rx="12" fill="#1e1e2e" filter="url(#shadow1)"/>
+  <circle cx="80" cy="120" r="16" fill="#3b82f6" opacity="0.3"/>
+  <text x="105" y="125" font-size="13" fill="#94a3b8">Studio</text>
+  <rect x="52" y="150" width="156" height="32" rx="6" fill="#334155"/>
+  <text x="72" y="171" font-size="12" fill="#e2e8f0">📊 ダッシュボード</text>
+  <rect x="52" y="190" width="156" height="32" rx="6" fill="#334155"/>
+  <text x="72" y="211" font-size="12" fill="#e2e8f0">🎬 コンテンツ</text>
+  <rect x="52" y="230" width="156" height="32" rx="6" fill="#3b82f6"/>
+  <text x="72" y="251" font-size="12" fill="#fff" font-weight="bold">📈 アナリティクス</text>
+  <rect x="52" y="270" width="156" height="32" rx="6" fill="#334155"/>
+  <text x="72" y="291" font-size="12" fill="#e2e8f0">💬 コメント</text>
+
+  <!-- Right: Analytics tabs -->
+  <rect x="240" y="90" width="520" height="380" rx="12" fill="#fff" filter="url(#shadow1)"/>
+  <!-- Tab bar -->
+  <rect x="255" y="105" width="80" height="30" rx="6" fill="#3b82f6"/>
+  <text x="295" y="125" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">概要</text>
+  <rect x="345" y="105" width="80" height="30" rx="6" fill="#f1f5f9"/>
+  <text x="385" y="125" text-anchor="middle" font-size="11" fill="#64748b">リーチ</text>
+  <rect x="435" y="105" width="120" height="30" rx="6" fill="#f1f5f9"/>
+  <text x="495" y="125" text-anchor="middle" font-size="11" fill="#64748b">エンゲージメント</text>
+  <rect x="565" y="105" width="80" height="30" rx="6" fill="#f1f5f9"/>
+  <text x="605" y="125" text-anchor="middle" font-size="11" fill="#64748b">視聴者</text>
+
+  <!-- Metrics row -->
+  <rect x="260" y="155" width="150" height="70" rx="8" fill="#eff6ff"/>
+  <text x="275" y="180" font-size="11" fill="#3b82f6">視聴回数</text>
+  <text x="275" y="207" font-size="22" font-weight="bold" fill="#1e40af">12,450</text>
+
+  <rect x="425" y="155" width="150" height="70" rx="8" fill="#f0fdf4"/>
+  <text x="440" y="180" font-size="11" fill="#16a34a">総再生時間</text>
+  <text x="440" y="207" font-size="22" font-weight="bold" fill="#15803d">840h</text>
+
+  <rect x="590" y="155" width="150" height="70" rx="8" fill="#fef3c7"/>
+  <text x="605" y="180" font-size="11" fill="#d97706">登録者</text>
+  <text x="605" y="207" font-size="22" font-weight="bold" fill="#b45309">+128</text>
+
+  <!-- Chart area -->
+  <line x1="280" y1="400" x2="730" y2="400" stroke="#e2e8f0" stroke-width="1"/>
+  <polyline points="280,380 340,360 400,340 460,310 520,290 580,260 640,240 700,220" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="280,380 340,360 400,340 460,310 520,290 580,260 640,240 700,220 700,400 280,400" fill="#3b82f6" opacity="0.06"/>
+
+  <text x="400" y="500" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

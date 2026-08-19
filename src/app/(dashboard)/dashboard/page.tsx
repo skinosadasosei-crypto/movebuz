@@ -131,7 +131,7 @@ export default function DashboardPage() {
     : [];
 
   const articleColumns = [
-    { key: "title", label: "ページ", width: "280px", render: (r: ArticleMetric) => <span className="text-xs font-medium truncate block max-w-[280px]">{r.title}</span> },
+    { key: "title", label: "ページ", width: "280px", render: (r: ArticleMetric) => <a href={`https://movebuz.vercel.app${r.url}`} target="_blank" rel="noopener noreferrer" className="text-xs font-medium truncate block max-w-[280px] hover:underline" style={{ color: "var(--dash-blue)" }}>{r.title}</a> },
     { key: "pageviews", label: "PV", sortable: true, align: "right" as const, render: (r: ArticleMetric) => r.pageviews.toLocaleString() },
     { key: "uniqueUsers", label: "UU", sortable: true, align: "right" as const, render: (r: ArticleMetric) => r.uniqueUsers.toLocaleString() },
     { key: "avgDuration", label: "平均滞在", sortable: true, align: "right" as const, render: (r: ArticleMetric) => `${Math.floor(r.avgDuration / 60)}:${String(r.avgDuration % 60).padStart(2, "0")}` },

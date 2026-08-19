@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#f0fdf4"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">ライブ配信の準備チェックリスト</text>
+  <g transform="translate(50,75)">
+    <rect width="340" height="340" rx="14" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <rect width="340" height="45" rx="14" fill="#22c55e"/>
+    <rect y="31" width="340" height="14" fill="#22c55e"/>
+    <text x="170" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">配信前（1週間〜前日）</text>
+    <text x="25" y="72" font-family="sans-serif" font-size="13" fill="#15803d">[ ] テーマと構成を決定</text>
+    <text x="25" y="96" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 配信日時をSNSで告知</text>
+    <text x="25" y="120" font-family="sans-serif" font-size="13" fill="#15803d">[ ] YouTube上でライブを予約</text>
+    <text x="25" y="144" font-family="sans-serif" font-size="13" fill="#15803d">[ ] サムネイル・タイトルを設定</text>
+    <text x="25" y="168" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 機材テスト（カメラ・マイク）</text>
+    <text x="25" y="192" font-family="sans-serif" font-size="13" fill="#15803d">[ ] ネット回線の速度確認</text>
+    <text x="25" y="216" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 照明・背景のセッティング</text>
+    <text x="25" y="240" font-family="sans-serif" font-size="13" fill="#15803d">[ ] 想定Q&amp;Aリストを準備</text>
+    <text x="25" y="268" font-family="sans-serif" font-weight="600" font-size="12" fill="#166534">推奨回線速度</text>
+    <text x="25" y="290" font-family="sans-serif" font-size="12" fill="#64748b">上り 15Mbps以上（720p配信の場合）</text>
+    <text x="25" y="310" font-family="sans-serif" font-size="12" fill="#64748b">上り 25Mbps以上（1080p配信の場合）</text>
+  </g>
+  <g transform="translate(410,75)">
+    <rect width="340" height="160" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="340" height="45" rx="14" fill="#3b82f6"/>
+    <rect y="31" width="340" height="14" fill="#3b82f6"/>
+    <text x="170" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">配信中</text>
+    <text x="25" y="72" font-family="sans-serif" font-size="13" fill="#1e40af">[ ] 開始5分前にスタンバイ</text>
+    <text x="25" y="96" font-family="sans-serif" font-size="13" fill="#1e40af">[ ] 冒頭で自己紹介と趣旨説明</text>
+    <text x="25" y="120" font-family="sans-serif" font-size="13" fill="#1e40af">[ ] チャットを定期的に確認</text>
+    <text x="25" y="144" font-family="sans-serif" font-size="13" fill="#1e40af">[ ] 途中参加者向けにリマインド</text>
+  </g>
+  <g transform="translate(410,260)">
+    <rect width="340" height="155" rx="14" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="340" height="45" rx="14" fill="#f59e0b"/>
+    <rect y="31" width="340" height="14" fill="#f59e0b"/>
+    <text x="170" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">配信後</text>
+    <text x="25" y="72" font-family="sans-serif" font-size="13" fill="#92400e">[ ] アーカイブのタイトル・説明文編集</text>
+    <text x="25" y="96" font-family="sans-serif" font-size="13" fill="#92400e">[ ] チャプター（タイムスタンプ）追加</text>
+    <text x="25" y="120" font-family="sans-serif" font-size="13" fill="#92400e">[ ] ハイライトをショート動画化</text>
+    <text x="25" y="144" font-family="sans-serif" font-size="13" fill="#92400e">[ ] 視聴データの分析</text>
+  </g>
+</svg>

@@ -82,12 +82,11 @@ export default function ContactPage() {
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
             <label className="block text-xs font-medium text-muted mb-1.5">
-              会社名 <span className="text-primary">*</span>
+              会社名
             </label>
             <input
               type="text"
               name="company"
-              required
               className="w-full bg-card border border-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
               placeholder="株式会社○○"
             />
@@ -95,12 +94,11 @@ export default function ContactPage() {
 
           <div>
             <label className="block text-xs font-medium text-muted mb-1.5">
-              お名前 <span className="text-primary">*</span>
+              お名前
             </label>
             <input
               type="text"
               name="name"
-              required
               className="w-full bg-card border border-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
               placeholder="山田 太郎"
             />
