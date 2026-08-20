@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   },
   description:
     "企業のYouTube運用を成功に導く情報メディア。チャンネル開設から運用代行まで、動画マーケティングのノウハウを発信します。",
+  verification: {
+    google: "jng9wHEJJ9Nx3usxmBOLR3wny5hC1aSyOPtL8fWe7uY",
+  },
   openGraph: {
     type: "website",
     locale: "ja_JP",
