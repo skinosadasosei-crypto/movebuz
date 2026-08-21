@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
-  <rect width="800" height="450" rx="16" fill="#fef2f2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" fill="none">
+  <rect width="800" height="470" rx="16" fill="#fef2f2"/>
   <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#1e293b">ショート動画と通常動画の違い</text>
   <g transform="translate(60,75)">
-    <rect width="310" height="340" rx="14" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <rect width="310" height="360" rx="14" fill="white" stroke="#ef4444" stroke-width="2"/>
     <rect width="310" height="50" rx="14" fill="#ef4444"/>
     <rect y="36" width="310" height="14" fill="#ef4444"/>
     <text x="155" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">ショート動画</text>
@@ -22,7 +22,7 @@
     <text x="30" y="345" font-family="sans-serif" font-size="13" fill="#64748b">認知拡大・登録者獲得</text>
   </g>
   <g transform="translate(430,75)">
-    <rect width="310" height="340" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="310" height="360" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
     <rect width="310" height="50" rx="14" fill="#3b82f6"/>
     <rect y="36" width="310" height="14" fill="#3b82f6"/>
     <text x="155" y="35" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="white">通常動画</text>
