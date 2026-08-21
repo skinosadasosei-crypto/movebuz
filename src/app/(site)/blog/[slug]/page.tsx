@@ -54,9 +54,28 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
   };
 
   const allArticles = await getAllArticlesWithGitHub();
-  const relatedArticles = allArticles
-    .filter((a) => a.category === article.category && a.slug !== article.slug)
-    .slice(0, 3);
+  const sameCategory = allArticles.filter(
+    (a) => a.category === article.category && a.slug !== article.slug
+  );
+  const otherCategory = allArticles.filter(
+    (a) => a.category !== article.category && a.slug !== article.slug
+  );
+  const relatedArticles = [...sameCategory, ...otherCategory].slice(0, 3);
+
+  const currentIndex = allArticles.findIndex((a) => a.slug === article.slug);
+  const prevArticle = currentIndex < allArticles.length - 1 ? allArticles[currentIndex + 1] : null;
+  const nextArticle = currentIndex > 0 ? allArticles[currentIndex - 1] : null;
+
+  const headings: { id: string; text: string; level: number }[] = [];
+  const contentWithIds = article.content.replace(
+    /<h([23])[^>]*>(.*?)<\/h\1>/g,
+    (_, level, text) => {
+      const plainText = text.replace(/<[^>]+>/g, "");
+      const id = plainText.replace(/\s+/g, "-").replace(/[^\w　-鿿゠-ヿ぀-ゟ-]/g, "").toLowerCase();
+      headings.push({ id, text: plainText, level: Number(level) });
+      return `<h${level} id="${id}">${text}</h${level}>`;
+    }
+  );
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -158,10 +177,29 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
             )}
           </div>
 
+          {/* TOC */}
+          {headings.length > 2 && (
+            <nav className="my-8 p-5 bg-card border border-border rounded-2xl">
+              <p className="text-sm font-bold mb-3 text-foreground">目次</p>
+              <ul className="space-y-1.5">
+                {headings.map((h) => (
+                  <li key={h.id} className={h.level === 3 ? "pl-4" : ""}>
+                    <a
+                      href={`#${h.id}`}
+                      className="text-sm text-muted hover:text-primary transition-colors leading-relaxed"
+                    >
+                      {h.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+
           {/* Content */}
           <div
             className="article-content"
-            dangerouslySetInnerHTML={{ __html: article.content }}
+            dangerouslySetInnerHTML={{ __html: contentWithIds }}
           />
 
           {/* FAQ */}
@@ -210,6 +248,30 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
           </div>
         </div>
       </article>
+
+      {/* Prev / Next */}
+      {(prevArticle || nextArticle) && (
+        <nav className="max-w-3xl mx-auto px-4 py-8 grid grid-cols-2 gap-4">
+          {prevArticle ? (
+            <Link
+              href={`/blog/${prevArticle.slug}`}
+              className="border border-border rounded-xl p-4 hover:bg-card transition-colors"
+            >
+              <span className="text-xs text-muted block mb-1">← 前の記事</span>
+              <span className="text-sm font-semibold line-clamp-2">{prevArticle.title}</span>
+            </Link>
+          ) : <div />}
+          {nextArticle ? (
+            <Link
+              href={`/blog/${nextArticle.slug}`}
+              className="border border-border rounded-xl p-4 hover:bg-card transition-colors text-right"
+            >
+              <span className="text-xs text-muted block mb-1">次の記事 →</span>
+              <span className="text-sm font-semibold line-clamp-2">{nextArticle.title}</span>
+            </Link>
+          ) : <div />}
+        </nav>
+      )}
 
       {/* Related articles */}
       {relatedArticles.length > 0 && (
