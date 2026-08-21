@@ -19,6 +19,18 @@ export function isGA4Configured(): boolean {
   return !!getClient() && !!getPropertyId();
 }
 
+const excludeDashboardFilter = {
+  notExpression: {
+    filter: {
+      fieldName: "pagePath",
+      stringFilter: {
+        matchType: "BEGINS_WITH" as const,
+        value: "/dashboard",
+      },
+    },
+  },
+};
+
 export async function fetchOverviewMetrics(days: number = 30) {
   const client = getClient();
   const propertyId = getPropertyId();
@@ -27,6 +39,7 @@ export async function fetchOverviewMetrics(days: number = 30) {
   const [response] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensionFilter: excludeDashboardFilter,
     metrics: [
       { name: "totalUsers" },
       { name: "sessions" },
@@ -60,6 +73,7 @@ export async function fetchDailyMetrics(days: number = 30) {
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
     dimensions: [{ name: "date" }],
+    dimensionFilter: excludeDashboardFilter,
     metrics: [
       { name: "totalUsers" },
       { name: "sessions" },
@@ -85,6 +99,7 @@ export async function fetchTopPages(days: number = 30, limit: number = 20) {
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
     dimensions: [{ name: "pagePath" }, { name: "pageTitle" }],
+    dimensionFilter: excludeDashboardFilter,
     metrics: [
       { name: "screenPageViews" },
       { name: "totalUsers" },
@@ -115,6 +130,7 @@ export async function fetchTrafficSources(days: number = 30) {
   const [response] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "sessionDefaultChannelGroup" }],
     metrics: [
       { name: "totalUsers" },
@@ -154,6 +170,7 @@ export async function fetchDeviceBreakdown(days: number = 30) {
   const [response] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "deviceCategory" }],
     metrics: [{ name: "sessions" }],
     orderBys: [{ metric: { metricName: "sessions" }, desc: true }],
@@ -182,6 +199,7 @@ export async function fetchHourlyMetrics(days: number = 30) {
   const [response] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "hour" }],
     metrics: [
       { name: "totalUsers" },
@@ -218,6 +236,7 @@ export async function fetchUserDemographics(days: number = 30) {
   const [ageRes] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "userAgeBracket" }],
     metrics: [{ name: "totalUsers" }],
     orderBys: [{ dimension: { dimensionName: "userAgeBracket" } }],
@@ -226,6 +245,7 @@ export async function fetchUserDemographics(days: number = 30) {
   const [genderRes] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
+    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "userGender" }],
     metrics: [{ name: "totalUsers" }],
     orderBys: [{ metric: { metricName: "totalUsers" }, desc: true }],
