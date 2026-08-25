@@ -1,36 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
-  <rect width="800" height="400" rx="16" fill="#f0fdf4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <rect width="800" height="440" rx="16" fill="#f0fdf4"/>
   <text x="400" y="40" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="#1e293b">YouTubeパートナープログラム（YPP）参加条件</text>
   <g transform="translate(50,70)">
-    <rect width="330" height="130" rx="14" fill="white" stroke="#10b981" stroke-width="2"/>
+    <rect width="330" height="160" rx="14" fill="white" stroke="#10b981" stroke-width="2"/>
     <rect width="330" height="42" rx="14" fill="#10b981"/>
     <rect y="28" width="330" height="14" fill="#10b981"/>
     <text x="165" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">通常動画ルート</text>
     <text x="25" y="72" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">チャンネル登録者数</text>
-    <text x="25" y="92" font-family="sans-serif" font-size="22" fill="#15803d" font-weight="700">1,000人以上</text>
-    <text x="25" y="115" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">過去12ヶ月の総再生時間</text>
-    <text x="280" y="92" font-family="sans-serif" font-size="12" fill="#64748b">かつ</text>
-    <text x="280" y="92" font-family="sans-serif" font-size="12" fill="#64748b">+</text>
+    <text x="25" y="98" font-family="sans-serif" font-size="22" fill="#15803d" font-weight="700">1,000人以上</text>
+    <line x1="25" y1="112" x2="305" y2="112" stroke="#dcfce7" stroke-width="1.5"/>
+    <text x="25" y="132" font-family="sans-serif" font-weight="600" font-size="13" fill="#166534">過去12ヶ月の総再生時間</text>
+    <text x="25" y="152" font-family="sans-serif" font-size="22" fill="#15803d" font-weight="700">4,000時間以上</text>
   </g>
   <g transform="translate(420,70)">
-    <rect width="330" height="130" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="330" height="160" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
     <rect width="330" height="42" rx="14" fill="#3b82f6"/>
     <rect y="28" width="330" height="14" fill="#3b82f6"/>
     <text x="165" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">ショート動画ルート</text>
     <text x="25" y="72" font-family="sans-serif" font-weight="600" font-size="13" fill="#1e40af">チャンネル登録者数</text>
-    <text x="25" y="92" font-family="sans-serif" font-size="22" fill="#1d4ed8" font-weight="700">1,000人以上</text>
-    <text x="25" y="115" font-family="sans-serif" font-weight="600" font-size="13" fill="#1e40af">過去90日間のショート視聴回数</text>
+    <text x="25" y="98" font-family="sans-serif" font-size="22" fill="#1d4ed8" font-weight="700">1,000人以上</text>
+    <line x1="25" y1="112" x2="305" y2="112" stroke="#dbeafe" stroke-width="1.5"/>
+    <text x="25" y="132" font-family="sans-serif" font-weight="600" font-size="13" fill="#1e40af">過去90日間のショート視聴回数</text>
+    <text x="25" y="152" font-family="sans-serif" font-size="22" fill="#1d4ed8" font-weight="700">1,000万回以上</text>
   </g>
-  <text x="215" y="182" font-family="sans-serif" font-size="22" fill="#15803d" font-weight="700">4,000時間以上</text>
-  <text x="585" y="182" font-family="sans-serif" font-size="22" fill="#1d4ed8" font-weight="700">1,000万回以上</text>
-  <g transform="translate(50,220)">
+  <g transform="translate(50,260)">
     <rect width="700" height="160" rx="14" fill="white" stroke="#f59e0b" stroke-width="2"/>
     <rect width="700" height="42" rx="14" fill="#f59e0b"/>
     <rect y="28" width="700" height="14" fill="#f59e0b"/>
     <text x="350" y="30" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="white">共通の要件</text>
     <text x="30" y="68" font-family="sans-serif" font-size="13" fill="#334155">・YouTubeのチャンネル収益化ポリシーを遵守していること</text>
-    <text x="30" y="90" font-family="sans-serif" font-size="13" fill="#334155">・Google AdSenseアカウントを持っている（または作成可能な）こと</text>
-    <text x="30" y="112" font-family="sans-serif" font-size="13" fill="#334155">・コミュニティガイドラインの違反警告を受けていないこと</text>
-    <text x="30" y="134" font-family="sans-serif" font-size="13" fill="#334155">・2段階認証を有効にしていること</text>
+    <text x="30" y="92" font-family="sans-serif" font-size="13" fill="#334155">・Google AdSenseアカウントを持っている（または作成可能な）こと</text>
+    <text x="30" y="116" font-family="sans-serif" font-size="13" fill="#334155">・コミュニティガイドラインの違反警告を受けていないこと</text>
+    <text x="30" y="140" font-family="sans-serif" font-size="13" fill="#334155">・2段階認証を有効にしていること</text>
   </g>
 </svg>
