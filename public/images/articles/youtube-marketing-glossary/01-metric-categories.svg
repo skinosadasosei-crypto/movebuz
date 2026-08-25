@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" fill="none">
+  <rect width="800" height="420" rx="16" fill="#f0f9ff"/>
+  <text x="400" y="40" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="#1e293b">YouTube用語の4つのカテゴリ</text>
+  <g transform="translate(30,65)">
+    <rect width="170" height="320" rx="14" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="170" height="45" rx="14" fill="#3b82f6"/>
+    <rect y="31" width="170" height="14" fill="#3b82f6"/>
+    <text x="85" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">指標・数値系</text>
+    <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#334155">・CTR</text>
+    <text x="20" y="97" font-family="sans-serif" font-size="12" fill="#334155">・CPM / CPV / CPC</text>
+    <text x="20" y="119" font-family="sans-serif" font-size="12" fill="#334155">・RPM</text>
+    <text x="20" y="141" font-family="sans-serif" font-size="12" fill="#334155">・インプレッション</text>
+    <text x="20" y="163" font-family="sans-serif" font-size="12" fill="#334155">・視聴維持率</text>
+    <text x="20" y="185" font-family="sans-serif" font-size="12" fill="#334155">・エンゲージメント</text>
+    <text x="20" y="207" font-family="sans-serif" font-size="12" fill="#334155">・直帰率</text>
+    <text x="20" y="229" font-family="sans-serif" font-size="12" fill="#334155">・コンバージョン</text>
+    <text x="20" y="251" font-family="sans-serif" font-size="12" fill="#334155">・KPI / ROI</text>
+  </g>
+  <g transform="translate(215,65)">
+    <rect width="170" height="320" rx="14" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="170" height="45" rx="14" fill="#8b5cf6"/>
+    <rect y="31" width="170" height="14" fill="#8b5cf6"/>
+    <text x="85" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">YouTube機能</text>
+    <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#334155">・エンドスクリーン</text>
+    <text x="20" y="97" font-family="sans-serif" font-size="12" fill="#334155">・カード</text>
+    <text x="20" y="119" font-family="sans-serif" font-size="12" fill="#334155">・チャプター</text>
+    <text x="20" y="141" font-family="sans-serif" font-size="12" fill="#334155">・再生リスト</text>
+    <text x="20" y="163" font-family="sans-serif" font-size="12" fill="#334155">・コミュニティ</text>
+    <text x="20" y="185" font-family="sans-serif" font-size="12" fill="#334155">・メンバーシップ</text>
+    <text x="20" y="207" font-family="sans-serif" font-size="12" fill="#334155">・スーパーチャット</text>
+    <text x="20" y="229" font-family="sans-serif" font-size="12" fill="#334155">・プレミア公開</text>
+    <text x="20" y="251" font-family="sans-serif" font-size="12" fill="#334155">・アナリティクス</text>
+  </g>
+  <g transform="translate(400,65)">
+    <rect width="170" height="320" rx="14" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <rect width="170" height="45" rx="14" fill="#ec4899"/>
+    <rect y="31" width="170" height="14" fill="#ec4899"/>
+    <text x="85" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">広告・集客</text>
+    <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#334155">・インストリーム広告</text>
+    <text x="20" y="97" font-family="sans-serif" font-size="12" fill="#334155">・バンパー広告</text>
+    <text x="20" y="119" font-family="sans-serif" font-size="12" fill="#334155">・ディスカバリー広告</text>
+    <text x="20" y="141" font-family="sans-serif" font-size="12" fill="#334155">・リマーケティング</text>
+    <text x="20" y="163" font-family="sans-serif" font-size="12" fill="#334155">・UTMパラメータ</text>
+    <text x="20" y="185" font-family="sans-serif" font-size="12" fill="#334155">・SEO</text>
+    <text x="20" y="207" font-family="sans-serif" font-size="12" fill="#334155">・オーガニック</text>
+    <text x="20" y="229" font-family="sans-serif" font-size="12" fill="#334155">・CTA</text>
+  </g>
+  <g transform="translate(585,65)">
+    <rect width="170" height="320" rx="14" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="170" height="45" rx="14" fill="#f59e0b"/>
+    <rect y="31" width="170" height="14" fill="#f59e0b"/>
+    <text x="85" y="32" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="white">戦略・分析</text>
+    <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#334155">・ペルソナ</text>
+    <text x="20" y="97" font-family="sans-serif" font-size="12" fill="#334155">・ファネル</text>
+    <text x="20" y="119" font-family="sans-serif" font-size="12" fill="#334155">・ABテスト</text>
+    <text x="20" y="141" font-family="sans-serif" font-size="12" fill="#334155">・アルゴリズム</text>
+    <text x="20" y="163" font-family="sans-serif" font-size="12" fill="#334155">・トラフィック</text>
+    <text x="20" y="185" font-family="sans-serif" font-size="12" fill="#334155">・セッション</text>
+    <text x="20" y="207" font-family="sans-serif" font-size="12" fill="#334155">・ブランディング</text>
+    <text x="20" y="229" font-family="sans-serif" font-size="12" fill="#334155">・リード</text>
+  </g>
+</svg>
