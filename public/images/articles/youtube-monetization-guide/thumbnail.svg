@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="0" fill="#0f172a"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <text x="600" y="180" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="56" fill="#f8fafc">YouTube収益化</text>
+  <text x="600" y="260" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="56" fill="#34d399">完全ガイド</text>
+  <g transform="translate(140,320)">
+    <rect width="180" height="110" rx="16" fill="#10b981" opacity="0.15" stroke="#10b981" stroke-width="2"/>
+    <text x="90" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#34d399">広告収益</text>
+    <text x="90" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">YPP・AdSense</text>
+  </g>
+  <g transform="translate(360,320)">
+    <rect width="180" height="110" rx="16" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="2"/>
+    <text x="90" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#60a5fa">案件・PR</text>
+    <text x="90" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">企業タイアップ</text>
+  </g>
+  <g transform="translate(580,320)">
+    <rect width="180" height="110" rx="16" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="90" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#a78bfa">自社商品</text>
+    <text x="90" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">販売・集客</text>
+  </g>
+  <g transform="translate(800,320)">
+    <rect width="180" height="110" rx="16" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="2"/>
+    <text x="90" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#fbbf24">ファン課金</text>
+    <text x="90" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">メンバーシップ</text>
+  </g>
+  <text x="600" y="530" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="22" fill="#94a3b8">条件・手順・収益を伸ばすコツまで</text>
+</svg>
