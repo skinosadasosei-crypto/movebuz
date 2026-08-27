@@ -8,14 +8,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://movebuz.vercel.app"
 const ogImage = `${siteUrl}/api/og`;
 
 export const metadata = {
-  title: "記事一覧",
-  description: "YouTube運用・動画マーケティングに関する最新記事の一覧です。",
+  title: "記事一覧 | YouTube運用・動画マーケティング",
+  description: "企業のYouTube運用に役立つ記事一覧。チャンネル開設・動画制作・アルゴリズム攻略・外注費用の相場まで、動画マーケティングの実践ノウハウをまとめています。",
   alternates: {
     canonical: `${siteUrl}/blog`,
   },
   openGraph: {
     title: "記事一覧 | MOVeBUZ",
-    description: "YouTube運用・動画マーケティングに関する最新記事の一覧です。",
+    description: "企業のYouTube運用に役立つ記事一覧。チャンネル開設・動画制作・アルゴリズム攻略・外注費用の相場まで、動画マーケティングの実践ノウハウをまとめています。",
     url: `${siteUrl}/blog`,
     images: [{ url: ogImage, width: 1200, height: 630, type: "image/png" }],
   },

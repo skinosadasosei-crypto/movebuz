@@ -1,6 +1,6 @@
 ---
-title: "【BtoB向け】YouTube動画の企画ネタ30選｜すぐに使えるテーマ集"
-description: "BtoB企業がYouTubeで発信すべき動画の企画ネタを30個厳選。業種別のアイデアや企画の考え方も解説します。"
+title: "YouTube企画ネタ一覧30選｜伸びる動画のアイデア集【企業・BtoB向け】"
+description: "YouTubeで伸びる企画ネタを30個一覧で紹介。バズった企画の共通点や、企業・BtoB向けの動画アイデアの考え方も解説します。"
 date: "2026-04-01"
 category: "video-production"
 tags: ["BtoB", "企画", "ネタ", "YouTube", "コンテンツ"]

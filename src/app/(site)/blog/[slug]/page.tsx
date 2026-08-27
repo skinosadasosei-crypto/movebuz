@@ -255,19 +255,37 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
           {prevArticle ? (
             <Link
               href={`/blog/${prevArticle.slug}`}
-              className="border border-border rounded-xl p-4 hover:bg-card transition-colors"
+              className="group border border-border rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all"
             >
-              <span className="text-xs text-muted block mb-1">← 前の記事</span>
-              <span className="text-sm font-semibold line-clamp-2">{prevArticle.title}</span>
+              <div className="aspect-[16/9] relative bg-card">
+                <img
+                  src={`/images/thumbnails/${prevArticle.slug}.svg`}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <span className="text-xs text-muted block mb-1">← 前の記事</span>
+                <span className="text-sm font-semibold line-clamp-2">{prevArticle.title}</span>
+              </div>
             </Link>
           ) : <div />}
           {nextArticle ? (
             <Link
               href={`/blog/${nextArticle.slug}`}
-              className="border border-border rounded-xl p-4 hover:bg-card transition-colors text-right"
+              className="group border border-border rounded-xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all"
             >
-              <span className="text-xs text-muted block mb-1">次の記事 →</span>
-              <span className="text-sm font-semibold line-clamp-2">{nextArticle.title}</span>
+              <div className="aspect-[16/9] relative bg-card">
+                <img
+                  src={`/images/thumbnails/${nextArticle.slug}.svg`}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3 text-right">
+                <span className="text-xs text-muted block mb-1">次の記事 →</span>
+                <span className="text-sm font-semibold line-clamp-2">{nextArticle.title}</span>
+              </div>
             </Link>
           ) : <div />}
         </nav>
@@ -284,14 +302,23 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
                 <Link
                   key={a.slug}
                   href={`/blog/${a.slug}`}
-                  className="bg-background border border-border rounded-2xl p-5 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                  className="bg-background border border-border rounded-2xl overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all"
                 >
-                  <h3 className="font-semibold text-sm leading-snug line-clamp-2 mb-2">
-                    {a.title}
-                  </h3>
-                  <time className="text-[11px] text-muted block">
-                    {a.date}
-                  </time>
+                  <div className="aspect-[16/9] relative bg-card">
+                    <img
+                      src={`/images/thumbnails/${a.slug}.svg`}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-sm leading-snug line-clamp-2 mb-2">
+                      {a.title}
+                    </h3>
+                    <time className="text-[11px] text-muted block">
+                      {a.date}
+                    </time>
+                  </div>
                 </Link>
               ))}
             </div>

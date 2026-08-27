@@ -11,6 +11,14 @@ export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ category: c.slug }));
 }
 
+const categoryDescriptions: Record<string, string> = {
+  "youtube-basics": "YouTube運用の基礎知識を解説。チャンネル開設から設定、アナリティクスの見方、失敗しない運用のコツまで、初心者にもわかりやすくまとめています。",
+  "video-production": "動画制作のノウハウを紹介。企画ネタの出し方、台本の書き方、撮影・編集テクニックなど、YouTube動画の品質を高める実践的な記事を掲載。",
+  "channel-growth": "YouTubeチャンネルを成長させる戦略を解説。アルゴリズムの仕組み、再生数を伸ばす方法、SEO対策など、登録者を増やすための施策をまとめています。",
+  "case-study": "YouTubeを活用した企業の成功事例を紹介。中小企業のYouTube活用法、ブランディング事例など、実際の成果と戦略のポイントを解説します。",
+  "outsourcing": "YouTube運用の外注・代行に関する記事。動画編集の外注費用の相場、運用代行の料金比較、失敗しない依頼先の選び方を解説します。",
+};
+
 export async function generateMetadata(
   props: { params: Promise<{ category: string }> }
 ): Promise<Metadata> {
@@ -18,8 +26,8 @@ export async function generateMetadata(
   const cat = CATEGORIES.find((c) => c.slug === category);
   if (!cat) return {};
   return {
-    title: `${cat.name}の記事一覧`,
-    description: `${cat.name}に関するYouTube運用・動画マーケティングの記事一覧です。`,
+    title: `${cat.name}の記事一覧 | YouTube運用メディア`,
+    description: categoryDescriptions[category] || `${cat.name}に関するYouTube運用・動画マーケティングの記事一覧です。`,
     alternates: {
       canonical: `${siteUrl}/blog/category/${category}`,
     },
