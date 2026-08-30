@@ -236,7 +236,6 @@ export async function fetchUserDemographics(days: number = 30) {
   const [ageRes] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
-    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "userAgeBracket" }],
     metrics: [{ name: "totalUsers" }],
     orderBys: [{ dimension: { dimensionName: "userAgeBracket" } }],
@@ -245,7 +244,6 @@ export async function fetchUserDemographics(days: number = 30) {
   const [genderRes] = await client.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: "today" }],
-    dimensionFilter: excludeDashboardFilter,
     dimensions: [{ name: "userGender" }],
     metrics: [{ name: "totalUsers" }],
     orderBys: [{ metric: { metricName: "totalUsers" }, desc: true }],

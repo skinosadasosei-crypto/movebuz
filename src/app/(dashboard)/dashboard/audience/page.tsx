@@ -58,7 +58,7 @@ export default function AudiencePage() {
   useEffect(() => {
     Promise.all([
       fetch("/api/dashboard/analytics?type=hourly").then((r) => r.json()),
-      fetch("/api/dashboard/analytics?type=demographics").then((r) => r.json()),
+      fetch("/api/dashboard/analytics?type=demographics&days=90").then((r) => r.json()),
     ])
       .then(([hr, demo]) => {
         if (hr.data) setHourly(hr.data);
@@ -218,7 +218,7 @@ export default function AudiencePage() {
               ) : (
                 <div className="flex items-center justify-center h-32 text-center px-4">
                   <p className="text-xs" style={{ color: demoError ? "var(--dash-red, #ef4444)" : "var(--dash-text-muted)" }}>
-                    {demoError || "GA4で「デモグラフィック レポート」を有効にすると表示されます"}
+                    {demoError || "ユーザー数が少ないためデモグラフィックデータが非表示です（GA4プライバシー閾値）"}
                   </p>
                 </div>
               )}
@@ -253,7 +253,7 @@ export default function AudiencePage() {
               ) : (
                 <div className="flex items-center justify-center h-32 text-center px-4">
                   <p className="text-xs" style={{ color: demoError ? "var(--dash-red, #ef4444)" : "var(--dash-text-muted)" }}>
-                    {demoError || "GA4で「デモグラフィック レポート」を有効にすると表示されます"}
+                    {demoError || "ユーザー数が少ないためデモグラフィックデータが非表示です（GA4プライバシー閾値）"}
                   </p>
                 </div>
               )}
