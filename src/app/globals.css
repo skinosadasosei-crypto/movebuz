@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #262626;
-  --primary: #e1306c;
-  --primary-light: #fdf2f5;
-  --primary-dark: #c13584;
-  --accent: #fd1d1d;
-  --accent-light: #fff5f5;
-  --muted: #8e8e8e;
-  --border: #dbdbdb;
+  --background: #f8fafc;
+  --foreground: #1e293b;
+  --primary: #2563eb;
+  --primary-light: #eff6ff;
+  --primary-dark: #1d4ed8;
+  --accent: #0ea5e9;
+  --accent-light: #f0f9ff;
+  --muted: #64748b;
+  --border: #e2e8f0;
   --card: #ffffff;
-  --gradient-start: #f58529;
-  --gradient-mid: #dd2a7b;
-  --gradient-end: #8134af;
-  --gradient-far: #515bd4;
+  --gradient-start: #2563eb;
+  --gradient-mid: #3b82f6;
+  --gradient-end: #0ea5e9;
+  --gradient-far: #06b6d4;
 }
 
 @theme inline {
@@ -38,11 +38,11 @@ body {
 }
 
 .ig-gradient {
-  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background: linear-gradient(135deg, #2563eb, #3b82f6, #0ea5e9, #06b6d4);
 }
 
 .ig-gradient-text {
-  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+  background: linear-gradient(135deg, #2563eb, #3b82f6, #0ea5e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -58,7 +58,7 @@ body {
   inset: 0;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background: linear-gradient(135deg, #2563eb, #3b82f6, #0ea5e9, #06b6d4);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
