@@ -21,35 +21,44 @@ async function verifyToken(token: string, secret: string): Promise<boolean> {
 }
 
 export async function proxy(request: NextRequest) {
+  const hostname = request.headers.get("host") || "";
   const { pathname } = request.nextUrl;
 
-  if (pathname === "/dashboard/login") {
+  if (hostname.includes("sosei-chiba")) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/sosei${pathname === "/" ? "" : pathname}`;
+    return NextResponse.rewrite(url);
+  }
+
+  if (pathname.startsWith("/dashboard")) {
+    if (pathname === "/dashboard/login") {
+      const token = request.cookies.get("dash_session")?.value;
+      const secret = process.env.DASHBOARD_SECRET;
+      if (token && secret) {
+        const valid = await verifyToken(token, secret);
+        if (valid) {
+          return NextResponse.redirect(new URL("/dashboard", request.url));
+        }
+      }
+      return NextResponse.next();
+    }
+
     const token = request.cookies.get("dash_session")?.value;
     const secret = process.env.DASHBOARD_SECRET;
-    if (token && secret) {
-      const valid = await verifyToken(token, secret);
-      if (valid) {
-        return NextResponse.redirect(new URL("/dashboard", request.url));
-      }
+
+    if (!token || !secret) {
+      return NextResponse.redirect(new URL("/dashboard/login", request.url));
     }
-    return NextResponse.next();
-  }
 
-  const token = request.cookies.get("dash_session")?.value;
-  const secret = process.env.DASHBOARD_SECRET;
-
-  if (!token || !secret) {
-    return NextResponse.redirect(new URL("/dashboard/login", request.url));
-  }
-
-  const valid = await verifyToken(token, secret);
-  if (!valid) {
-    return NextResponse.redirect(new URL("/dashboard/login", request.url));
+    const valid = await verifyToken(token, secret);
+    if (!valid) {
+      return NextResponse.redirect(new URL("/dashboard/login", request.url));
+    }
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: "/dashboard/:path*",
+  matcher: ["/((?!_next|api|favicon.ico|icon\\.svg|sitemap\\.xml|robots\\.txt).*)"],
 };
