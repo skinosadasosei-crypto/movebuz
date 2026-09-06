@@ -1,0 +1,101 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="fwHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="fwShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" rx="16" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" rx="16" fill="url(#fwHeader)"/>
+  <rect x="0" y="16" width="800" height="40" fill="url(#fwHeader)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">ネタ出し3つのフレームワーク</text>
+
+  <!-- Framework 1: 競合分析 -->
+  <rect x="30" y="80" width="230" height="340" rx="12" fill="#fff" filter="url(#fwShadow)"/>
+  <rect x="30" y="80" width="230" height="6" rx="3" fill="#059669"/>
+  <text x="145" y="120" text-anchor="middle" fill="#059669" font-size="14" font-weight="bold">STEP 1</text>
+  <text x="145" y="150" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">競合チャンネル</text>
+  <text x="145" y="172" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">分析</text>
+  <line x1="95" y1="185" x2="195" y2="185" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+  <!-- Checklist items -->
+  <circle cx="60" cy="215" r="6" fill="#dcfce7" stroke="#059669" stroke-width="1.5"/>
+  <text x="60" y="219" text-anchor="middle" fill="#059669" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="75" y="219" fill="#475569" font-size="12">人気動画のテーマを把握</text>
+  <circle cx="60" cy="250" r="6" fill="#dcfce7" stroke="#059669" stroke-width="1.5"/>
+  <text x="60" y="254" text-anchor="middle" fill="#059669" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="75" y="254" fill="#475569" font-size="12">自社独自の切り口を追加</text>
+  <circle cx="60" cy="285" r="6" fill="#dcfce7" stroke="#059669" stroke-width="1.5"/>
+  <text x="60" y="289" text-anchor="middle" fill="#059669" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="75" y="289" fill="#475569" font-size="12">空白テーマを見つける</text>
+  <circle cx="60" cy="320" r="6" fill="#dcfce7" stroke="#059669" stroke-width="1.5"/>
+  <text x="60" y="324" text-anchor="middle" fill="#059669" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="75" y="324" fill="#475569" font-size="12">コメント欄からニーズ収集</text>
+  <!-- Result -->
+  <rect x="50" y="355" width="190" height="40" rx="8" fill="#ecfdf5"/>
+  <text x="145" y="380" text-anchor="middle" fill="#059669" font-size="12" font-weight="bold">差別化できるネタが見つかる</text>
+
+  <!-- Arrow 1 -->
+  <text x="275" y="250" text-anchor="middle" fill="#cbd5e1" font-size="28">&#x25B6;</text>
+
+  <!-- Framework 2: 視聴者の悩み -->
+  <rect x="285" y="80" width="230" height="340" rx="12" fill="#fff" filter="url(#fwShadow)"/>
+  <rect x="285" y="80" width="230" height="6" rx="3" fill="#0891b2"/>
+  <text x="400" y="120" text-anchor="middle" fill="#0891b2" font-size="14" font-weight="bold">STEP 2</text>
+  <text x="400" y="150" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">視聴者の悩みから</text>
+  <text x="400" y="172" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">逆算</text>
+  <line x1="350" y1="185" x2="450" y2="185" stroke="#0891b2" stroke-width="2" stroke-linecap="round"/>
+  <!-- Checklist items -->
+  <circle cx="315" cy="215" r="6" fill="#e0f2fe" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="315" y="219" text-anchor="middle" fill="#0891b2" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="330" y="219" fill="#475569" font-size="12">よくある質問をリスト化</text>
+  <circle cx="315" cy="250" r="6" fill="#e0f2fe" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="315" y="254" text-anchor="middle" fill="#0891b2" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="330" y="254" fill="#475569" font-size="12">SNS・レビューで悩み調査</text>
+  <circle cx="315" cy="285" r="6" fill="#e0f2fe" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="315" y="289" text-anchor="middle" fill="#0891b2" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="330" y="289" fill="#475569" font-size="12">知恵袋・Quoraで質問調査</text>
+  <circle cx="315" cy="320" r="6" fill="#e0f2fe" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="315" y="324" text-anchor="middle" fill="#0891b2" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="330" y="324" fill="#475569" font-size="12">サイト内検索KWを分析</text>
+  <!-- Result -->
+  <rect x="305" y="355" width="190" height="40" rx="8" fill="#ecfeff"/>
+  <text x="400" y="380" text-anchor="middle" fill="#0891b2" font-size="12" font-weight="bold">需要のあるネタが見つかる</text>
+
+  <!-- Arrow 2 -->
+  <text x="530" y="250" text-anchor="middle" fill="#cbd5e1" font-size="28">&#x25B6;</text>
+
+  <!-- Framework 3: 検索KW -->
+  <rect x="540" y="80" width="230" height="340" rx="12" fill="#fff" filter="url(#fwShadow)"/>
+  <rect x="540" y="80" width="230" height="6" rx="3" fill="#2563eb"/>
+  <text x="655" y="120" text-anchor="middle" fill="#2563eb" font-size="14" font-weight="bold">STEP 3</text>
+  <text x="655" y="150" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">検索キーワードから</text>
+  <text x="655" y="172" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">逆算</text>
+  <line x1="605" y1="185" x2="705" y2="185" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <!-- Checklist items -->
+  <circle cx="570" cy="215" r="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="570" y="219" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="585" y="219" fill="#475569" font-size="12">サジェストKWを確認</text>
+  <circle cx="570" cy="250" r="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="570" y="254" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="585" y="254" fill="#475569" font-size="12">検索ボリュームを調査</text>
+  <circle cx="570" cy="285" r="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="570" y="289" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="585" y="289" fill="#475569" font-size="12">検索パターンに当てはめる</text>
+  <circle cx="570" cy="320" r="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="570" y="324" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="bold">&#x2713;</text>
+  <text x="585" y="324" fill="#475569" font-size="12">GSCのKWを動画に転用</text>
+  <!-- Result -->
+  <rect x="560" y="355" width="190" height="40" rx="8" fill="#eff6ff"/>
+  <text x="655" y="380" text-anchor="middle" fill="#2563eb" font-size="12" font-weight="bold">SEOに強いネタが見つかる</text>
+
+  <!-- Footer -->
+  <text x="400" y="455" text-anchor="middle" fill="#94a3b8" font-size="12">3つのフレームワークを組み合わせてネタを量産しよう</text>
+</svg>

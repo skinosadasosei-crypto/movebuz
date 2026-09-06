@@ -1,0 +1,129 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="50%" style="stop-color:#ea580c"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">バズる動画に共通する7つの法則</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(30, 84)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#dc2626"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">1</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">冒頭3秒</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">最初のインパクトで</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">離脱を防ぐ</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#dc262615"/>
+    <text x="117" y="99" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="bold">離脱率30-40%を改善</text>
+  </g>
+
+  <g transform="translate(283, 84)">
+    <!-- Card 2 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#ea580c"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">2</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">感情トリガー</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">驚き・共感・好奇心で</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">心を動かす</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#ea580c15"/>
+    <text x="117" y="99" text-anchor="middle" fill="#ea580c" font-size="10" font-weight="bold">シェア率の向上</text>
+  </g>
+
+  <g transform="translate(536, 84)">
+    <!-- Card 3 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#f59e0b"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">3</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">トレンド活用</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">旬のテーマ×専門性で</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">露出機会を増やす</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#f59e0b15"/>
+    <text x="117" y="99" text-anchor="middle" fill="#f59e0b" font-size="10" font-weight="bold">初動の再生数アップ</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(30, 224)">
+    <!-- Card 4 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#16a34a"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">4</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">サムネイル設計</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">CTR8%以上を目指す</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">視覚的な訴求</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#16a34a15"/>
+    <text x="117" y="99" text-anchor="middle" fill="#16a34a" font-size="10" font-weight="bold">クリック率が成否を決める</text>
+  </g>
+
+  <g transform="translate(283, 224)">
+    <!-- Card 5 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#0ea5e9"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">5</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">シェアされる構造</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">「教えたい」と</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">思わせる設計</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#0ea5e915"/>
+    <text x="117" y="99" text-anchor="middle" fill="#0ea5e9" font-size="10" font-weight="bold">SNS拡散で露出拡大</text>
+  </g>
+
+  <g transform="translate(536, 224)">
+    <!-- Card 6 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#8b5cf6"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">6</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">シリーズ化</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">一過性のバズを</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">チャンネル成長へ</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#8b5cf615"/>
+    <text x="117" y="99" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="bold">登録者・リピート増加</text>
+  </g>
+
+  <!-- Row 3: Center card -->
+  <g transform="translate(283, 364)">
+    <!-- Card 7 -->
+    <rect x="0" y="0" width="235" height="120" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="20" fill="#ec4899"/>
+    <text x="36" y="43" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">7</text>
+    <text x="68" y="32" fill="#1e293b" font-size="14" font-weight="bold">適切な動画尺</text>
+    <text x="68" y="50" fill="#64748b" font-size="11">テーマに合った長さで</text>
+    <text x="68" y="66" fill="#64748b" font-size="11">視聴維持率を最大化</text>
+    <rect x="16" y="84" width="203" height="22" rx="11" fill="#ec489915"/>
+    <text x="117" y="99" text-anchor="middle" fill="#ec4899" font-size="10" font-weight="bold">維持率がアルゴリズムの鍵</text>
+  </g>
+
+  <!-- Connecting arrows from center to sides -->
+  <line x1="283" y1="424" x2="265" y2="424" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="518" y1="424" x2="536" y2="424" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Left box -->
+  <rect x="30" y="374" width="235" height="100" rx="12" fill="#fff3f3" filter="url(#cardShadow)"/>
+  <text x="147" y="410" text-anchor="middle" fill="#dc2626" font-size="13" font-weight="bold">全法則に共通するポイント</text>
+  <text x="147" y="434" text-anchor="middle" fill="#64748b" font-size="11">視聴者目線で設計し</text>
+  <text x="147" y="452" text-anchor="middle" fill="#64748b" font-size="11">データで検証・改善する</text>
+
+  <!-- Right box -->
+  <rect x="536" y="374" width="235" height="100" rx="12" fill="#f0fdf4" filter="url(#cardShadow)"/>
+  <text x="653" y="410" text-anchor="middle" fill="#16a34a" font-size="13" font-weight="bold">企業チャンネルの注意</text>
+  <text x="653" y="434" text-anchor="middle" fill="#64748b" font-size="11">ブランド整合性を保ち</text>
+  <text x="653" y="452" text-anchor="middle" fill="#64748b" font-size="11">ビジネス成果へ接続する</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="524" text-anchor="middle" fill="#94a3b8" font-size="11">※ 7つの法則を組み合わせることでバズの確率が高まります</text>
+
+  <!-- Bottom accent line -->
+  <rect x="200" y="548" width="400" height="3" rx="1.5" fill="url(#headerGrad)" opacity="0.4"/>
+</svg>

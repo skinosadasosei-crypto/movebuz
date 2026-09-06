@@ -1,0 +1,104 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" rx="16" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" rx="16" fill="url(#headerGrad)"/>
+  <rect x="0" y="16" width="800" height="40" fill="url(#headerGrad)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">企画ネタ 8カテゴリの全体像</text>
+
+  <!-- Row 1 -->
+  <!-- Card 1: 教育・ノウハウ系 -->
+  <rect x="30" y="80" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="80" width="170" height="6" rx="3" fill="#2563eb"/>
+  <circle cx="115" cy="140" r="28" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="115" y="150" text-anchor="middle" fill="#2563eb" font-size="24">&#x1F4DA;</text>
+  <text x="115" y="190" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">教育・ノウハウ系</text>
+  <text x="115" y="210" text-anchor="middle" fill="#64748b" font-size="11">専門知識を発信し</text>
+  <text x="115" y="226" text-anchor="middle" fill="#64748b" font-size="11">信頼を構築する</text>
+  <text x="115" y="260" text-anchor="middle" fill="#2563eb" font-size="20" font-weight="bold">7本</text>
+
+  <!-- Card 2: ハウツー系 -->
+  <rect x="215" y="80" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="215" y="80" width="170" height="6" rx="3" fill="#0891b2"/>
+  <circle cx="300" cy="140" r="28" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="300" y="150" text-anchor="middle" fill="#0891b2" font-size="24">&#x1F527;</text>
+  <text x="300" y="190" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">ハウツー系</text>
+  <text x="300" y="210" text-anchor="middle" fill="#64748b" font-size="11">手順を見せて</text>
+  <text x="300" y="226" text-anchor="middle" fill="#64748b" font-size="11">検索流入を獲得</text>
+  <text x="300" y="260" text-anchor="middle" fill="#0891b2" font-size="20" font-weight="bold">7本</text>
+
+  <!-- Card 3: 比較・ランキング系 -->
+  <rect x="400" y="80" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="400" y="80" width="170" height="6" rx="3" fill="#059669"/>
+  <circle cx="485" cy="140" r="28" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="485" y="150" text-anchor="middle" fill="#059669" font-size="24">&#x1F4CA;</text>
+  <text x="485" y="190" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">比較・ランキング系</text>
+  <text x="485" y="210" text-anchor="middle" fill="#64748b" font-size="11">購買検討層に刺さる</text>
+  <text x="485" y="226" text-anchor="middle" fill="#64748b" font-size="11">比較コンテンツ</text>
+  <text x="485" y="260" text-anchor="middle" fill="#059669" font-size="20" font-weight="bold">6本</text>
+
+  <!-- Card 4: ストーリー系 -->
+  <rect x="585" y="80" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="585" y="80" width="170" height="6" rx="3" fill="#d97706"/>
+  <circle cx="670" cy="140" r="28" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <text x="670" y="150" text-anchor="middle" fill="#d97706" font-size="24">&#x1F3AC;</text>
+  <text x="670" y="190" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">ストーリー系</text>
+  <text x="670" y="210" text-anchor="middle" fill="#64748b" font-size="11">感情に訴えて</text>
+  <text x="670" y="226" text-anchor="middle" fill="#64748b" font-size="11">ブランド構築</text>
+  <text x="670" y="260" text-anchor="middle" fill="#d97706" font-size="20" font-weight="bold">6本</text>
+
+  <!-- Row 2 -->
+  <!-- Card 5: トレンド・ニュース系 -->
+  <rect x="30" y="325" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="325" width="170" height="6" rx="3" fill="#dc2626"/>
+  <circle cx="115" cy="385" r="28" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="115" y="395" text-anchor="middle" fill="#dc2626" font-size="24">&#x1F4F0;</text>
+  <text x="115" y="435" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">トレンド系</text>
+  <text x="115" y="455" text-anchor="middle" fill="#64748b" font-size="11">タイムリーな情報で</text>
+  <text x="115" y="471" text-anchor="middle" fill="#64748b" font-size="11">注目を集める</text>
+  <text x="115" y="505" text-anchor="middle" fill="#dc2626" font-size="20" font-weight="bold">6本</text>
+
+  <!-- Card 6: 社内カルチャー系 -->
+  <rect x="215" y="325" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="215" y="325" width="170" height="6" rx="3" fill="#7c3aed"/>
+  <circle cx="300" cy="385" r="28" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="300" y="395" text-anchor="middle" fill="#7c3aed" font-size="24">&#x1F3E2;</text>
+  <text x="300" y="435" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">社内カルチャー系</text>
+  <text x="300" y="455" text-anchor="middle" fill="#64748b" font-size="11">採用ブランディングと</text>
+  <text x="300" y="471" text-anchor="middle" fill="#64748b" font-size="11">企業の透明性向上</text>
+  <text x="300" y="505" text-anchor="middle" fill="#7c3aed" font-size="20" font-weight="bold">6本</text>
+
+  <!-- Card 7: Q&A・視聴者参加系 -->
+  <rect x="400" y="325" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="400" y="325" width="170" height="6" rx="3" fill="#db2777"/>
+  <circle cx="485" cy="385" r="28" fill="#fdf2f8" stroke="#db2777" stroke-width="1.5"/>
+  <text x="485" y="395" text-anchor="middle" fill="#db2777" font-size="24">&#x2753;</text>
+  <text x="485" y="435" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">Q&amp;A・参加系</text>
+  <text x="485" y="455" text-anchor="middle" fill="#64748b" font-size="11">視聴者との</text>
+  <text x="485" y="471" text-anchor="middle" fill="#64748b" font-size="11">双方向コミュニケーション</text>
+  <text x="485" y="505" text-anchor="middle" fill="#db2777" font-size="20" font-weight="bold">6本</text>
+
+  <!-- Card 8: コラボ・対談系 -->
+  <rect x="585" y="325" width="170" height="220" rx="10" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="585" y="325" width="170" height="6" rx="3" fill="#ea580c"/>
+  <circle cx="670" cy="385" r="28" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="670" y="395" text-anchor="middle" fill="#ea580c" font-size="24">&#x1F91D;</text>
+  <text x="670" y="435" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">コラボ・対談系</text>
+  <text x="670" y="455" text-anchor="middle" fill="#64748b" font-size="11">新しい視聴者層に</text>
+  <text x="670" y="471" text-anchor="middle" fill="#64748b" font-size="11">リーチを拡大</text>
+  <text x="670" y="505" text-anchor="middle" fill="#ea580c" font-size="20" font-weight="bold">6本</text>
+
+  <!-- Footer -->
+  <text x="400" y="575" text-anchor="middle" fill="#94a3b8" font-size="12">8カテゴリ合計 50本の企画ネタ</text>
+</svg>

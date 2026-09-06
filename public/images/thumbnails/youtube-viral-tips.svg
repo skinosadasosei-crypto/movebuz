@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop stop-color="#dc2626"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="520" height="510" rx="24" fill="white" opacity="0.12"/>
+  <text x="100" y="160" font-family="sans-serif" font-weight="900" font-size="72" fill="white">YouTube</text>
+  <text x="100" y="250" font-family="sans-serif" font-weight="900" font-size="72" fill="white">バズる動画</text>
+  <text x="100" y="330" font-family="sans-serif" font-weight="700" font-size="30" fill="#fef3c7">再生数が急増する</text>
+  <text x="100" y="375" font-family="sans-serif" font-weight="700" font-size="30" fill="#fef3c7">仕組みと法則</text>
+  <rect x="100" y="420" width="200" height="50" rx="25" fill="#ffffff"/>
+  <text x="200" y="452" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#dc2626">7つの法則</text>
+  <g transform="translate(650,80)">
+    <rect width="480" height="100" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="50" r="28" fill="#fbbf24" opacity="0.8"/>
+    <text x="55" y="57" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#1e293b">3s</text>
+    <text x="110" y="40" font-family="sans-serif" font-weight="700" font-size="22" fill="white">冒頭3秒の設計</text>
+    <text x="110" y="70" font-family="sans-serif" font-size="17" fill="#fef3c7">視聴者の離脱を防ぐ冒頭戦略</text>
+  </g>
+  <g transform="translate(650,200)">
+    <rect width="480" height="100" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="50" r="28" fill="#f472b6" opacity="0.8"/>
+    <text x="55" y="57" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#1e293b">CTR</text>
+    <text x="110" y="40" font-family="sans-serif" font-weight="700" font-size="22" fill="white">サムネイル最適化</text>
+    <text x="110" y="70" font-family="sans-serif" font-size="17" fill="#fef3c7">CTR8%以上を目指す設計</text>
+  </g>
+  <g transform="translate(650,320)">
+    <rect width="480" height="100" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="50" r="28" fill="#60a5fa" opacity="0.8"/>
+    <text x="55" y="57" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e293b">ALG</text>
+    <text x="110" y="40" font-family="sans-serif" font-weight="700" font-size="22" fill="white">アルゴリズム攻略</text>
+    <text x="110" y="70" font-family="sans-serif" font-size="17" fill="#fef3c7">おすすめに載るメカニズム</text>
+  </g>
+  <g transform="translate(650,460)">
+    <rect width="480" height="100" rx="16" fill="white" opacity="0.15"/>
+    <circle cx="55" cy="50" r="28" fill="#34d399" opacity="0.8"/>
+    <text x="55" y="57" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e293b">BIZ</text>
+    <text x="110" y="40" font-family="sans-serif" font-weight="700" font-size="22" fill="white">企業チャンネル戦略</text>
+    <text x="110" y="70" font-family="sans-serif" font-size="17" fill="#fef3c7">ブランドを守りながらバズを狙う</text>
+  </g>
+</svg>

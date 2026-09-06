@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradH1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <filter id="shadowH1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradH1)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradH1)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">企業の初投稿におすすめの3つのジャンル</text>
+
+  <!-- Card 1: 自己紹介 -->
+  <rect x="40" y="100" width="220" height="330" rx="14" fill="#fff" filter="url(#shadowH1)"/>
+  <rect x="40" y="100" width="220" height="8" rx="4" fill="#3b82f6"/>
+  <circle cx="150" cy="170" r="36" fill="#3b82f6" opacity="0.1"/>
+  <text x="150" y="180" text-anchor="middle" font-size="34">🏢</text>
+  <text x="150" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">自己紹介</text>
+  <text x="150" y="252" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">会社紹介</text>
+  <line x1="90" y1="270" x2="210" y2="270" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+  <text x="150" y="298" text-anchor="middle" font-size="12" fill="#666">チャンネルの方向性を</text>
+  <text x="150" y="316" text-anchor="middle" font-size="12" fill="#666">伝え、信頼感を築く</text>
+  <rect x="70" y="340" width="160" height="32" rx="16" fill="#3b82f6" opacity="0.1"/>
+  <text x="150" y="361" text-anchor="middle" font-size="12" fill="#3b82f6" font-weight="bold">難易度：低い</text>
+  <rect x="70" y="384" width="160" height="28" rx="14" fill="#f0f9ff"/>
+  <text x="150" y="403" text-anchor="middle" font-size="11" fill="#3b82f6">台本が作りやすい</text>
+
+  <!-- Card 2: ハウツー -->
+  <rect x="290" y="100" width="220" height="330" rx="14" fill="#fff" filter="url(#shadowH1)"/>
+  <rect x="290" y="100" width="220" height="8" rx="4" fill="#8b5cf6"/>
+  <circle cx="400" cy="170" r="36" fill="#8b5cf6" opacity="0.1"/>
+  <text x="400" y="180" text-anchor="middle" font-size="34">💡</text>
+  <text x="400" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">ハウツー</text>
+  <text x="400" y="252" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">ノウハウ</text>
+  <line x1="340" y1="270" x2="460" y2="270" stroke="#8b5cf6" stroke-width="2" opacity="0.3"/>
+  <text x="400" y="298" text-anchor="middle" font-size="12" fill="#666">検索流入が見込め</text>
+  <text x="400" y="316" text-anchor="middle" font-size="12" fill="#666">長期的な資産になる</text>
+  <rect x="320" y="340" width="160" height="32" rx="16" fill="#8b5cf6" opacity="0.1"/>
+  <text x="400" y="361" text-anchor="middle" font-size="12" fill="#8b5cf6" font-weight="bold">難易度：中くらい</text>
+  <rect x="320" y="384" width="160" height="28" rx="14" fill="#f5f3ff"/>
+  <text x="400" y="403" text-anchor="middle" font-size="11" fill="#8b5cf6">専門性をアピール</text>
+
+  <!-- Card 3: Q&A -->
+  <rect x="540" y="100" width="220" height="330" rx="14" fill="#fff" filter="url(#shadowH1)"/>
+  <rect x="540" y="100" width="220" height="8" rx="4" fill="#ec4899"/>
+  <circle cx="650" cy="170" r="36" fill="#ec4899" opacity="0.1"/>
+  <text x="650" y="180" text-anchor="middle" font-size="34">❓</text>
+  <text x="650" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Q&A</text>
+  <text x="650" y="252" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">よくある質問</text>
+  <line x1="590" y1="270" x2="710" y2="270" stroke="#ec4899" stroke-width="2" opacity="0.3"/>
+  <text x="650" y="298" text-anchor="middle" font-size="12" fill="#666">既存の問い合わせが</text>
+  <text x="650" y="316" text-anchor="middle" font-size="12" fill="#666">そのまま企画になる</text>
+  <rect x="570" y="340" width="160" height="32" rx="16" fill="#ec4899" opacity="0.1"/>
+  <text x="650" y="361" text-anchor="middle" font-size="12" fill="#ec4899" font-weight="bold">難易度：低い</text>
+  <rect x="570" y="384" width="160" height="28" rx="14" fill="#fdf2f8"/>
+  <text x="650" y="403" text-anchor="middle" font-size="11" fill="#ec4899">ネタ切れしにくい</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="120" y="456" width="560" height="3" rx="1.5" fill="url(#gradH1)" opacity="0.3"/>
+
+  <!-- Footer note -->
+  <text x="400" y="486" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

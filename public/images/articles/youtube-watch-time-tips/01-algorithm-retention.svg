@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#grad1)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad1)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">YouTubeアルゴリズムと視聴維持率の関係</text>
+
+  <!-- Flow diagram -->
+  <rect x="40" y="90" width="720" height="180" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <text x="80" y="125" font-size="16" font-weight="bold" fill="#333">視聴維持率が高い動画に起こること</text>
+  <line x1="60" y1="140" x2="740" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <rect x="60" y="155" width="150" height="90" rx="10" fill="#ede9fe"/>
+  <text x="135" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed">視聴維持率が高い</text>
+  <text x="135" y="210" text-anchor="middle" font-size="11" fill="#6d28d9">動画を最後まで視聴</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="220,200 240,190 240,195 270,195 270,205 240,205 240,210" fill="#a78bfa"/>
+
+  <!-- Step 2 -->
+  <rect x="280" y="155" width="150" height="90" rx="10" fill="#f3e8ff"/>
+  <text x="355" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed">アルゴリズムが</text>
+  <text x="355" y="210" text-anchor="middle" font-size="11" fill="#6d28d9">高評価と判定</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="440,200 460,190 460,195 490,195 490,205 460,205 460,210" fill="#a78bfa"/>
+
+  <!-- Step 3 -->
+  <rect x="500" y="155" width="220" height="90" rx="10" fill="#7c3aed"/>
+  <text x="610" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">おすすめ・関連動画に表示</text>
+  <text x="610" y="210" text-anchor="middle" font-size="11" fill="#e9d5ff">再生数・登録者が増加</text>
+
+  <!-- Benefits section -->
+  <rect x="40" y="290" width="720" height="200" rx="14" fill="#fff" filter="url(#shadow1)"/>
+  <text x="80" y="325" font-size="16" font-weight="bold" fill="#333">高い視聴維持率がもたらす3つのメリット</text>
+  <line x1="60" y1="340" x2="740" y2="340" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Benefit 1 -->
+  <rect x="60" y="355" width="220" height="65" rx="8" fill="#ede9fe"/>
+  <text x="170" y="383" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed">おすすめ表示の増加</text>
+  <text x="170" y="403" text-anchor="middle" font-size="11" fill="#6d28d9">トップ・サイドバーに推薦</text>
+
+  <!-- Benefit 2 -->
+  <rect x="295" y="355" width="210" height="65" rx="8" fill="#f3e8ff"/>
+  <text x="400" y="383" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed">検索順位の向上</text>
+  <text x="400" y="403" text-anchor="middle" font-size="11" fill="#6d28d9">YouTube検索で上位表示</text>
+
+  <!-- Benefit 3 -->
+  <rect x="520" y="355" width="220" height="65" rx="8" fill="#ede9fe"/>
+  <text x="630" y="383" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed">チャンネル評価の向上</text>
+  <text x="630" y="403" text-anchor="middle" font-size="11" fill="#6d28d9">新規動画も推薦されやすい</text>
+
+  <!-- Warning -->
+  <rect x="60" y="435" width="680" height="40" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="460" text-anchor="middle" font-size="12" fill="#92400e" font-weight="bold">注意：視聴維持率が低い動画が多いと、チャンネル全体のおすすめ露出が減少します</text>
+
+  <text x="400" y="507" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

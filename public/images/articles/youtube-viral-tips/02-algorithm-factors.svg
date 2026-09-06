@@ -1,0 +1,83 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="algoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <filter id="algoShadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" ry="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" ry="16" fill="url(#algoGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#algoGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="24" font-weight="bold">おすすめアルゴリズムが重視する5つの指標</text>
+
+  <!-- Central funnel concept -->
+  <!-- Step 1: CTR -->
+  <g transform="translate(40, 88)">
+    <rect width="720" height="72" rx="14" fill="#fff" filter="url(#algoShadow)"/>
+    <rect width="6" height="72" rx="3" fill="#dc2626"/>
+    <circle cx="48" cy="36" r="22" fill="#dc262618"/>
+    <text x="48" y="43" text-anchor="middle" fill="#dc2626" font-size="20" font-weight="bold">1</text>
+    <text x="86" y="30" fill="#1e293b" font-size="16" font-weight="bold">クリック率（CTR）</text>
+    <text x="86" y="52" fill="#64748b" font-size="12">サムネイルの表示回数に対するクリック数の割合</text>
+    <rect x="530" y="16" width="170" height="40" rx="20" fill="#dc262612"/>
+    <text x="615" y="41" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="bold">目標：8〜10%以上</text>
+  </g>
+
+  <!-- Step 2: Retention -->
+  <g transform="translate(40, 176)">
+    <rect width="720" height="72" rx="14" fill="#fff" filter="url(#algoShadow)"/>
+    <rect width="6" height="72" rx="3" fill="#ea580c"/>
+    <circle cx="48" cy="36" r="22" fill="#ea580c18"/>
+    <text x="48" y="43" text-anchor="middle" fill="#ea580c" font-size="20" font-weight="bold">2</text>
+    <text x="86" y="30" fill="#1e293b" font-size="16" font-weight="bold">視聴維持率</text>
+    <text x="86" y="52" fill="#64748b" font-size="12">動画全体のうち平均してどの程度が視聴されたか</text>
+    <rect x="530" y="16" width="170" height="40" rx="20" fill="#ea580c12"/>
+    <text x="615" y="41" text-anchor="middle" fill="#ea580c" font-size="12" font-weight="bold">最重要指標</text>
+  </g>
+
+  <!-- Step 3: Watch time -->
+  <g transform="translate(40, 264)">
+    <rect width="720" height="72" rx="14" fill="#fff" filter="url(#algoShadow)"/>
+    <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+    <circle cx="48" cy="36" r="22" fill="#f59e0b18"/>
+    <text x="48" y="43" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="bold">3</text>
+    <text x="86" y="30" fill="#1e293b" font-size="16" font-weight="bold">総視聴時間</text>
+    <text x="86" y="52" fill="#64748b" font-size="12">動画全体の視聴時間の合計値</text>
+    <rect x="530" y="16" width="170" height="40" rx="20" fill="#f59e0b12"/>
+    <text x="615" y="41" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="bold">量×質の総合評価</text>
+  </g>
+
+  <!-- Step 4: Engagement -->
+  <g transform="translate(40, 352)">
+    <rect width="720" height="72" rx="14" fill="#fff" filter="url(#algoShadow)"/>
+    <rect width="6" height="72" rx="3" fill="#16a34a"/>
+    <circle cx="48" cy="36" r="22" fill="#16a34a18"/>
+    <text x="48" y="43" text-anchor="middle" fill="#16a34a" font-size="20" font-weight="bold">4</text>
+    <text x="86" y="30" fill="#1e293b" font-size="16" font-weight="bold">エンゲージメント</text>
+    <text x="86" y="52" fill="#64748b" font-size="12">高評価・コメント・共有・保存の総合的な反応</text>
+    <rect x="530" y="16" width="170" height="40" rx="20" fill="#16a34a12"/>
+    <text x="615" y="41" text-anchor="middle" fill="#16a34a" font-size="12" font-weight="bold">能動的な反応</text>
+  </g>
+
+  <!-- Step 5: Session time -->
+  <g transform="translate(40, 440)">
+    <rect width="720" height="72" rx="14" fill="#fff" filter="url(#algoShadow)"/>
+    <rect width="6" height="72" rx="3" fill="#2563eb"/>
+    <circle cx="48" cy="36" r="22" fill="#2563eb18"/>
+    <text x="48" y="43" text-anchor="middle" fill="#2563eb" font-size="20" font-weight="bold">5</text>
+    <text x="86" y="30" fill="#1e293b" font-size="16" font-weight="bold">セッション時間への貢献</text>
+    <text x="86" y="52" fill="#64748b" font-size="12">視聴後にYouTube上に留まり続けたかどうか</text>
+    <rect x="530" y="16" width="170" height="40" rx="20" fill="#2563eb12"/>
+    <text x="615" y="41" text-anchor="middle" fill="#2563eb" font-size="12" font-weight="bold">プラットフォーム貢献</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="540" text-anchor="middle" fill="#94a3b8" font-size="11">※ これらの指標を総合的に満たすことで、おすすめへの表示頻度が上がります</text>
+</svg>

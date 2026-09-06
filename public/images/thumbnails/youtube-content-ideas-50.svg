@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Floating idea cards -->
+  <g transform="translate(60, 40)">
+    <!-- Card row 1 -->
+    <g transform="rotate(-4, 130, 80)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F4DA;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">教育・ノウハウ系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">7本のネタ</text>
+    </g>
+
+    <g transform="translate(230, 10) rotate(2, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F527;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">ハウツー系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">7本のネタ</text>
+    </g>
+
+    <g transform="translate(460, 0) rotate(-2, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F4CA;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">比較・ランキング系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">6本のネタ</text>
+    </g>
+
+    <g transform="translate(690, 15) rotate(3, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F3AC;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">ストーリー系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">6本のネタ</text>
+    </g>
+
+    <!-- Card row 2 -->
+    <g transform="translate(100, 150) rotate(3, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F4F0;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">トレンド・ニュース系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">6本のネタ</text>
+    </g>
+
+    <g transform="translate(340, 160) rotate(-3, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F3E2;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">社内カルチャー系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">6本のネタ</text>
+    </g>
+
+    <g transform="translate(580, 155) rotate(2, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.9"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x2753;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">Q&amp;A・参加系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">6本のネタ</text>
+    </g>
+
+    <g transform="translate(810, 145) rotate(-2, 100, 55)">
+      <rect x="0" y="0" width="200" height="110" rx="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2" opacity="0.85"/>
+      <rect x="12" y="12" width="176" height="50" rx="5" fill="#0f2540"/>
+      <text x="100" y="42" text-anchor="middle" font-family="system-ui" font-size="20" fill="#38bdf8" opacity="0.6">&#x1F91D;</text>
+      <text x="12" y="82" font-family="system-ui" font-size="11" font-weight="600" fill="#7dd3fc">コラボ・対談系</text>
+      <text x="12" y="98" font-family="system-ui" font-size="9" fill="#64748b">6本のネタ</text>
+    </g>
+  </g>
+
+  <!-- Badge -->
+  <rect x="60" y="420" width="100" height="36" rx="18" fill="#38bdf8"/>
+  <text x="110" y="443" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#0c4a6e">50選</text>
+
+  <!-- Main title -->
+  <text x="60" y="510" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#f1f5f9">企業YouTubeの企画ネタ50選</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="555" font-family="system-ui, sans-serif" font-size="18" fill="#7dd3fc">ネタ切れを解消するカテゴリ別アイデア集</text>
+
+  <!-- Bottom accent line -->
+  <rect x="60" y="585" width="200" height="3" rx="1.5" fill="#38bdf8" opacity="0.6"/>
+</svg>

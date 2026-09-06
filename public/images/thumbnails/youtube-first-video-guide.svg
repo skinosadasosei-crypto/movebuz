@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="120" r="200" fill="#3b82f6" opacity="0.05"/>
+  <circle cx="250" cy="500" r="160" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="1050" cy="480" r="120" fill="#ec4899" opacity="0.04"/>
+
+  <!-- Stars -->
+  <circle cx="120" cy="90" r="2" fill="#fff" opacity="0.25"/>
+  <circle cx="350" cy="60" r="1.5" fill="#fff" opacity="0.2"/>
+  <circle cx="580" cy="100" r="2" fill="#fff" opacity="0.15"/>
+  <circle cx="800" cy="70" r="1.5" fill="#fff" opacity="0.25"/>
+  <circle cx="1000" cy="50" r="2" fill="#fff" opacity="0.2"/>
+  <circle cx="1100" cy="150" r="1" fill="#fff" opacity="0.15"/>
+  <circle cx="200" cy="200" r="1" fill="#fff" opacity="0.12"/>
+  <circle cx="700" cy="180" r="1.5" fill="#fff" opacity="0.1"/>
+
+  <!-- Play button icon -->
+  <g transform="translate(540, 80)">
+    <circle cx="60" cy="60" r="50" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.6"/>
+    <polygon points="48,35 48,85 88,60" fill="url(#accent)" opacity="0.7"/>
+  </g>
+
+  <!-- Number 1 badge -->
+  <g transform="translate(80, 200)" filter="url(#glow)">
+    <rect x="0" y="0" width="100" height="100" rx="20" fill="url(#accent)" opacity="0.15"/>
+    <rect x="5" y="5" width="90" height="90" rx="18" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.4"/>
+    <text x="50" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="56" font-weight="800" fill="#a78bfa">1</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" font-weight="800" fill="#e2e8f0">YouTube初投稿の</text>
+  <text x="600" y="360" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" font-weight="800" fill="#e2e8f0">完全ガイド</text>
+
+  <!-- Accent line -->
+  <rect x="350" y="385" width="500" height="4" rx="2" fill="url(#accent)" opacity="0.6"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#93c5fd">企業チャンネルの最初の1本の作り方</text>
+
+  <!-- Step indicators -->
+  <g transform="translate(200, 480)">
+    <circle cx="0" cy="20" r="18" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="2"/>
+    <text x="0" y="26" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#60a5fa">準備</text>
+    <line x1="28" y1="20" x2="130" y2="20" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="160" cy="20" r="18" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="160" y="26" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#a78bfa">撮影</text>
+    <line x1="188" y1="20" x2="290" y2="20" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="320" cy="20" r="18" fill="#ec4899" opacity="0.2" stroke="#ec4899" stroke-width="2"/>
+    <text x="320" y="26" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#f472b6">編集</text>
+    <line x1="348" y1="20" x2="450" y2="20" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="480" cy="20" r="18" fill="#10b981" opacity="0.2" stroke="#10b981" stroke-width="2"/>
+    <text x="480" y="26" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#34d399">公開</text>
+    <line x1="508" y1="20" x2="610" y2="20" stroke="#334155" stroke-width="2"/>
+
+    <circle cx="640" cy="20" r="18" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="2"/>
+    <text x="640" y="26" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#fbbf24">改善</text>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="620" width="1200" height="10" fill="url(#accent)" opacity="0.4"/>
+</svg>

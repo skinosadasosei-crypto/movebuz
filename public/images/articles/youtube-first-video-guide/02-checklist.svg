@@ -1,0 +1,108 @@
+<svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradC1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <filter id="shadowC1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="580" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradC1)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradC1)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">撮影・編集の最低限チェックリスト</text>
+
+  <!-- Left column: 撮影 -->
+  <rect x="30" y="90" width="360" height="440" rx="14" fill="#fff" filter="url(#shadowC1)"/>
+  <rect x="30" y="90" width="360" height="50" rx="14" fill="#059669"/>
+  <rect x="30" y="120" width="360" height="20" fill="#059669"/>
+  <text x="210" y="122" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">撮影チェック</text>
+
+  <!-- Checklist items - 撮影 -->
+  <g transform="translate(55, 170)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#059669" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#059669" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">音声テスト</text>
+    <text x="34" y="36" font-size="11" fill="#666">テスト撮影で音が聞こえるか確認</text>
+  </g>
+
+  <g transform="translate(55, 240)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#059669" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#059669" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">照明の確認</text>
+    <text x="34" y="36" font-size="11" fill="#666">逆光・顔が暗くないかチェック</text>
+  </g>
+
+  <g transform="translate(55, 310)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#059669" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#059669" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">背景の整理</text>
+    <text x="34" y="36" font-size="11" fill="#666">余計なものが映り込んでいないか</text>
+  </g>
+
+  <g transform="translate(55, 380)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#059669" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#059669" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">カメラの固定</text>
+    <text x="34" y="36" font-size="11" fill="#666">三脚・スタンドで手ブレを防止</text>
+  </g>
+
+  <!-- Tip badge - 撮影 -->
+  <rect x="55" y="450" width="310" height="56" rx="10" fill="#ecfdf5"/>
+  <text x="210" y="474" text-anchor="middle" font-size="11" fill="#059669" font-weight="bold">POINT</text>
+  <text x="210" y="494" text-anchor="middle" font-size="11" fill="#059669">音声品質は映像品質より優先度が高い</text>
+
+  <!-- Right column: 編集 -->
+  <rect x="410" y="90" width="360" height="440" rx="14" fill="#fff" filter="url(#shadowC1)"/>
+  <rect x="410" y="90" width="360" height="50" rx="14" fill="#0891b2"/>
+  <rect x="410" y="120" width="360" height="20" fill="#0891b2"/>
+  <text x="590" y="122" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">編集チェック</text>
+
+  <!-- Checklist items - 編集 -->
+  <g transform="translate(435, 170)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#0891b2" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#0891b2" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">不要な間をカット</text>
+    <text x="34" y="36" font-size="11" fill="#666">沈黙・言い直しを取り除く</text>
+  </g>
+
+  <g transform="translate(435, 240)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#0891b2" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#0891b2" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">テロップ挿入</text>
+    <text x="34" y="36" font-size="11" fill="#666">キーワード・要点を画面に表示</text>
+  </g>
+
+  <g transform="translate(435, 310)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#0891b2" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#0891b2" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">BGM音量バランス</text>
+    <text x="34" y="36" font-size="11" fill="#666">話し声の20〜30%程度に調整</text>
+  </g>
+
+  <g transform="translate(435, 380)">
+    <rect x="0" y="0" width="22" height="22" rx="4" fill="#0891b2" opacity="0.15"/>
+    <text x="6" y="16" font-size="14" fill="#0891b2" font-weight="bold">✓</text>
+    <text x="34" y="16" font-size="14" fill="#333" font-weight="600">エンディング設計</text>
+    <text x="34" y="36" font-size="11" fill="#666">登録誘導・次の動画への導線</text>
+  </g>
+
+  <!-- Tip badge - 編集 -->
+  <rect x="435" y="450" width="310" height="56" rx="10" fill="#ecfeff"/>
+  <text x="590" y="474" text-anchor="middle" font-size="11" fill="#0891b2" font-weight="bold">POINT</text>
+  <text x="590" y="494" text-anchor="middle" font-size="11" fill="#0891b2">テロップは音なし視聴への配慮にもなる</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="120" y="548" width="560" height="3" rx="1.5" fill="url(#gradC1)" opacity="0.3"/>
+
+  <!-- Footer note -->
+  <text x="400" y="572" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>
