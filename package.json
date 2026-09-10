@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/notify-search-engines.mjs",
     "start": "next start",
     "lint": "eslint",
     "generate": "node scripts/generate-article.mjs",
