@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="60" rx="16" fill="url(#headerGrad)"/>
+  <rect y="30" width="800" height="30" fill="url(#headerGrad)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">YouTube概要欄の3つの役割</text>
+
+  <!-- Card 1: SEO -->
+  <rect x="30" y="85" width="230" height="300" rx="14" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="85" width="230" height="8" rx="4" fill="#7c3aed"/>
+  <circle cx="145" cy="145" r="36" fill="#7c3aed" opacity="0.1"/>
+  <text x="145" y="140" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed">SEARCH</text>
+  <text x="145" y="158" text-anchor="middle" font-size="11" fill="#7c3aed">ENGINE</text>
+  <text x="145" y="205" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e1b4b">SEO効果</text>
+  <text x="145" y="235" text-anchor="middle" font-size="12" fill="#64748b">検索アルゴリズムが</text>
+  <text x="145" y="253" text-anchor="middle" font-size="12" fill="#64748b">概要欄テキストを解析</text>
+  <rect x="55" y="275" width="180" height="28" rx="6" fill="#7c3aed" opacity="0.08"/>
+  <text x="145" y="294" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed">検索順位の向上</text>
+  <rect x="55" y="311" width="180" height="28" rx="6" fill="#7c3aed" opacity="0.08"/>
+  <text x="145" y="330" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed">おすすめ表示の増加</text>
+
+  <!-- Card 2: 導線 -->
+  <rect x="285" y="85" width="230" height="300" rx="14" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="285" y="85" width="230" height="8" rx="4" fill="#0891b2"/>
+  <circle cx="400" cy="145" r="36" fill="#0891b2" opacity="0.1"/>
+  <text x="400" y="148" text-anchor="middle" font-size="26" fill="#0891b2">&#8594;</text>
+  <text x="400" y="205" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e1b4b">導線設計</text>
+  <text x="400" y="235" text-anchor="middle" font-size="12" fill="#64748b">視聴者を次のアクションに</text>
+  <text x="400" y="253" text-anchor="middle" font-size="12" fill="#64748b">誘導するリンク配置</text>
+  <rect x="310" y="275" width="180" height="28" rx="6" fill="#0891b2" opacity="0.08"/>
+  <text x="400" y="294" text-anchor="middle" font-size="12" font-weight="bold" fill="#0891b2">Webサイトへ誘導</text>
+  <rect x="310" y="311" width="180" height="28" rx="6" fill="#0891b2" opacity="0.08"/>
+  <text x="400" y="330" text-anchor="middle" font-size="12" font-weight="bold" fill="#0891b2">関連動画へ回遊</text>
+
+  <!-- Card 3: 信頼性 -->
+  <rect x="540" y="85" width="230" height="300" rx="14" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="540" y="85" width="230" height="8" rx="4" fill="#059669"/>
+  <circle cx="655" cy="145" r="36" fill="#059669" opacity="0.1"/>
+  <text x="655" y="152" text-anchor="middle" font-size="28" fill="#059669">&#10003;</text>
+  <text x="655" y="205" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e1b4b">信頼性</text>
+  <text x="655" y="235" text-anchor="middle" font-size="12" fill="#64748b">会社情報やSNSで</text>
+  <text x="655" y="253" text-anchor="middle" font-size="12" fill="#64748b">チャンネルの信用を構築</text>
+  <rect x="565" y="275" width="180" height="28" rx="6" fill="#059669" opacity="0.08"/>
+  <text x="655" y="294" text-anchor="middle" font-size="12" font-weight="bold" fill="#059669">企業としての安心感</text>
+  <rect x="565" y="311" width="180" height="28" rx="6" fill="#059669" opacity="0.08"/>
+  <text x="655" y="330" text-anchor="middle" font-size="12" font-weight="bold" fill="#059669">視聴者ロイヤルティ向上</text>
+
+  <!-- Footer -->
+  <text x="400" y="405" text-anchor="middle" font-size="11" fill="#94a3b8">概要欄はSEO・導線・信頼性の3つを同時にカバーできる唯一のスペース</text>
+</svg>

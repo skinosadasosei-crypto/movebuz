@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 540" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="50%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <filter id="cardShadow2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="540" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#headerGrad2)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad2)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">効果的なハッシュタグの3分類</text>
+
+  <!-- Card 1: Brand -->
+  <rect x="30" y="90" width="230" height="340" rx="14" fill="#fff" filter="url(#cardShadow2)"/>
+  <rect x="30" y="90" width="230" height="6" rx="3" fill="#8b5cf6"/>
+
+  <circle cx="145" cy="142" r="30" fill="#f5f3ff"/>
+  <text x="145" y="152" text-anchor="middle" font-size="28" fill="#7c3aed" font-weight="bold">#</text>
+
+  <text x="145" y="198" text-anchor="middle" font-size="20" font-weight="bold" fill="#5b21b6">ブランド系</text>
+
+  <rect x="50" y="218" width="190" height="32" rx="6" fill="#f5f3ff"/>
+  <text x="145" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed">必ず1個は含める</text>
+
+  <text x="60" y="276" font-size="12" fill="#374151">- 社名・チャンネル名</text>
+  <text x="60" y="298" font-size="12" fill="#374151">- キャンペーン名</text>
+  <text x="60" y="320" font-size="12" fill="#374151">- シリーズ名</text>
+
+  <rect x="50" y="344" width="190" height="68" rx="8" fill="#ede9fe"/>
+  <text x="145" y="370" text-anchor="middle" font-size="11" font-weight="bold" fill="#6d28d9">自社動画を</text>
+  <text x="145" y="388" text-anchor="middle" font-size="11" font-weight="bold" fill="#6d28d9">タグページで一覧化</text>
+  <text x="145" y="406" text-anchor="middle" font-size="11" fill="#7c3aed">ブランド認知の向上</text>
+
+  <!-- Card 2: Topic -->
+  <rect x="285" y="90" width="230" height="340" rx="14" fill="#fff" filter="url(#cardShadow2)"/>
+  <rect x="285" y="90" width="230" height="6" rx="3" fill="#3b82f6"/>
+
+  <circle cx="400" cy="142" r="30" fill="#eff6ff"/>
+  <text x="400" y="152" text-anchor="middle" font-size="28" fill="#2563eb" font-weight="bold">#</text>
+
+  <text x="400" y="198" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d4ed8">トピック系</text>
+
+  <rect x="305" y="218" width="190" height="32" rx="6" fill="#eff6ff"/>
+  <text x="400" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#2563eb">2〜3個を動画ごとに選定</text>
+
+  <text x="315" y="276" font-size="12" fill="#374151">- 動画のテーマ</text>
+  <text x="315" y="298" font-size="12" fill="#374151">- 業界・ジャンル名</text>
+  <text x="315" y="320" font-size="12" fill="#374151">- 具体的なスキル名</text>
+
+  <rect x="305" y="344" width="190" height="68" rx="8" fill="#dbeafe"/>
+  <text x="400" y="370" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">同テーマに興味がある</text>
+  <text x="400" y="388" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">視聴者へリーチ</text>
+  <text x="400" y="406" text-anchor="middle" font-size="11" fill="#2563eb">発見可能性の向上</text>
+
+  <!-- Card 3: Trend -->
+  <rect x="540" y="90" width="230" height="340" rx="14" fill="#fff" filter="url(#cardShadow2)"/>
+  <rect x="540" y="90" width="230" height="6" rx="3" fill="#f59e0b"/>
+
+  <circle cx="655" cy="142" r="30" fill="#fffbeb"/>
+  <text x="655" y="152" text-anchor="middle" font-size="28" fill="#d97706" font-weight="bold">#</text>
+
+  <text x="655" y="198" text-anchor="middle" font-size="20" font-weight="bold" fill="#b45309">トレンド系</text>
+
+  <rect x="560" y="218" width="190" height="32" rx="6" fill="#fffbeb"/>
+  <text x="655" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#d97706">0〜1個を状況に応じて</text>
+
+  <text x="570" y="276" font-size="12" fill="#374151">- 話題のキーワード</text>
+  <text x="570" y="298" font-size="12" fill="#374151">- イベント名</text>
+  <text x="570" y="320" font-size="12" fill="#374151">- 年度・季節のテーマ</text>
+
+  <rect x="560" y="344" width="190" height="68" rx="8" fill="#fef3c7"/>
+  <text x="655" y="370" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">タイムリーな話題で</text>
+  <text x="655" y="388" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">一時的に露出を拡大</text>
+  <text x="655" y="406" text-anchor="middle" font-size="11" fill="#b45309">短期的なリーチ獲得</text>
+
+  <!-- Bottom recommendation -->
+  <rect x="120" y="460" width="560" height="55" rx="28" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="400" y="485" text-anchor="middle" font-size="13" font-weight="bold" fill="#dc2626">おすすめ構成：ブランド系 1個 ＋ トピック系 2〜3個 ＋ トレンド系 0〜1個</text>
+  <text x="400" y="504" text-anchor="middle" font-size="12" fill="#dc2626">＝ 合計 3〜5個に厳選</text>
+</svg>

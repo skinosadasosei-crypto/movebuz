@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="white" opacity="0.07"/>
+
+  <!-- Accent bar left -->
+  <rect x="60" y="60" width="6" height="70" rx="3" fill="url(#accentLine)" opacity="0.6"/>
+
+  <!-- Top line -->
+  <text x="600" y="155" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="48" fill="#fca5a5">YouTubeコミュニティ</text>
+
+  <!-- Main title -->
+  <text x="600" y="265" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="92" fill="white">投稿の活用法</text>
+
+  <!-- Sub title -->
+  <text x="600" y="370" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="58" fill="#fca5a5">動画以外でファンと繋がる</text>
+
+  <!-- Subtitle pill -->
+  <rect x="300" y="410" width="600" height="55" rx="28" fill="white" opacity="0.12"/>
+  <text x="600" y="448" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">アンケート・告知・舞台裏でチャンネル成長</text>
+
+  <!-- Decorative poll bars -->
+  <rect x="110" y="500" width="120" height="16" rx="8" fill="#fca5a5" opacity="0.25"/>
+  <rect x="110" y="525" width="80" height="16" rx="8" fill="#fca5a5" opacity="0.15"/>
+  <rect x="110" y="550" width="100" height="16" rx="8" fill="#fca5a5" opacity="0.2"/>
+
+  <!-- Decorative chat bubbles right -->
+  <rect x="960" y="500" width="120" height="30" rx="15" fill="white" opacity="0.1"/>
+  <rect x="980" y="540" width="100" height="30" rx="15" fill="white" opacity="0.07"/>
+
+  <!-- Decorative circles -->
+  <circle cx="150" cy="490" r="20" fill="#fca5a5" opacity="0.12"/>
+  <circle cx="1060" cy="490" r="20" fill="#fca5a5" opacity="0.12"/>
+  <circle cx="230" cy="565" r="10" fill="#f87171" opacity="0.08"/>
+</svg>

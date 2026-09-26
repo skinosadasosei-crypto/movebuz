@@ -1,0 +1,76 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="50%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">ハッシュタグ vs タグ（動画タグ）の違い</text>
+
+  <!-- Left card: Hashtag -->
+  <rect x="30" y="90" width="355" height="390" rx="14" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="90" width="355" height="6" rx="3" fill="#3b82f6"/>
+
+  <text x="208" y="138" text-anchor="middle" font-size="28" fill="#3b82f6" font-weight="bold">#ハッシュタグ</text>
+
+  <rect x="55" y="158" width="305" height="42" rx="8" fill="#eff6ff"/>
+  <text x="208" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">視聴者に見える</text>
+
+  <text x="70" y="228" font-size="14" fill="#374151">設定場所</text>
+  <text x="200" y="228" font-size="14" fill="#111827" font-weight="bold">タイトル or 概要欄</text>
+
+  <text x="70" y="262" font-size="14" fill="#374151">表示場所</text>
+  <text x="200" y="262" font-size="14" fill="#111827" font-weight="bold">タイトル上部 / 概要欄内</text>
+
+  <text x="70" y="296" font-size="14" fill="#374151">クリック</text>
+  <text x="200" y="296" font-size="14" fill="#111827" font-weight="bold">可能（トピックページへ）</text>
+
+  <text x="70" y="330" font-size="14" fill="#374151">上限</text>
+  <text x="200" y="330" font-size="14" fill="#111827" font-weight="bold">15個まで</text>
+
+  <text x="70" y="364" font-size="14" fill="#374151">主な役割</text>
+  <text x="200" y="364" font-size="14" fill="#111827" font-weight="bold">視聴者の探索導線</text>
+
+  <rect x="55" y="390" width="305" height="70" rx="10" fill="#dbeafe"/>
+  <text x="208" y="418" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">視聴者が自分で</text>
+  <text x="208" y="440" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">トピックを探索できる導線</text>
+
+  <!-- Right card: Tag -->
+  <rect x="415" y="90" width="355" height="390" rx="14" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="415" y="90" width="355" height="6" rx="3" fill="#10b981"/>
+
+  <text x="593" y="138" text-anchor="middle" font-size="28" fill="#10b981" font-weight="bold">タグ（動画タグ）</text>
+
+  <rect x="440" y="158" width="305" height="42" rx="8" fill="#ecfdf5"/>
+  <text x="593" y="185" text-anchor="middle" font-size="14" font-weight="bold" fill="#059669">視聴者には見えない</text>
+
+  <text x="455" y="228" font-size="14" fill="#374151">設定場所</text>
+  <text x="585" y="228" font-size="14" fill="#111827" font-weight="bold">YouTube Studio 詳細設定</text>
+
+  <text x="455" y="262" font-size="14" fill="#374151">表示場所</text>
+  <text x="585" y="262" font-size="14" fill="#111827" font-weight="bold">表示されない（非公開）</text>
+
+  <text x="455" y="296" font-size="14" fill="#374151">クリック</text>
+  <text x="585" y="296" font-size="14" fill="#111827" font-weight="bold">不可</text>
+
+  <text x="455" y="330" font-size="14" fill="#374151">上限</text>
+  <text x="585" y="330" font-size="14" fill="#111827" font-weight="bold">500文字まで</text>
+
+  <text x="455" y="364" font-size="14" fill="#374151">主な役割</text>
+  <text x="585" y="364" font-size="14" fill="#111827" font-weight="bold">アルゴリズムへの補足情報</text>
+
+  <rect x="440" y="390" width="305" height="70" rx="10" fill="#d1fae5"/>
+  <text x="593" y="418" text-anchor="middle" font-size="13" font-weight="bold" fill="#065f46">YouTubeのシステムが</text>
+  <text x="593" y="440" text-anchor="middle" font-size="13" font-weight="bold" fill="#065f46">動画内容を理解するための裏側情報</text>
+</svg>

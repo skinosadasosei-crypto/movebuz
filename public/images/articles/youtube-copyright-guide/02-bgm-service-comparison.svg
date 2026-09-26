@@ -1,0 +1,86 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="hgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+  <rect width="800" height="64" rx="16" fill="url(#hgrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#hgrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">著作権フリーBGMサービスの比較と選び方</text>
+
+  <!-- Category 1: Free -->
+  <rect x="30" y="85" width="355" height="200" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="85" width="355" height="40" rx="12" fill="#dcfce7"/>
+  <rect x="30" y="105" width="355" height="20" fill="#dcfce7"/>
+  <text x="207" y="112" text-anchor="middle" font-size="16" font-weight="bold" fill="#166534">無料サービス</text>
+
+  <!-- YouTube Audio Library -->
+  <rect x="50" y="138" width="315" height="56" rx="8" fill="#f0fdf4"/>
+  <text x="60" y="158" font-size="13" font-weight="bold" fill="#166534">YouTubeオーディオライブラリ</text>
+  <text x="60" y="178" font-size="11" fill="#15803d">YouTube公式提供 / Content ID申し立てなし</text>
+
+  <!-- Creative Commons -->
+  <rect x="50" y="202" width="315" height="56" rx="8" fill="#f0fdf4"/>
+  <text x="60" y="222" font-size="13" font-weight="bold" fill="#166534">クリエイティブコモンズ素材</text>
+  <text x="60" y="242" font-size="11" fill="#15803d">CC BY / CC0を選択 / NC付きは企業利用不可</text>
+
+  <!-- Pros/Cons Free -->
+  <text x="60" y="275" font-size="11" fill="#22c55e" font-weight="bold">利点：コスト0円・法的に安全</text>
+
+  <!-- Category 2: Paid -->
+  <rect x="415" y="85" width="355" height="200" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="415" y="85" width="355" height="40" rx="12" fill="#ede9fe"/>
+  <rect x="415" y="105" width="355" height="20" fill="#ede9fe"/>
+  <text x="592" y="112" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed">有料サービス</text>
+
+  <!-- Service A -->
+  <rect x="435" y="138" width="315" height="56" rx="8" fill="#f5f3ff"/>
+  <text x="445" y="158" font-size="13" font-weight="bold" fill="#7c3aed">サブスクリプション型</text>
+  <text x="445" y="178" font-size="11" fill="#6d28d9">月額制で全曲使い放題 / 楽曲数が豊富</text>
+
+  <!-- Service B -->
+  <rect x="435" y="202" width="315" height="56" rx="8" fill="#f5f3ff"/>
+  <text x="445" y="222" font-size="13" font-weight="bold" fill="#7c3aed">買い切り型</text>
+  <text x="445" y="242" font-size="11" fill="#6d28d9">1曲ずつ購入 / 利用期限なし</text>
+
+  <!-- Pros/Cons Paid -->
+  <text x="445" y="275" font-size="11" fill="#7c3aed" font-weight="bold">利点：高品質・ジャンル豊富・独自性</text>
+
+  <!-- Selection checklist -->
+  <rect x="30" y="305" width="740" height="185" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <text x="400" y="335" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">BGMサービス選定チェックリスト</text>
+  <line x1="50" y1="348" x2="750" y2="348" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Checklist items - Row 1 -->
+  <rect x="50" y="360" width="220" height="50" rx="8" fill="#ede9fe"/>
+  <text x="65" y="382" font-size="12" font-weight="bold" fill="#7c3aed">商用利用の許可</text>
+  <text x="65" y="400" font-size="10" fill="#6d28d9">企業チャンネルで使えるか</text>
+
+  <rect x="290" y="360" width="220" height="50" rx="8" fill="#f3e8ff"/>
+  <text x="305" y="382" font-size="12" font-weight="bold" fill="#7c3aed">Content ID未登録</text>
+  <text x="305" y="400" font-size="10" fill="#6d28d9">申し立てが発生しないか</text>
+
+  <rect x="530" y="360" width="220" height="50" rx="8" fill="#ede9fe"/>
+  <text x="545" y="382" font-size="12" font-weight="bold" fill="#7c3aed">マルチプラットフォーム</text>
+  <text x="545" y="400" font-size="10" fill="#6d28d9">SNS転用も可能か</text>
+
+  <!-- Checklist items - Row 2 -->
+  <rect x="50" y="420" width="220" height="50" rx="8" fill="#f3e8ff"/>
+  <text x="65" y="442" font-size="12" font-weight="bold" fill="#7c3aed">解約後の利用条件</text>
+  <text x="65" y="460" font-size="10" fill="#6d28d9">既存動画で使い続けられるか</text>
+
+  <rect x="290" y="420" width="220" height="50" rx="8" fill="#ede9fe"/>
+  <text x="305" y="442" font-size="12" font-weight="bold" fill="#7c3aed">楽曲の更新頻度</text>
+  <text x="305" y="460" font-size="10" fill="#6d28d9">定期的に新曲が追加されるか</text>
+
+  <rect x="530" y="420" width="220" height="50" rx="8" fill="#f3e8ff"/>
+  <text x="545" y="442" font-size="12" font-weight="bold" fill="#7c3aed">料金体系の明確さ</text>
+  <text x="545" y="460" font-size="10" fill="#6d28d9">月額・年額・追加費用の有無</text>
+
+  <text x="400" y="507" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

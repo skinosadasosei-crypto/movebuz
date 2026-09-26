@@ -1,0 +1,89 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="50%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowEnd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#headerGrad2)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad2)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">コミュニティ運用のエンゲージメント向上サイクル</text>
+
+  <!-- Center circle -->
+  <circle cx="400" cy="310" r="65" fill="#fef2f2" stroke="#ef4444" stroke-width="2.5"/>
+  <text x="400" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#dc2626">エンゲージメント</text>
+  <text x="400" y="322" text-anchor="middle" font-size="14" font-weight="bold" fill="#dc2626">向上</text>
+
+  <!-- Step 1: Plan (top) -->
+  <rect x="305" y="95" width="190" height="90" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="305" y="95" width="190" height="5" rx="2.5" fill="#3b82f6"/>
+  <circle cx="340" cy="130" r="16" fill="#eff6ff"/>
+  <text x="340" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#3b82f6">1</text>
+  <text x="420" y="128" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e3a5f">投稿計画</text>
+  <text x="400" y="155" text-anchor="middle" font-size="11" fill="#666">形式・テーマ・時間帯</text>
+  <text x="400" y="172" text-anchor="middle" font-size="11" fill="#666">を事前に設計する</text>
+
+  <!-- Step 2: Post (right) -->
+  <rect x="565" y="225" width="190" height="90" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="565" y="225" width="190" height="5" rx="2.5" fill="#10b981"/>
+  <circle cx="600" cy="260" r="16" fill="#ecfdf5"/>
+  <text x="600" y="265" text-anchor="middle" font-size="14" font-weight="bold" fill="#10b981">2</text>
+  <text x="680" y="258" text-anchor="middle" font-size="15" font-weight="bold" fill="#065f46">投稿実行</text>
+  <text x="660" y="285" text-anchor="middle" font-size="11" fill="#666">CTAを含めて投稿</text>
+  <text x="660" y="302" text-anchor="middle" font-size="11" fill="#666">バリエーションを意識</text>
+
+  <!-- Step 3: Engage (bottom) -->
+  <rect x="565" y="385" width="190" height="90" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="565" y="385" width="190" height="5" rx="2.5" fill="#f59e0b"/>
+  <circle cx="600" cy="420" r="16" fill="#fffbeb"/>
+  <text x="600" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#f59e0b">3</text>
+  <text x="680" y="418" text-anchor="middle" font-size="15" font-weight="bold" fill="#92400e">コメント対応</text>
+  <text x="660" y="445" text-anchor="middle" font-size="11" fill="#666">24時間以内に返信</text>
+  <text x="660" y="462" text-anchor="middle" font-size="11" fill="#666">会話を生み出す</text>
+
+  <!-- Step 4: Measure (bottom-left) -->
+  <rect x="45" y="385" width="190" height="90" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="45" y="385" width="190" height="5" rx="2.5" fill="#8b5cf6"/>
+  <circle cx="80" cy="420" r="16" fill="#f5f3ff"/>
+  <text x="80" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b5cf6">4</text>
+  <text x="160" y="418" text-anchor="middle" font-size="15" font-weight="bold" fill="#5b21b6">効果測定</text>
+  <text x="140" y="445" text-anchor="middle" font-size="11" fill="#666">インプレッション・</text>
+  <text x="140" y="462" text-anchor="middle" font-size="11" fill="#666">エンゲージメント率を分析</text>
+
+  <!-- Step 5: Improve (left) -->
+  <rect x="45" y="225" width="190" height="90" rx="12" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="45" y="225" width="190" height="5" rx="2.5" fill="#ec4899"/>
+  <circle cx="80" cy="260" r="16" fill="#fdf2f8"/>
+  <text x="80" y="265" text-anchor="middle" font-size="14" font-weight="bold" fill="#ec4899">5</text>
+  <text x="160" y="258" text-anchor="middle" font-size="15" font-weight="bold" fill="#9d174d">改善・最適化</text>
+  <text x="140" y="285" text-anchor="middle" font-size="11" fill="#666">成功パターンを再現</text>
+  <text x="140" y="302" text-anchor="middle" font-size="11" fill="#666">翌週の計画に反映</text>
+
+  <!-- Arrows connecting steps (clockwise) -->
+  <!-- 1 -> 2 -->
+  <path d="M 495 155 Q 540 175 565 235" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowEnd)"/>
+  <!-- 2 -> 3 -->
+  <path d="M 660 315 Q 665 350 660 385" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowEnd)"/>
+  <!-- 3 -> 4 -->
+  <path d="M 565 445 Q 400 500 235 445" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowEnd)"/>
+  <!-- 4 -> 5 -->
+  <path d="M 140 385 Q 135 350 140 315" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowEnd)"/>
+  <!-- 5 -> 1 -->
+  <path d="M 235 250 Q 275 195 305 165" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowEnd)"/>
+
+  <!-- Bottom label -->
+  <rect x="240" y="515" width="320" height="30" rx="15" fill="#fef2f2"/>
+  <text x="400" y="535" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="bold">週単位でサイクルを回して継続的に改善</text>
+</svg>

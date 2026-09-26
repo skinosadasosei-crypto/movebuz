@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="white" opacity="0.07"/>
+
+  <!-- Accent bar left -->
+  <rect x="60" y="60" width="6" height="70" rx="3" fill="url(#accentLine)" opacity="0.6"/>
+
+  <!-- Large decorative hashtag symbols -->
+  <text x="80" y="540" font-family="sans-serif" font-weight="900" font-size="220" fill="white" opacity="0.06">#</text>
+  <text x="900" y="250" font-family="sans-serif" font-weight="900" font-size="180" fill="white" opacity="0.05">#</text>
+
+  <!-- Top line -->
+  <text x="600" y="150" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="50" fill="#fca5a5">YouTubeの</text>
+
+  <!-- Main title -->
+  <text x="600" y="265" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="96" fill="white">#ハッシュタグ</text>
+
+  <!-- Sub title -->
+  <text x="600" y="365" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="64" fill="#f87171">正しい使い方</text>
+
+  <!-- Subtitle pill -->
+  <rect x="280" y="405" width="640" height="55" rx="28" fill="white" opacity="0.12"/>
+  <text x="600" y="443" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="28" fill="white">効果的な付け方とやってはいけないNG例</text>
+
+  <!-- Decorative small hashtags -->
+  <text x="160" y="180" font-family="sans-serif" font-weight="bold" font-size="32" fill="white" opacity="0.15">#</text>
+  <text x="1020" y="160" font-family="sans-serif" font-weight="bold" font-size="28" fill="white" opacity="0.12">#</text>
+  <text x="1060" y="530" font-family="sans-serif" font-weight="bold" font-size="36" fill="white" opacity="0.15">#</text>
+  <text x="120" y="400" font-family="sans-serif" font-weight="bold" font-size="24" fill="white" opacity="0.1">#</text>
+
+  <!-- Decorative circles -->
+  <circle cx="150" cy="530" r="25" fill="#f87171" opacity="0.15"/>
+  <circle cx="1060" cy="530" r="25" fill="#f87171" opacity="0.15"/>
+  <circle cx="230" cy="555" r="14" fill="#fca5a5" opacity="0.1"/>
+</svg>

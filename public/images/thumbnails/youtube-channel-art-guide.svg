@@ -1,0 +1,88 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgArt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="accentArt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgArt)"/>
+
+  <!-- Decorative dots -->
+  <circle cx="80" cy="60" r="2" fill="#fff" opacity="0.2"/>
+  <circle cx="250" cy="100" r="1.5" fill="#fff" opacity="0.15"/>
+  <circle cx="450" cy="50" r="2" fill="#fff" opacity="0.2"/>
+  <circle cx="750" cy="80" r="1.5" fill="#fff" opacity="0.15"/>
+  <circle cx="950" cy="60" r="2" fill="#fff" opacity="0.2"/>
+  <circle cx="1100" cy="110" r="1.5" fill="#fff" opacity="0.15"/>
+
+  <!-- Banner mockup -->
+  <g transform="translate(340, 40)">
+    <!-- Outer frame (banner shape) -->
+    <rect x="0" y="0" width="520" height="200" rx="10" fill="#374151" opacity="0.6"/>
+    <rect x="10" y="10" width="500" height="180" rx="6" fill="#4f46e5" opacity="0.3"/>
+    <!-- Safe area indicator -->
+    <rect x="80" y="40" width="360" height="120" rx="4" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="8 4"/>
+    <text x="260" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#c7d2fe" font-weight="bold">安全領域</text>
+    <text x="260" y="115" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#a5b4fc">1546 x 423 px</text>
+    <!-- Size label -->
+    <text x="260" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#818cf8">2560 x 1440 px</text>
+  </g>
+
+  <!-- Icon mockup -->
+  <g transform="translate(120, 120)">
+    <circle cx="80" cy="80" r="70" fill="#374151" opacity="0.6"/>
+    <circle cx="80" cy="80" r="58" fill="#6366f1" opacity="0.3"/>
+    <text x="80" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#c7d2fe" font-weight="bold">LOGO</text>
+    <text x="80" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">800 x 800</text>
+    <text x="80" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#818cf8" font-weight="bold">アイコン</text>
+  </g>
+
+  <!-- Watermark mockup -->
+  <g transform="translate(960, 140)">
+    <rect x="0" y="0" width="120" height="90" rx="6" fill="#374151" opacity="0.6"/>
+    <!-- Play button shape -->
+    <polygon points="30,25 30,65 60,45" fill="#6366f1" opacity="0.3"/>
+    <!-- Watermark square -->
+    <rect x="80" y="55" width="28" height="28" rx="4" fill="#818cf8" opacity="0.6"/>
+    <text x="94" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#fff" font-weight="bold">W</text>
+    <text x="60" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#818cf8" font-weight="bold">透かし</text>
+  </g>
+
+  <!-- Three element labels -->
+  <g transform="translate(100, 360)">
+    <!-- Banner label -->
+    <rect x="0" y="0" width="280" height="44" rx="22" fill="#4f46e5" opacity="0.2" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="28" cy="22" r="14" fill="#818cf8" opacity="0.3"/>
+    <text x="28" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#c7d2fe">1</text>
+    <text x="155" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#e0e7ff" font-weight="bold">バナー画像</text>
+
+    <!-- Icon label -->
+    <rect x="320" y="0" width="280" height="44" rx="22" fill="#4f46e5" opacity="0.2" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="348" cy="22" r="14" fill="#818cf8" opacity="0.3"/>
+    <text x="348" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#c7d2fe">2</text>
+    <text x="475" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#e0e7ff" font-weight="bold">チャンネルアイコン</text>
+
+    <!-- Watermark label -->
+    <rect x="640" y="0" width="280" height="44" rx="22" fill="#4f46e5" opacity="0.2" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="668" cy="22" r="14" fill="#818cf8" opacity="0.3"/>
+    <text x="668" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#c7d2fe">3</text>
+    <text x="795" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#e0e7ff" font-weight="bold">ブランディング透かし</text>
+  </g>
+
+  <!-- Accent line -->
+  <rect x="200" y="440" width="800" height="3" rx="1.5" fill="url(#accentArt)" opacity="0.4"/>
+
+  <!-- Main title -->
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">YouTubeチャンネルアートの作り方</text>
+  <text x="600" y="545" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#a5b4fc">バナー・アイコン・透かしの設定ガイド</text>
+
+  <!-- Footer -->
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6366f1" opacity="0.6">動画のミカタ | douga-no-mikata.com</text>
+</svg>

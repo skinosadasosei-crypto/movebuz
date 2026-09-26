@@ -1,0 +1,77 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f766e"/>
+      <stop offset="50%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#2dd4bf"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">競合チャンネルの見つけ方と選定基準</text>
+
+  <!-- Step 1: Search -->
+  <rect x="40" y="90" width="220" height="150" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="40" y="90" width="220" height="5" rx="2.5" fill="#3b82f6"/>
+  <text x="150" y="125" text-anchor="middle" font-size="28">🔍</text>
+  <text x="150" y="152" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e3a5f">方法1</text>
+  <text x="150" y="175" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a5f">YouTube検索</text>
+  <text x="150" y="198" text-anchor="middle" font-size="11" fill="#666">ターゲットキーワードで</text>
+  <text x="150" y="215" text-anchor="middle" font-size="11" fill="#666">上位チャンネルを特定</text>
+
+  <!-- Step 2: Related -->
+  <rect x="290" y="90" width="220" height="150" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="290" y="90" width="220" height="5" rx="2.5" fill="#10b981"/>
+  <text x="400" y="125" text-anchor="middle" font-size="28">📺</text>
+  <text x="400" y="152" text-anchor="middle" font-size="15" font-weight="bold" fill="#065f46">方法2</text>
+  <text x="400" y="175" text-anchor="middle" font-size="14" font-weight="bold" fill="#065f46">関連動画・おすすめ</text>
+  <text x="400" y="198" text-anchor="middle" font-size="11" fill="#666">アルゴリズムが類似と</text>
+  <text x="400" y="215" text-anchor="middle" font-size="11" fill="#666">判断したチャンネル</text>
+
+  <!-- Step 3: Industry -->
+  <rect x="540" y="90" width="220" height="150" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="540" y="90" width="220" height="5" rx="2.5" fill="#f59e0b"/>
+  <text x="650" y="125" text-anchor="middle" font-size="28">🏷</text>
+  <text x="650" y="152" text-anchor="middle" font-size="15" font-weight="bold" fill="#92400e">方法3</text>
+  <text x="650" y="175" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">業界キーワード</text>
+  <text x="650" y="198" text-anchor="middle" font-size="11" fill="#666">複数キーワードの組み合わせ</text>
+  <text x="650" y="215" text-anchor="middle" font-size="11" fill="#666">で繰り返し上位に出る先</text>
+
+  <!-- Arrows down -->
+  <line x1="150" y1="240" x2="150" y2="280" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="150,280 143,268 157,268" fill="#3b82f6"/>
+  <line x1="400" y1="240" x2="400" y2="280" stroke="#10b981" stroke-width="2"/>
+  <polygon points="400,280 393,268 407,268" fill="#10b981"/>
+  <line x1="650" y1="240" x2="650" y2="280" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="650,280 643,268 657,268" fill="#f59e0b"/>
+
+  <!-- Selection criteria box -->
+  <rect x="60" y="290" width="680" height="120" rx="14" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="400" y="320" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f766e">選定基準（3〜5チャンネルに絞る）</text>
+
+  <circle cx="120" cy="358" r="6" fill="#14b8a6"/>
+  <text x="140" y="363" font-size="13" fill="#333">同ジャンル・同ターゲット層のチャンネル</text>
+
+  <circle cx="120" cy="388" r="6" fill="#14b8a6"/>
+  <text x="140" y="393" font-size="13" fill="#333">登録者数が自チャンネルの2〜10倍程度</text>
+
+  <!-- Arrow down to result -->
+  <line x1="400" y1="410" x2="400" y2="445" stroke="url(#arrowGrad)" stroke-width="2.5"/>
+  <polygon points="400,445 393,433 407,433" fill="#0f766e"/>
+
+  <!-- Result box -->
+  <rect x="180" y="455" width="440" height="44" rx="22" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="400" y="483" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f766e">競合リスト完成 → 5つのポイントで分析開始</text>
+</svg>

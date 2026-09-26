@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadowBanner">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradBanner)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradBanner)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">YouTubeバナー画像のデバイス別表示範囲</text>
+
+  <!-- Banner mockup area -->
+  <rect x="60" y="90" width="680" height="280" rx="12" fill="#fff" filter="url(#shadowBanner)"/>
+
+  <!-- Full area (TV) 2560x1440 -->
+  <rect x="80" y="110" width="640" height="240" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="110" y="134" font-size="11" fill="#6366f1" font-weight="bold">TV表示: 2560 x 1440（全体）</text>
+
+  <!-- PC display area -->
+  <rect x="80" y="158" width="640" height="120" rx="0" fill="#c7d2fe" opacity="0.5" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="96" y="176" font-size="11" fill="#4f46e5" font-weight="bold">PC表示: 2560 x 423</text>
+
+  <!-- Tablet display area -->
+  <rect x="142" y="158" width="516" height="120" rx="0" fill="#a5b4fc" opacity="0.4" stroke="#4338ca" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="158" y="196" font-size="11" fill="#4338ca" font-weight="bold">タブレット: 1855 x 423</text>
+
+  <!-- Mobile safe area (center) -->
+  <rect x="185" y="158" width="430" height="120" rx="0" fill="#818cf8" opacity="0.3" stroke="#3730a3" stroke-width="2"/>
+  <text x="400" y="230" text-anchor="middle" font-size="13" fill="#3730a3" font-weight="bold">安全領域: 1546 x 423</text>
+  <text x="400" y="250" text-anchor="middle" font-size="11" fill="#3730a3">ロゴ・テキストはこの範囲内に配置</text>
+
+  <!-- Legend -->
+  <g transform="translate(80, 395)">
+    <!-- TV -->
+    <rect x="0" y="0" width="18" height="12" rx="3" fill="#e0e7ff" stroke="#6366f1" stroke-width="1"/>
+    <text x="26" y="11" font-size="12" fill="#555">TV（全体表示）</text>
+
+    <!-- PC -->
+    <rect x="170" y="0" width="18" height="12" rx="3" fill="#c7d2fe" stroke="#4f46e5" stroke-width="1"/>
+    <text x="196" y="11" font-size="12" fill="#555">PC</text>
+
+    <!-- Tablet -->
+    <rect x="280" y="0" width="18" height="12" rx="3" fill="#a5b4fc" stroke="#4338ca" stroke-width="1"/>
+    <text x="306" y="11" font-size="12" fill="#555">タブレット</text>
+
+    <!-- Mobile -->
+    <rect x="430" y="0" width="18" height="12" rx="3" fill="#818cf8" stroke="#3730a3" stroke-width="1.5"/>
+    <text x="456" y="11" font-size="12" fill="#555" font-weight="bold">スマホ（安全領域）</text>
+  </g>
+
+  <!-- Recommended size note -->
+  <rect x="140" y="430" width="520" height="36" rx="18" fill="#f0f0ff"/>
+  <text x="400" y="453" text-anchor="middle" font-size="13" fill="#4f46e5" font-weight="bold">推奨アップロードサイズ: 2560 x 1440 px（6MB以内）</text>
+
+  <!-- Bottom accent -->
+  <rect x="120" y="482" width="560" height="3" rx="1.5" fill="url(#gradBanner)" opacity="0.3"/>
+
+  <!-- Footer -->
+  <text x="400" y="498" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

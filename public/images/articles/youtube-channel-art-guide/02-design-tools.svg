@@ -1,0 +1,84 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="gradTools" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadowTools">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="#fafafa"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" rx="16" fill="url(#gradTools)"/>
+  <rect y="32" width="800" height="32" fill="url(#gradTools)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">チャンネルアート制作に使えるデザインツール</text>
+
+  <!-- Card 1: Canva -->
+  <rect x="40" y="100" width="220" height="320" rx="14" fill="#fff" filter="url(#shadowTools)"/>
+  <rect x="40" y="100" width="220" height="8" rx="4" fill="#10b981"/>
+  <circle cx="150" cy="170" r="36" fill="#10b981" opacity="0.1"/>
+  <!-- Canva icon (simplified palette) -->
+  <circle cx="150" cy="170" r="20" fill="none" stroke="#10b981" stroke-width="3"/>
+  <circle cx="142" cy="162" r="4" fill="#10b981"/>
+  <circle cx="158" cy="162" r="4" fill="#34d399"/>
+  <circle cx="150" cy="178" r="4" fill="#6ee7b7"/>
+  <text x="150" y="226" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Canva</text>
+  <line x1="90" y1="242" x2="210" y2="242" stroke="#10b981" stroke-width="2" opacity="0.3"/>
+  <text x="150" y="268" text-anchor="middle" font-size="12" fill="#666">YouTube専用テンプレート</text>
+  <text x="150" y="286" text-anchor="middle" font-size="12" fill="#666">安全領域ガイド付き</text>
+  <rect x="70" y="306" width="160" height="32" rx="16" fill="#10b981" opacity="0.1"/>
+  <text x="150" y="327" text-anchor="middle" font-size="12" fill="#10b981" font-weight="bold">初心者におすすめ</text>
+  <rect x="70" y="350" width="160" height="28" rx="14" fill="#ecfdf5"/>
+  <text x="150" y="369" text-anchor="middle" font-size="11" fill="#10b981">無料プランで十分</text>
+  <rect x="70" y="388" width="160" height="22" rx="11" fill="#f0fdf4"/>
+  <text x="150" y="403" text-anchor="middle" font-size="10" fill="#059669">難易度: ★☆☆</text>
+
+  <!-- Card 2: Adobe Express -->
+  <rect x="290" y="100" width="220" height="320" rx="14" fill="#fff" filter="url(#shadowTools)"/>
+  <rect x="290" y="100" width="220" height="8" rx="4" fill="#3b82f6"/>
+  <circle cx="400" cy="170" r="36" fill="#3b82f6" opacity="0.1"/>
+  <!-- Adobe icon (simplified A) -->
+  <rect x="384" y="154" width="32" height="32" rx="4" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="400" y="179" text-anchor="middle" font-size="18" font-weight="bold" fill="#3b82f6">A</text>
+  <text x="400" y="226" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Adobe Express</text>
+  <line x1="340" y1="242" x2="460" y2="242" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+  <text x="400" y="268" text-anchor="middle" font-size="12" fill="#666">プロ品質テンプレート</text>
+  <text x="400" y="286" text-anchor="middle" font-size="12" fill="#666">Adobe製品との連携</text>
+  <rect x="320" y="306" width="160" height="32" rx="16" fill="#3b82f6" opacity="0.1"/>
+  <text x="400" y="327" text-anchor="middle" font-size="12" fill="#3b82f6" font-weight="bold">高品質な仕上がり</text>
+  <rect x="320" y="350" width="160" height="28" rx="14" fill="#eff6ff"/>
+  <text x="400" y="369" text-anchor="middle" font-size="11" fill="#3b82f6">基本無料・一部有料</text>
+  <rect x="320" y="388" width="160" height="22" rx="11" fill="#f0f7ff"/>
+  <text x="400" y="403" text-anchor="middle" font-size="10" fill="#2563eb">難易度: ★★☆</text>
+
+  <!-- Card 3: Figma -->
+  <rect x="540" y="100" width="220" height="320" rx="14" fill="#fff" filter="url(#shadowTools)"/>
+  <rect x="540" y="100" width="220" height="8" rx="4" fill="#8b5cf6"/>
+  <circle cx="650" cy="170" r="36" fill="#8b5cf6" opacity="0.1"/>
+  <!-- Figma icon (simplified) -->
+  <rect x="640" y="152" width="10" height="16" rx="5" fill="#8b5cf6"/>
+  <rect x="652" y="152" width="10" height="16" rx="5" fill="#a78bfa"/>
+  <rect x="640" y="170" width="10" height="16" rx="5" fill="#7c3aed"/>
+  <circle cx="657" cy="178" r="5" fill="#c4b5fd"/>
+  <text x="650" y="226" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Figma</text>
+  <line x1="590" y1="242" x2="710" y2="242" stroke="#8b5cf6" stroke-width="2" opacity="0.3"/>
+  <text x="650" y="268" text-anchor="middle" font-size="12" fill="#666">自由度の高い設計</text>
+  <text x="650" y="286" text-anchor="middle" font-size="12" fill="#666">チーム共同編集に対応</text>
+  <rect x="570" y="306" width="160" height="32" rx="16" fill="#8b5cf6" opacity="0.1"/>
+  <text x="650" y="327" text-anchor="middle" font-size="12" fill="#8b5cf6" font-weight="bold">デザイナー向け</text>
+  <rect x="570" y="350" width="160" height="28" rx="14" fill="#f5f3ff"/>
+  <text x="650" y="369" text-anchor="middle" font-size="11" fill="#8b5cf6">無料プランあり</text>
+  <rect x="570" y="388" width="160" height="22" rx="11" fill="#faf5ff"/>
+  <text x="650" y="403" text-anchor="middle" font-size="10" fill="#7c3aed">難易度: ★★★</text>
+
+  <!-- Bottom accent -->
+  <rect x="120" y="456" width="560" height="3" rx="1.5" fill="url(#gradTools)" opacity="0.3"/>
+
+  <!-- Footer -->
+  <text x="400" y="486" text-anchor="middle" font-size="11" fill="#999">出典: 動画のミカタ | douga-no-mikata.com</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#grad2)"/>
+  <rect y="32" width="800" height="32" fill="url(#grad2)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">目的別：終了画面 + カードの組み合わせパターン</text>
+
+  <!-- Pattern 1 -->
+  <rect x="40" y="85" width="720" height="135" rx="14" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="40" y="85" width="8" height="135" rx="4" fill="#7c3aed"/>
+
+  <rect x="68" y="95" width="200" height="28" rx="14" fill="#7c3aed"/>
+  <text x="168" y="114" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">パターン1：連続視聴</text>
+
+  <text x="68" y="148" font-size="13" font-weight="bold" fill="#333">カード設定</text>
+  <text x="150" y="148" font-size="12" fill="#555">動画中盤で「前回の動画」を紹介</text>
+
+  <text x="68" y="172" font-size="13" font-weight="bold" fill="#333">終了画面</text>
+  <text x="142" y="172" font-size="12" fill="#555">「シリーズ次回」+「再生リスト」を配置</text>
+
+  <!-- Flow arrows for Pattern 1 -->
+  <rect x="530" y="105" width="90" height="40" rx="8" fill="#ede9fe"/>
+  <text x="575" y="122" text-anchor="middle" font-size="10" font-weight="bold" fill="#7c3aed">前回の動画</text>
+  <text x="575" y="136" text-anchor="middle" font-size="9" fill="#6d28d9">カード</text>
+  <polygon points="625,125 640,118 640,122 655,122 655,128 640,128 640,132" fill="#a78bfa"/>
+  <rect x="660" y="105" width="80" height="40" rx="8" fill="#7c3aed"/>
+  <text x="700" y="122" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">次の動画</text>
+  <text x="700" y="136" text-anchor="middle" font-size="9" fill="#e9d5ff">終了画面</text>
+
+  <rect x="550" y="160" width="180" height="26" rx="6" fill="#f3e8ff"/>
+  <text x="640" y="178" text-anchor="middle" font-size="11" fill="#7c3aed">シリーズ完走率UP</text>
+
+  <!-- Pattern 2 -->
+  <rect x="40" y="235" width="720" height="135" rx="14" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="40" y="235" width="8" height="135" rx="4" fill="#f59e0b"/>
+
+  <rect x="68" y="245" width="200" height="28" rx="14" fill="#f59e0b"/>
+  <text x="168" y="264" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">パターン2：幅広い回遊</text>
+
+  <text x="68" y="298" font-size="13" font-weight="bold" fill="#333">カード設定</text>
+  <text x="150" y="298" font-size="12" fill="#555">関連テーマの動画を2〜3枚配置</text>
+
+  <text x="68" y="322" font-size="13" font-weight="bold" fill="#333">終了画面</text>
+  <text x="142" y="322" font-size="12" fill="#555">「自動選択」+「再生リスト」を配置</text>
+
+  <!-- Flow for Pattern 2 -->
+  <rect x="520" y="255" width="80" height="36" rx="8" fill="#fef3c7"/>
+  <text x="560" y="277" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">関連A</text>
+  <rect x="610" y="255" width="80" height="36" rx="8" fill="#fef3c7"/>
+  <text x="650" y="277" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">関連B</text>
+  <rect x="565" y="300" width="110" height="36" rx="8" fill="#f59e0b"/>
+  <text x="620" y="322" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">自動推薦</text>
+
+  <rect x="550" y="345" width="180" height="26" rx="6" fill="#fef9c3"/>
+  <text x="640" y="363" text-anchor="middle" font-size="11" fill="#92400e">チャンネル全体の視聴数UP</text>
+
+  <!-- Pattern 3 -->
+  <rect x="40" y="385" width="720" height="135" rx="14" fill="#fff" filter="url(#shadow2)"/>
+  <rect x="40" y="385" width="8" height="135" rx="4" fill="#10b981"/>
+
+  <rect x="68" y="395" width="200" height="28" rx="14" fill="#10b981"/>
+  <text x="168" y="414" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">パターン3：登録者獲得</text>
+
+  <text x="68" y="448" font-size="13" font-weight="bold" fill="#333">カード設定</text>
+  <text x="150" y="448" font-size="12" fill="#555">チャンネルの人気動画を紹介</text>
+
+  <text x="68" y="472" font-size="13" font-weight="bold" fill="#333">終了画面</text>
+  <text x="142" y="472" font-size="12" fill="#555">「登録ボタン」+「最新アップロード」を配置</text>
+
+  <!-- Flow for Pattern 3 -->
+  <rect x="530" y="405" width="90" height="36" rx="8" fill="#d1fae5"/>
+  <text x="575" y="427" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">人気動画</text>
+  <polygon points="625,423 640,416 640,420 655,420 655,426 640,426 640,430" fill="#10b981"/>
+  <rect x="660" y="405" width="80" height="36" rx="8" fill="#10b981"/>
+  <text x="700" y="421" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">チャンネル</text>
+  <text x="700" y="434" text-anchor="middle" font-size="9" fill="#d1fae5">登録</text>
+
+  <rect x="550" y="455" width="180" height="26" rx="6" fill="#d1fae5"/>
+  <text x="640" y="473" text-anchor="middle" font-size="11" fill="#065f46">チャンネル登録者UP</text>
+
+  <!-- Footer -->
+  <text x="400" y="545" text-anchor="middle" font-size="11" fill="#999">出典: MOVeBUZ | movebuz.vercel.app</text>
+</svg>

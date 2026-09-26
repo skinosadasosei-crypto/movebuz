@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="hGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <filter id="s2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="60" rx="16" fill="url(#hGrad)"/>
+  <rect y="30" width="800" height="30" fill="url(#hGrad)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">概要欄テンプレートの構成（上から順に配置）</text>
+
+  <!-- Vertical line -->
+  <line x1="120" y1="90" x2="120" y2="510" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Section 1: 冒頭要約 -->
+  <circle cx="120" cy="110" r="18" fill="#1d4ed8"/>
+  <text x="120" y="116" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">1</text>
+  <rect x="160" y="82" width="600" height="56" rx="10" fill="#fff" filter="url(#s2)"/>
+  <rect x="160" y="82" width="6" height="56" rx="3" fill="#1d4ed8"/>
+  <text x="185" y="104" font-size="15" font-weight="bold" fill="#1e1b4b">冒頭の要約（最初の2〜3行）</text>
+  <text x="185" y="126" font-size="12" fill="#64748b">検索結果に表示される最初の120文字 ― キーワード＋動画の要点を凝縮</text>
+
+  <!-- Section 2: タイムスタンプ -->
+  <circle cx="120" cy="195" r="18" fill="#7c3aed"/>
+  <text x="120" y="201" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">2</text>
+  <rect x="160" y="167" width="600" height="56" rx="10" fill="#fff" filter="url(#s2)"/>
+  <rect x="160" y="167" width="6" height="56" rx="3" fill="#7c3aed"/>
+  <text x="185" y="189" font-size="15" font-weight="bold" fill="#1e1b4b">タイムスタンプ（チャプター）</text>
+  <text x="185" y="211" font-size="12" fill="#64748b">0:00から開始 ― シークバーにセクション表示 ― Google検索にも反映</text>
+
+  <!-- Section 3: 関連リンク -->
+  <circle cx="120" cy="280" r="18" fill="#0891b2"/>
+  <text x="120" y="286" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">3</text>
+  <rect x="160" y="252" width="600" height="56" rx="10" fill="#fff" filter="url(#s2)"/>
+  <rect x="160" y="252" width="6" height="56" rx="3" fill="#0891b2"/>
+  <text x="185" y="274" font-size="15" font-weight="bold" fill="#1e1b4b">関連リンク</text>
+  <text x="185" y="296" font-size="12" fill="#64748b">自社サイト・LP ― 関連動画・再生リスト ― 無料資料・ホワイトペーパー</text>
+
+  <!-- Section 4: SNS・チャンネル情報 -->
+  <circle cx="120" cy="365" r="18" fill="#059669"/>
+  <text x="120" y="371" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">4</text>
+  <rect x="160" y="337" width="600" height="56" rx="10" fill="#fff" filter="url(#s2)"/>
+  <rect x="160" y="337" width="6" height="56" rx="3" fill="#059669"/>
+  <text x="185" y="359" font-size="15" font-weight="bold" fill="#1e1b4b">SNS・チャンネル情報</text>
+  <text x="185" y="381" font-size="12" fill="#64748b">公式SNS ― チャンネル登録リンク ― 会社名・お問い合わせ先</text>
+
+  <!-- Section 5: ハッシュタグ -->
+  <circle cx="120" cy="450" r="18" fill="#dc2626"/>
+  <text x="120" y="456" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">5</text>
+  <rect x="160" y="422" width="600" height="56" rx="10" fill="#fff" filter="url(#s2)"/>
+  <rect x="160" y="422" width="6" height="56" rx="3" fill="#dc2626"/>
+  <text x="185" y="444" font-size="15" font-weight="bold" fill="#1e1b4b">ハッシュタグ（3〜5個）</text>
+  <text x="185" y="466" font-size="12" fill="#64748b">動画タイトル上にも表示 ― ジャンル認知に有効 ― 15個超はスパム扱い</text>
+
+  <!-- Priority indicator -->
+  <text x="120" y="510" text-anchor="middle" font-size="10" fill="#94a3b8">高</text>
+  <rect x="90" y="516" width="60" height="6" rx="3" fill="#e2e8f0"/>
+  <rect x="90" y="516" width="60" height="6" rx="3" fill="url(#hGrad)" opacity="0.3"/>
+  <text x="120" y="540" text-anchor="middle" font-size="10" fill="#94a3b8">低</text>
+
+  <!-- Priority arrow -->
+  <text x="68" y="310" text-anchor="middle" font-size="11" fill="#94a3b8" transform="rotate(-90, 68, 310)">SEO重要度</text>
+</svg>

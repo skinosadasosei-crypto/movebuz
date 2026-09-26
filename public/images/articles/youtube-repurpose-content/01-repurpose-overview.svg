@@ -1,0 +1,111 @@
+<svg viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="620" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">1本のYouTube動画から展開できるコンテンツ</text>
+
+  <!-- Center circle: YouTube Video -->
+  <circle cx="400" cy="310" r="75" fill="#fef2f2" stroke="#ef4444" stroke-width="2.5"/>
+  <text x="400" y="295" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc2626">YouTube</text>
+  <text x="400" y="315" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc2626">動画</text>
+  <text x="400" y="335" text-anchor="middle" font-size="12" fill="#dc2626">（1本）</text>
+
+  <!-- Card 1: Blog (top-left) -->
+  <rect x="30" y="100" width="170" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="30" y="100" width="170" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="115" y="135" text-anchor="middle" font-size="22">📝</text>
+  <text x="115" y="158" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a5f">ブログ記事</text>
+  <text x="115" y="178" text-anchor="middle" font-size="10" fill="#666">SEO流入を獲得</text>
+
+  <!-- Arrow from Card 1 -->
+  <line x1="200" y1="170" x2="330" y2="270" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="330,270 320,260 325,273" fill="#2563eb"/>
+
+  <!-- Card 2: SNS (top-center-left) -->
+  <rect x="230" y="90" width="170" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="230" y="90" width="170" height="5" rx="2.5" fill="#8b5cf6"/>
+  <text x="315" y="125" text-anchor="middle" font-size="22">📱</text>
+  <text x="315" y="148" text-anchor="middle" font-size="14" font-weight="bold" fill="#5b21b6">SNS投稿</text>
+  <text x="315" y="168" text-anchor="middle" font-size="10" fill="#666">X・Instagram・LinkedIn</text>
+
+  <!-- Arrow from Card 2 -->
+  <line x1="350" y1="190" x2="385" y2="240" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="385,240 375,232 380,245" fill="#8b5cf6"/>
+
+  <!-- Card 3: Shorts (top-center-right) -->
+  <rect x="430" y="90" width="170" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="430" y="90" width="170" height="5" rx="2.5" fill="#ec4899"/>
+  <text x="515" y="125" text-anchor="middle" font-size="22">🎬</text>
+  <text x="515" y="148" text-anchor="middle" font-size="14" font-weight="bold" fill="#9d174d">ショート動画</text>
+  <text x="515" y="168" text-anchor="middle" font-size="10" fill="#666">Shorts・Reels・TikTok</text>
+
+  <!-- Arrow from Card 3 -->
+  <line x1="480" y1="190" x2="440" y2="240" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="440,240 445,228 435,235" fill="#ec4899"/>
+
+  <!-- Card 4: Podcast (top-right) -->
+  <rect x="620" y="100" width="150" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="620" y="100" width="150" height="5" rx="2.5" fill="#f59e0b"/>
+  <text x="695" y="135" text-anchor="middle" font-size="22">🎧</text>
+  <text x="695" y="158" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">ポッドキャスト</text>
+  <text x="695" y="178" text-anchor="middle" font-size="10" fill="#666">音声配信</text>
+
+  <!-- Arrow from Card 4 -->
+  <line x1="620" y1="175" x2="470" y2="275" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="470,275 478,263 466,268" fill="#f59e0b"/>
+
+  <!-- Card 5: Newsletter (bottom-left) -->
+  <rect x="60" y="420" width="170" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="60" y="420" width="170" height="5" rx="2.5" fill="#10b981"/>
+  <text x="145" y="455" text-anchor="middle" font-size="22">📧</text>
+  <text x="145" y="478" text-anchor="middle" font-size="14" font-weight="bold" fill="#065f46">メールマガジン</text>
+  <text x="145" y="498" text-anchor="middle" font-size="10" fill="#666">見込み顧客に直接配信</text>
+
+  <!-- Arrow from center to Card 5 -->
+  <line x1="340" y1="360" x2="220" y2="430" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="220,430 230,420 217,423" fill="#10b981"/>
+
+  <!-- Card 6: Slides (bottom-center) -->
+  <rect x="310" y="440" width="180" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="310" y="440" width="180" height="5" rx="2.5" fill="#06b6d4"/>
+  <text x="400" y="475" text-anchor="middle" font-size="22">📊</text>
+  <text x="400" y="498" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e7490">スライド資料</text>
+  <text x="400" y="518" text-anchor="middle" font-size="10" fill="#666">営業・セミナー用に再構成</text>
+
+  <!-- Arrow from center to Card 6 -->
+  <line x1="400" y1="385" x2="400" y2="440" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,440 394,430 406,430" fill="#06b6d4"/>
+
+  <!-- Card 7: Infographic (bottom-right) -->
+  <rect x="570" y="420" width="170" height="100" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="570" y="420" width="170" height="5" rx="2.5" fill="#f97316"/>
+  <text x="655" y="455" text-anchor="middle" font-size="22">🖼</text>
+  <text x="655" y="478" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a3412">インフォグラフィック</text>
+  <text x="655" y="498" text-anchor="middle" font-size="10" fill="#666">データを1枚で視覚化</text>
+
+  <!-- Arrow from center to Card 7 -->
+  <line x1="465" y1="360" x2="580" y2="430" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="580,430 572,418 576,433" fill="#f97316"/>
+
+  <!-- Bottom summary bar -->
+  <rect x="100" y="565" width="600" height="40" rx="20" fill="#eff6ff"/>
+  <text x="400" y="590" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">1本の動画 → 7種類のコンテンツで発信力を最大化</text>
+</svg>

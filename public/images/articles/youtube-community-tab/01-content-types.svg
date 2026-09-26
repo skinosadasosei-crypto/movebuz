@@ -1,0 +1,77 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="50%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" rx="16" fill="url(#headerGrad)"/>
+  <rect y="32" width="800" height="32" fill="url(#headerGrad)"/>
+  <text x="400" y="42" text-anchor="middle" fill="#fff" font-size="22" font-weight="bold">コミュニティタブで投稿できるコンテンツの種類</text>
+
+  <!-- Card 1: Text -->
+  <rect x="40" y="95" width="220" height="180" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="40" y="95" width="220" height="5" rx="2.5" fill="#3b82f6"/>
+  <text x="150" y="140" text-anchor="middle" font-size="32">T</text>
+  <text x="150" y="170" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e3a5f">テキスト投稿</text>
+  <text x="150" y="195" text-anchor="middle" font-size="11" fill="#666">お知らせ・日常発信</text>
+  <text x="150" y="215" text-anchor="middle" font-size="11" fill="#666">手軽に素早く投稿可能</text>
+  <rect x="85" y="235" width="130" height="24" rx="12" fill="#eff6ff"/>
+  <text x="150" y="251" text-anchor="middle" font-size="11" fill="#3b82f6" font-weight="bold">手軽さ ★★★★★</text>
+
+  <!-- Card 2: Image -->
+  <rect x="290" y="95" width="220" height="180" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="290" y="95" width="220" height="5" rx="2.5" fill="#10b981"/>
+  <rect x="380" y="120" width="40" height="30" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="392" cy="132" r="5" fill="#10b981"/>
+  <polygon points="385,146 400,136 415,146" fill="#10b981" opacity="0.5"/>
+  <text x="400" y="170" text-anchor="middle" font-size="16" font-weight="bold" fill="#065f46">画像投稿</text>
+  <text x="400" y="195" text-anchor="middle" font-size="11" fill="#666">写真・イラストを添付</text>
+  <text x="400" y="215" text-anchor="middle" font-size="11" fill="#666">視覚的に訴求できる</text>
+  <rect x="335" y="235" width="130" height="24" rx="12" fill="#ecfdf5"/>
+  <text x="400" y="251" text-anchor="middle" font-size="11" fill="#10b981" font-weight="bold">視覚効果 ★★★★☆</text>
+
+  <!-- Card 3: Poll -->
+  <rect x="540" y="95" width="220" height="180" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="540" y="95" width="220" height="5" rx="2.5" fill="#f59e0b"/>
+  <rect x="620" y="118" width="80" height="14" rx="7" fill="#fef3c7"/>
+  <rect x="620" y="118" width="52" height="14" rx="7" fill="#f59e0b" opacity="0.6"/>
+  <rect x="620" y="138" width="80" height="14" rx="7" fill="#fef3c7"/>
+  <rect x="620" y="138" width="30" height="14" rx="7" fill="#f59e0b" opacity="0.6"/>
+  <text x="650" y="170" text-anchor="middle" font-size="16" font-weight="bold" fill="#92400e">アンケート投稿</text>
+  <text x="650" y="195" text-anchor="middle" font-size="11" fill="#666">選択式で意見を収集</text>
+  <text x="650" y="215" text-anchor="middle" font-size="11" fill="#666">参加ハードルが最も低い</text>
+  <rect x="585" y="235" width="130" height="24" rx="12" fill="#fffbeb"/>
+  <text x="650" y="251" text-anchor="middle" font-size="11" fill="#f59e0b" font-weight="bold">反応率 ★★★★★</text>
+
+  <!-- Card 4: GIF -->
+  <rect x="115" y="310" width="220" height="180" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="115" y="310" width="220" height="5" rx="2.5" fill="#8b5cf6"/>
+  <text x="225" y="355" text-anchor="middle" font-size="16" fill="#8b5cf6" font-weight="bold">GIF</text>
+  <rect x="210" y="360" width="30" height="4" rx="2" fill="#8b5cf6" opacity="0.3"/>
+  <text x="225" y="385" text-anchor="middle" font-size="16" font-weight="bold" fill="#5b21b6">GIF投稿</text>
+  <text x="225" y="410" text-anchor="middle" font-size="11" fill="#666">動きのある画像で注目</text>
+  <text x="225" y="430" text-anchor="middle" font-size="11" fill="#666">フィードで目を引く</text>
+  <rect x="160" y="450" width="130" height="24" rx="12" fill="#f5f3ff"/>
+  <text x="225" y="466" text-anchor="middle" font-size="11" fill="#8b5cf6" font-weight="bold">注目度 ★★★★☆</text>
+
+  <!-- Card 5: Video Link -->
+  <rect x="465" y="310" width="220" height="180" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="465" y="310" width="220" height="5" rx="2.5" fill="#ef4444"/>
+  <polygon points="565,338 565,358 580,348" fill="#ef4444"/>
+  <rect x="555" y="332" width="40" height="30" rx="4" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="575" y="385" text-anchor="middle" font-size="16" font-weight="bold" fill="#991b1b">動画リンク投稿</text>
+  <text x="575" y="410" text-anchor="middle" font-size="11" fill="#666">過去動画を再度紹介</text>
+  <text x="575" y="430" text-anchor="middle" font-size="11" fill="#666">リーチの再拡大に有効</text>
+  <rect x="510" y="450" width="130" height="24" rx="12" fill="#fef2f2"/>
+  <text x="575" y="466" text-anchor="middle" font-size="11" fill="#ef4444" font-weight="bold">再発見率 ★★★☆☆</text>
+</svg>
